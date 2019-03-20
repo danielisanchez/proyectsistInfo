@@ -1,0 +1,149 @@
+<app-navbar-admin></app-navbar-admin>
+<div class="container">
+    <div class="row">
+        <div class="col text-center">
+            <button (click)="openCreateModal(CreateTemplate)" class="btn btn-outline-dark">Crear Producto</button>
+        </div>
+    </div>
+</div>
+<section id="team" class="pb-5">
+    <div class="container">
+        <h5 class="section-title h1">Vista del administrador</h5>
+        <div class="row">
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png" alt="card image"></p>
+                                    <h4 class="card-title">Producto1</h4>
+                                    <p class="card-text">Departamento</p>
+                                    <p class="card-text">Precio: $30</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Producto1</h4>
+                                    <p class="card-text">Descripcion</p>
+
+                                </div>
+                                <div class="card-footer">
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <button class="btn btn-primary btn-sm">editar</button>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <button class="btn btn-danger btn-sm">Eliminar</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<ng-template #CreateTemplate>
+    <div class="modal-header">
+        <h4 class="modal-title fa-pull-right">Nuevo producto</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="createModalRef.hide()">
+                <span aria-hidden="true">&times;</span>
+            </button>
+    </div>
+    <div class="modal-body">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <!--Foto-->
+                    <div class="text-center">
+                        <!-- <img *ngIf="this.imageUrl==null" src="/assets/img/sin-perfil.png" class="img-thumbnail" alt="avatar">
+                        <img *ngIf="this.imageUrl!=null" src={{this.imageUrl}} class="img-thumbnail" alt="avatar"> -->
+                        <h6>Seleccione la foto para el producto</h6>
+                        <br>
+
+                        <div class="container">
+                            <!--Barra de progreso-->
+                            <progressbar [value]="uploadProgress| async" type="primary" [striped]="true" [animate]="true"></progressbar>
+
+                            <!--Muestra el progreso de la barra-->
+                            <div class="item">
+                                Progress: {{ (uploadProgress | async) / 100 | percent }}
+                            </div>
+                            <br>
+
+                            <!--Se sube una nueva foto para el usuario-->
+                            <div class="item">
+                                <!--Selecciona un archivo .png o .jpg-->
+                                <input #inputFile class="hidden" type="file" (change)="upload($event)" accept=".png,.jpg">
+                                <!--Botón para poner en funcionamiento el input-->
+                                <button type="button" class="btn btn-lg btn-success" (click)="inputFile.click()">
+                                Subir foto
+                                <i class="fas fa-upload"></i>
+                            </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="tab-content">
+                        <form #cf="ngForm" class="form" id="CreateForm">
+                            <div class="form-group">
+                                <div class="col-xs-6">
+                                    <label for="name"><h4>Nombre</h4></label>
+                                    <input [(ngModel)]="productoNuevo.name" #name="ngModel" ngModel type="text" class="form-control" name="name" id="name" placeholder="Nombre del producto">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-6">
+                                    <label for="descripcion"><h4>Descripción</h4></label>
+                                    <textarea [(ngModel)]="productoNuevo.description" #descripcion="ngModel" ngModel type="text" class="form-control" name="descripcion" id="descripcion" placeholder="Descripcion del producto"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+
+                                <div class="col-xs-6">
+                                    <label for="precio"><h4>Precio</h4></label>
+                                    <input [(ngModel)]="productoNuevo.price" #precio="ngModel" ngModel type="number" class="form-control" name="precio" id="precio" placeholder="Introduzca el precio">
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <!-- agregar navs para cada extra -->
+                                <label><h4>Extras</h4></label>
+                                <button class="btn btn-extra btn-success btn-sm" type="button">
+                                            <i class="fas fa-plus-circle"></i>
+                                    </button>
+                                <!-- <tabset #extraTabs [vertical]="true" type="pills">
+                                    <div *ngIf="newProduct.extras.length > 0">
+                                        <tab (removed)="removeCreateExtra(extra)" [removable]="true" [active]="false" [disabled]=true *ngFor="let extra of newProduct.extras" heading="{{extra.name}}"></tab>
+                                    </div>
+                                </tabset> -->
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-12">
+                                    <br>
+                                    <button class="btn btn-primary" type="submit">Crear Producto
+                                            <i class="fas fa-pencil-alt"></i>
+                                    </button>
+                                    <button class="btn btn-cancelar btn-danger">Cancelar
+                                            <i class="far fa-times-circle"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-template>

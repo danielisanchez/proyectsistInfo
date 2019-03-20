@@ -1,0 +1,377 @@
+:root {
+    --input-padding-x: 1.5rem;
+    --input-padding-y: 0.75rem;
+}
+
+.card-signin {
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-top-style: initial;
+    border-right-style: initial;
+    border-bottom-style: initial;
+    border-left-style: initial;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-bottom-color: initial;
+    border-left-color: initial;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem 1rem 0px;
+}
+
+.card-signin .card-img-left {
+    width: 45%;
+    background-image: url("https://source.unsplash.com/collection/190727/414x512");
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: scroll;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    background-size: cover;
+}
+
+.card-signin .card-title {
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.card-signin .card-body {
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+}
+
+.form-signin {
+    width: 100%;
+}
+
+.form-signin .btn {
+    font-size: 80%;
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+}
+
+.form-label-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.form-label-group>label {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    width: 100%;
+    margin-bottom: 0px;
+    line-height: 1.5;
+    color: rgb(73, 80, 87);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: all;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.form-label-group input::placeholder {
+    color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown) {
+    padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+    padding-bottom: calc(var(--input-padding-y) / 3);
+}
+
+.form-label-group input:not(:placeholder-shown)~label {
+    padding-top: calc(var(--input-padding-y) / 3);
+    padding-bottom: calc(var(--input-padding-y) / 3);
+    font-size: 12px;
+    color: rgb(119, 119, 119);
+}
+
+.btn-google {
+    color: white;
+    background-color: rgb(234, 67, 53);
+}
+
+.btn-facebook {
+    color: white;
+    background-color: rgb(59, 89, 152);
+}
+
+.btn.btn-lg.btn-primary.btn-block.text-uppercase {
+    background-color: rgb(234, 67, 53);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: rgb(234, 67, 53);
+    border-right-color: rgb(234, 67, 53);
+    border-bottom-color: rgb(234, 67, 53);
+    border-left-color: rgb(234, 67, 53);
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+}
+
+.blog-header {
+    line-height: 1;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(229, 229, 229);
+}
+
+.blog-header-logo {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.nav-scroller .nav-link {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-size: 0.875rem;
+}
+
+.c6101 {
+    min-height: 75px;
+}
+
+.c6120 {
+    min-height: 75px;
+}
+
+.jumbotron {
+    color: rgb(255, 255, 255);
+    background-image: url("https://www.gridbox.io/projects/109c62b4-ed6e-4dd6-b83f-937e6924aa5b/assets/img/pexels-photo-998641.jpeg");
+    background-repeat-x: repeat;
+    background-repeat-y: repeat;
+    background-attachment: scroll;
+    background-position-x: 50%;
+    background-position-y: 100%;
+    background-size: cover;
+}
+
+.c6621 {
+    min-height: 75px;
+}
+
+.c6640 {
+    min-height: 75px;
+}
+
+.display-4.text-center {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 23px;
+    margin-left: 0px;
+}
+
+@media (max-width: 480px) {
+    .blog-header-logo.text-dark {
+        font-size: 25px;
+    }
+}
+
+.blog-header {
+    line-height: 1;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(229, 229, 229);
+}
+
+.blog-header-logo {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.nav-scroller .nav-link {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-size: 0.875rem;
+}
+
+.c6101 {
+    min-height: 75px;
+}
+
+.c6120 {
+    min-height: 75px;
+}
+
+.jumbotron {
+    color: rgb(255, 255, 255);
+    background-image: url("https://www.gridbox.io/projects/109c62b4-ed6e-4dd6-b83f-937e6924aa5b/assets/img/pexels-photo-998641.jpeg");
+    background-repeat-x: repeat;
+    background-repeat-y: repeat;
+    background-attachment: scroll;
+    background-position-x: 50%;
+    background-position-y: 100%;
+    background-size: cover;
+}
+
+.c6621 {
+    min-height: 75px;
+}
+
+.c6640 {
+    min-height: 75px;
+}
+
+.display-4.text-center {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 23px;
+    margin-left: 0px;
+}
+
+@media (max-width: 480px) {
+    .blog-header-logo.text-dark {
+        font-size: 25px;
+    }
+}
+
+.blog-header {
+    line-height: 1;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(229, 229, 229);
+}
+
+.blog-header-logo {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.nav-scroller .nav-link {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-size: 0.875rem;
+}
+
+.c6101 {
+    min-height: 75px;
+}
+
+.c6120 {
+    min-height: 75px;
+}
+
+.jumbotron {
+    color: rgb(255, 255, 255);
+    background-image: url("https://www.gridbox.io/projects/109c62b4-ed6e-4dd6-b83f-937e6924aa5b/assets/img/pexels-photo-998641.jpeg");
+    background-repeat-x: repeat;
+    background-repeat-y: repeat;
+    background-attachment: scroll;
+    background-position-x: 50%;
+    background-position-y: 100%;
+    background-size: cover;
+}
+
+.c6621 {
+    min-height: 75px;
+}
+
+.c6640 {
+    min-height: 75px;
+}
+
+.display-4.text-center {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 23px;
+    margin-left: 0px;
+}
+
+@media (max-width: 480px) {
+    .blog-header-logo.text-dark {
+        font-size: 25px;
+    }
+}

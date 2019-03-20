@@ -1,0 +1,68 @@
+<!-- Determina si el usuario esta autenticado o es un invitado-->
+<div *ngIf="auth.User | async; then authenticated"></div>
+
+<!-- Se usa el #authenticated para renderisar el template dependiendo de la respuesta del servicio auth de firestore -->
+<!-- Esto con tal de poder hacer uso de una navegación basada en roles-->
+
+
+<!--Template para usuario autenticadoe-->
+<ng-template #authenticated>
+    <div *ngIf="auth.User | async as User">
+        <div *ngIf="User.role === 'customer'">
+            <app-navbar-user></app-navbar-user>
+        </div>
+        <div *ngIf="User.role === 'admin'">
+            <app-navbar-admin></app-navbar-admin>
+        </div>
+        <div class="container">
+            <!--Se muestran los otros datos del usuario-->
+            <div>
+                <br>
+                <h3>bienvenida a tu perfil, {{User.name}}</h3>
+                <br>
+                <hr>
+                <small>Para realizar cualquier cambio es necesario que pongas tu contraseña y el dato que deseas cambiar</small>
+                <br>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="home">
+                        <form (ngSubmit)="actualizarPerfil(f)" #f="ngForm" novalidate="">
+                            <div class="form-group">
+                                <div class="col-xs-4">
+                                    <label for="first_name"><h4>Nombre</h4></label>
+                                    <input type="text" class="form-control" name="name" id="name" #name="ngModel" ngModel placeholder="{{User.name | titlecase}}">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-4">
+                                    <label for="email"><h4>Email</h4></label>
+                                    <input type="text" class="form-control" name="email" id="email" #email="ngModel" ngModel placeholder="{{User.email}}">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-4">
+                                    <label for="password"><h4>Contrasena Actual</h4></label>
+                                    <input type="password" class="form-control" name="password" id="password" #password="ngModel" ngModel placeholder="password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-4">
+                                    <label for="confirm"><h4>Nueva Contraseña</h4></label>
+                                    <input type="password" class="form-control" name="confirm" id="confirm" #confirm="ngModel" ngModel placeholder="nuevo password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-12">
+                                    <br>
+                                    <button class="btn btn-lg btn-success" type="submit">
+                                                        Actualizar
+                                        </button>
+                                </div>
+                            </div>
+                        </form>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-template>

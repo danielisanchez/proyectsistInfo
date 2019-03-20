@@ -1,0 +1,48 @@
+<div class="row">
+    <div class="col">
+    </div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="assets/logomandarina.ico" width="30px" height="30px" style="margin-right: 10px;">
+    <a href="#" class="navbar-brand">La Mandarina Mecánica</a>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-10 col-xl-9 mx-auto">
+            <div class="card card-signin flex-row my-5">
+                <div class="card-img-left d-none d-md-flex">
+                </div>
+                <div class="card-body">
+                    <h5 data-type="header" class="card-title text-center">
+                        <b>Registrarse</b>
+                    </h5>
+                    <form (ngSubmit)="onSignup(f)" #f="ngForm" novalidate="" class="form-signin">
+                        <div class="form-label-group">
+                            <input type="text" id="username" name="username" class="form-control" #username="ngModel" ngModel placeholder="Username" required="" autofocus="" class="form-control" />
+                            <label for="inputUserame">Usuario</label>
+                        </div>
+                        <div class="form-label-group">
+                            <input type="email" id="email" name="email" class="form-control" #email="ngModel" ngModel placeholder="Email address" required="" class="form-control" />
+                            <label for="inputEmail">Correo electrónico</label>
+                        </div>
+                        <hr/>
+                        <div class="form-label-group">
+                            <input type="password" id="password" name="password" #password="ngModel" ngModel placeholder="Password" required="" class="form-control" />
+                            <label for="inputPassword">Contraseña</label>
+                        </div>
+                        <div class="form-label-group">
+                            <input type="password" id="ConfirmPassword" name="ConfirmPassword" #ConfirmPassword="ngModel" ngModel placeholder="Password" required="" class="form-control" />
+                            <label for="inputConfirmPassword">Confirmar
+          contraseña</label>
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-primary btn-block text-uppercase">Registrar</button>
+                        <a href="iniciosesion" class="d-block text-center mt-2 small">¿Ya
+          estás registradx? Inicia Sesión</a>
+                        <hr class="my-4" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col">
+    </div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="assets/logomandarina.ico" width="30px" height="30px" style="margin-right: 10px;">
+    <a href="#" class="navbar-brand">La Mandarina Mecánica</a>
+</nav>
+
+<div class="container">
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <div class="card card-signin my-5">
+                <div class="card-body">
+                    <h5 data-type="header" class="card-title text-center">Contraseña olvidada
+                    </h5>
+                    <form (ngSubmit)="forgot(f)" #f="ngForm" novalidate class="form-signin">
+                        <p>Por favor introduzca su correo electronico</p>
+                        <div class="form-label-group">
+                            <input id="email" name="email" type="email" placeholder="Email address" #email="ngModel" ngModel required=" " autofocus=" " class="form-control " />
+                            <label for="inputEmail ">Correo
+          Electrónico</label>
+                        </div>
+                        <br>
+                        <button type="submit " class="btn btn-lg btn-primary btn-block text-uppercase ">Enviar contraseña</button>
+                        <hr class="my-4 " />
+                        <a class="d-block text-center mt-2 small " [routerLink]="[ '/login'] " routerLinkActive="active ">¿Desea volver al login?</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
