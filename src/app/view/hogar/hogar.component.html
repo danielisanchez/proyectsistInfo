@@ -1,3 +1,75 @@
-<p>
-  hogar works!
-</p>
+<!-- Determina si el usuario esta autenticado o es un invitado-->
+<div *ngIf="auth.User | async; then authenticated"></div>
+
+<!-- Se usa el #authenticated para renderisar el template dependiendo de la respuesta del servicio auth de firestore -->
+<!-- Esto con tal de poder hacer uso de una navegación basada en roles-->
+
+
+<!--Template para usuario autenticadoe-->
+<ng-template #authenticated>
+    <div *ngIf="auth.User | async as User">
+        <div *ngIf="User.role === 'customer'">
+            <app-navbar-user></app-navbar-user>
+        </div>
+        <div *ngIf="User.role === 'admin'">
+            <app-navbar-admin></app-navbar-admin>
+        </div>
+        <section id="team" class="pb-5">
+            <div class="container">
+                <h5 class="section-title h1">Bienvenido a la sección de hogar</h5>
+                <div class="col text-right">
+
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" [(ngModel)]="searchterm" (ngModelChange)="search($event)" type="search" placeholder="Búsqueda" aria-label="Search" name="searchInput">
+                        <button class="btn btn-dark my-2 my-sm-0" type="submit">buscar</button>
+                    </form>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let producto of productos">
+                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                            <div class="mainflip">
+                                <div class="frontside">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <p><img class=" img-fluid" src={{producto.photoUrl}} alt="card image"></p>
+                                            <h4 class="card-title">{{producto.name}}</h4>
+                                            <p class="card-text">{{producto.department}}</p>
+                                            <p class="card-text">Precio: ${{producto.price}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <button class="btn btn-primary btn-sm">Carrito</button>
+                                            </li>
+                                            <li class="list-inline-item align-self-end">
+                                                <button class="btn btn-primary btn-sm">Lista de deseos</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="backside">
+                                    <div class="card">
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="card-title">{{producto.name}}</h4>
+                                            <p class="card-text">{{producto.description}}</p>
+
+                                        </div>
+                                        <div class="card-footer">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item align-content-center">
+                                                    <button class="btn btn-primary btn-sm">Comentarios</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</ng-template>

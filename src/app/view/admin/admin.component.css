@@ -26,13 +26,6 @@ section .section-title {
     margin-bottom: 50px;
 }
 
-
-/* 
-#team .card {
-    border: none;
-    background: #ffffff;
-} */
-
 .image-flip:hover .backside,
 .image-flip.hover .backside {
     -webkit-transform: rotateY(0deg);
@@ -124,4 +117,12 @@ section .section-title {
     width: 120px;
     height: 120px;
     border-radius: 50%;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn-cancelar {
+    margin-left: 10px;
 }

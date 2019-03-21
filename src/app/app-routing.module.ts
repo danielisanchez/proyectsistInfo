@@ -8,6 +8,9 @@ import {OlvidoPassComponent} from './component/olvido-pass/olvido-pass.component
 import{NosotrosComponent} from './view/nosotros/nosotros.component';
 import { PerfilComponent } from './view/perfil/perfil.component';
 import { AdminComponent } from './view/admin/admin.component';
+import { HogarComponent } from './view/hogar/hogar.component';
+import { ArteComponent } from './view/arte/arte.component';
+import { ElectrodomesticoComponent } from './view/electrodomestico/electrodomestico.component';
 
 const routes: Routes = [
 {
@@ -20,6 +23,21 @@ component: NosotrosComponent,
   component: InicioComponent,
   
   },
+  {
+    path:'hogar',
+    component: HogarComponent,
+    
+    },
+    {
+      path:'arte',
+      component: ArteComponent,
+      
+      },
+      {
+        path:'electrodomesticos',
+        component: ElectrodomesticoComponent,
+        
+        },
   {
     path:'admin',
     component: AdminComponent,

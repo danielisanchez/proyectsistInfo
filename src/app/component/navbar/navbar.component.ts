@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PilotoService } from 'src/app/servicios/piloto.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,11 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  piloto:boolean = true;
+  piloto:boolean;
   //invocar servicio de piloto y llenar la variable
-  constructor() { }
+  constructor(public pilotoService: PilotoService) { }
   
   ngOnInit() {
+    this.pilotoService.getPiloto().subscribe(element => this.piloto = element.value)
   }
 
 }
