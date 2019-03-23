@@ -62,7 +62,7 @@ export class ProductoService {
           return data;
       });
     }));
-    return this.productosDisponible.pipe(map(arr => arr.filter( r => r.department === 'electrodomésticos')))
+    return this.productosDisponible.pipe(map(arr => arr.filter( r => r.department === 'electrodomesticos')))
   }
   ProductosArte():Observable<Product[]>{
     this.productosDisponible = this.productCollection.snapshotChanges().pipe(map(changes=> {

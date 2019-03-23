@@ -3,6 +3,8 @@ import { AuthService } from 'src/app/auth/auth.service';
 import { Subject, combineLatest} from 'rxjs';
 import { ProductoService } from 'src/app/servicios/producto.service';
 import { AngularFirestore } from '@angular/fire/firestore';
+import { CarritoService } from 'src/app/servicios/carrito.service';
+import { wishlistService } from 'src/app/servicios/wishlist.service';
 
 @Component({
   selector: 'app-hogar',
@@ -17,7 +19,8 @@ export class HogarComponent implements OnInit {
   startObs = this.startAt.asObservable();
   endObs = this.endAt.asObservable();
   productos;
-  constructor(public auth: AuthService, public productoService: ProductoService, public afs: AngularFirestore){ }
+  variacionHogar;
+  constructor(public auth: AuthService, public productoService: ProductoService, public afs: AngularFirestore, public carritoService: CarritoService, public wishlistService: wishlistService){ }
 
   ngOnInit() {
     this.getProducts()
@@ -66,5 +69,17 @@ export class HogarComponent implements OnInit {
     }else{
       alert("Error en los valores suminstrados")
     }
+  }
+
+  anadirCarrito(producto){
+    this.carritoService.agregarProducto(producto, this.variacionHogar)
+    alert("Producto añadido al carrito")
+    this.variacionHogar = undefined;
+  }
+
+  anadirWish(producto){
+    this.wishlistService.agregarProducto(producto, this.variacionHogar)
+    alert("Producto añadido a la wishlist");
+    this.variacionHogar = undefined;
   }
 }

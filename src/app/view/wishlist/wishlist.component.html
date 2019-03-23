@@ -16,16 +16,13 @@
         </div>
         <section id="team" class="pb-5">
             <div class="container">
-                <h5 class="section-title h1">Mi carrito</h5>
-                <div class="col text-center">
-                    <button (click)="Comprar()" class="btn btn-primary">Comprar</button>
-                </div>
+                <h5 class="section-title h1">Mi Wishlist</h5>
                 <br>
                 <div class="col text-center">
-                    <button (click)="LimpiarCarrito(User.uid)" class="btn btn-dark">Limpiar Carrito</button>
+                    <button (click)="LimpiarWishList(User.uid)" class="btn btn-dark">Limpiar Wishlist</button>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let producto of carrito.products; let i = index">
+                    <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let producto of ListaDeseo.products; let i = index">
                         <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                             <div class="mainflip">
                                 <div class="frontside">
@@ -49,23 +46,15 @@
                                     <div class="card-body text-center mt-4">
                                         <h4 class="card-title">{{producto.name}}</h4>
                                         <p class="card-text">{{producto.description}}</p>
-                                        <div class="input-group">
-                                            <input #quantity type="text" class="form-control" placeholder="Cantidad" aria-label="Recipient's username" aria-describedby="basic-addon2" value="{{producto.qty}}">
-                                            <div class="input-group-append">
-                                                <button (click)="incrementar(producto, User.uid)" class="btn btn-primary" type="button">+
-																								</button>
-                                                <button (click)="decrementar(producto, User.uid)" class="btn btn-danger" type="button">-
-																								</button>
-                                            </div>
-                                        </div>
-
-
                                     </div>
                                     <div class="card-footer">
                                         <ul class="list-inline">
                                             <li class="list-inline-item align-content-center">
-                                                <button (click)="eliminarProducto(producto,User.uid, i)" class="btn btn-danger btn-sm">Eliminar</button>
+                                                <button (click)="AnadirCarrito(producto,User.uid, i)" class="btn btn-primary btn-sm">Agregar al carrito</button>
                                             </li>
+                                            <li class="list-inline-item align-content-center">
+                                            </li>
+                                            <button (click)="eliminarProducto(producto,User.uid, i)" class="btn btn-danger btn-sm">Eliminar</button>
                                         </ul>
                                     </div>
                                 </div>

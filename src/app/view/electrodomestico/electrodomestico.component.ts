@@ -3,6 +3,8 @@ import { AuthService } from 'src/app/auth/auth.service';
 import { Subject, combineLatest} from 'rxjs';
 import { ProductoService } from 'src/app/servicios/producto.service';
 import { AngularFirestore } from '@angular/fire/firestore';
+import { CarritoService } from 'src/app/servicios/carrito.service';
+import { wishlistService } from 'src/app/servicios/wishlist.service';
 
 @Component({
   selector: 'app-electrodomestico',
@@ -16,7 +18,8 @@ export class ElectrodomesticoComponent implements OnInit {
   startObs = this.startAt.asObservable();
   endObs = this.endAt.asObservable();
   productos;
-  constructor(public auth: AuthService, public productoService: ProductoService, public afs: AngularFirestore){ }
+  variacionElectro;
+  constructor(public auth: AuthService, public productoService: ProductoService, public afs: AngularFirestore, public carritoService: CarritoService, public wishlistService: wishlistService){ }
 
   ngOnInit() {
     this.getProducts()
@@ -65,5 +68,16 @@ export class ElectrodomesticoComponent implements OnInit {
     }else{
       alert("Error en los valores suminstrados")
     }
+  }
+  anadirCarrito(producto){
+    this.carritoService.agregarProducto(producto, this.variacionElectro); 
+    alert("Producto añadido al carrito");
+    this.variacionElectro = undefined;
+  }
+
+  anadirWish(producto){
+    this.wishlistService.agregarProducto(producto, this.variacionElectro)
+    alert("Producto añadido a la wishlist");
+    this.variacionElectro = undefined;
   }
 }

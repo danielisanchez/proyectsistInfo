@@ -1,17 +1,14 @@
 import { Injectable } from '@angular/core';
 import { AuthService } from '../auth/auth.service';
 import { AngularFirestore } from '@angular/fire/firestore';
-import { ProductoService } from './producto.service';
 import { Carrito } from '../models/carrito';
 import { Product } from '../models/product';
 import { isUndefined, isNullOrUndefined } from 'util';
-import { promise } from 'protractor';
-import { Variacion } from '../models/variacion';
 
 @Injectable({
   providedIn: 'root'
 })
-export class CarritoService {
+export class wishlistService {
 
   
   constructor(
@@ -19,25 +16,25 @@ export class CarritoService {
     private afs: AngularFirestore
   ) { }
 
-  CrearCarrito(id){
-    this.afs.collection('carts').doc(id).set(
+  CrearWishList(id){
+    this.afs.collection('wishlist').doc(id).set(
       {id: id, products: [], totalProducts: 0}
     )
   }
 
-  MiCarrito(uid){
-    return this.afs.doc<Carrito>(`carts/${uid}`).snapshotChanges();
+  MiWishList(uid){
+    return this.afs.doc<Carrito>(`wishlist/${uid}`).snapshotChanges();
   }
 
-  RefMiCarrito(uid){
-    return this.afs.collection<Carrito>('carts').doc(uid).ref;
+  RefMiWish(uid){
+    return this.afs.collection<Carrito>('wishlist').doc(uid).ref;
   }
 
   agregarProducto(producto, variacion): Promise<any> {
     return new Promise((resolve, reject) => {
       this.auth.User.subscribe(data => {
         if(data){
-          const cartRef = this.RefMiCarrito(data.uid);
+          const cartRef = this.RefMiWish(data.uid);
           cartRef.get().then(doc => {
             let cartData = doc.data();
             let productosEnCarrito = cartData.products;
@@ -52,7 +49,7 @@ export class CarritoService {
                   qty: 1
                 }
 
-                const exist = CarritoService.ProductosIguales(productosEnCarrito,producto,variacion);
+                const exist = wishlistService.ProductosIguales(productosEnCarrito,producto,variacion);
                 if(!exist){
                   productosEnCarrito.push(productoAlCarrito);
                   cartData.totalProducts += 1;
@@ -70,7 +67,7 @@ export class CarritoService {
                     description: producto.description,
                     qty: 1
                   }
-                  const exist = CarritoService.ProductosIguales(productosEnCarrito,producto, variacion);
+                  const exist = wishlistService.ProductosIguales(productosEnCarrito,producto, variacion);
                   if(!exist){
                     productosEnCarrito.push(productToCart);
                     cartData.totalProducts += 1;
@@ -117,9 +114,9 @@ export class CarritoService {
     return sum;
   }
 
-  resetCart(uid): Promise<any>{
+  resetWishList(uid): Promise<any>{
     return new Promise((resolve, reject) => {
-      const ref = this.RefMiCarrito(uid);
+      const ref = this.RefMiWish(uid);
       ref.get().then(doc => {
         let cartData = doc.data();
         cartData.products = [];
@@ -133,57 +130,9 @@ export class CarritoService {
     })
   }
 
-  incrementar(producto,uid, variacion){
-    return new Promise((resolve,reject)=> {
-      const ref = this.RefMiCarrito(uid);
-      ref.get().then(doc => {
-        let cartData = doc.data();
-        let productosEnCarrito = cartData.products;
-        const exist = CarritoService.ProductosIguales(productosEnCarrito, producto, variacion)
-        if(exist){
-            exist.qty = exist.qty + 1;
-            cartData.totalProducts = parseInt(cartData.totalProducts) + 1;
-          return ref.update(cartData).then(() => {
-            resolve(true);
-          }).catch((err) => {
-            reject(err);
-          });
-        }
-      })
-    })
-  }
-
-  disminuir(producto,uid, variacion){
-    return new Promise((resolve,reject)=> {
-      const ref = this.RefMiCarrito(uid);
-      ref.get().then(doc => {
-        let cartData = doc.data();
-        let productosEnCarrito = cartData.products;
-        const exist = CarritoService.ProductosIguales(productosEnCarrito,  producto, variacion)
-        if(exist){
-            exist.qty = exist.qty - 1;
-            cartData.totalProducts = parseInt(cartData.totalProducts) - 1;
-          return ref.update(cartData).then(() => {
-            resolve(true);
-          }).catch((err) => {
-            reject(err);
-          });
-        }
-      })
-    })
-  }
-  totalPrice(products: Product[]): number {
-    let total = 0;
-    console.log(products);
-    for (let i = 0; i < products.length; i++) {
-      total += (parseInt(products[i]['qty']) * products[i]['price']);
-    }
-    return total;
-  }
-
   removeProduct(product, uid, index): Promise<any> {
     return new Promise((resolve, reject) => {
-      const ref = this.RefMiCarrito(uid);
+      const ref = this.RefMiWish(uid);
       ref.get().then(doc => {
         let cartData = doc.data();
         let productsInCart = cartData.products;

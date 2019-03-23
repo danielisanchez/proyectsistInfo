@@ -38,28 +38,34 @@
                                             <p class="card-text">Precio: ${{producto.price}}</p>
                                         </div>
                                     </div>
-                                    <div class="card-footer">
-                                        <ul class="list-inline">
-                                            <li class="list-inline-item">
-                                                <button class="btn btn-primary btn-sm">Carrito</button>
-                                            </li>
-                                            <li class="list-inline-item align-self-end">
-                                                <button class="btn btn-primary btn-sm">Lista de deseos</button>
-                                            </li>
-                                        </ul>
-                                    </div>
                                 </div>
                                 <div class="backside">
                                     <div class="card">
                                         <div class="card-body text-center mt-4">
                                             <h4 class="card-title">{{producto.name}}</h4>
                                             <p class="card-text">{{producto.description}}</p>
+                                            <div class="form-group">
 
-                                        </div>
-                                        <div class="card-footer">
+                                                <div *ngIf="producto.variaciones.length >0">
+                                                    <label for="exampleFormControlSelect1">Variacion</label>
+                                                    <select [(ngModel)]="variacionHogar" class="form-control" id="exampleFormControlSelect1">
+                                                        <option *ngFor="let Variacion of producto.variaciones">{{Variacion.value}}</option>
+                                                      </select>
+                                                </div>
+                                            </div>
                                             <ul class="list-inline">
                                                 <li class="list-inline-item align-content-center">
                                                     <button class="btn btn-primary btn-sm">Comentarios</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item">
+                                                    <button (click)="anadirCarrito(producto)" class="btn btn-primary btn-sm">Carrito</button>
+                                                </li>
+                                                <li class="list-inline-item align-self-end">
+                                                    <button (click)="anadirWish(producto)" class="btn btn-primary btn-sm">Lista de deseos</button>
                                                 </li>
                                             </ul>
                                         </div>

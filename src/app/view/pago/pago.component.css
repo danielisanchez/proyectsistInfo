@@ -1,0 +1,29 @@
+.c1955 {
+    min-height: 75px;
+}
+
+.c1999 {
+    min-height: 300px;
+    height: auto;
+}
+
+.c2042 {
+    min-height: 20px;
+}
+
+.c2594 {
+    min-height: 75px;
+}
+
+.c2636 {
+    min-height: 75px;
+}
+
+.c6024 {
+    width: 100%;
+}
+
+.btn.btn-primary.btn-lg.btn-block {
+    background-color: #FF530D;
+    border: 1px solid #FF530D;
+}

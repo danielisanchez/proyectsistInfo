@@ -38,6 +38,8 @@ import { PerfilComponent } from './view/perfil/perfil.component'
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
 import { UsuariosComponent } from './view/usuarios/usuarios.component';
+import { PagoComponent } from './view/pago/pago.component';
+import { WishlistComponent } from './view/wishlist/wishlist.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +59,9 @@ import { UsuariosComponent } from './view/usuarios/usuarios.component';
     HogarComponent,
     AdminComponent,
     PerfilComponent,
-    UsuariosComponent
+    UsuariosComponent,
+    PagoComponent,
+    WishlistComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,5 @@
 <!-- Determina si el usuario esta autenticado o es un invitado-->
-<div *ngIf="auth.User | async; then authenticated"></div>
+<div *ngIf="auth.User | async; then authenticated; else noauthenticated"></div>
 
 <!-- Se usa el #authenticated para renderisar el template dependiendo de la respuesta del servicio auth de firestore -->
 <!-- Esto con tal de poder hacer uso de una navegación basada en roles-->
@@ -16,7 +16,7 @@
         </div>
         <section id="team" class="pb-5">
             <div class="container">
-                <h5 class="section-title h1">Bienvenido a la sección de arte</h5>
+                <h5 class="section-title h1">Bienvenido a la sección de electrodomesticos</h5>
                 <div class="col text-right">
 
                     <form class="form-inline my-2 my-lg-0">
@@ -36,17 +36,8 @@
                                             <h4 class="card-title">{{producto.name}}</h4>
                                             <p class="card-text">{{producto.department}}</p>
                                             <p class="card-text">Precio: ${{producto.price}}</p>
+
                                         </div>
-                                    </div>
-                                    <div class="card-footer">
-                                        <ul class="list-inline">
-                                            <li class="list-inline-item">
-                                                <button class="btn btn-primary btn-sm">Carrito</button>
-                                            </li>
-                                            <li class="list-inline-item align-self-end">
-                                                <button class="btn btn-primary btn-sm">Lista de deseos</button>
-                                            </li>
-                                        </ul>
                                     </div>
                                 </div>
                                 <div class="backside">
@@ -54,12 +45,28 @@
                                         <div class="card-body text-center mt-4">
                                             <h4 class="card-title">{{producto.name}}</h4>
                                             <p class="card-text">{{producto.description}}</p>
+                                            <div class="form-group">
 
-                                        </div>
-                                        <div class="card-footer">
+                                                <div *ngIf="producto.variaciones.length >0">
+                                                    <label for="exampleFormControlSelect1">Variacion</label>
+                                                    <select [(ngModel)]="variacionElectro" class="form-control" id="exampleFormControlSelect1">
+                                                        <option *ngFor="let Variacion of producto.variaciones">{{Variacion.value}}</option>
+                                                      </select>
+                                                </div>
+                                            </div>
                                             <ul class="list-inline">
                                                 <li class="list-inline-item align-content-center">
                                                     <button class="btn btn-primary btn-sm">Comentarios</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-footer">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item">
+                                                    <button (click)="anadirCarrito(producto)" class="btn btn-primary btn-sm">Carrito</button>
+                                                </li>
+                                                <li class="list-inline-item align-self-end">
+                                                    <button (click)="anadirWish(producto)" class="btn btn-primary btn-sm">Lista de deseos</button>
                                                 </li>
                                             </ul>
                                         </div>
@@ -72,4 +79,48 @@
             </div>
         </section>
     </div>
+</ng-template>
+
+<!--Template para usuario no autenticadoe-->
+<ng-template #noauthenticated>
+    <app-navbar></app-navbar>
+    <section id="team" class="pb-5">
+        <div class="container">
+            <h5 class="section-title h1">Bienvenido a la sección de electrodomesticos</h5>
+            <div class="col text-right">
+
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" [(ngModel)]="searchterm" (ngModelChange)="search($event)" type="search" placeholder="Búsqueda" aria-label="Search" name="searchInput">
+                    <button class="btn btn-dark my-2 my-sm-0" type="submit">buscar</button>
+                </form>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let producto of productos">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src={{producto.photoUrl}} alt="card image"></p>
+                                        <h4 class="card-title">{{producto.name}}</h4>
+                                        <p class="card-text">{{producto.department}}</p>
+                                        <p class="card-text">Precio: ${{producto.price}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">{{producto.name}}</h4>
+                                        <p class="card-text">{{producto.description}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </ng-template>

@@ -3,6 +3,9 @@ import { AuthService } from 'src/app/auth/auth.service';
 import { Subject, combineLatest} from 'rxjs';
 import { ProductoService } from 'src/app/servicios/producto.service';
 import { AngularFirestore } from '@angular/fire/firestore';
+import { CarritoService } from 'src/app/servicios/carrito.service';
+import { isNullOrUndefined } from 'util';
+import { wishlistService } from 'src/app/servicios/wishlist.service';
 
 @Component({
   selector: 'app-arte',
@@ -21,7 +24,8 @@ export class ArteComponent implements OnInit {
   // propiedades para el filtro
   precio: number;
   name: string;
-  constructor(public auth: AuthService, public productoService: ProductoService, public afs: AngularFirestore) { }
+  variacion;
+  constructor(public auth: AuthService, public productoService: ProductoService, public afs: AngularFirestore, public carritoService: CarritoService, public wishlistService: wishlistService) { }
 
   ngOnInit() {
     this.getProducts()
@@ -70,5 +74,15 @@ export class ArteComponent implements OnInit {
       }else{
         alert("Error en los valores suminstrados")
       }
+    }
+    anadirCarrito(producto){
+      this.carritoService.agregarProducto(producto, this.variacion)
+      alert("Producto añadido al carrito")   
+      this.variacion = undefined
+    }
+    anadirWish(producto){
+      this.wishlistService.agregarProducto(producto, this.variacion)
+      alert("Producto añadido a la wishlist");
+      this.variacion = undefined
     }
 }

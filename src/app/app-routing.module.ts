@@ -11,6 +11,8 @@ import { AdminComponent } from './view/admin/admin.component';
 import { HogarComponent } from './view/hogar/hogar.component';
 import { ArteComponent } from './view/arte/arte.component';
 import { ElectrodomesticoComponent } from './view/electrodomestico/electrodomestico.component';
+import { WishlistComponent } from './view/wishlist/wishlist.component';
+import { PagoComponent } from './view/pago/pago.component';
 
 const routes: Routes = [
 {
@@ -22,37 +24,44 @@ component: NosotrosComponent,
   path:'inicio',
   component: InicioComponent,
   
-  },
-  {
-    path:'hogar',
-    component: HogarComponent,
+},
+{
+  path:'hogar',
+  component: HogarComponent,
     
-    },
-    {
-      path:'arte',
-      component: ArteComponent,
+},
+{
+  path:'arte',
+  component: ArteComponent,
       
-      },
-      {
-        path:'electrodomesticos',
-        component: ElectrodomesticoComponent,
+},
+{
+  path:'electrodomesticos',
+  component: ElectrodomesticoComponent,
         
-        },
-  {
-    path:'admin',
-    component: AdminComponent,
+},
+{
+  path:'admin',
+  component: AdminComponent,
     
-    },
-  {
-    path:'perfil',
-    component: PerfilComponent,
+},
+{
+  path:'perfil',
+  component: PerfilComponent,
     
-    },
+},
 {
   path: 'carrito',
   component: CarritoComponent,
 },
-
+{
+  path: 'wish',
+  component: WishlistComponent,
+},
+{
+  path: 'pago',
+  component: PagoComponent,
+},
 {
   path: 'iniciosesion',
   component: FormComponent,
