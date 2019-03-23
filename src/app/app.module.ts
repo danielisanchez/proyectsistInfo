@@ -40,6 +40,7 @@ import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
 import { UsuariosComponent } from './view/usuarios/usuarios.component';
 import { PagoComponent } from './view/pago/pago.component';
 import { WishlistComponent } from './view/wishlist/wishlist.component';
+import { PespecialComponent } from './view/pespecial/pespecial.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import { WishlistComponent } from './view/wishlist/wishlist.component';
     PerfilComponent,
     UsuariosComponent,
     PagoComponent,
-    WishlistComponent
+    WishlistComponent,
+    PespecialComponent
   ],
   imports: [
     BrowserModule,

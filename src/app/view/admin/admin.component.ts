@@ -11,6 +11,8 @@ import { NgForm } from '@angular/forms';
 import { finalize } from 'rxjs/operators';
 import { Variacion } from 'src/app/models/variacion';
 import { PilotoService } from 'src/app/servicios/piloto.service';
+import { RecomendadoService } from 'src/app/servicios/recomendado.service';
+import { PromocionService } from 'src/app/servicios/promocion.service';
 
 
 @Component({
@@ -23,6 +25,7 @@ export class AdminComponent implements OnInit {
   modalRef: BsModalRef;
   modalRef2: BsModalRef;
   confirmRef: BsModalRef;
+  PromocionRef: BsModalRef;
   createModalRef: BsModalRef;
   createModalRef2: BsModalRef;
   createModalRef3: BsModalRef;
@@ -40,13 +43,17 @@ export class AdminComponent implements OnInit {
   priceValue;
   productoSelecionado: Product;
   piloto: any;
-
+  promocionProducto;
+  VariacionPromocion: string;
+  
   constructor(private productService: ProductoService, 
     private modalService: BsModalService, 
     private router: Router,
     private storage: AngularFireStorage,
     public afs: AngularFirestore,
-    public pilotoService: PilotoService
+    public pilotoService: PilotoService,
+    public recomendadoService: RecomendadoService,
+    public promocionService: PromocionService
     ) { }
 
   ngOnInit() {
@@ -88,6 +95,11 @@ export class AdminComponent implements OnInit {
     this.OpcionDep = this.productoSelecionado.department;
     this.OpcionVar = this.productoSelecionado.variaciones;
     this.modalRef = this.modalService.show(template, { class: 'gray modal-lg'});
+  }
+  PromocionProduct(template: TemplateRef<any>, promocionProduct){
+    this.promocionProducto = promocionProduct;
+    this.priceValue = this.promocionProducto.price;
+    this.PromocionRef = this.modalService.show(template, {class: 'gray modal-lg'});
   }
   delete(){
       this.confirmRef.hide();
@@ -173,6 +185,39 @@ export class AdminComponent implements OnInit {
     this.createModalRef.hide();
     this.createModalRef =null;
   }
+  crearPromocion(form:NgForm){
+    if(form.value.precio != undefined){
+      this.promocionProducto.price = form.value.precio;
+    }
+    if(this.VariacionPromocion != undefined){
+      const ProductoPromocion = {
+        department: this.promocionProducto.department,
+        description: this.promocionProducto.description,
+        id: this.promocionProducto.id,
+        name: this.promocionProducto.name,
+        photoUrl: this.promocionProducto.photoUrl,
+        price: this.promocionProducto. price,
+        variacion: this.VariacionPromocion
+      }
+      this.PromocionRef.hide();
+      this.PromocionRef = null;
+      this.promocionService.crearProducto(ProductoPromocion);
+      alert("Se ha agregado un producto en promocion")
+    }else {
+      const ProductoPromocion = {
+        department: this.promocionProducto.department,
+        description: this.promocionProducto.description,
+        id: this.promocionProducto.id,
+        name: this.promocionProducto.name,
+        photoUrl: this.promocionProducto.photoUrl,
+        price: this.promocionProducto. price,
+      }
+      this.PromocionRef.hide();
+      this.PromocionRef = null;
+      this.promocionService.crearProducto(ProductoPromocion);
+      alert("Se ha agregado un producto en promocion")
+    }
+  }
   updateProduct(form: NgForm){
     if(form.value.name != ""){
       this.productoSelecionado.name = form.value.name;
@@ -229,5 +274,9 @@ export class AdminComponent implements OnInit {
   closeVariacionEditModal(template: TemplateRef<any>){
     this.createModalRef3.hide();
     this.modalRef = this.modalService.show(template, {class: 'modal-lg'})
+  }
+  Recomendado(producto){
+    this.recomendadoService.crearProducto(producto);
+    alert("Se ha agregado un producto recomendado");
   }
 }

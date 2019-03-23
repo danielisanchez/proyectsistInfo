@@ -1,3 +1,30 @@
-<p>
-  usuarios works!
-</p>
+<app-navbar-admin></app-navbar-admin>
+
+<section id="team" class="pb-3">
+    <div class="container">
+        <h5 class="section-title h1">Usuarios</h5>
+        <table class="table table-bordered text-center">
+            <thead>
+                <tr>
+                    <th class="text-center" scope="col">#</th>
+                    <th class="text-center" scope="col">Nombre</th>
+                    <th class="text-center" scope="col">Correo</th>
+                    <th class="text-center" scope="col">Habilitar/Desabilitar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let usuario of usuarios; let i = index">
+                    <th class="text-center" *ngIf="usuario.role =='customer'" scope="row">{{i+1}}</th>
+                    <td class="text-center" *ngIf="usuario.role =='customer'">{{usuario.name}}</td>
+                    <td class="text-center" *ngIf="usuario.role =='customer'">{{usuario.email}}</td>
+                    <td *ngIf="usuario.role =='customer'" class="text-center">
+                        <button *ngIf="usuario.isActive == false" class="btn btn-primary" (click)="ActivarUsuario(usuario)" type="submit">Activar
+                          </button>
+                        <button *ngIf="usuario.isActive == true" class="btn btn-danger" (click)="DesactivarUsuario(usuario)" type="submit">Desactivar
+                            </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>

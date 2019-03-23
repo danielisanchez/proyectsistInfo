@@ -11,7 +11,7 @@ export class ProductoService {
   productCollection: AngularFirestoreCollection<Product>;
   productDoc: AngularFirestoreDocument<Product>;
   productos: Observable<Product[]>;
-  productosDisponible: Observable<Product[]>;
+  ProductosDep: Observable<Product[]>;
   producto: Observable<Product>;
 
   constructor( 
@@ -45,34 +45,34 @@ export class ProductoService {
     return this.producto;
   }
   ProductosHogar():Observable<Product[]>{
-    this.productosDisponible = this.productCollection.snapshotChanges().pipe(map(changes=> {
+    this.ProductosDep = this.productCollection.snapshotChanges().pipe(map(changes=> {
       return changes.map(action => {
           const data = action.payload.doc.data() as Product;
           data.id = action.payload.doc.id;
           return data;
       });
     }));
-    return this.productosDisponible.pipe(map(arr => arr.filter( r => r.department === 'hogar')))
+    return this.ProductosDep.pipe(map(arr => arr.filter( r => r.department === 'hogar')))
   }
   ProductosElectro():Observable<Product[]>{
-    this.productosDisponible = this.productCollection.snapshotChanges().pipe(map(changes=> {
+    this.ProductosDep = this.productCollection.snapshotChanges().pipe(map(changes=> {
       return changes.map(action => {
           const data = action.payload.doc.data() as Product;
           data.id = action.payload.doc.id;
           return data;
       });
     }));
-    return this.productosDisponible.pipe(map(arr => arr.filter( r => r.department === 'electrodomesticos')))
+    return this.ProductosDep.pipe(map(arr => arr.filter( r => r.department === 'electrodomesticos')))
   }
   ProductosArte():Observable<Product[]>{
-    this.productosDisponible = this.productCollection.snapshotChanges().pipe(map(changes=> {
+    this.ProductosDep = this.productCollection.snapshotChanges().pipe(map(changes=> {
       return changes.map(action => {
           const data = action.payload.doc.data() as Product;
           data.id = action.payload.doc.id;
           return data;
       });
     }));
-    return this.productosDisponible.pipe(map(arr => arr.filter( r => r.department === 'arte')))
+    return this.ProductosDep.pipe(map(arr => arr.filter( r => r.department === 'arte')))
   }
   updateProducto(product: Product){
     this.productDoc = this.afs.doc(`products/${product.id}`);

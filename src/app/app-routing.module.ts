@@ -13,6 +13,8 @@ import { ArteComponent } from './view/arte/arte.component';
 import { ElectrodomesticoComponent } from './view/electrodomestico/electrodomestico.component';
 import { WishlistComponent } from './view/wishlist/wishlist.component';
 import { PagoComponent } from './view/pago/pago.component';
+import { PespecialComponent } from './view/pespecial/pespecial.component';
+import { UsuariosComponent } from './view/usuarios/usuarios.component';
 
 const routes: Routes = [
 {
@@ -67,6 +69,10 @@ component: NosotrosComponent,
   component: FormComponent,
 },
 {
+  path: 'especial',
+  component: PespecialComponent,
+},
+{
   path: 'registro',
   component: FormRegistroComponent,
 },
@@ -74,7 +80,10 @@ component: NosotrosComponent,
   path: 'olvido',
   component: OlvidoPassComponent,
 },
-
+{
+  path: 'usuarios',
+  component: UsuariosComponent,
+},
 ];
 
 @NgModule({

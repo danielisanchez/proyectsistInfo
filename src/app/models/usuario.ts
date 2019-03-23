@@ -4,4 +4,5 @@ export class Usuario {
     photoUrl : string;
     name : string;
     role : string;
+    isActive: boolean;
 }

@@ -51,49 +51,15 @@
             <h1 data-type="header" class="display-4 text-center">Promociones
             </h1>
             <div class="row">
-                <div class="col-md-4">
+                <div *ngFor="let producto of productosPromocionales" class="col-md-4">
                     <div class="card mb-4 box-shadow">
-                        <img data-type="image" src="https://source.unsplash.com/collection/190727/300x300" class="card-img-top" />
+                        <img data-type="image" src="{{producto.photoUrl}}" class="card-img-top" />
                         <div class="card-body">
                             <h3 data-type="header" class="mb-0">
-                                <a href="#" class="text-dark">Post title</a>
+                                {{producto.name}}
                             </h3>
-                            <p data-type="paragraph" class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                            </p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img data-type="image" src="https://source.unsplash.com/collection/410546/300x300" class="card-img-top" />
-                        <div class="card-body">
-                            <h3 data-type="header" class="mb-0">
-                                <a href="#" class="text-dark">Post title</a>
-                            </h3>
-                            <p data-type="paragraph" class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                            </p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img data-type="image" src="https://source.unsplash.com/collection/542909/300x300" class="card-img-top" />
-                        <div class="card-body">
-                            <h3 data-type="header" class="mb-0">
-                                <a href="#" class="text-dark">Post title</a>
-                            </h3>
-                            <p data-type="paragraph" class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                            </p>
+                            <br>
+                            <p data-type="text" class="card-text">Precio de promocion: {{producto.price}}</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
@@ -213,54 +179,19 @@
                 </div>
             </div>
         </div>
-
         <div class="container c6640">
             <h1 data-type="header" class="display-4 text-center">Recomendados
             </h1>
             <div class="row">
-                <div class="col-md-4">
+                <div *ngFor="let producto of productosRecomendados" class="col-md-4">
                     <div class="card mb-4 box-shadow">
-                        <img data-type="image" src="https://source.unsplash.com/collection/190727/300x300" class="card-img-top" />
+                        <img data-type="image" src="{{producto.photoUrl}}" class="card-img-top" />
                         <div class="card-body">
-                            <h3 data-type="header" class="mb-0">
-                                <a href="#" class="text-dark">Post title</a>
+                            <h3 data-type="header" class="mb-0 text-dark">
+                                {{producto.name}}
                             </h3>
-                            <p data-type="paragraph" class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                            </p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img data-type="image" src="https://source.unsplash.com/collection/410546/300x300" class="card-img-top" />
-                        <div class="card-body">
-                            <h3 data-type="header" class="mb-0">
-                                <a href="#" class="text-dark">Post title</a>
-                            </h3>
-                            <p data-type="paragraph" class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                            </p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img data-type="image" src="https://source.unsplash.com/collection/542909/300x300" class="card-img-top" />
-                        <div class="card-body">
-                            <h3 data-type="header" class="mb-0">
-                                <a href="#" class="text-dark">Post title</a>
-                            </h3>
-                            <p data-type="paragraph" class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                            </p>
+                            <br>
+                            <p data-type="text" class="card-text">{{producto.description}}</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>

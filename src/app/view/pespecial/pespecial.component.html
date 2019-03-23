@@ -1,0 +1,141 @@
+<app-navbar-admin></app-navbar-admin>
+<section id="team" class="pb-5">
+    <div class="container">
+        <h5 class="section-title h1">Productos Recomendados</h5>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let producto of productosRecomendados">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src={{producto.photoUrl}} alt="card image"></p>
+                                    <h4 class="card-title">{{producto.name}}</h4>
+                                    <p class="card-text">{{producto.department}}</p>
+                                    <p class="card-text">Precio: ${{producto.price}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">{{producto.name}}</h4>
+                                    <p class="card-text">{{producto.description}}</p>
+
+                                </div>
+                                <div class="card-footer">
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item align-self-end">
+                                            <button (click)="openConfirmRecomendado(ConfirmRecomendado, producto)" class="btn btn-danger btn-sm">Eliminar</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="team" class="pb-5">
+    <div class="container">
+        <h5 class="section-title h1">Productos Promocionales</h5>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let producto of productosPromocionales">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src={{producto.photoUrl}} alt="card image"></p>
+                                    <h4 class="card-title">{{producto.name}}</h4>
+                                    <p class="card-text">{{producto.department}}</p>
+                                    <p class="card-text">{{producto.variacion}}</p>
+                                    <p class="card-text">Precio: ${{producto.price}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">{{producto.name}}</h4>
+                                    <p class="card-text">{{producto.description}}</p>
+
+                                </div>
+                                <div class="card-footer">
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item align-self-end">
+                                            <button (click)="openEditPrecio(PrecioTemplate, producto)" class="btn btn-danger btn-sm">Editar precio</button>
+                                        </li>
+                                        <li class="list-inline-item align-self-end">
+                                            <button (click)="openConfirmPromo(ConfirmPromo, producto)" class="btn btn-danger btn-sm">Eliminar</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<ng-template #ConfirmPromo>
+    <div class="modal-header">
+        <h4 class="modal-title pull-left">Borrar producto promocional</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="confirmPromoRef.hide()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+    </div>
+    <div class="modal-body">
+        ¿Desea borrar de forma permanente el producto seleccionado?
+        <br><br>
+        <button (click)="deletePromo()" class="btn btn-success" type="button">Sí</button>
+        <button (click)="confirmPromoRef.hide()" class="btn btn-danger btn-cancelar" type="button">No</button>
+    </div>
+</ng-template>
+
+<ng-template #ConfirmRecomendado>
+    <div class="modal-header">
+        <h4 class="modal-title pull-left">Borrar producto recomendado</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="confirmRecoRef.hide()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+    </div>
+    <div class="modal-body">
+        ¿Desea borrar de forma permanente el producto seleccionado?
+        <br><br>
+        <button (click)="deleteRecomendado()" class="btn btn-success" type="button">Sí</button>
+        <button (click)="confirmRecoRef.hide()" class="btn btn-danger btn-cancelar" type="button">No</button>
+    </div>
+</ng-template>
+
+<ng-template #PrecioTemplate>
+    <div class="modal-header">
+        <h4 class="modal-title pull-left">Seleccione un precio</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="PrecioRef.hide()">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+    </div>
+    <div class="modal-body">
+        <form #promo="ngForm" class="form" id="PromoForm">
+            <div class="form-group">
+                <div class="col-xs-6">
+                    <label for="precio"><h4>Precio</h4></label>
+                    <input [(ngModel)]="priceValue" #precio="ngModel" ngModel type="number" class="form-control" name="precio" id="precio" placeholder="Introduzca el precio">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-12">
+                    <br>
+                    <button class="btn btn-primary" (click)="ActualizarPrecio(promo)" type="submit">actualizar
+                            </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</ng-template>

@@ -26,12 +26,16 @@ export class FormComponent implements OnInit {
     const password = form.value.password;
     this.auth.emailAndPassword(email, password).then(credentials => {
       this.auth.isAdmin(credentials.user.uid).subscribe(usuario => {
-        this.admin = usuario 
-        if(this.admin.role == 'admin'){
-          this.router.navigate(['admin'])
-        }
-        if(this.admin.role == 'customer'){
-          this.router.navigate(['inicio'])
+        if(usuario.isActive == false){
+          alert("El usuario no se encuentra activo");
+          return 
+        }else{
+          if(usuario.role == 'admin'){
+            this.router.navigate(['admin'])
+          }
+          if(usuario.role == 'customer'){
+            this.router.navigate(['inicio'])
+          }
         }
       })
     }).catch(err => {
