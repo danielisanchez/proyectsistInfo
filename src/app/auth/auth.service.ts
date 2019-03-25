@@ -52,7 +52,8 @@ export class AuthService {
           email: user.email,
           name: user.name,
           photoUrl: null,
-          role: "customer"
+          role: "customer",
+          isActive: true
         }
         return userRef.set(data);
       }else{
@@ -61,7 +62,8 @@ export class AuthService {
           email: user.email,
           name: user.name,
           photoUrl: null,
-          role: "admin"
+          role: "admin",
+          isActive: true
         }
         return userRef.set(data);
       }
@@ -72,7 +74,8 @@ export class AuthService {
           email: user.email,
           name: user.name,
           photoUrl: user.photoUrl,
-          role: "customer"
+          role: "customer", 
+          isActive: true
       }
       return userRef.set(data);
     }else {
@@ -81,7 +84,8 @@ export class AuthService {
         email: user.email,
         name: user.name,
         photoUrl: user.photoUrl,
-        role: "admin"
+        role: "admin",
+        isActive: true
       }
       return userRef.set(data);
     }

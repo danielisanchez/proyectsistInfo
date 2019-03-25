@@ -5,11 +5,11 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyAz3X61TfyJNy1s_MiDMsutQMZxlyrK1Eg",
-    authDomain: "la-mandarina-mecanica.firebaseapp.com",
-    databaseURL: "https://la-mandarina-mecanica.firebaseio.com",
-    projectId: "la-mandarina-mecanica",
-    storageBucket: "la-mandarina-mecanica.appspot.com",
-    messagingSenderId: "1055087528109"
+    apiKey: "AIzaSyBafSPh7H_let-SltPQtEV-MjH2a8S3gvU",
+    authDomain: "proysistemasinfo.firebaseapp.com",
+    databaseURL: "https://proysistemasinfo.firebaseio.com",
+    projectId: "proysistemasinfo",
+    storageBucket: "proysistemasinfo.appspot.com",
+    messagingSenderId: "768619126709"
   }
 };

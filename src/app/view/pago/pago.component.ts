@@ -50,7 +50,7 @@ export class PagoComponent implements OnInit, AfterViewChecked {
       tagline: false      
   },
     client: {
-        sandbox: 'AZC2Qq_ii09SCT7iRUTjEBrF4a8vx2nUi1ByXmLNT_A-iSsqOTQoyeX8AItdNDaDWiGhrsbwwlbx6nL1',
+        sandbox: 'AZQAWe78bKpRVpd3vzZ7X1Mzuiuj87QvVHPUawuBoV_RSZe0CTH4hXsOAi4aLDhQCySMITMd8MLNU-oj',
         production: '<production-key>'
     },
     commit: true,
