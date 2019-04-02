@@ -3,6 +3,8 @@ import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument 
 import {Compra} from "../models/compra";
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
+import * as faker from 'faker';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -38,7 +40,8 @@ export class CompraService {
   }
 
   save(compra: Compra){
-    this.compraCollection.add(compra);
+    const id = faker.random.alphaNumeric(20);
+    compra.id = id;
+    this.compraCollection.doc(id).set(compra);
   }
 }
-

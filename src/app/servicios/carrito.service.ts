@@ -5,8 +5,6 @@ import { ProductoService } from './producto.service';
 import { Carrito } from '../models/carrito';
 import { Product } from '../models/product';
 import { isUndefined, isNullOrUndefined } from 'util';
-import { promise } from 'protractor';
-import { Variacion } from '../models/variacion';
 
 @Injectable({
   providedIn: 'root'
@@ -20,17 +18,17 @@ export class CarritoService {
   ) { }
 
   CrearCarrito(id){
-    this.afs.collection('carts').doc(id).set(
+    this.afs.collection('carritos').doc(id).set(
       {id: id, products: [], totalProducts: 0}
     )
   }
 
   MiCarrito(uid){
-    return this.afs.doc<Carrito>(`carts/${uid}`).snapshotChanges();
+    return this.afs.doc<Carrito>(`carritos/${uid}`).snapshotChanges();
   }
 
   RefMiCarrito(uid){
-    return this.afs.collection<Carrito>('carts').doc(uid).ref;
+    return this.afs.collection<Carrito>('carritos').doc(uid).ref;
   }
 
   agregarProducto(producto, variacion): Promise<any> {

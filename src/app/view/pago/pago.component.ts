@@ -83,7 +83,6 @@ export class PagoComponent implements OnInit, AfterViewChecked {
         // Make a call to the REST api to execute the payment
         if(this.DataVerified() == true){
           return actions.payment.execute().then((payment) => {
-            window.alert('Payment Complete!');
             this.RegistrarCompra();
         })
         }else{

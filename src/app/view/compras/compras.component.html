@@ -1,3 +1,56 @@
-<p>
-  compras works!
-</p>
+<app-navbar-user></app-navbar-user>
+
+<section id="team" class="pb-3">
+    <div class="container">
+        <h5 class="section-title h1 text-center">Historial de compra</h5>
+        <table class="table table-striped text-center">
+            <thead>
+                <tr>
+                    <th class="text-center" scope="col">#</th>
+                    <th class="text-center" scope="col">Fecha</th>
+                    <th class="text-center" scope="col">Monto</th>
+                    <th class="text-center" scope="col">Ver Productos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let compra of compras; let i = index">
+                    <th class="text-center" scope="row">{{i+1}}</th>
+                    <td class="text-center">{{compra.created_at}}</td>
+                    <td class="text-center">{{compra.amount}}</td>
+                    <td class="text-center">
+                        <button class="btn btn-primary" (click)="DetalleProductos(productos)" type="submit">Productos
+                        </button>
+                        <ng-template #productos>
+                            <div class="modal-header">
+                                <h4 class="modal-title pull-left">Productos</h4>
+                                <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <b>ID de la compra</b> {{compra.id}}
+                                <hr>
+                                <strong>Productos Pedidos:</strong>
+                                <br><br>
+                                <div *ngFor="let product of compra.product; let i index">
+                                    <b>Nombre:</b> {{product.name}}
+                                    <br>
+                                    <b>Precio:</b> {{product.price}}
+                                    <br>
+                                    <div *ngIf="product.variacion == null">
+                                        <b>No tiene variacion</b>
+                                    </div>
+                                    <div *ngIf="product.variacion != null">
+                                        <b>Variacion:</b> {{product.variacion}}
+                                    </div>
+                                    <br>
+                                    <hr>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>

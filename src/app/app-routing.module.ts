@@ -15,6 +15,7 @@ import { WishlistComponent } from './view/wishlist/wishlist.component';
 import { PagoComponent } from './view/pago/pago.component';
 import { PespecialComponent } from './view/pespecial/pespecial.component';
 import { UsuariosComponent } from './view/usuarios/usuarios.component';
+import { ComprasComponent } from './view/compras/compras.component';
 
 const routes: Routes = [
 {
@@ -84,6 +85,10 @@ component: NosotrosComponent,
   path: 'usuarios',
   component: UsuariosComponent,
 },
+{
+  path: 'compras',
+  component: ComprasComponent,
+}
 ];
 
 @NgModule({
