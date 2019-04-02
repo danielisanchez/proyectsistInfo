@@ -124,18 +124,24 @@
                                 Compra de un usuario      
                             </label>
                     </div>
+                    <div class="form-check">
+                        <input [checked]="checkFiltro" (change)="CheckedFiltro($event)" class="form-check-input" type="radio" name="exampleRadios4" id="exampleRadios4">
+                        <label class="form-check-label" for="exampleRadios4">
+                                    Sin filtro    
+                                </label>
+                    </div>
                     <br>
                     <div *ngIf="checkRgo == true">
                         <form>
                             <div class="form-row">
                                 <div class="form-group col-md-3">
                                     <label for="inputMin">Ingrese Valor minimo</label>
-                                    <input type="number" class="form-control" id="inputMin" placeholder="Valor Minimo">
+                                    <input [(ngModel)]="minPrecio" type="number" class="form-control" id="inputMin" name="inputValorMin" placeholder="Valor Minimo">
                                 </div>
                                 <div class="col">
                                     <div class="form-group col-md-3">
                                         <label for="inputMin">Ingrese Valor maximo</label>
-                                        <input type="number" class="form-control" id="inputMin" placeholder="Valor Maximo">
+                                        <input [(ngModel)]="maxPrecio" type="number" class="form-control" id="inputMin" name="inputValorMax" placeholder="Valor Maximo">
                                     </div>
                                 </div>
                             </div>
@@ -147,7 +153,7 @@
                             <div class="form-row">
                                 <div class="form-group col-md-3">
                                     <label for="inputUid">Ingrese el uid</label>
-                                    <input type="text" class="form-control" id="inputUid" placeholder="uid">
+                                    <input [(ngModel)]="uid" type="text" class="form-control" name="inputUid" id="inputUid" placeholder="uid">
                                 </div>
                             </div>
                         </form>
@@ -156,7 +162,7 @@
                     <div>
 
                     </div>
-                    <button class="btn btn-primary" (click)="prueba()" type="submit">Aplicar Filtro
+                    <button class="btn btn-primary" (click)="filtro()" type="submit">Aplicar Filtro
                         </button>
                     <br>
                     <hr>

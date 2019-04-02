@@ -3,7 +3,7 @@ import { AuthService } from 'src/app/auth/auth.service';
 import { BsModalService } from 'ngx-bootstrap/modal';
 import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
 import { AngularFirestore } from '@angular/fire/firestore';
-import { isUndefined } from 'util';
+import { isUndefined, isNullOrUndefined } from 'util';
 import { ProductoService } from 'src/app/servicios/producto.service';
 import { CompraService } from 'src/app/servicios/compra.service';
 
@@ -26,6 +26,10 @@ export class ComprasComponent implements OnInit {
   checkAsc: boolean = false;
   checkRgo: boolean = false;
   checkUser: boolean = false;
+  checkFiltro: boolean = false;
+  minPrecio;
+  maxPrecio;
+  uid;
   constructor(private productoService: ProductoService,
     public comprasService: CompraService,
     public auth: AuthService, 
@@ -85,29 +89,84 @@ export class ComprasComponent implements OnInit {
     this.checkDes = false;
     this.checkAsc = false;
     this.checkUser = true;
+    this.checkFiltro = false;
   }
   CheckedAsc(event){
     this.checkRgo = false;
     this.checkDes = false;
     this.checkAsc = true;
     this.checkUser = false;
+    this.checkFiltro = false;
   }
   CheckedDesc(event){
     this.checkRgo = false;
     this.checkDes = true;
     this.checkAsc = false;
     this.checkUser = false;
+    this.checkFiltro = false;
   }
   CheckedRgo(event){
     this.checkRgo = true;
     this.checkDes = false;
     this.checkAsc = false;
     this.checkUser = false;
+    this.checkFiltro = false;
   }
-  prueba(){
-    console.log("asc "+ this.checkAsc);
-    console.log("desc "+ this.checkDes);
-    console.log("rgo "+ this.checkRgo);
-    console.log("user "+ this.checkUser);
+  CheckedFiltro(event){
+    this.checkRgo = false;
+    this.checkDes = false;
+    this.checkAsc = false;
+    this.checkUser = false;
+    this.checkFiltro = true;
+  }
+  filtro(){
+    if(this.checkAsc == true){
+      this.PrecioAsc().subscribe(compras => this.compras = compras);
+      return;
+    }else if(this.checkDes == true){
+      this.PrecioDesc().subscribe(compras => this.compras = compras);
+      return;
+    }else if(this.checkRgo == true){
+      if(isNullOrUndefined(this.minPrecio)){
+        alert("Introduzca el precio minimo")
+        return;
+      }else if(isNullOrUndefined(this.maxPrecio)){
+        alert("Introduzca el precio minimo")
+        return;
+      }else{
+        this.PrecioEntre(this.minPrecio, this.maxPrecio).subscribe(compras => this.compras = compras);
+        this.minPrecio = null;
+        this.maxPrecio = null;
+        return;
+      }
+    }else if(this.checkUser == true){
+      this.FiltroUid(this.uid).subscribe(compras => this.compras = compras);
+      this.uid = null;
+      return;
+    }else if(this.checkFiltro == true){
+      this.getCompras();
+      return;
+    }
+  }
+  
+  // Filtro Precio ascendiente
+  PrecioAsc(){
+    return this.afs.collection('purchases', ref => ref.orderBy("amount", "asc")).valueChanges();
+  }
+  // Filtro precio descendiente
+  PrecioDesc(){
+    return this.afs.collection('purchases', ref => ref.orderBy("amount", "desc")).valueChanges();
+  }
+  // Precio entre valores
+  PrecioEntre(menor:number, mayor:number){
+    if(menor<= mayor){
+      return this.afs.collection('purchases', ref => ref.where("amount", ">=",menor).where("amount","<=",mayor)).valueChanges();
+    }else{
+      alert("Error en los valores suminstrados")
+    }
+  }
+  // Filtro para un solo usuario
+  FiltroUid(userId){
+    return this.afs.collection('purchases', ref => ref.where("uid", "==", userId)).valueChanges();
   }
 }
