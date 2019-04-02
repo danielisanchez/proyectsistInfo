@@ -41,6 +41,7 @@ import { UsuariosComponent } from './view/usuarios/usuarios.component';
 import { PagoComponent } from './view/pago/pago.component';
 import { WishlistComponent } from './view/wishlist/wishlist.component';
 import { PespecialComponent } from './view/pespecial/pespecial.component';
+import { ComprasComponent } from './view/compras/compras.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +64,8 @@ import { PespecialComponent } from './view/pespecial/pespecial.component';
     UsuariosComponent,
     PagoComponent,
     WishlistComponent,
-    PespecialComponent
+    PespecialComponent,
+    ComprasComponent
   ],
   imports: [
     BrowserModule,

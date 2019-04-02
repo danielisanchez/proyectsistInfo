@@ -35,44 +35,36 @@
         <div class="col-md-8 order-md-1">
             <h4 data-type="header" class="mb-3">Información de Contacto
             </h4>
-            <form novalidate="" class="needs-validation">
+            <form novalidate="">
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <label for="firstName">Nombre</label>
-                        <input type="text" id="firstName" placeholder="" value="" required="" class="form-control" />
-                        <div class="invalid-feedback"> Valid first name is required.
-                        </div>
+                        <input [(ngModel)]="nombre" type="text" name="nombre" class="form-control" />
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="lastName">Apellido</label>
-                        <input type="text" id="lastName" placeholder="" value="" required="" class="form-control" />
-                        <div class="invalid-feedback"> Valid last name is required.
-                        </div>
+                        <input [(ngModel)]="apellido" type="text" name="apellido" class="form-control" />
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="col-md-6 mb-3">
-                        <label for="validationDefault03">City</label>
-                        <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
+                        <label for="validationDefault03">Ciudad</label>
+                        <input [(ngModel)]="ciudad" type="text" name="ciudad" class="form-control">
                     </div>
                     <div class="col-md-3 mb-3">
-                        <label for="validationDefault04">State</label>
-                        <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <label for="validationDefault05">Zip</label>
-                        <input type="number" class="form-control" id="validationDefault05" placeholder="Zip" required>
+                        <label for="validationDefault04">Estado</label>
+                        <input [(ngModel)]="estado" type="text" name="estado" class="form-control">
                     </div>
                 </div>
                 <div class="mb-3">
                     <label for="address">Dirección</label>
-                    <input type="text" id="address" placeholder="1234 Main St" required="" class="form-control" />
-                    <div class="invalid-feedback"> Please enter your shipping address.
-                    </div>
+                    <input [(ngModel)]="direccion" type="text" name="direccion" class="form-control" />
                 </div>
-                <hr class="mb-4" />
                 <div class="text-center">
                     <div id="paypal-checkout-btn"></div>
+                    <button class="btn btn-primary top-space" type=" button ">
+                            PDF factura
+                        </button>
                 </div>
             </form>
         </div>

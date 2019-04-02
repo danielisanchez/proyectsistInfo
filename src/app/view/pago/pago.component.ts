@@ -1,8 +1,13 @@
 import { Component, OnInit, AfterViewChecked } from '@angular/core';
 import { AuthService } from 'src/app/auth/auth.service';
 import { CarritoService } from 'src/app/servicios/carrito.service';
+import { Compra } from 'src/app/models/compra';
+import * as moment from 'moment';
+import { CompraService } from 'src/app/servicios/compra.service';
+import { Router } from '@angular/router';
 
 declare let paypal: any;
+
 @Component({
   selector: 'app-pago',
   templateUrl: './pago.component.html',
@@ -10,12 +15,18 @@ declare let paypal: any;
 })
 export class PagoComponent implements OnInit, AfterViewChecked {
 
-  constructor(public auth: AuthService, public carritoService: CarritoService) { }
+  constructor(public auth: AuthService, public carritoService: CarritoService, public ComprasService: CompraService, private router: Router) { }
   uid;
   carrito;
   total: number;
   paypalLoad;
   addScript: boolean = false;
+  prueba: boolean = true;
+  nombre = "";
+  apellido = "";
+  ciudad ="";
+  estado= "";
+  direccion ="";
   ngOnInit() {
     this.getCarrito()
   }
@@ -44,9 +55,9 @@ export class PagoComponent implements OnInit, AfterViewChecked {
 
     style: {
       label: 'paypal',
-      size:  'medium',    // small | medium | large | responsive
-      shape: 'rect',     // pill | rect
-      color: 'gold',     // gold | blue | silver | black
+      size:  'medium',   
+      shape: 'rect',     
+      color: 'silver',     
       tagline: false      
   },
     client: {
@@ -70,10 +81,15 @@ export class PagoComponent implements OnInit, AfterViewChecked {
     onAuthorize:(data, actions) => {
   
         // Make a call to the REST api to execute the payment
-        return actions.payment.execute().then((payment) => {
+        if(this.DataVerified() == true){
+          return actions.payment.execute().then((payment) => {
             window.alert('Payment Complete!');
-            // this.PruebaToOrder();
+            this.RegistrarCompra();
         })
+        }else{
+          alert("Por favor rellene todos los datos del formulario");
+        }
+
     }
   };
   
@@ -97,20 +113,38 @@ export class PagoComponent implements OnInit, AfterViewChecked {
         document.body.appendChild(scriptElement);
       })
   }
+  DataVerified(){
+    if(this.nombre == ""){
+      return false;
 
-  // PruebaToOrder(){
-  //   let order: Order = {
-  //     id: null,
-  //     uid: this.User_id,
-  //     product: this.cart.products,
-  //     amount: this.totalIva,
-  //     created_at: moment(new Date).format('DD/MM/YYYY')
-  //   };
+    }else if(this.apellido == ""){
+      return false;
 
-  //   this.orderService.save(order);
-  //   this.CartService.resetCart(this.User_id).then(() => {
-  //     this.router.navigate(['dashboard/compras']);
-  //     alert("compraExitosa");
-  //   })
-  // }
+    }else if(this.ciudad == ""){
+      return false;
+
+    }else if(this.estado == ""){
+      return false;
+
+    }else if(this.direccion == ""){
+      return false;
+
+    }else{
+      return true
+    }
+  }
+  RegistrarCompra(){
+    let Compra: Compra = {
+      id: null,
+      uid: this.uid,
+      product: this.carrito.products,
+      amount: this.total,
+      created_at: moment(new Date).format('DD/MM/YYYY')
+    }
+    this.ComprasService.save(Compra);
+    this.carritoService.resetCart(this.uid).then(() => {
+      this.router.navigate(['compras']);
+      alert("Compra exitosa")
+    })
+  }
 }
