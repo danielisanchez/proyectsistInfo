@@ -18,7 +18,7 @@ export class ProductoService {
   ProductosDep: Observable<Product[]>;
   producto: Observable<Product>;
   productoVenta;
-  ProductosVendidos: Observable<Product[]>;
+  productoComentario;
   constructor( 
     private afs: AngularFirestore, public carritoService: CarritoService, public ComprasService: CompraService, private router: Router) {
       this.productCollection = this.afs.collection('products', ref => ref);
@@ -137,4 +137,52 @@ return this.afs.firestore.runTransaction(function(transaction) {
       alert("Compra exitosa")
     })
   }
+  agregarComentario(producto, comentario, rate, usuario){
+    var subscription = this.getProducto(producto.id).subscribe(producto => {
+      this.productoComentario = producto
+      subscription.unsubscribe();
+    }).add( () => {
+      if(this.productoComentario.comentarios == null){
+        let ProductoNuevo = {
+          id: this.productoComentario.id,
+          department: this.productoComentario.department,
+          description: this.productoComentario.description,
+          name: this.productoComentario.name,
+          photoUrl: this.productoComentario.photoUrl,
+          price: this.productoComentario.price,
+          sold: this.productoComentario.sold,
+          variaciones: this.productoComentario.variaciones,
+          comentarios: []
+        }
+        let NuevoComentario = {
+          nombre: usuario.name,
+          comentario: comentario,
+          calificacion: rate
+        }
+        ProductoNuevo.comentarios.push(NuevoComentario)
+        this.updateProducto(ProductoNuevo);
+        alert("se agrego el comentario");
+      }else {
+        let ProductoNuevo = {
+          id: this.productoComentario.id,
+          department: this.productoComentario.department,
+          description: this.productoComentario.description,
+          name: this.productoComentario.name,
+          photoUrl: this.productoComentario.photoUrl,
+          price: this.productoComentario.price,
+          sold: this.productoComentario.sold,
+          variaciones: this.productoComentario.variaciones,
+          comentarios: this.productoComentario.comentarios
+        }
+        let NuevoComentario = {
+          nombre: usuario.name,
+          comentario: comentario,
+          calificacion: rate
+        }
+        ProductoNuevo.comentarios.push(NuevoComentario)
+        this.updateProducto(ProductoNuevo);
+        alert("se agrego el comentario");
+      }
+    })
+    }
 }

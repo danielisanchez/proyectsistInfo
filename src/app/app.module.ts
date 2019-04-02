@@ -37,6 +37,9 @@ import { PerfilComponent } from './view/perfil/perfil.component'
 // Modulos Ngx-Boostrap
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
+import { RatingModule } from 'ngx-bootstrap';
+
+//Vistas
 import { UsuariosComponent } from './view/usuarios/usuarios.component';
 import { PagoComponent } from './view/pago/pago.component';
 import { WishlistComponent } from './view/wishlist/wishlist.component';
@@ -76,6 +79,7 @@ import { ComprasComponent } from './view/compras/compras.component';
     AuthModule,
     ProgressbarModule.forRoot(),
     ModalModule.forRoot(),
+    RatingModule.forRoot(),
     AngularFirestoreModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireStorageModule

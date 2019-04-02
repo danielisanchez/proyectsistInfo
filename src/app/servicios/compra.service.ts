@@ -4,6 +4,8 @@ import {Compra} from "../models/compra";
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import * as faker from 'faker';
+import { ProductoService } from './producto.service';
+import { Product } from '../models/product';
 
 @Injectable({
   providedIn: 'root'
@@ -13,6 +15,7 @@ export class CompraService {
   compraDoc: AngularFirestoreDocument<Compra>;
   compras: Observable<Compra[]>;
   compra: Observable<Compra>;
+
   constructor(private afs: AngularFirestore) {
     this.compraCollection = this.afs.collection<Compra>('purchases', ref => ref);
    }
@@ -33,6 +36,15 @@ export class CompraService {
       }));
       return this.compras;
     }
+     //Para que el admin pueda verlos todos
+    this.compras = this.compraCollection.snapshotChanges().pipe(map(changes => {
+        return changes.map(action => {
+          const data = action.payload.doc.data() as Compra;
+          data.id = action.payload.doc.id;
+          return data;
+        });
+      }));
+      return this.compras;
 }
 
   getCompra(id: string) {

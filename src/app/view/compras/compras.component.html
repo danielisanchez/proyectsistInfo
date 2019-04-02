@@ -9,6 +9,7 @@
                     <th class="text-center" scope="col">#</th>
                     <th class="text-center" scope="col">Fecha</th>
                     <th class="text-center" scope="col">Monto</th>
+                    <th class="text-center" scope="col"># Productos</th>
                     <th class="text-center" scope="col">Ver Productos</th>
                 </tr>
             </thead>
@@ -17,6 +18,7 @@
                     <th class="text-center" scope="row">{{i+1}}</th>
                     <td class="text-center">{{compra.created_at}}</td>
                     <td class="text-center">{{compra.amount}}</td>
+                    <td class="text-center">{{compra.product.length + 1}}</td>
                     <td class="text-center">
                         <button class="btn btn-primary" (click)="DetalleProductos(productos)" type="submit">Productos
                         </button>
@@ -45,6 +47,35 @@
                                         <b>Variacion:</b> {{product.variacion}}
                                     </div>
                                     <br>
+                                    <button class="btn btn-dark" (click)="Modalcomentar(comentar, product)" type="submit">Comentar
+                                    </button>
+                                    <ng-template #comentar>
+                                        <div class="modal-header">
+                                            <h4 class="modal-title pull-left">Comentario</h4>
+                                            <button type="button" class="close pull-right" aria-label="Close" (click)="ComentarmodalRef.hide()">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Que opina sobre el producto: {{productoComentar.name}}</p>
+                                            <!-- Cuerpo de comentarios -->
+                                            <form #f="ngForm" class="form" id="ProductForm">
+                                                <div class="form-group">
+                                                    <textarea [(ngModel)]="comentario" #name="ngModel" ngModel type="text" placeholder="Deje su comentario aca" class="form-control" name="comentario" id="comentario" rows="5">
+
+                                                    </textarea>
+                                                </div>
+                                            </form>
+                                            <p>Por favor deje una calificacion</p>
+                                            <rating [(ngModel)]="rate" [max]="max" style="color: #dbb716;font-size: 20px;"></rating>
+                                            <br>
+                                            <hr>
+                                            <div class="text-center">
+                                                <button class="btn btn-primary" (click)="agregarComentario()" type="submit">Agregar Comentario
+                                                        </button>
+                                            </div>
+                                        </div>
+                                    </ng-template>
                                     <hr>
                                 </div>
                             </div>
