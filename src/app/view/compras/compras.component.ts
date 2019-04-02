@@ -22,9 +22,13 @@ export class ComprasComponent implements OnInit {
   rate = 0;
   isReadonly = false;
   usuario;
+  checkDes: boolean = false;
+  checkAsc: boolean = false;
+  checkRgo: boolean = false;
+  checkUser: boolean = false;
   constructor(private productoService: ProductoService,
     public comprasService: CompraService,
-    private auth: AuthService, 
+    public auth: AuthService, 
     private modalService: BsModalService,
     private afs: AngularFirestore) { }
 
@@ -35,12 +39,17 @@ export class ComprasComponent implements OnInit {
     this.auth.User.subscribe(user => {
       this.usuario = user;
       if(user){
-        this.comprasService.obtenerCompras(user.uid).subscribe(compras => this.compras = compras);
+        if(user.role == 'customer'){
+          this.comprasService.obtenerCompras(user.uid).subscribe(compras => this.compras = compras);
+        }else if(user.role =='admin'){
+          this.comprasService.obtenerCompras().subscribe(compras => this.compras = compras);
+        }
       }
     })
   }
   DetalleProductos(template: TemplateRef<any>) {
     this.modalRef = this.modalService.show(template);
+    console.log(this.compras);
   }
   Modalcomentar(template: TemplateRef<any>, producto){
     this.productoComentar = producto;
@@ -70,5 +79,35 @@ export class ComprasComponent implements OnInit {
     this.rate = 0;
     this.ComentarmodalRef.hide();
 
+  }
+  CheckedUser(event){
+    this.checkRgo = false;
+    this.checkDes = false;
+    this.checkAsc = false;
+    this.checkUser = true;
+  }
+  CheckedAsc(event){
+    this.checkRgo = false;
+    this.checkDes = false;
+    this.checkAsc = true;
+    this.checkUser = false;
+  }
+  CheckedDesc(event){
+    this.checkRgo = false;
+    this.checkDes = true;
+    this.checkAsc = false;
+    this.checkUser = false;
+  }
+  CheckedRgo(event){
+    this.checkRgo = true;
+    this.checkDes = false;
+    this.checkAsc = false;
+    this.checkUser = false;
+  }
+  prueba(){
+    console.log("asc "+ this.checkAsc);
+    console.log("desc "+ this.checkDes);
+    console.log("rgo "+ this.checkRgo);
+    console.log("user "+ this.checkUser);
   }
 }

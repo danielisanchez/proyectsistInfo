@@ -1,88 +1,221 @@
-<app-navbar-user></app-navbar-user>
-
-<section id="team" class="pb-3">
-    <div class="container">
-        <h5 class="section-title h1 text-center">Historial de compra</h5>
-        <table class="table table-striped text-center">
-            <thead>
-                <tr>
-                    <th class="text-center" scope="col">#</th>
-                    <th class="text-center" scope="col">Fecha</th>
-                    <th class="text-center" scope="col">Monto</th>
-                    <th class="text-center" scope="col"># Productos</th>
-                    <th class="text-center" scope="col">Ver Productos</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr *ngFor="let compra of compras; let i = index">
-                    <th class="text-center" scope="row">{{i+1}}</th>
-                    <td class="text-center">{{compra.created_at}}</td>
-                    <td class="text-center">{{compra.amount}}</td>
-                    <td class="text-center">{{compra.product.length + 1}}</td>
-                    <td class="text-center">
-                        <button class="btn btn-primary" (click)="DetalleProductos(productos)" type="submit">Productos
-                        </button>
-                        <ng-template #productos>
-                            <div class="modal-header">
-                                <h4 class="modal-title pull-left">Productos</h4>
-                                <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <b>ID de la compra</b> {{compra.id}}
-                                <hr>
-                                <strong>Productos Pedidos:</strong>
-                                <br><br>
-                                <div *ngFor="let product of compra.product; let i index">
-                                    <b>Nombre:</b> {{product.name}}
-                                    <br>
-                                    <b>Precio:</b> {{product.price}}
-                                    <br>
-                                    <b>Cantidad:</b> {{product.qty}}
-                                    <div *ngIf="product.variacion == null">
-                                        <b>No tiene variacion</b>
-                                    </div>
-                                    <div *ngIf="product.variacion != null">
-                                        <b>Variacion:</b> {{product.variacion}}
-                                    </div>
-                                    <br>
-                                    <button class="btn btn-dark" (click)="Modalcomentar(comentar, product)" type="submit">Comentar
+<div *ngIf="auth.User | async; then authenticated;"></div>
+<ng-template #authenticated>
+    <div *ngIf="auth.User | async as User">
+        <div *ngIf="User.role == 'customer'">
+            <app-navbar-user></app-navbar-user>
+        </div>
+        <div *ngIf="User.role == 'admin'">
+            <app-navbar-admin></app-navbar-admin>
+        </div>
+        <div *ngIf="User.role == 'customer'">
+            <section id="team" class="pb-3">
+                <div class="container">
+                    <h5 class="section-title h1 text-center">Historial de compra</h5>
+                    <table class="table table-striped text-center">
+                        <thead>
+                            <tr>
+                                <th class="text-center" scope="col">#</th>
+                                <th class="text-center" scope="col">Fecha</th>
+                                <th class="text-center" scope="col">Monto</th>
+                                <th class="text-center" scope="col"># Productos</th>
+                                <th class="text-center" scope="col">Ver Productos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let compra of compras; let i = index">
+                                <th class="text-center" scope="row">{{i+1}}</th>
+                                <td class="text-center">{{compra.created_at}}</td>
+                                <td class="text-center">{{compra.amount}}</td>
+                                <td class="text-center">{{compra.product.length + 1}}</td>
+                                <td class="text-center">
+                                    <button class="btn btn-primary" (click)="DetalleProductos(productos)" type="submit">Productos
                                     </button>
-                                    <ng-template #comentar>
+                                    <ng-template #productos>
                                         <div class="modal-header">
-                                            <h4 class="modal-title pull-left">Comentario</h4>
-                                            <button type="button" class="close pull-right" aria-label="Close" (click)="ComentarmodalRef.hide()">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
+                                            <h4 class="modal-title pull-left">Productos</h4>
+                                            <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
                                         </div>
                                         <div class="modal-body">
-                                            <p>Que opina sobre el producto: {{productoComentar.name}}</p>
-                                            <!-- Cuerpo de comentarios -->
-                                            <form #f="ngForm" class="form" id="ProductForm">
-                                                <div class="form-group">
-                                                    <textarea [(ngModel)]="comentario" #name="ngModel" ngModel type="text" placeholder="Deje su comentario aca" class="form-control" name="comentario" id="comentario" rows="5">
-
-                                                    </textarea>
-                                                </div>
-                                            </form>
-                                            <p>Por favor deje una calificacion</p>
-                                            <rating [(ngModel)]="rate" [max]="max" style="color: #dbb716;font-size: 20px;"></rating>
-                                            <br>
+                                            <b>ID de la compra</b> {{compra.id}}
                                             <hr>
-                                            <div class="text-center">
-                                                <button class="btn btn-primary" (click)="agregarComentario()" type="submit">Agregar Comentario
-                                                        </button>
+                                            <strong>Productos Pedidos:</strong>
+                                            <br><br>
+                                            <div *ngFor="let product of compra.product; let i index">
+                                                <b>Nombre:</b> {{product.name}}
+                                                <br>
+                                                <b>Precio:</b> {{product.price}}
+                                                <br>
+                                                <b>Cantidad:</b> {{product.qty}}
+                                                <div *ngIf="product.variacion == null">
+                                                    <b>No tiene variacion</b>
+                                                </div>
+                                                <div *ngIf="product.variacion != null">
+                                                    <b>Variacion:</b> {{product.variacion}}
+                                                </div>
+                                                <br>
+                                                <button class="btn btn-dark" (click)="Modalcomentar(comentar, product)" type="submit">Comentar
+                                                </button>
+                                                <ng-template #comentar>
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title pull-left">Comentario</h4>
+                                                        <button type="button" class="close pull-right" aria-label="Close" (click)="ComentarmodalRef.hide()">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>Que opina sobre el producto: {{productoComentar.name}}</p>
+                                                        <!-- Cuerpo de comentarios -->
+                                                        <form #f="ngForm" class="form" id="ProductForm">
+                                                            <div class="form-group">
+                                                                <textarea [(ngModel)]="comentario" #name="ngModel" ngModel type="text" placeholder="Deje su comentario aca" class="form-control" name="comentario" id="comentario" rows="5">
+            
+                                                                </textarea>
+                                                            </div>
+                                                        </form>
+                                                        <p>Por favor deje una calificacion</p>
+                                                        <rating [(ngModel)]="rate" [max]="max" style="color: #dbb716;font-size: 20px;"></rating>
+                                                        <br>
+                                                        <hr>
+                                                        <div class="text-center">
+                                                            <button class="btn btn-primary" (click)="agregarComentario()" type="submit">Agregar Comentario
+                                                                    </button>
+                                                        </div>
+                                                    </div>
+                                                </ng-template>
+                                                <hr>
                                             </div>
                                         </div>
                                     </ng-template>
-                                    <hr>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+        <div *ngIf="User.role == 'admin'">
+            <section id="team" class="pb-3">
+                <div class="container">
+                    <h5 class="section-title h1 text-center">Historial de compra</h5>
+                    <p class="section-title h1 text-center">Filtros</p>
+                    <div class="form-check">
+                        <input [checked]="checkAsc" (change)="CheckedAsc($event)" class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios1">
+                        <label class="form-check-label" for="exampleRadios1">
+                              Precio ascendiente
+                            </label>
+                    </div>
+                    <div class="form-check">
+                        <input [checked]="checkDes" (change)="CheckedDesc($event)" class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios2">
+                        <label class="form-check-label" for="exampleRadios2">
+                              Precio descendiente
+                            </label>
+                    </div>
+                    <div class="form-check">
+                        <input [checked]="checkRgo" (change)="CheckedRgo($event)" class="form-check-input" type="radio" name="exampleRadios3" id="exampleRadios3">
+                        <label class="form-check-label" for="exampleRadios3">
+                              Rango de monto
+                            </label>
+                    </div>
+                    <div class="form-check">
+                        <input [checked]="checkUser" (change)="CheckedUser($event)" class="form-check-input" type="radio" name="exampleRadios4" id="exampleRadios4">
+                        <label class="form-check-label" for="exampleRadios4">
+                                Compra de un usuario      
+                            </label>
+                    </div>
+                    <br>
+                    <div *ngIf="checkRgo == true">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-3">
+                                    <label for="inputMin">Ingrese Valor minimo</label>
+                                    <input type="number" class="form-control" id="inputMin" placeholder="Valor Minimo">
+                                </div>
+                                <div class="col">
+                                    <div class="form-group col-md-3">
+                                        <label for="inputMin">Ingrese Valor maximo</label>
+                                        <input type="number" class="form-control" id="inputMin" placeholder="Valor Maximo">
+                                    </div>
                                 </div>
                             </div>
-                        </ng-template>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                        </form>
+                        <br>
+                    </div>
+                    <div *ngIf="checkUser == true">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-3">
+                                    <label for="inputUid">Ingrese el uid</label>
+                                    <input type="text" class="form-control" id="inputUid" placeholder="uid">
+                                </div>
+                            </div>
+                        </form>
+                        <br>
+                    </div>
+                    <div>
+
+                    </div>
+                    <button class="btn btn-primary" (click)="prueba()" type="submit">Aplicar Filtro
+                        </button>
+                    <br>
+                    <hr>
+                    <table class="table table-striped text-center">
+                        <thead>
+                            <tr>
+                                <th class="text-center" scope="col">#</th>
+                                <th class="text-center" scope="col">id usuario</th>
+                                <th class="text-center" scope="col">Fecha</th>
+                                <th class="text-center" scope="col">Monto</th>
+                                <th class="text-center" scope="col"># Productos</th>
+                                <th class="text-center" scope="col">Ver Productos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let compra of compras; let i = index">
+                                <th class="text-center" scope="row">{{i+1}}</th>
+                                <th class="text-center" scope="row">{{compra.uid}}</th>
+                                <td class="text-center">{{compra.created_at}}</td>
+                                <td class="text-center">{{compra.amount}}</td>
+                                <td class="text-center">{{compra.product.length + 1}}</td>
+                                <td class="text-center">
+                                    <button class="btn btn-primary" (click)="DetalleProductos(productos)" type="submit">Productos
+                                    </button>
+                                    <ng-template #productos>
+                                        <div class="modal-header">
+                                            <h4 class="modal-title pull-left">Productos</h4>
+                                            <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <b>ID de la compra</b> {{compra.id}}
+                                            <hr>
+                                            <strong>Productos Pedidos:</strong>
+                                            <br><br>
+                                            <div *ngFor="let product of compra.product; let i index">
+                                                <b>Nombre:</b> {{product.name}}
+                                                <br>
+                                                <b>Precio:</b> {{product.price}}
+                                                <br>
+                                                <b>Cantidad:</b> {{product.qty}}
+                                                <div *ngIf="product.variacion == null">
+                                                    <b>No tiene variacion</b>
+                                                </div>
+                                                <div *ngIf="product.variacion != null">
+                                                    <b>Variacion:</b> {{product.variacion}}
+                                                </div>
+                                                <br>
+                                                <hr>
+                                            </div>
+                                        </div>
+                                    </ng-template>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
     </div>
-</section>
+</ng-template>
