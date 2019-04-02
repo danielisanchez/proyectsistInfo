@@ -1,10 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, TemplateRef } from '@angular/core';
 import { AuthService } from 'src/app/auth/auth.service';
 import { Subject, combineLatest} from 'rxjs';
 import { ProductoService } from 'src/app/servicios/producto.service';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { CarritoService } from 'src/app/servicios/carrito.service';
 import { wishlistService } from 'src/app/servicios/wishlist.service';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap';
+import { isNullOrUndefined } from 'util';
 
 @Component({
   selector: 'app-arte',
@@ -12,7 +14,7 @@ import { wishlistService } from 'src/app/servicios/wishlist.service';
   styleUrls: ['./arte.component.css']
 })
 export class ArteComponent implements OnInit {
-
+  modalRef: BsModalRef;
   searchterm;
   startAt = new Subject();
   endAt = new Subject();
@@ -24,7 +26,15 @@ export class ArteComponent implements OnInit {
   precio: number;
   name: string;
   variacion;
-  constructor(public auth: AuthService, public productoService: ProductoService, public afs: AngularFirestore, public carritoService: CarritoService, public wishlistService: wishlistService) { }
+  rate = [];
+  Productocomentarios;
+  constructor(public auth: AuthService, 
+    public productoService: ProductoService, 
+    public afs: AngularFirestore, 
+    public carritoService: CarritoService, 
+    public wishlistService: wishlistService,
+    public ModalService: BsModalService
+    ) { }
 
   ngOnInit() {
     this.getProducts()
@@ -83,5 +93,17 @@ export class ArteComponent implements OnInit {
       this.wishlistService.agregarProducto(producto, this.variacion)
       alert("Producto añadido a la wishlist");
       this.variacion = undefined
+    }
+    MostrarComentarios(template: TemplateRef<any>, producto){
+      if(isNullOrUndefined(producto.comentarios)){
+        alert("Este producto no tiene comentarios");
+        return
+      }else{
+        this.Productocomentarios = producto.comentarios;
+        this.Productocomentarios.forEach(comentario => {
+          this.rate.push(comentario.calificacion);
+        });
+        this.modalRef = this.ModalService.show(template, {class: 'gray modal-lg'});
+      }
     }
 }

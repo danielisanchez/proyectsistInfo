@@ -1,5 +1,5 @@
 <!-- Determina si el usuario esta autenticado o es un invitado-->
-<div *ngIf="auth.User | async; then authenticated"></div>
+<div *ngIf="auth.User | async; then authenticated; else noauthenticated"></div>
 
 <!-- Se usa el #authenticated para renderisar el template dependiendo de la respuesta del servicio auth de firestore -->
 <!-- Esto con tal de poder hacer uso de una navegación basada en roles-->
@@ -55,7 +55,7 @@
                                             </div>
                                             <ul class="list-inline">
                                                 <li class="list-inline-item align-content-center">
-                                                    <button class="btn btn-primary btn-sm">Comentarios</button>
+                                                    <button (click)="MostrarComentarios(comentario, producto)" class="btn btn-primary btn-sm">Comentarios</button>
                                                 </li>
                                             </ul>
                                         </div>
@@ -77,5 +77,72 @@
                 </div>
             </div>
         </section>
+    </div>
+</ng-template>
+
+<ng-template #noauthenticated>
+    <app-navbar></app-navbar>
+    <section id="team" class="pb-5">
+        <div class="container">
+            <h5 class="section-title h1">Bienvenido a la sección de Arte</h5>
+            <div class="col text-right">
+
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" [(ngModel)]="searchterm" (ngModelChange)="search($event)" type="search" placeholder="Búsqueda" aria-label="Search" name="searchInput">
+                    <button class="btn btn-dark my-2 my-sm-0" type="submit">buscar</button>
+                </form>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let producto of productos">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src={{producto.photoUrl}} alt="card image"></p>
+                                        <h4 class="card-title">{{producto.name}}</h4>
+                                        <p class="card-text">{{producto.department}}</p>
+                                        <p class="card-text">Precio: ${{producto.price}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">{{producto.name}}</h4>
+                                        <p class="card-text">{{producto.description}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</ng-template>
+
+<ng-template #comentario>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mb-4">
+                <h4 data-type="header" class="d-flex justify-content-between align-items-center mb-3">
+                    <span data-highlightable="1" class="text-muted gjs-comp-selected">Comentarios</span>
+                    <span data-highlightable="1" class="badge badge-info badge-pill">{{Productocomentarios.length}}</span>
+                </h4>
+                <ul class="list-group mb-3">
+                    <li *ngFor="let comentario of Productocomentarios; let i = index" class="list-group-item d-flex justify-content-between lh-condensed">
+                        <div>
+                            <h6 data-type="header" class="my-0">{{comentario.nombre}}
+                            </h6>
+                            <small class="text-muted">{{comentario.comentario}}</small>
+                        </div>
+                        <!-- <span class="text-muted">Costo Unitario: {{comentario.calificacion}}</span> -->
+                        <span class="text-muted"><rating [(ngModel)]="rate[i]" [readonly]="true" [max]="5" style="color: #dbb716;font-size: 20px;"></rating></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </ng-template>
