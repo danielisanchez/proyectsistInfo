@@ -110,7 +110,8 @@ export class AdminComponent implements OnInit {
         description: this.productoSelecionado.description,
         photoUrl: this.productoSelecionado.photoUrl,
         department: this.productoSelecionado.department,
-        variacion: this.productoSelecionado.variaciones
+        variacion: this.productoSelecionado.variaciones,
+        sold: this.productoSelecionado.sold
       }
       this.productService.deleteProducto(productoEliminar);
       
@@ -178,6 +179,7 @@ export class AdminComponent implements OnInit {
         photoUrl: this.image,
         department: this.OpcionDepartamento, 
         variaciones: this.productoNuevo.variaciones,
+        sold: 0
       }
     }         
     this.image=null;
@@ -197,7 +199,8 @@ export class AdminComponent implements OnInit {
         name: this.promocionProducto.name,
         photoUrl: this.promocionProducto.photoUrl,
         price: this.promocionProducto. price,
-        variacion: this.VariacionPromocion
+        variacion: this.VariacionPromocion,
+        sold:0
       }
       this.PromocionRef.hide();
       this.PromocionRef = null;
@@ -211,6 +214,7 @@ export class AdminComponent implements OnInit {
         name: this.promocionProducto.name,
         photoUrl: this.promocionProducto.photoUrl,
         price: this.promocionProducto. price,
+        sold:0
       }
       this.PromocionRef.hide();
       this.PromocionRef = null;

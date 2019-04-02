@@ -7,5 +7,6 @@ export class Product {
     department: string;
     description: string;
     photoUrl: string;
-    variaciones?: Variacion[];        
+    variaciones?: Variacion[];   
+    sold: number;     
 }

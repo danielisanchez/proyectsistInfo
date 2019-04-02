@@ -22,7 +22,6 @@ export class CarritoComponent implements OnInit {
       if(user){
           this.carritoService.MiCarrito(user.uid).subscribe(Cart => {
             this.carrito = Cart.payload.data();
-
           })
       }
     })

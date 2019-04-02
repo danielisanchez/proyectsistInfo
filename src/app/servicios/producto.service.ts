@@ -2,7 +2,11 @@ import { Injectable } from '@angular/core';
 import { Product } from '../models/product';
 import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from '@angular/fire/firestore'
 import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { map, finalize} from 'rxjs/operators';
+import { CarritoService } from './carrito.service';
+import { CompraService } from './compra.service';
+import { Router } from '@angular/router';
+
 
 @Injectable({
   providedIn: 'root'
@@ -13,9 +17,10 @@ export class ProductoService {
   productos: Observable<Product[]>;
   ProductosDep: Observable<Product[]>;
   producto: Observable<Product>;
-
+  productoVenta;
+  ProductosVendidos: Observable<Product[]>;
   constructor( 
-    private afs: AngularFirestore) {
+    private afs: AngularFirestore, public carritoService: CarritoService, public ComprasService: CompraService, private router: Router) {
       this.productCollection = this.afs.collection('products', ref => ref);
   }
   crearProducto(product: Product){
@@ -74,6 +79,10 @@ export class ProductoService {
     }));
     return this.ProductosDep.pipe(map(arr => arr.filter( r => r.department === 'arte')))
   }
+
+  ProductosMasVendidos(){
+    return this.afs.collection('products', ref => ref.orderBy("sold", "desc").limit(6)).valueChanges();
+  }
   updateProducto(product: Product){
     this.productDoc = this.afs.doc(`products/${product.id}`);
     this.productDoc.update(product);
@@ -81,5 +90,51 @@ export class ProductoService {
   deleteProducto(product: Product){
     this.productDoc = this.afs.doc(`products/${product.id}`);
     this.productDoc.delete();
+  }
+  updateSold( cantidad: number, producto: Product){
+    //Metodo para hacer transacciones de la página oficial de firestore
+
+    // Create a reference to the SF doc.
+    var sfDocRef = this.afs.firestore.collection("products").doc(producto.id);
+
+return this.afs.firestore.runTransaction(function(transaction) {
+    // This code may get re-run multiple times if there are conflicts.
+    return transaction.get(sfDocRef).then(function(sfDoc) {
+        if (!sfDoc.exists) {
+            throw "Document does not exist!";
+        }
+        
+        // Add one person to the city population.
+        // Note: this could be done without a transaction
+        //       by updating the population using FieldValue.increment()
+        var newVenta = sfDoc.data().sold + cantidad;
+        transaction.update(sfDocRef, { sold: newVenta });
+    });
+}).then(function() {
+    console.log("Transaction successfully committed!");
+}).catch(function(error) {
+    console.log("Transaction failed: ", error);
+});
+}
+  ventaProducto(Carritoproductos, Compra, uid){
+    //Por cada producto en el carrito es necesario llamar al producto original
+    //Para modificarle el campo sold
+    Carritoproductos.forEach(productoCarrito => {
+      var subscription = this.getProducto(productoCarrito.id).subscribe(producto => {
+        this.productoVenta = producto
+        //Una vez que productoVenta se llena del producto que trae el subscribe debo hacer un unsubscribe
+        subscription.unsubscribe();
+
+        //El metodo add es un metodo que pertenece a los subscribe de firestore y se ejecuta una vez que ya no estoy subscrito
+        //Por eso hago el unsubscribe anteriormente
+      }).add(()=>{
+        this.updateSold(productoCarrito.qty, this.productoVenta);
+      });
+    });
+    this.ComprasService.save(Compra);    
+    this.carritoService.resetCart(uid).then(() => {
+      this.router.navigate(['compras']);
+      alert("Compra exitosa")
+    })
   }
 }

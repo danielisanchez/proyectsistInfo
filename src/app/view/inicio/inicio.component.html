@@ -4,9 +4,6 @@
         <div *ngIf="User.role === 'customer'">
             <app-navbar-user></app-navbar-user>
         </div>
-        <div *ngIf="User.role === 'admin'">
-            <app-navbar-admin></app-navbar-admin>
-        </div>
         <div id="carouselExampleCaptions" data-ride="carousel" class="carousel slide">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active">
@@ -60,12 +57,15 @@
                             </h3>
                             <br>
                             <p data-type="text" class="card-text">Precio de promocion: {{producto.price}}</p>
+                            <div *ngIf="producto.variacion != null">
+                                <p data-type="text" class="card-text">Aplica unicamente para el producto de variacion {{producto.variacion}}</p>
+                            </div>
+                            <div *ngIf="producto.variacion == null">
+                                <p data-type="text" class="card-text">Aplica unicamente para el producto que no posee variacion</p>
+                            </div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
-                                </div>
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Agregar Carrito</button>
+                                    <button type="button" (click)="agregarCarrito(producto)" class="btn btn-sm btn-outline-secondary">Agregar Carrito</button>
                                 </div>
                             </div>
                         </div>
@@ -78,105 +78,16 @@
             <h1 data-type="header" class="display-4 text-center">Los más vendidos
             </h1>
             <div class="row">
-                <div class="col-md-4">
+                <div *ngFor="let producto of productosMasVendidos" class="col-md-4">
                     <div class="card mb-4 box-shadow">
-                        <img data-type="image" src="https://source.unsplash.com/collection/190727/300x300" class="card-img-top" />
+                        <img data-type="image" height=300px width=300px src="{{producto.photoUrl}}" class="card-img-top" />
                         <div class="card-body">
                             <h3 data-type="header" class="mb-0">
-                                <a href="#" class="text-dark">Post title</a>
+                                <a href="#" class="text-dark"> {{producto.name}}</a>
                             </h3>
-                            <p data-type="paragraph" class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                            </p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img data-type="image" src="https://source.unsplash.com/collection/410546/300x300" class="card-img-top" />
-                        <div class="card-body">
-                            <h3 data-type="header" class="mb-0">
-                                <a href="#" class="text-dark">Post title</a>
-                            </h3>
-                            <p data-type="paragraph" class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                            </p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img data-type="image" src="https://source.unsplash.com/collection/542909/300x300" class="card-img-top" />
-                        <div class="card-body">
-                            <h3 data-type="header" class="mb-0">
-                                <a href="#" class="text-dark">Post title</a>
-                            </h3>
-                            <p data-type="paragraph" class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                            </p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img data-type="image" src="https://source.unsplash.com/collection/140489/300x300" class="card-img-top" />
-                        <div class="card-body">
-                            <h3 data-type="header" class="mb-0">
-                                <a href="#" class="text-dark">Post title</a>
-                            </h3>
-                            <p data-type="paragraph" class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                            </p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Delete</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img data-type="image" src="https://source.unsplash.com/collection/403065/300x300" class="card-img-top" />
-                        <div class="card-body">
-                            <h3 data-type="header" class="mb-0">
-                                <a href="#" class="text-dark">Post title</a>
-                            </h3>
-                            <p data-type="paragraph" class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                            </p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
-                        <img data-type="image" src="https://source.unsplash.com/collection/1410856/300x300" class="card-img-top" />
-                        <div class="card-body">
-                            <h3 data-type="header" class="mb-0">
-                                <a href="#" class="text-dark">Post title</a>
-                            </h3>
-                            <p data-type="paragraph" class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                            </p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
-                                </div>
-                            </div>
+                            <br>
+                            <p data-type="text" class="card-text">Se han vendido: {{producto.sold}}</p>
+                            <p data-type="text" class="card-text">{{producto.description}}</p>
                         </div>
                     </div>
                 </div>
@@ -195,11 +106,6 @@
                             </h3>
                             <br>
                             <p data-type="text" class="card-text">{{producto.description}}</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -265,120 +171,26 @@
                         </h3>
                         <br>
                         <p data-type="text" class="card-text">Precio de promocion: {{producto.price}}</p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <div class="container c6640">
         <h1 data-type="header" class="display-4 text-center">Los más vendidos
         </h1>
         <div class="row">
-            <div class="col-md-4">
+            <div *ngFor="let producto of productosMasVendidos" class="col-md-4">
                 <div class="card mb-4 box-shadow">
-                    <img data-type="image" src="https://source.unsplash.com/collection/190727/300x300" class="card-img-top" />
+                    <img data-type="image" height=300px width=300px src="{{producto.photoUrl}}" class="card-img-top" />
                     <div class="card-body">
                         <h3 data-type="header" class="mb-0">
-                            <a href="#" class="text-dark">Post title</a>
+                            <a href="#" class="text-dark"> {{producto.name}}</a>
                         </h3>
-                        <p data-type="paragraph" class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                    <img data-type="image" src="https://source.unsplash.com/collection/410546/300x300" class="card-img-top" />
-                    <div class="card-body">
-                        <h3 data-type="header" class="mb-0">
-                            <a href="#" class="text-dark">Post title</a>
-                        </h3>
-                        <p data-type="paragraph" class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                    <img data-type="image" src="https://source.unsplash.com/collection/542909/300x300" class="card-img-top" />
-                    <div class="card-body">
-                        <h3 data-type="header" class="mb-0">
-                            <a href="#" class="text-dark">Post title</a>
-                        </h3>
-                        <p data-type="paragraph" class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                    <img data-type="image" src="https://source.unsplash.com/collection/140489/300x300" class="card-img-top" />
-                    <div class="card-body">
-                        <h3 data-type="header" class="mb-0">
-                            <a href="#" class="text-dark">Post title</a>
-                        </h3>
-                        <p data-type="paragraph" class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Delete</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                    <img data-type="image" src="https://source.unsplash.com/collection/403065/300x300" class="card-img-top" />
-                    <div class="card-body">
-                        <h3 data-type="header" class="mb-0">
-                            <a href="#" class="text-dark">Post title</a>
-                        </h3>
-                        <p data-type="paragraph" class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                    <img data-type="image" src="https://source.unsplash.com/collection/1410856/300x300" class="card-img-top" />
-                    <div class="card-body">
-                        <h3 data-type="header" class="mb-0">
-                            <a href="#" class="text-dark">Post title</a>
-                        </h3>
-                        <p data-type="paragraph" class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                        </p>
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Detalles</button>
-                            </div>
-                        </div>
+                        <br>
+                        <p data-type="text" class="card-text">Se han vendido: {{producto.sold}}</p>
+
+                        <p data-type="text" class="card-text">{{producto.description}}</p>
                     </div>
                 </div>
             </div>

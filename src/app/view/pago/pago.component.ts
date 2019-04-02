@@ -5,6 +5,7 @@ import { Compra } from 'src/app/models/compra';
 import * as moment from 'moment';
 import { CompraService } from 'src/app/servicios/compra.service';
 import { Router } from '@angular/router';
+import { ProductoService } from 'src/app/servicios/producto.service';
 
 declare let paypal: any;
 
@@ -15,9 +16,11 @@ declare let paypal: any;
 })
 export class PagoComponent implements OnInit, AfterViewChecked {
 
-  constructor(public auth: AuthService, public carritoService: CarritoService, public ComprasService: CompraService, private router: Router) { }
+  constructor(public auth: AuthService, public carritoService: CarritoService, public ComprasService: CompraService, private router: Router, 
+    public productoService: ProductoService) { }
   uid;
   carrito;
+  productos = [];
   total: number;
   paypalLoad;
   addScript: boolean = false;
@@ -37,7 +40,6 @@ export class PagoComponent implements OnInit, AfterViewChecked {
           this.carritoService.MiCarrito(user.uid).subscribe(Cart => {
             this.carrito = Cart.payload.data();
             this.getTotal(this.carrito)
-
           })
       }
     })
@@ -132,7 +134,7 @@ export class PagoComponent implements OnInit, AfterViewChecked {
       return true
     }
   }
-  RegistrarCompra(){
+   RegistrarCompra(){
     let Compra: Compra = {
       id: null,
       uid: this.uid,
@@ -140,10 +142,6 @@ export class PagoComponent implements OnInit, AfterViewChecked {
       amount: this.total,
       created_at: moment(new Date).format('DD/MM/YYYY')
     }
-    this.ComprasService.save(Compra);
-    this.carritoService.resetCart(this.uid).then(() => {
-      this.router.navigate(['compras']);
-      alert("Compra exitosa")
-    })
+    this.productoService.ventaProducto(this.carrito.products, Compra, this.uid);
   }
 }
