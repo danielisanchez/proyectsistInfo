@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewChecked } from '@angular/core';
+import { Component, OnInit, AfterViewChecked, ViewChild, ElementRef } from '@angular/core';
 import { AuthService } from 'src/app/auth/auth.service';
 import { CarritoService } from 'src/app/servicios/carrito.service';
 import { Compra } from 'src/app/models/compra';
@@ -6,6 +6,7 @@ import * as moment from 'moment';
 import { CompraService } from 'src/app/servicios/compra.service';
 import { Router } from '@angular/router';
 import { ProductoService } from 'src/app/servicios/producto.service';
+import * as jsPDF from 'jspdf';
 
 declare let paypal: any;
 
@@ -25,14 +26,41 @@ export class PagoComponent implements OnInit, AfterViewChecked {
   paypalLoad;
   addScript: boolean = false;
   prueba: boolean = true;
+  mostrar: boolean = false;
   nombre = "";
   apellido = "";
   ciudad ="";
   estado= "";
   direccion ="";
+  fechaFactura;
+  @ViewChild('content') content: ElementRef
+
   ngOnInit() {
     this.getCarrito()
+    this.fechaFactura = moment(new Date).format('DD/MM/YYYY')
   }
+
+  downloadPDF(){
+    var doc = new jsPDF({
+      orientation: 'landscape',
+    })
+    
+
+    let specialElementHandlers = {
+      '#editor': function(element,renderer) {
+        return true;
+      }
+    };
+    let content = this.content.nativeElement;
+
+    doc.fromHTML(content.innerHTML,20,0,{
+      'width':60,
+      'elementHandlers': specialElementHandlers
+    });
+
+    doc.save('factura.pdf');
+  }
+
   getCarrito(){
     this.auth.User.subscribe(user => {
       this.uid = user.uid;
@@ -51,6 +79,7 @@ export class PagoComponent implements OnInit, AfterViewChecked {
   getTotal(carrito){
     this.total = this.carritoService.totalPrice(carrito.products);
   }
+
   // Variable paypalConfig
   paypalConfig = {
     env: 'sandbox',
@@ -114,6 +143,7 @@ export class PagoComponent implements OnInit, AfterViewChecked {
         document.body.appendChild(scriptElement);
       })
   }
+
   DataVerified(){
     if(this.nombre == ""){
       return false;
@@ -134,6 +164,7 @@ export class PagoComponent implements OnInit, AfterViewChecked {
       return true
     }
   }
+
    RegistrarCompra(){
     let Compra: Compra = {
       id: null,
@@ -144,4 +175,5 @@ export class PagoComponent implements OnInit, AfterViewChecked {
     }
     this.productoService.ventaProducto(this.carrito.products, Compra, this.uid);
   }
+
 }

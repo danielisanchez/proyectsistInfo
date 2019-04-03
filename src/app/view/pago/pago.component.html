@@ -1,72 +1,149 @@
-<app-navbar-user></app-navbar-user>
-<div class="container">
-    <div class="py-5 text-center">
-        <img data-type="image" src="https://www.gridbox.io/projects/457e2284-c2ed-489b-b2d5-a70a14b82275/assets/img/logomandarina.png" alt="" width="72" height="72" class="d-block mx-auto mb-4" />
-        <h2 data-type="header">Completa tu pago
-        </h2>
-    </div>
-    <div class="row">
-        <div class="col-md-4 order-md-2 mb-4">
-            <h4 data-type="header" class="d-flex justify-content-between align-items-center mb-3">
-                <span data-highlightable="1" class="text-muted gjs-comp-selected">Tu carrito</span>
-                <span data-highlightable="1" class="badge badge-secondary badge-pill">{{carrito?.totalProducts}}</span>
-            </h4>
-            <ul class="list-group mb-3">
-                <li *ngFor="let producto of carrito.products; let i = index" class="list-group-item d-flex justify-content-between lh-condensed">
-                    <div>
-                        <h6 data-type="header" class="my-0">{{producto.name}}
-                        </h6>
-                        <div *ngIf="producto.variacion != undefined">
-                            <small class="text-muted">{{producto.variacion}}</small><br>
-                            <small class="text-muted">cantidad: {{producto.qty}}</small>
+<div *ngIf="auth.User | async; then authenticated;"></div>
+<ng-template #authenticated>
+    <div *ngIf="auth.User | async as User">
+        <app-navbar-user></app-navbar-user>
+        <div class="container">
+            <div class="py-5 text-center">
+                <img data-type="image" src="https://www.gridbox.io/projects/457e2284-c2ed-489b-b2d5-a70a14b82275/assets/img/logomandarina.png" alt="" width="72" height="72" class="d-block mx-auto mb-4" />
+                <h2 data-type="header">Completa tu pago
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 order-md-2 mb-4">
+                    <h4 data-type="header" class="d-flex justify-content-between align-items-center mb-3">
+                        <span data-highlightable="1" class="text-muted gjs-comp-selected">Tu carrito</span>
+                        <span data-highlightable="1" class="badge badge-secondary badge-pill">{{carrito?.totalProducts}}</span>
+                    </h4>
+                    <ul class="list-group mb-3">
+                        <li *ngFor="let producto of carrito.products; let i = index" class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 data-type="header" class="my-0">{{producto.name}}
+                                </h6>
+                                <div *ngIf="producto.variacion != undefined">
+                                    <small class="text-muted">{{producto.variacion}}</small><br>
+                                    <small class="text-muted">cantidad: {{producto.qty}}</small>
+                                </div>
+                                <div *ngIf="producto.variacion == undefined">
+                                    <small class="text-muted">cantidad: {{producto.qty}}</small>
+                                </div>
+                            </div>
+                            <span class="text-muted">Costo Unitario: {{producto.price}}</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Total (USD)</span>
+                            <strong>{{total}}</strong>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-8 order-md-1">
+                    <h4 data-type="header" class="mb-3">Información de Contacto
+                    </h4>
+                    <form novalidate="">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName">Nombre</label>
+                                <input [(ngModel)]="nombre" type="text" name="nombre" class="form-control" />
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName">Apellido</label>
+                                <input [(ngModel)]="apellido" type="text" name="apellido" class="form-control" />
+                            </div>
                         </div>
-                        <div *ngIf="producto.variacion == undefined">
-                            <small class="text-muted">cantidad: {{producto.qty}}</small>
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationDefault03">Ciudad</label>
+                                <input [(ngModel)]="ciudad" type="text" name="ciudad" class="form-control">
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationDefault04">Estado</label>
+                                <input [(ngModel)]="estado" type="text" name="estado" class="form-control">
+                            </div>
                         </div>
-                    </div>
-                    <span class="text-muted">Costo Unitario: {{producto.price}}</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between">
-                    <span>Total (USD)</span>
-                    <strong>{{total}}</strong>
-                </li>
-            </ul>
-        </div>
-        <div class="col-md-8 order-md-1">
-            <h4 data-type="header" class="mb-3">Información de Contacto
-            </h4>
-            <form novalidate="">
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label for="firstName">Nombre</label>
-                        <input [(ngModel)]="nombre" type="text" name="nombre" class="form-control" />
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="lastName">Apellido</label>
-                        <input [(ngModel)]="apellido" type="text" name="apellido" class="form-control" />
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="col-md-6 mb-3">
-                        <label for="validationDefault03">Ciudad</label>
-                        <input [(ngModel)]="ciudad" type="text" name="ciudad" class="form-control">
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <label for="validationDefault04">Estado</label>
-                        <input [(ngModel)]="estado" type="text" name="estado" class="form-control">
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="address">Dirección</label>
-                    <input [(ngModel)]="direccion" type="text" name="direccion" class="form-control" />
-                </div>
-                <div class="text-center">
-                    <div id="paypal-checkout-btn"></div>
-                    <button class="btn btn-primary top-space" type=" button ">
+                        <div class="mb-3">
+                            <label for="address">Dirección</label>
+                            <input [(ngModel)]="direccion" type="text" name="direccion" class="form-control" />
+                        </div>
+                        <div class="text-center">
+                            <div id="paypal-checkout-btn"></div>
+
+                            <button (click)="downloadPDF()" class="btn btn-primary top-space" type=" button ">
                             PDF factura
                         </button>
+                        </div>
+                    </form>
                 </div>
-            </form>
+            </div>
+        </div>
+
+        <!-- Factura a imprimir -->
+        <div class="ghost" id="content" #content>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="invoice-title">
+                        <h2>Mandarina Mecanica</h2>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-12">
+                            <strong>Facturado a:</strong><br> {{User.name}}
+                            <br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <address>
+                                <strong>Metodo de pago</strong><br>
+                                Paypal<br>
+                            </address>
+                        </div>
+                        <div class="col-12 text-right">
+                            <address>
+                                <strong>Fecha de la orden:</strong><br>
+                                {{fechaFactura}}<br><br>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><strong>Detalle de la orden</strong></h3>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table table-condensed">
+                                <thead>
+                                    <tr>
+                                        <td><strong>Producto</strong></td>
+                                        <td class="text-center"><strong>Precio</strong></td>
+                                        <td class="text-center"><strong>Cantidad</strong></td>
+                                        <td class="text-center"><strong>variacion</strong></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- foreach ($order->lineItems as $line) or some such thing here -->
+                                    <tr *ngFor="let producto of carrito.products">
+                                        <td>{{producto.name}}</td>
+                                        <td class="text-center">${{producto.price}}</td>
+                                        <td class="text-center">{{producto.qty}}</td>
+                                        <td *ngIf="producto.variacion != undefined" class="text-right">{{producto.variacion}}</td>
+                                        <td *ngIf="producto.variacion == undefined" class="text-right">No tiene</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="thick-line"></td>
+                                        <td class="thick-line"></td>
+                                        <td class="thick-line text-center"><strong>Total</strong></td>
+                                        <td class="thick-line text-right">{{total}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</ng-template>
