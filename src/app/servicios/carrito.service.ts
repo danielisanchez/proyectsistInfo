@@ -16,21 +16,23 @@ export class CarritoService {
     public auth: AuthService,
     private afs: AngularFirestore
   ) { }
-
+  //Metodo para crear el carrito
+  //De esta forma cada usuario siempre tendra un carrito asociado
   CrearCarrito(id){
     this.afs.collection('carritos').doc(id).set(
       {id: id, products: [], totalProducts: 0}
     )
   }
-
+  //Metodo para adquirir el carrito
   MiCarrito(uid){
     return this.afs.doc<Carrito>(`carritos/${uid}`).snapshotChanges();
   }
-
+  //Metodo para adquirir la referencia del carrito
   RefMiCarrito(uid){
     return this.afs.collection<Carrito>('carritos').doc(uid).ref;
   }
 
+  //Metodo para agregar un producto al carrito
   agregarProducto(producto, variacion): Promise<any> {
     return new Promise((resolve, reject) => {
       this.auth.User.subscribe(data => {
@@ -49,7 +51,6 @@ export class CarritoService {
                   variacion: variacion,
                   qty: 1
                 }
-
                 const exist = CarritoService.ProductosIguales(productosEnCarrito,producto,variacion);
                 if(!exist){
                   productosEnCarrito.push(productoAlCarrito);
@@ -88,6 +89,7 @@ export class CarritoService {
     })
   }
 
+  //Metodo para saber si se insertara un producto que ya existe en el carrito
   static ProductosIguales(productosEnCarrito,producto,variacion){
     if(productosEnCarrito.length > 0){
       for(let i =0; i<productosEnCarrito.length; i++){
@@ -114,7 +116,7 @@ export class CarritoService {
     }
     return sum;
   }
-
+  //Limpio mi carrito
   resetCart(uid): Promise<any>{
     return new Promise((resolve, reject) => {
       const ref = this.RefMiCarrito(uid);
@@ -130,7 +132,7 @@ export class CarritoService {
       })
     })
   }
-
+  //Incremento la cantidad del producto
   incrementar(producto,uid, variacion){
     return new Promise((resolve,reject)=> {
       const ref = this.RefMiCarrito(uid);
@@ -150,7 +152,7 @@ export class CarritoService {
       })
     })
   }
-
+  //Decremento la cantidad del producto
   disminuir(producto,uid, variacion){
     return new Promise((resolve,reject)=> {
       const ref = this.RefMiCarrito(uid);
@@ -170,6 +172,7 @@ export class CarritoService {
       })
     })
   }
+  //Precio total
   totalPrice(products: Product[]): number {
     let total = 0;
     for (let i = 0; i < products.length; i++) {
@@ -177,7 +180,7 @@ export class CarritoService {
     }
     return total;
   }
-
+  //Remover un producto del carrito
   removeProduct(product, uid, index): Promise<any> {
     return new Promise((resolve, reject) => {
       const ref = this.RefMiCarrito(uid);
