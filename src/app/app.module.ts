@@ -45,6 +45,10 @@ import { PagoComponent } from './view/pago/pago.component';
 import { WishlistComponent } from './view/wishlist/wishlist.component';
 import { PespecialComponent } from './view/pespecial/pespecial.component';
 import { ComprasComponent } from './view/compras/compras.component';
+import { EstadisticasComponent } from './view/estadisticas/estadisticas.component';
+
+//Charts
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -68,7 +72,8 @@ import { ComprasComponent } from './view/compras/compras.component';
     PagoComponent,
     WishlistComponent,
     PespecialComponent,
-    ComprasComponent
+    ComprasComponent,
+    EstadisticasComponent
   ],
   imports: [
     BrowserModule,
@@ -81,6 +86,7 @@ import { ComprasComponent } from './view/compras/compras.component';
     ModalModule.forRoot(),
     RatingModule.forRoot(),
     AngularFirestoreModule,
+    ChartsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireStorageModule
   ],

@@ -172,7 +172,6 @@ export class CarritoService {
   }
   totalPrice(products: Product[]): number {
     let total = 0;
-    console.log(products);
     for (let i = 0; i < products.length; i++) {
       total += (parseInt(products[i]['qty']) * products[i]['price']);
     }

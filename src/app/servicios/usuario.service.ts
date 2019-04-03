@@ -24,7 +24,7 @@ export class UsuarioService {
     this.userCollection.add(user);
   }
 
-  //Obtener Usuario:
+  //Obtener Usuarios:
   ObtenerUsuarios():Observable<Usuario[]>
   {
     this.users = this.userCollection.snapshotChanges().pipe(map(changes => {

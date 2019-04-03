@@ -22,9 +22,16 @@ export class ArteComponent implements OnInit {
   endObs = this.endAt.asObservable();
   productos;
   filteredProductos;
-  // propiedades para el filtro
-  precio: number;
-  name: string;
+  // check para el filtro
+  PrecioAsc: boolean = false;
+  PrecioDesc: boolean = false;
+  PrecioRgo: boolean = false;
+  NombreAsc: boolean = false;
+  NombreDesc: boolean = false;
+
+  minPrecio;
+  maxPrecio;
+
   variacion;
   rate = [];
   Productocomentarios;
@@ -62,24 +69,24 @@ export class ArteComponent implements OnInit {
   }
     //Filtro nombre ascendiente
     NameAsc(){
-      return this.afs.collection('products', ref => ref.orderBy("name", "asc")).valueChanges();
+      return this.afs.collection('products', ref => ref.orderBy("name", "asc").where("department", "==", "arte")).valueChanges();
     }
     // Filtro nombre descendiente
     NameDes(){
-      return this.afs.collection('products', ref => ref.orderBy("name", "desc")).valueChanges();
+      return this.afs.collection('products', ref => ref.orderBy("name", "desc").where("department", "==", "arte")).valueChanges();
     }
     // Filtro Precio ascendiente
-    PrecioAsc(){
-      return this.afs.collection('products', ref => ref.orderBy("price", "asc")).valueChanges();
+    PrecioAscendente(){
+      return this.afs.collection('products', ref => ref.orderBy("price", "asc").where("department", "==", "arte")).valueChanges();
     }
     // Filtro precio descendiente
-    PrecioDesc(){
-      return this.afs.collection('products', ref => ref.orderBy("price", "desc")).valueChanges();
+    PrecioDescendiente(){
+      return this.afs.collection('products', ref => ref.orderBy("price", "desc").where("department", "==", "arte")).valueChanges();
     }
     // Precio entre valores
     PrecioEntre(menor:number, mayor:number){
       if(menor<= mayor){
-        return this.afs.collection('products', ref => ref.where("price", ">=",menor).where("price","<=",mayor)).valueChanges();
+        this.productoService.ProductosArteEntre(menor,mayor).subscribe(productos => this.productos = productos);
       }else{
         alert("Error en los valores suminstrados")
       }
@@ -105,5 +112,72 @@ export class ArteComponent implements OnInit {
         });
         this.modalRef = this.ModalService.show(template, {class: 'gray modal-lg'});
       }
+    }
+
+    CheckedPrecioAsc(){
+      this.PrecioDesc = false;
+      this.PrecioRgo = false;
+      this.PrecioAsc= true;
+      this.NombreAsc = false;
+      this.NombreDesc = false;
+    }
+    CheckedPrecioDesc(){
+      this.PrecioDesc = true;
+      this.PrecioRgo = false;
+      this.PrecioAsc= false;
+      this.NombreAsc = false;
+      this.NombreDesc = false;
+    }
+    CheckedRgo(){
+      this.PrecioDesc = false;
+      this.PrecioRgo = true;
+      this.PrecioAsc= false;
+      this.NombreAsc = false;
+      this.NombreDesc = false;
+    }
+    CheckedNombreAsc(){
+      this.PrecioDesc = false;
+      this.PrecioRgo = false;
+      this.PrecioAsc= false;
+      this.NombreAsc = true;
+      this.NombreDesc = false;
+    }
+    CheckedNombreDesc(){
+      this.PrecioDesc = false;
+      this.PrecioRgo = false;
+      this.PrecioAsc= false;
+      this.NombreAsc = false;
+      this.NombreDesc = true;
+    }
+    filtro(){
+      if(this.PrecioAsc == true){
+        this.PrecioAscendente().subscribe(productos => this.productos = productos);
+        return;
+      }else if(this.PrecioDesc == true){
+        this.PrecioDescendiente().subscribe(productos => this.productos = productos);
+        return;
+      }else if(this.PrecioRgo == true){
+        if(isNullOrUndefined(this.minPrecio)){
+          alert("Introduzca el precio minimo")
+          return;
+        }else if(isNullOrUndefined(this.maxPrecio)){
+          alert("Introduzca el precio minimo")
+          return;
+        }else{
+          this.PrecioEntre(this.minPrecio, this.maxPrecio);
+          this.minPrecio = null;
+          this.maxPrecio = null;
+          return;
+        }
+      }else if(this.NombreAsc == true){
+        this.NameAsc().subscribe(productos => this.productos = productos);
+        return;
+      }else if(this.NombreDesc == true){
+        this.NameDes().subscribe(productos => this.productos = productos);
+        return;
+      }
+    }
+    Quitarfiltro(){
+      this.getProducts();
     }
 }

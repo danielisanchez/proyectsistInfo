@@ -24,6 +24,62 @@
                         <button class="btn btn-dark my-2 my-sm-0" type="submit">buscar</button>
                     </form>
                 </div>
+                <p class="section-title h1 text-center">Filtros</p>
+                <div class="form-check">
+                    <input [checked]="PrecioAsc" (change)="CheckedPrecioAsc()" class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios1">
+                    <label class="form-check-label" for="exampleRadios1">
+                              Precio ascendiente
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [checked]="PrecioDesc" (change)="CheckedPrecioDesc()" class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios2">
+                    <label class="form-check-label" for="exampleRadios2">
+                              Precio descendiente
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [checked]="PrecioRgo" (change)="CheckedRgo()" class="form-check-input" type="radio" name="exampleRadios3" id="exampleRadios3">
+                    <label class="form-check-label" for="exampleRadios3">
+                              Rango de monto
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [checked]="NombreAsc" (change)="CheckedNombreAsc()" class="form-check-input" type="radio" name="exampleRadios4" id="exampleRadios4">
+                    <label class="form-check-label" for="exampleRadios4">
+                                Nombre Ascendiente  
+                            </label>
+                </div>
+                <div class="form-check">
+                    <input [checked]="NombreDesc" (change)="CheckedNombreDesc()" class="form-check-input" type="radio" name="exampleRadios5" id="exampleRadios5">
+                    <label class="form-check-label" for="exampleRadios5">
+                                    Nombre Descendiente   
+                                </label>
+                </div>
+                <br>
+                <div *ngIf="PrecioRgo == true">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-3">
+                                <label for="inputMin">Ingrese Valor minimo</label>
+                                <input [(ngModel)]="minPrecio" type="number" class="form-control" id="inputMin" name="inputValorMin" placeholder="Valor Minimo">
+                            </div>
+                            <div class="col">
+                                <div class="form-group col-md-3">
+                                    <label for="inputMin">Ingrese Valor maximo</label>
+                                    <input [(ngModel)]="maxPrecio" type="number" class="form-control" id="inputMin" name="inputValorMax" placeholder="Valor Maximo">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <br>
+                </div>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button (click)="filtro()" type="button" class="btn btn-primary">Aplicar Filtro</button>
+                    <button (click)="Quitarfiltro()" type="button" class="btn btn-primary">Quitar Filtro</button>
+                </div>
+                <br>
+                <hr>
+                <br>
                 <br>
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let producto of productos">

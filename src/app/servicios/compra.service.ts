@@ -5,7 +5,6 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import * as faker from 'faker';
 import { ProductoService } from './producto.service';
-import { Product } from '../models/product';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +14,12 @@ export class CompraService {
   compraDoc: AngularFirestoreDocument<Compra>;
   compras: Observable<Compra[]>;
   compra: Observable<Compra>;
-
+  totalAmount;
+  comprasTotales;
+  depHogar: boolean = false;
+  depElectro: boolean = false;
+  depArte: boolean = false;
+  gananciasDep = [0,0,0]; //HOGAR/ARTE/ELECTRO  -- 0,1,2
   constructor(private afs: AngularFirestore) {
     this.compraCollection = this.afs.collection<Compra>('purchases', ref => ref);
    }
@@ -55,5 +59,13 @@ export class CompraService {
     const id = faker.random.alphaNumeric(20);
     compra.id = id;
     this.compraCollection.doc(id).set(compra);
+  }
+
+  GananciasTotales(compras): number {
+    let total = 0;
+    for (let i = 0; i < compras.length; i++) {
+      total += (parseInt(compras[i]['amount']));
+    }
+    return total;
   }
 }

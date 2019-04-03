@@ -79,9 +79,44 @@ export class ProductoService {
     }));
     return this.ProductosDep.pipe(map(arr => arr.filter( r => r.department === 'arte')))
   }
+  ProductosArteEntre(min,max):Observable<Product[]>{
+    this.ProductosDep = this.productCollection.snapshotChanges().pipe(map(changes=> {
+      return changes.map(action => {
+          const data = action.payload.doc.data() as Product;
+          data.id = action.payload.doc.id;
+          return data;
+      });
+    }));
+    return this.ProductosDep.pipe(map(arr => arr.filter( r => r.department === 'arte' && r.price >= min && r.price <= max)))
+  }
+
+  ProductosElectroEntre(min,max):Observable<Product[]>{
+    this.ProductosDep = this.productCollection.snapshotChanges().pipe(map(changes=> {
+      return changes.map(action => {
+          const data = action.payload.doc.data() as Product;
+          data.id = action.payload.doc.id;
+          return data;
+      });
+    }));
+    return this.ProductosDep.pipe(map(arr => arr.filter( r => r.department === 'electrodomesticos' && r.price >= min && r.price <= max)))
+  }
+  ProductosHogarEntre(min,max):Observable<Product[]>{
+    this.ProductosDep = this.productCollection.snapshotChanges().pipe(map(changes=> {
+      return changes.map(action => {
+          const data = action.payload.doc.data() as Product;
+          data.id = action.payload.doc.id;
+          return data;
+      });
+    }));
+    return this.ProductosDep.pipe(map(arr => arr.filter( r => r.department === 'hogar' && r.price >= min && r.price <= max)))
+  }
 
   ProductosMasVendidos(){
     return this.afs.collection('products', ref => ref.orderBy("sold", "desc").limit(6)).valueChanges();
+  }
+
+  ProductosMasVendidosLimite(limite){
+    return this.afs.collection('products', ref => ref.orderBy("sold", "desc").limit(limite)).valueChanges();
   }
   updateProducto(product: Product){
     this.productDoc = this.afs.doc(`products/${product.id}`);

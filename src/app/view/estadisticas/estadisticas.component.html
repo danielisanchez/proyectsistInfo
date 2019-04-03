@@ -1,0 +1,68 @@
+<app-navbar-admin></app-navbar-admin>
+
+<section id="team" class="pb-3">
+    <div class="container">
+        <br>
+        <div class="container c6640">
+            <h5 data-type="header" class="display-4 text-center">Los {{limit}} productos más vendidos
+            </h5>
+            <p class="section-title h1 text-center">Filtros</p>
+            <div class="form-check">
+                <input [checked]="checkLimit" (change)="CheckedLimit($event)" class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios1">
+                <label class="form-check-label" for="exampleRadios1">
+                          Escoger cantidad de vendidos
+                            </label>
+            </div>
+            <div *ngIf="checkLimit == true">
+
+                <form>
+                    <div class="form-row">
+                        <div class="col">
+                            <div class="form-group col-md-3">
+                                <label for="inputMin">cantidad de productos</label>
+                                <input [(ngModel)]="limite" type="number" class="form-control" id="limit" name="inputlimit" placeholder="# productos">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <br>
+            <button class="btn btn-primary" (click)="filtro()" type="submit">Aplicar Filtro
+                      </button>
+            <br>
+            <hr>
+            <div class="row">
+                <div *ngFor="let producto of productosMasVendidos" class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img data-type="image" height=300px width=300px src="{{producto.photoUrl}}" class="card-img-top" />
+                        <div class="card-body">
+                            <h3 data-type="header" class="mb-0">
+                                <p class="text-dark"> {{producto.name}}</p>
+                            </h3>
+                            <br>
+                            <p data-type="text" class="card-text">Se han vendido: {{producto.sold}}</p>
+                            <p data-type="text" class="card-text">{{producto.description}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="col-sm-12 text-center">
+                <h1 class="text-center">Ganancias Totales: {{TotalGanancia}}</h1>
+                <br>
+                <hr>
+                <h2 class="text-center">Total de productos vendido: {{totalProductos}}</h2>
+                <br>
+                <hr>
+                <h2 class="text-center">Ganancias por departamento</h2>
+                <small class="text-center color-warning">es necesario clickear los label</small>
+                <div style="display: block;">
+                    <canvas baseChart [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType" [options]="pieChartOptions" [plugins]="pieChartPlugins" [legend]="pieChartLegend">
+                    </canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
