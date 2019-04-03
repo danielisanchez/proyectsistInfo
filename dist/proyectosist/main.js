@@ -1273,6 +1273,293 @@ $exports.store = store;
 
 /***/ }),
 
+/***/ "./node_modules/moment/locale sync recursive ^\\.\\/.*$":
+/*!**************************************************!*\
+  !*** ./node_modules/moment/locale sync ^\.\/.*$ ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./af": "./node_modules/moment/locale/af.js",
+	"./af.js": "./node_modules/moment/locale/af.js",
+	"./ar": "./node_modules/moment/locale/ar.js",
+	"./ar-dz": "./node_modules/moment/locale/ar-dz.js",
+	"./ar-dz.js": "./node_modules/moment/locale/ar-dz.js",
+	"./ar-kw": "./node_modules/moment/locale/ar-kw.js",
+	"./ar-kw.js": "./node_modules/moment/locale/ar-kw.js",
+	"./ar-ly": "./node_modules/moment/locale/ar-ly.js",
+	"./ar-ly.js": "./node_modules/moment/locale/ar-ly.js",
+	"./ar-ma": "./node_modules/moment/locale/ar-ma.js",
+	"./ar-ma.js": "./node_modules/moment/locale/ar-ma.js",
+	"./ar-sa": "./node_modules/moment/locale/ar-sa.js",
+	"./ar-sa.js": "./node_modules/moment/locale/ar-sa.js",
+	"./ar-tn": "./node_modules/moment/locale/ar-tn.js",
+	"./ar-tn.js": "./node_modules/moment/locale/ar-tn.js",
+	"./ar.js": "./node_modules/moment/locale/ar.js",
+	"./az": "./node_modules/moment/locale/az.js",
+	"./az.js": "./node_modules/moment/locale/az.js",
+	"./be": "./node_modules/moment/locale/be.js",
+	"./be.js": "./node_modules/moment/locale/be.js",
+	"./bg": "./node_modules/moment/locale/bg.js",
+	"./bg.js": "./node_modules/moment/locale/bg.js",
+	"./bm": "./node_modules/moment/locale/bm.js",
+	"./bm.js": "./node_modules/moment/locale/bm.js",
+	"./bn": "./node_modules/moment/locale/bn.js",
+	"./bn.js": "./node_modules/moment/locale/bn.js",
+	"./bo": "./node_modules/moment/locale/bo.js",
+	"./bo.js": "./node_modules/moment/locale/bo.js",
+	"./br": "./node_modules/moment/locale/br.js",
+	"./br.js": "./node_modules/moment/locale/br.js",
+	"./bs": "./node_modules/moment/locale/bs.js",
+	"./bs.js": "./node_modules/moment/locale/bs.js",
+	"./ca": "./node_modules/moment/locale/ca.js",
+	"./ca.js": "./node_modules/moment/locale/ca.js",
+	"./cs": "./node_modules/moment/locale/cs.js",
+	"./cs.js": "./node_modules/moment/locale/cs.js",
+	"./cv": "./node_modules/moment/locale/cv.js",
+	"./cv.js": "./node_modules/moment/locale/cv.js",
+	"./cy": "./node_modules/moment/locale/cy.js",
+	"./cy.js": "./node_modules/moment/locale/cy.js",
+	"./da": "./node_modules/moment/locale/da.js",
+	"./da.js": "./node_modules/moment/locale/da.js",
+	"./de": "./node_modules/moment/locale/de.js",
+	"./de-at": "./node_modules/moment/locale/de-at.js",
+	"./de-at.js": "./node_modules/moment/locale/de-at.js",
+	"./de-ch": "./node_modules/moment/locale/de-ch.js",
+	"./de-ch.js": "./node_modules/moment/locale/de-ch.js",
+	"./de.js": "./node_modules/moment/locale/de.js",
+	"./dv": "./node_modules/moment/locale/dv.js",
+	"./dv.js": "./node_modules/moment/locale/dv.js",
+	"./el": "./node_modules/moment/locale/el.js",
+	"./el.js": "./node_modules/moment/locale/el.js",
+	"./en-SG": "./node_modules/moment/locale/en-SG.js",
+	"./en-SG.js": "./node_modules/moment/locale/en-SG.js",
+	"./en-au": "./node_modules/moment/locale/en-au.js",
+	"./en-au.js": "./node_modules/moment/locale/en-au.js",
+	"./en-ca": "./node_modules/moment/locale/en-ca.js",
+	"./en-ca.js": "./node_modules/moment/locale/en-ca.js",
+	"./en-gb": "./node_modules/moment/locale/en-gb.js",
+	"./en-gb.js": "./node_modules/moment/locale/en-gb.js",
+	"./en-ie": "./node_modules/moment/locale/en-ie.js",
+	"./en-ie.js": "./node_modules/moment/locale/en-ie.js",
+	"./en-il": "./node_modules/moment/locale/en-il.js",
+	"./en-il.js": "./node_modules/moment/locale/en-il.js",
+	"./en-nz": "./node_modules/moment/locale/en-nz.js",
+	"./en-nz.js": "./node_modules/moment/locale/en-nz.js",
+	"./eo": "./node_modules/moment/locale/eo.js",
+	"./eo.js": "./node_modules/moment/locale/eo.js",
+	"./es": "./node_modules/moment/locale/es.js",
+	"./es-do": "./node_modules/moment/locale/es-do.js",
+	"./es-do.js": "./node_modules/moment/locale/es-do.js",
+	"./es-us": "./node_modules/moment/locale/es-us.js",
+	"./es-us.js": "./node_modules/moment/locale/es-us.js",
+	"./es.js": "./node_modules/moment/locale/es.js",
+	"./et": "./node_modules/moment/locale/et.js",
+	"./et.js": "./node_modules/moment/locale/et.js",
+	"./eu": "./node_modules/moment/locale/eu.js",
+	"./eu.js": "./node_modules/moment/locale/eu.js",
+	"./fa": "./node_modules/moment/locale/fa.js",
+	"./fa.js": "./node_modules/moment/locale/fa.js",
+	"./fi": "./node_modules/moment/locale/fi.js",
+	"./fi.js": "./node_modules/moment/locale/fi.js",
+	"./fo": "./node_modules/moment/locale/fo.js",
+	"./fo.js": "./node_modules/moment/locale/fo.js",
+	"./fr": "./node_modules/moment/locale/fr.js",
+	"./fr-ca": "./node_modules/moment/locale/fr-ca.js",
+	"./fr-ca.js": "./node_modules/moment/locale/fr-ca.js",
+	"./fr-ch": "./node_modules/moment/locale/fr-ch.js",
+	"./fr-ch.js": "./node_modules/moment/locale/fr-ch.js",
+	"./fr.js": "./node_modules/moment/locale/fr.js",
+	"./fy": "./node_modules/moment/locale/fy.js",
+	"./fy.js": "./node_modules/moment/locale/fy.js",
+	"./ga": "./node_modules/moment/locale/ga.js",
+	"./ga.js": "./node_modules/moment/locale/ga.js",
+	"./gd": "./node_modules/moment/locale/gd.js",
+	"./gd.js": "./node_modules/moment/locale/gd.js",
+	"./gl": "./node_modules/moment/locale/gl.js",
+	"./gl.js": "./node_modules/moment/locale/gl.js",
+	"./gom-latn": "./node_modules/moment/locale/gom-latn.js",
+	"./gom-latn.js": "./node_modules/moment/locale/gom-latn.js",
+	"./gu": "./node_modules/moment/locale/gu.js",
+	"./gu.js": "./node_modules/moment/locale/gu.js",
+	"./he": "./node_modules/moment/locale/he.js",
+	"./he.js": "./node_modules/moment/locale/he.js",
+	"./hi": "./node_modules/moment/locale/hi.js",
+	"./hi.js": "./node_modules/moment/locale/hi.js",
+	"./hr": "./node_modules/moment/locale/hr.js",
+	"./hr.js": "./node_modules/moment/locale/hr.js",
+	"./hu": "./node_modules/moment/locale/hu.js",
+	"./hu.js": "./node_modules/moment/locale/hu.js",
+	"./hy-am": "./node_modules/moment/locale/hy-am.js",
+	"./hy-am.js": "./node_modules/moment/locale/hy-am.js",
+	"./id": "./node_modules/moment/locale/id.js",
+	"./id.js": "./node_modules/moment/locale/id.js",
+	"./is": "./node_modules/moment/locale/is.js",
+	"./is.js": "./node_modules/moment/locale/is.js",
+	"./it": "./node_modules/moment/locale/it.js",
+	"./it-ch": "./node_modules/moment/locale/it-ch.js",
+	"./it-ch.js": "./node_modules/moment/locale/it-ch.js",
+	"./it.js": "./node_modules/moment/locale/it.js",
+	"./ja": "./node_modules/moment/locale/ja.js",
+	"./ja.js": "./node_modules/moment/locale/ja.js",
+	"./jv": "./node_modules/moment/locale/jv.js",
+	"./jv.js": "./node_modules/moment/locale/jv.js",
+	"./ka": "./node_modules/moment/locale/ka.js",
+	"./ka.js": "./node_modules/moment/locale/ka.js",
+	"./kk": "./node_modules/moment/locale/kk.js",
+	"./kk.js": "./node_modules/moment/locale/kk.js",
+	"./km": "./node_modules/moment/locale/km.js",
+	"./km.js": "./node_modules/moment/locale/km.js",
+	"./kn": "./node_modules/moment/locale/kn.js",
+	"./kn.js": "./node_modules/moment/locale/kn.js",
+	"./ko": "./node_modules/moment/locale/ko.js",
+	"./ko.js": "./node_modules/moment/locale/ko.js",
+	"./ku": "./node_modules/moment/locale/ku.js",
+	"./ku.js": "./node_modules/moment/locale/ku.js",
+	"./ky": "./node_modules/moment/locale/ky.js",
+	"./ky.js": "./node_modules/moment/locale/ky.js",
+	"./lb": "./node_modules/moment/locale/lb.js",
+	"./lb.js": "./node_modules/moment/locale/lb.js",
+	"./lo": "./node_modules/moment/locale/lo.js",
+	"./lo.js": "./node_modules/moment/locale/lo.js",
+	"./lt": "./node_modules/moment/locale/lt.js",
+	"./lt.js": "./node_modules/moment/locale/lt.js",
+	"./lv": "./node_modules/moment/locale/lv.js",
+	"./lv.js": "./node_modules/moment/locale/lv.js",
+	"./me": "./node_modules/moment/locale/me.js",
+	"./me.js": "./node_modules/moment/locale/me.js",
+	"./mi": "./node_modules/moment/locale/mi.js",
+	"./mi.js": "./node_modules/moment/locale/mi.js",
+	"./mk": "./node_modules/moment/locale/mk.js",
+	"./mk.js": "./node_modules/moment/locale/mk.js",
+	"./ml": "./node_modules/moment/locale/ml.js",
+	"./ml.js": "./node_modules/moment/locale/ml.js",
+	"./mn": "./node_modules/moment/locale/mn.js",
+	"./mn.js": "./node_modules/moment/locale/mn.js",
+	"./mr": "./node_modules/moment/locale/mr.js",
+	"./mr.js": "./node_modules/moment/locale/mr.js",
+	"./ms": "./node_modules/moment/locale/ms.js",
+	"./ms-my": "./node_modules/moment/locale/ms-my.js",
+	"./ms-my.js": "./node_modules/moment/locale/ms-my.js",
+	"./ms.js": "./node_modules/moment/locale/ms.js",
+	"./mt": "./node_modules/moment/locale/mt.js",
+	"./mt.js": "./node_modules/moment/locale/mt.js",
+	"./my": "./node_modules/moment/locale/my.js",
+	"./my.js": "./node_modules/moment/locale/my.js",
+	"./nb": "./node_modules/moment/locale/nb.js",
+	"./nb.js": "./node_modules/moment/locale/nb.js",
+	"./ne": "./node_modules/moment/locale/ne.js",
+	"./ne.js": "./node_modules/moment/locale/ne.js",
+	"./nl": "./node_modules/moment/locale/nl.js",
+	"./nl-be": "./node_modules/moment/locale/nl-be.js",
+	"./nl-be.js": "./node_modules/moment/locale/nl-be.js",
+	"./nl.js": "./node_modules/moment/locale/nl.js",
+	"./nn": "./node_modules/moment/locale/nn.js",
+	"./nn.js": "./node_modules/moment/locale/nn.js",
+	"./pa-in": "./node_modules/moment/locale/pa-in.js",
+	"./pa-in.js": "./node_modules/moment/locale/pa-in.js",
+	"./pl": "./node_modules/moment/locale/pl.js",
+	"./pl.js": "./node_modules/moment/locale/pl.js",
+	"./pt": "./node_modules/moment/locale/pt.js",
+	"./pt-br": "./node_modules/moment/locale/pt-br.js",
+	"./pt-br.js": "./node_modules/moment/locale/pt-br.js",
+	"./pt.js": "./node_modules/moment/locale/pt.js",
+	"./ro": "./node_modules/moment/locale/ro.js",
+	"./ro.js": "./node_modules/moment/locale/ro.js",
+	"./ru": "./node_modules/moment/locale/ru.js",
+	"./ru.js": "./node_modules/moment/locale/ru.js",
+	"./sd": "./node_modules/moment/locale/sd.js",
+	"./sd.js": "./node_modules/moment/locale/sd.js",
+	"./se": "./node_modules/moment/locale/se.js",
+	"./se.js": "./node_modules/moment/locale/se.js",
+	"./si": "./node_modules/moment/locale/si.js",
+	"./si.js": "./node_modules/moment/locale/si.js",
+	"./sk": "./node_modules/moment/locale/sk.js",
+	"./sk.js": "./node_modules/moment/locale/sk.js",
+	"./sl": "./node_modules/moment/locale/sl.js",
+	"./sl.js": "./node_modules/moment/locale/sl.js",
+	"./sq": "./node_modules/moment/locale/sq.js",
+	"./sq.js": "./node_modules/moment/locale/sq.js",
+	"./sr": "./node_modules/moment/locale/sr.js",
+	"./sr-cyrl": "./node_modules/moment/locale/sr-cyrl.js",
+	"./sr-cyrl.js": "./node_modules/moment/locale/sr-cyrl.js",
+	"./sr.js": "./node_modules/moment/locale/sr.js",
+	"./ss": "./node_modules/moment/locale/ss.js",
+	"./ss.js": "./node_modules/moment/locale/ss.js",
+	"./sv": "./node_modules/moment/locale/sv.js",
+	"./sv.js": "./node_modules/moment/locale/sv.js",
+	"./sw": "./node_modules/moment/locale/sw.js",
+	"./sw.js": "./node_modules/moment/locale/sw.js",
+	"./ta": "./node_modules/moment/locale/ta.js",
+	"./ta.js": "./node_modules/moment/locale/ta.js",
+	"./te": "./node_modules/moment/locale/te.js",
+	"./te.js": "./node_modules/moment/locale/te.js",
+	"./tet": "./node_modules/moment/locale/tet.js",
+	"./tet.js": "./node_modules/moment/locale/tet.js",
+	"./tg": "./node_modules/moment/locale/tg.js",
+	"./tg.js": "./node_modules/moment/locale/tg.js",
+	"./th": "./node_modules/moment/locale/th.js",
+	"./th.js": "./node_modules/moment/locale/th.js",
+	"./tl-ph": "./node_modules/moment/locale/tl-ph.js",
+	"./tl-ph.js": "./node_modules/moment/locale/tl-ph.js",
+	"./tlh": "./node_modules/moment/locale/tlh.js",
+	"./tlh.js": "./node_modules/moment/locale/tlh.js",
+	"./tr": "./node_modules/moment/locale/tr.js",
+	"./tr.js": "./node_modules/moment/locale/tr.js",
+	"./tzl": "./node_modules/moment/locale/tzl.js",
+	"./tzl.js": "./node_modules/moment/locale/tzl.js",
+	"./tzm": "./node_modules/moment/locale/tzm.js",
+	"./tzm-latn": "./node_modules/moment/locale/tzm-latn.js",
+	"./tzm-latn.js": "./node_modules/moment/locale/tzm-latn.js",
+	"./tzm.js": "./node_modules/moment/locale/tzm.js",
+	"./ug-cn": "./node_modules/moment/locale/ug-cn.js",
+	"./ug-cn.js": "./node_modules/moment/locale/ug-cn.js",
+	"./uk": "./node_modules/moment/locale/uk.js",
+	"./uk.js": "./node_modules/moment/locale/uk.js",
+	"./ur": "./node_modules/moment/locale/ur.js",
+	"./ur.js": "./node_modules/moment/locale/ur.js",
+	"./uz": "./node_modules/moment/locale/uz.js",
+	"./uz-latn": "./node_modules/moment/locale/uz-latn.js",
+	"./uz-latn.js": "./node_modules/moment/locale/uz-latn.js",
+	"./uz.js": "./node_modules/moment/locale/uz.js",
+	"./vi": "./node_modules/moment/locale/vi.js",
+	"./vi.js": "./node_modules/moment/locale/vi.js",
+	"./x-pseudo": "./node_modules/moment/locale/x-pseudo.js",
+	"./x-pseudo.js": "./node_modules/moment/locale/x-pseudo.js",
+	"./yo": "./node_modules/moment/locale/yo.js",
+	"./yo.js": "./node_modules/moment/locale/yo.js",
+	"./zh-cn": "./node_modules/moment/locale/zh-cn.js",
+	"./zh-cn.js": "./node_modules/moment/locale/zh-cn.js",
+	"./zh-hk": "./node_modules/moment/locale/zh-hk.js",
+	"./zh-hk.js": "./node_modules/moment/locale/zh-hk.js",
+	"./zh-tw": "./node_modules/moment/locale/zh-tw.js",
+	"./zh-tw.js": "./node_modules/moment/locale/zh-tw.js"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) { // check for number or string
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return id;
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./node_modules/moment/locale sync recursive ^\\.\\/.*$";
+
+/***/ }),
+
 /***/ "./src/$$_lazy_route_resource lazy recursive":
 /*!**********************************************************!*\
   !*** ./src/$$_lazy_route_resource lazy namespace object ***!
@@ -1324,6 +1611,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _view_pago_pago_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./view/pago/pago.component */ "./src/app/view/pago/pago.component.ts");
 /* harmony import */ var _view_pespecial_pespecial_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./view/pespecial/pespecial.component */ "./src/app/view/pespecial/pespecial.component.ts");
 /* harmony import */ var _view_usuarios_usuarios_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./view/usuarios/usuarios.component */ "./src/app/view/usuarios/usuarios.component.ts");
+/* harmony import */ var _view_compras_compras_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./view/compras/compras.component */ "./src/app/view/compras/compras.component.ts");
+/* harmony import */ var _view_estadisticas_estadisticas_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./view/estadisticas/estadisticas.component */ "./src/app/view/estadisticas/estadisticas.component.ts");
+
+
 
 
 
@@ -1403,6 +1694,14 @@ var routes = [
         path: 'usuarios',
         component: _view_usuarios_usuarios_component__WEBPACK_IMPORTED_MODULE_17__["UsuariosComponent"],
     },
+    {
+        path: 'estadisticas',
+        component: _view_estadisticas_estadisticas_component__WEBPACK_IMPORTED_MODULE_19__["EstadisticasComponent"],
+    },
+    {
+        path: 'compras',
+        component: _view_compras_compras_component__WEBPACK_IMPORTED_MODULE_18__["ComprasComponent"],
+    }
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -1513,10 +1812,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _view_perfil_perfil_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./view/perfil/perfil.component */ "./src/app/view/perfil/perfil.component.ts");
 /* harmony import */ var ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ngx-bootstrap/modal */ "./node_modules/ngx-bootstrap/modal/fesm5/ngx-bootstrap-modal.js");
 /* harmony import */ var ngx_bootstrap_progressbar__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ngx-bootstrap/progressbar */ "./node_modules/ngx-bootstrap/progressbar/fesm5/ngx-bootstrap-progressbar.js");
-/* harmony import */ var _view_usuarios_usuarios_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./view/usuarios/usuarios.component */ "./src/app/view/usuarios/usuarios.component.ts");
-/* harmony import */ var _view_pago_pago_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./view/pago/pago.component */ "./src/app/view/pago/pago.component.ts");
-/* harmony import */ var _view_wishlist_wishlist_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./view/wishlist/wishlist.component */ "./src/app/view/wishlist/wishlist.component.ts");
-/* harmony import */ var _view_pespecial_pespecial_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./view/pespecial/pespecial.component */ "./src/app/view/pespecial/pespecial.component.ts");
+/* harmony import */ var ngx_bootstrap__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ngx-bootstrap */ "./node_modules/ngx-bootstrap/esm5/ngx-bootstrap.js");
+/* harmony import */ var _view_usuarios_usuarios_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./view/usuarios/usuarios.component */ "./src/app/view/usuarios/usuarios.component.ts");
+/* harmony import */ var _view_pago_pago_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./view/pago/pago.component */ "./src/app/view/pago/pago.component.ts");
+/* harmony import */ var _view_wishlist_wishlist_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./view/wishlist/wishlist.component */ "./src/app/view/wishlist/wishlist.component.ts");
+/* harmony import */ var _view_pespecial_pespecial_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./view/pespecial/pespecial.component */ "./src/app/view/pespecial/pespecial.component.ts");
+/* harmony import */ var _view_compras_compras_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./view/compras/compras.component */ "./src/app/view/compras/compras.component.ts");
+/* harmony import */ var _view_estadisticas_estadisticas_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./view/estadisticas/estadisticas.component */ "./src/app/view/estadisticas/estadisticas.component.ts");
+/* harmony import */ var ng2_charts__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ng2-charts */ "./node_modules/ng2-charts/fesm5/ng2-charts.js");
 
 
 
@@ -1552,8 +1855,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+//Vistas
 
 
+
+
+
+
+//Charts
 
 var AppModule = /** @class */ (function () {
     function AppModule() {
@@ -1577,10 +1886,12 @@ var AppModule = /** @class */ (function () {
                 _view_hogar_hogar_component__WEBPACK_IMPORTED_MODULE_24__["HogarComponent"],
                 _view_admin_admin_component__WEBPACK_IMPORTED_MODULE_25__["AdminComponent"],
                 _view_perfil_perfil_component__WEBPACK_IMPORTED_MODULE_26__["PerfilComponent"],
-                _view_usuarios_usuarios_component__WEBPACK_IMPORTED_MODULE_29__["UsuariosComponent"],
-                _view_pago_pago_component__WEBPACK_IMPORTED_MODULE_30__["PagoComponent"],
-                _view_wishlist_wishlist_component__WEBPACK_IMPORTED_MODULE_31__["WishlistComponent"],
-                _view_pespecial_pespecial_component__WEBPACK_IMPORTED_MODULE_32__["PespecialComponent"]
+                _view_usuarios_usuarios_component__WEBPACK_IMPORTED_MODULE_30__["UsuariosComponent"],
+                _view_pago_pago_component__WEBPACK_IMPORTED_MODULE_31__["PagoComponent"],
+                _view_wishlist_wishlist_component__WEBPACK_IMPORTED_MODULE_32__["WishlistComponent"],
+                _view_pespecial_pespecial_component__WEBPACK_IMPORTED_MODULE_33__["PespecialComponent"],
+                _view_compras_compras_component__WEBPACK_IMPORTED_MODULE_34__["ComprasComponent"],
+                _view_estadisticas_estadisticas_component__WEBPACK_IMPORTED_MODULE_35__["EstadisticasComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -1591,7 +1902,9 @@ var AppModule = /** @class */ (function () {
                 _auth_auth_module__WEBPACK_IMPORTED_MODULE_15__["AuthModule"],
                 ngx_bootstrap_progressbar__WEBPACK_IMPORTED_MODULE_28__["ProgressbarModule"].forRoot(),
                 ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_27__["ModalModule"].forRoot(),
+                ngx_bootstrap__WEBPACK_IMPORTED_MODULE_29__["RatingModule"].forRoot(),
                 _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_18__["AngularFirestoreModule"],
+                ng2_charts__WEBPACK_IMPORTED_MODULE_36__["ChartsModule"],
                 _angular_fire__WEBPACK_IMPORTED_MODULE_17__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].firebase),
                 _angular_fire_storage__WEBPACK_IMPORTED_MODULE_19__["AngularFireStorageModule"]
             ],
@@ -2115,7 +2428,7 @@ module.exports = ".c5071{\n    fill:#fff;\n  }\n  .c5210{\n    fill:#fff;\n  }\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\n    <div class=\"col\">\n    </div>\n</div>\n<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\n    <img src=\"assets/logomandarina.ico\" width=\"30px\" height=\"30px\" style=\"margin-right: 10px;\">\n    <a href=\"#\" class=\"navbar-brand\">La Mandarina Mecánica</a>\n    <button type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" class=\"navbar-toggler\"><span class=\"navbar-toggler-icon\"></span></button>\n    <div id=\"navbarSupportedContent\" class=\"collapse navbar-collapse\">\n        <ul class=\"navbar-nav mr-auto\">\n            <li class=\"nav-item active\">\n                <a href=\"perfil\" class=\"nav-link\">Mi Perfil <span class=\"sr-only\">(current)</span></a>\n            </li>\n            <li class=\"nav-item \">\n                <a href=\"admin\" class=\"nav-link\">Administrar</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"usuarios\" class=\"nav-link\">Usuarios</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"especial\" class=\"nav-link\">Recomendados/Promociones</a>\n            </li>\n        </ul>\n        <form class=\"form-inline my-2 my-lg-0\">\n            <a data-highlightable=\"1\" href=\"#\" (click)=\"auth.signOut()\" class=\"nav-link gjs-hovered\">Cerrar Sesión</a>\n        </form>\n    </div>\n</nav>"
+module.exports = "<div class=\"row\">\n    <div class=\"col\">\n    </div>\n</div>\n<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\n    <img src=\"assets/logomandarina.ico\" width=\"30px\" height=\"30px\" style=\"margin-right: 10px;\">\n    <a href=\"#\" class=\"navbar-brand\">La Mandarina Mecánica</a>\n    <button type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" class=\"navbar-toggler\"><span class=\"navbar-toggler-icon\"></span></button>\n    <div id=\"navbarSupportedContent\" class=\"collapse navbar-collapse\">\n        <ul class=\"navbar-nav mr-auto\">\n            <li class=\"nav-item active\">\n                <a href=\"perfil\" class=\"nav-link\">Mi Perfil <span class=\"sr-only\">(current)</span></a>\n            </li>\n            <li class=\"nav-item \">\n                <a href=\"admin\" class=\"nav-link\">Administrar</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"usuarios\" class=\"nav-link\">Usuarios</a>\n            </li>\n            <li class=\"nav-item \">\n                <a href=\"compras\" class=\"nav-link\">Compras</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"especial\" class=\"nav-link\">Recomendados/Promociones</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"estadisticas\" class=\"nav-link\">Estadisticas</a>\n            </li>\n        </ul>\n        <form class=\"form-inline my-2 my-lg-0\">\n            <a data-highlightable=\"1\" href=\"#\" (click)=\"auth.signOut()\" class=\"nav-link gjs-hovered\">Cerrar Sesión</a>\n        </form>\n    </div>\n</nav>"
 
 /***/ }),
 
@@ -2174,7 +2487,7 @@ module.exports = ".c5071{\n    fill:#fff;\n  }\n  .c5210{\n    fill:#fff;\n  }\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\n    <div class=\"col\">\n    </div>\n</div>\n<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\n    <img src=\"assets/logomandarina.ico\" width=\"30px\" height=\"30px\" style=\"margin-right: 10px;\">\n    <a href=\"#\" class=\"navbar-brand\">La Mandarina Mecánica</a>\n    <button type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" class=\"navbar-toggler\"><span class=\"navbar-toggler-icon\"></span></button>\n    <div id=\"navbarSupportedContent\" class=\"collapse navbar-collapse\">\n        <ul class=\"navbar-nav mr-auto\">\n            <li class=\"nav-item active\">\n                <a href=\"perfil\" class=\"nav-link\">Mi Perfil<span class=\"sr-only\">(current)</span></a>\n            </li>\n            <li class=\"nav-item \">\n                <a href=\"inicio\" class=\"nav-link\">Inicio</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"carrito\" class=\"nav-link\">\n                    Carrito de Compras<span class=\"badge badge-danger\">{{carrito?.totalProducts}}</span></a>\n\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"wish\" class=\"nav-link\">\n                        Wishlist<span class=\"badge badge-danger\">{{wishlist?.totalProducts}}</span></a>\n\n            </li>\n            <li class=\"nav-item \">\n                <a href=\"pago\" class=\"nav-link\">Pago</a>\n            </li>\n            <li class=\"nav-item dropdown\">\n                <a href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\" class=\"nav-link dropdown-toggle\">\n        Catálogo\n      </a>\n                <div aria-labelledby=\"navbarDropdown\" class=\"dropdown-menu\">\n                    <a href=\"hogar\" class=\"dropdown-item\">Hogar</a>\n                    <a href=\"arte\" class=\"dropdown-item\">Arte</a>\n                    <a href=\"electrodomesticos\" class=\"dropdown-item\">Electrodomésticos</a>\n                </div>\n            </li>\n            <li class=\"nav-item\">\n            </li>\n        </ul>\n        <form class=\"form-inline my-2 my-lg-0\">\n            <a data-highlightable=\"1\" href=\"#\" (click)=\"auth.signOut()\" class=\"nav-link gjs-hovered\">Cerrar Sesión</a>\n        </form>\n    </div>\n</nav>"
+module.exports = "<div class=\"row\">\n    <div class=\"col\">\n    </div>\n</div>\n<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\n    <img src=\"assets/logomandarina.ico\" width=\"30px\" height=\"30px\" style=\"margin-right: 10px;\">\n    <a href=\"#\" class=\"navbar-brand\">La Mandarina Mecánica</a>\n    <button type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" class=\"navbar-toggler\"><span class=\"navbar-toggler-icon\"></span></button>\n    <div id=\"navbarSupportedContent\" class=\"collapse navbar-collapse\">\n        <ul class=\"navbar-nav mr-auto\">\n            <li class=\"nav-item \">\n                <a href=\"inicio\" class=\"nav-link\">inicio</a>\n            </li>\n            <li class=\"nav-item \">\n                <a href=\"perfil\" class=\"nav-link\">Mi Perfil<span class=\"sr-only\">(current)</span></a>\n            </li>\n            <li class=\"nav-item \">\n                <a href=\"compras\" class=\"nav-link\">Compras</a>\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"carrito\" class=\"nav-link\">\n                    Carrito de Compras<span class=\"badge badge-danger\">{{carrito?.totalProducts}}</span></a>\n\n            </li>\n            <li class=\"nav-item\">\n                <a href=\"wish\" class=\"nav-link\">\n                        Wishlist<span class=\"badge badge-danger\">{{wishlist?.totalProducts}}</span></a>\n            </li>\n            <li class=\"nav-item dropdown\">\n                <a href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\" class=\"nav-link dropdown-toggle\">\n        Catálogo\n      </a>\n                <div aria-labelledby=\"navbarDropdown\" class=\"dropdown-menu\">\n                    <a href=\"hogar\" class=\"dropdown-item\">Hogar</a>\n                    <a href=\"arte\" class=\"dropdown-item\">Arte</a>\n                    <a href=\"electrodomesticos\" class=\"dropdown-item\">Electrodomésticos</a>\n                </div>\n            </li>\n            <li class=\"nav-item\">\n            </li>\n        </ul>\n        <form class=\"form-inline my-2 my-lg-0\">\n            <a data-highlightable=\"1\" href=\"#\" (click)=\"auth.signOut()\" class=\"nav-link gjs-hovered\">Cerrar Sesión</a>\n        </form>\n    </div>\n</nav>"
 
 /***/ }),
 
@@ -2434,15 +2747,20 @@ var CarritoService = /** @class */ (function () {
         this.afs = afs;
     }
     CarritoService_1 = CarritoService;
+    //Metodo para crear el carrito
+    //De esta forma cada usuario siempre tendra un carrito asociado
     CarritoService.prototype.CrearCarrito = function (id) {
-        this.afs.collection('carts').doc(id).set({ id: id, products: [], totalProducts: 0 });
+        this.afs.collection('carritos').doc(id).set({ id: id, products: [], totalProducts: 0 });
     };
+    //Metodo para adquirir el carrito
     CarritoService.prototype.MiCarrito = function (uid) {
-        return this.afs.doc("carts/" + uid).snapshotChanges();
+        return this.afs.doc("carritos/" + uid).snapshotChanges();
     };
+    //Metodo para adquirir la referencia del carrito
     CarritoService.prototype.RefMiCarrito = function (uid) {
-        return this.afs.collection('carts').doc(uid).ref;
+        return this.afs.collection('carritos').doc(uid).ref;
     };
+    //Metodo para agregar un producto al carrito
     CarritoService.prototype.agregarProducto = function (producto, variacion) {
         var _this = this;
         return new Promise(function (resolve, reject) {
@@ -2501,6 +2819,7 @@ var CarritoService = /** @class */ (function () {
             });
         });
     };
+    //Metodo para saber si se insertara un producto que ya existe en el carrito
     CarritoService.ProductosIguales = function (productosEnCarrito, producto, variacion) {
         if (productosEnCarrito.length > 0) {
             for (var i = 0; i < productosEnCarrito.length; i++) {
@@ -2530,6 +2849,7 @@ var CarritoService = /** @class */ (function () {
         }
         return sum;
     };
+    //Limpio mi carrito
     CarritoService.prototype.resetCart = function (uid) {
         var _this = this;
         return new Promise(function (resolve, reject) {
@@ -2546,6 +2866,7 @@ var CarritoService = /** @class */ (function () {
             });
         });
     };
+    //Incremento la cantidad del producto
     CarritoService.prototype.incrementar = function (producto, uid, variacion) {
         var _this = this;
         return new Promise(function (resolve, reject) {
@@ -2566,6 +2887,7 @@ var CarritoService = /** @class */ (function () {
             });
         });
     };
+    //Decremento la cantidad del producto
     CarritoService.prototype.disminuir = function (producto, uid, variacion) {
         var _this = this;
         return new Promise(function (resolve, reject) {
@@ -2586,14 +2908,15 @@ var CarritoService = /** @class */ (function () {
             });
         });
     };
+    //Precio total
     CarritoService.prototype.totalPrice = function (products) {
         var total = 0;
-        console.log(products);
         for (var i = 0; i < products.length; i++) {
             total += (parseInt(products[i]['qty']) * products[i]['price']);
         }
         return total;
     };
+    //Remover un producto del carrito
     CarritoService.prototype.removeProduct = function (product, uid, index) {
         var _this = this;
         return new Promise(function (resolve, reject) {
@@ -2621,6 +2944,174 @@ var CarritoService = /** @class */ (function () {
             _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_3__["AngularFirestore"]])
     ], CarritoService);
     return CarritoService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/servicios/compra.service.ts":
+/*!*********************************************!*\
+  !*** ./src/app/servicios/compra.service.ts ***!
+  \*********************************************/
+/*! exports provided: CompraService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CompraService", function() { return CompraService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/fire/firestore */ "./node_modules/@angular/fire/firestore/index.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+/* harmony import */ var faker__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! faker */ "./node_modules/faker/index.js");
+/* harmony import */ var faker__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(faker__WEBPACK_IMPORTED_MODULE_4__);
+
+
+
+
+
+var CompraService = /** @class */ (function () {
+    function CompraService(afs) {
+        this.afs = afs;
+        this.depHogar = false;
+        this.depElectro = false;
+        this.depArte = false;
+        this.gananciasDep = [0, 0, 0]; //HOGAR/ARTE/ELECTRO  -- 0,1,2
+        this.compraCollection = this.afs.collection('purchases', function (ref) { return ref; });
+    }
+    CompraService.prototype.InicializarCollection = function (uid) {
+        if (uid) {
+            this.compraCollection = this.afs.collection('purchases', function (ref) { return ref.where('uid', '==', uid); });
+        }
+    };
+    CompraService.prototype.obtenerCompras = function (uid) {
+        if (uid) {
+            this.InicializarCollection(uid);
+            this.compras = this.compraCollection.snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (changes) {
+                return changes.map(function (action) {
+                    var data = action.payload.doc.data();
+                    data.id = action.payload.doc.id;
+                    return data;
+                });
+            }));
+            return this.compras;
+        }
+        //Para que el admin pueda verlos todos
+        this.compras = this.compraCollection.snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (changes) {
+            return changes.map(function (action) {
+                var data = action.payload.doc.data();
+                data.id = action.payload.doc.id;
+                return data;
+            });
+        }));
+        return this.compras;
+    };
+    CompraService.prototype.getCompra = function (id) {
+        return this.afs.doc("purchases/" + id);
+    };
+    CompraService.prototype.save = function (compra) {
+        var id = faker__WEBPACK_IMPORTED_MODULE_4__["random"].alphaNumeric(20);
+        compra.id = id;
+        this.compraCollection.doc(id).set(compra);
+    };
+    CompraService.prototype.GananciasTotales = function (compras) {
+        var total = 0;
+        for (var i = 0; i < compras.length; i++) {
+            total += (parseInt(compras[i]['amount']));
+        }
+        return total;
+    };
+    CompraService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_fire_firestore__WEBPACK_IMPORTED_MODULE_2__["AngularFirestore"]])
+    ], CompraService);
+    return CompraService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/servicios/estadisticas.service.ts":
+/*!***************************************************!*\
+  !*** ./src/app/servicios/estadisticas.service.ts ***!
+  \***************************************************/
+/*! exports provided: EstadisticasService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EstadisticasService", function() { return EstadisticasService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _producto_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./producto.service */ "./src/app/servicios/producto.service.ts");
+
+
+
+var EstadisticasService = /** @class */ (function () {
+    function EstadisticasService(productoService) {
+        this.productoService = productoService;
+        this.depHogar = false;
+        this.depElectro = false;
+        this.depArte = false;
+        this.gananciasDep = [0, 0, 0]; //HOGAR/ARTE/ELECTRO
+        this.TotalProductos = 0;
+    }
+    EstadisticasService.prototype.GananciasPorDept = function (compras) {
+        var _this = this;
+        compras.forEach(function (compra) {
+            compra.product.forEach(function (element) {
+                var sub = _this.productoService.getProducto(element.id).subscribe(function (producto) {
+                    if (producto.department == 'electrodomesticos') {
+                        _this.depElectro = true;
+                    }
+                    else if (producto.department == 'hogar') {
+                        _this.depHogar = true;
+                    }
+                    else if (producto.department == 'arte') {
+                        _this.depArte = true;
+                    }
+                    sub.unsubscribe();
+                }).add(function () {
+                    if (_this.depElectro == true) {
+                        _this.gananciasDep[2] += parseInt(element['price']) * element['qty'];
+                    }
+                    if (_this.depArte == true) {
+                        _this.gananciasDep[1] += parseInt(element['price']) * element['qty'];
+                    }
+                    if (_this.depHogar == true) {
+                        _this.gananciasDep[0] += parseInt(element['price']) * element['qty'];
+                    }
+                    _this.reset();
+                });
+            });
+        });
+        return this.gananciasDep;
+    };
+    EstadisticasService.prototype.CantidadProductosVendidos = function (compras) {
+        var _this = this;
+        compras.forEach(function (compra) {
+            compra.product.forEach(function (element) {
+                _this.TotalProductos = _this.TotalProductos + element['qty'];
+            });
+        });
+        return this.TotalProductos;
+    };
+    EstadisticasService.prototype.reset = function () {
+        this.depArte = false;
+        this.depElectro = false;
+        this.depHogar = false;
+    };
+    EstadisticasService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_producto_service__WEBPACK_IMPORTED_MODULE_2__["ProductoService"]])
+    ], EstadisticasService);
+    return EstadisticasService;
 }());
 
 
@@ -2706,13 +3197,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/fire/firestore */ "./node_modules/@angular/fire/firestore/index.js");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+/* harmony import */ var _carrito_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./carrito.service */ "./src/app/servicios/carrito.service.ts");
+/* harmony import */ var _compra_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./compra.service */ "./src/app/servicios/compra.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
+
+
 
 
 
 
 var ProductoService = /** @class */ (function () {
-    function ProductoService(afs) {
+    function ProductoService(afs, carritoService, ComprasService, router) {
         this.afs = afs;
+        this.carritoService = carritoService;
+        this.ComprasService = ComprasService;
+        this.router = router;
         this.productCollection = this.afs.collection('products', function (ref) { return ref; });
     }
     ProductoService.prototype.crearProducto = function (product) {
@@ -2772,6 +3272,42 @@ var ProductoService = /** @class */ (function () {
         }));
         return this.ProductosDep.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (arr) { return arr.filter(function (r) { return r.department === 'arte'; }); }));
     };
+    ProductoService.prototype.ProductosArteEntre = function (min, max) {
+        this.ProductosDep = this.productCollection.snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (changes) {
+            return changes.map(function (action) {
+                var data = action.payload.doc.data();
+                data.id = action.payload.doc.id;
+                return data;
+            });
+        }));
+        return this.ProductosDep.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (arr) { return arr.filter(function (r) { return r.department === 'arte' && r.price >= min && r.price <= max; }); }));
+    };
+    ProductoService.prototype.ProductosElectroEntre = function (min, max) {
+        this.ProductosDep = this.productCollection.snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (changes) {
+            return changes.map(function (action) {
+                var data = action.payload.doc.data();
+                data.id = action.payload.doc.id;
+                return data;
+            });
+        }));
+        return this.ProductosDep.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (arr) { return arr.filter(function (r) { return r.department === 'electrodomesticos' && r.price >= min && r.price <= max; }); }));
+    };
+    ProductoService.prototype.ProductosHogarEntre = function (min, max) {
+        this.ProductosDep = this.productCollection.snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (changes) {
+            return changes.map(function (action) {
+                var data = action.payload.doc.data();
+                data.id = action.payload.doc.id;
+                return data;
+            });
+        }));
+        return this.ProductosDep.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (arr) { return arr.filter(function (r) { return r.department === 'hogar' && r.price >= min && r.price <= max; }); }));
+    };
+    ProductoService.prototype.ProductosMasVendidos = function () {
+        return this.afs.collection('products', function (ref) { return ref.orderBy("sold", "desc").limit(6); }).valueChanges();
+    };
+    ProductoService.prototype.ProductosMasVendidosLimite = function (limite) {
+        return this.afs.collection('products', function (ref) { return ref.orderBy("sold", "desc").limit(limite); }).valueChanges();
+    };
     ProductoService.prototype.updateProducto = function (product) {
         this.productDoc = this.afs.doc("products/" + product.id);
         this.productDoc.update(product);
@@ -2780,11 +3316,104 @@ var ProductoService = /** @class */ (function () {
         this.productDoc = this.afs.doc("products/" + product.id);
         this.productDoc.delete();
     };
+    ProductoService.prototype.updateSold = function (cantidad, producto) {
+        //Metodo para hacer transacciones de la página oficial de firestore
+        // Create a reference to the SF doc.
+        var sfDocRef = this.afs.firestore.collection("products").doc(producto.id);
+        return this.afs.firestore.runTransaction(function (transaction) {
+            // This code may get re-run multiple times if there are conflicts.
+            return transaction.get(sfDocRef).then(function (sfDoc) {
+                if (!sfDoc.exists) {
+                    throw "Document does not exist!";
+                }
+                // Add one person to the city population.
+                // Note: this could be done without a transaction
+                //       by updating the population using FieldValue.increment()
+                var newVenta = sfDoc.data().sold + cantidad;
+                transaction.update(sfDocRef, { sold: newVenta });
+            });
+        }).then(function () {
+            console.log("Transaction successfully committed!");
+        }).catch(function (error) {
+            console.log("Transaction failed: ", error);
+        });
+    };
+    ProductoService.prototype.ventaProducto = function (Carritoproductos, Compra, uid) {
+        var _this = this;
+        //Por cada producto en el carrito es necesario llamar al producto original
+        //Para modificarle el campo sold
+        Carritoproductos.forEach(function (productoCarrito) {
+            var subscription = _this.getProducto(productoCarrito.id).subscribe(function (producto) {
+                _this.productoVenta = producto;
+                //Una vez que productoVenta se llena del producto que trae el subscribe debo hacer un unsubscribe
+                subscription.unsubscribe();
+                //El metodo add es un metodo que pertenece a los subscribe de firestore y se ejecuta una vez que ya no estoy subscrito
+                //Por eso hago el unsubscribe anteriormente
+            }).add(function () {
+                _this.updateSold(productoCarrito.qty, _this.productoVenta);
+            });
+        });
+        this.ComprasService.save(Compra);
+        this.carritoService.resetCart(uid).then(function () {
+            _this.router.navigate(['compras']);
+            alert("Compra exitosa");
+        });
+    };
+    ProductoService.prototype.agregarComentario = function (producto, comentario, rate, usuario) {
+        var _this = this;
+        var subscription = this.getProducto(producto.id).subscribe(function (producto) {
+            _this.productoComentario = producto;
+            subscription.unsubscribe();
+        }).add(function () {
+            if (_this.productoComentario.comentarios == null) {
+                var ProductoNuevo = {
+                    id: _this.productoComentario.id,
+                    department: _this.productoComentario.department,
+                    description: _this.productoComentario.description,
+                    name: _this.productoComentario.name,
+                    photoUrl: _this.productoComentario.photoUrl,
+                    price: _this.productoComentario.price,
+                    sold: _this.productoComentario.sold,
+                    variaciones: _this.productoComentario.variaciones,
+                    comentarios: []
+                };
+                var NuevoComentario = {
+                    nombre: usuario.name,
+                    comentario: comentario,
+                    calificacion: rate
+                };
+                ProductoNuevo.comentarios.push(NuevoComentario);
+                _this.updateProducto(ProductoNuevo);
+                alert("se agrego el comentario");
+            }
+            else {
+                var ProductoNuevo = {
+                    id: _this.productoComentario.id,
+                    department: _this.productoComentario.department,
+                    description: _this.productoComentario.description,
+                    name: _this.productoComentario.name,
+                    photoUrl: _this.productoComentario.photoUrl,
+                    price: _this.productoComentario.price,
+                    sold: _this.productoComentario.sold,
+                    variaciones: _this.productoComentario.variaciones,
+                    comentarios: _this.productoComentario.comentarios
+                };
+                var NuevoComentario = {
+                    nombre: usuario.name,
+                    comentario: comentario,
+                    calificacion: rate
+                };
+                ProductoNuevo.comentarios.push(NuevoComentario);
+                _this.updateProducto(ProductoNuevo);
+                alert("se agrego el comentario");
+            }
+        });
+    };
     ProductoService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
             providedIn: 'root'
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_fire_firestore__WEBPACK_IMPORTED_MODULE_2__["AngularFirestore"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_fire_firestore__WEBPACK_IMPORTED_MODULE_2__["AngularFirestore"], _carrito_service__WEBPACK_IMPORTED_MODULE_4__["CarritoService"], _compra_service__WEBPACK_IMPORTED_MODULE_5__["CompraService"], _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"]])
     ], ProductoService);
     return ProductoService;
 }());
@@ -2931,7 +3560,7 @@ var UsuarioService = /** @class */ (function () {
     UsuarioService.prototype.CrearUsuario = function (user) {
         this.userCollection.add(user);
     };
-    //Obtener Usuario:
+    //Obtener Usuarios:
     UsuarioService.prototype.ObtenerUsuarios = function () {
         this.users = this.userCollection.snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (changes) {
             return changes.map(function (action) {
@@ -3277,7 +3906,8 @@ var AdminComponent = /** @class */ (function () {
             description: this.productoSelecionado.description,
             photoUrl: this.productoSelecionado.photoUrl,
             department: this.productoSelecionado.department,
-            variacion: this.productoSelecionado.variaciones
+            variacion: this.productoSelecionado.variaciones,
+            sold: this.productoSelecionado.sold
         };
         this.productService.deleteProducto(productoEliminar);
     };
@@ -3346,6 +3976,7 @@ var AdminComponent = /** @class */ (function () {
                 photoUrl: this.image,
                 department: this.OpcionDepartamento,
                 variaciones: this.productoNuevo.variaciones,
+                sold: 0
             };
         }
         this.image = null;
@@ -3365,7 +3996,8 @@ var AdminComponent = /** @class */ (function () {
                 name: this.promocionProducto.name,
                 photoUrl: this.promocionProducto.photoUrl,
                 price: this.promocionProducto.price,
-                variacion: this.VariacionPromocion
+                variacion: this.VariacionPromocion,
+                sold: 0
             };
             this.PromocionRef.hide();
             this.PromocionRef = null;
@@ -3380,6 +4012,7 @@ var AdminComponent = /** @class */ (function () {
                 name: this.promocionProducto.name,
                 photoUrl: this.promocionProducto.photoUrl,
                 price: this.promocionProducto.price,
+                sold: 0
             };
             this.PromocionRef.hide();
             this.PromocionRef = null;
@@ -3488,7 +4121,7 @@ module.exports = ".row {\n    padding: 2em;\n}\n\n.btn-primary:hover,\n.btn-prim
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Determina si el usuario esta autenticado o es un invitado-->\n<div *ngIf=\"auth.User | async; then authenticated\"></div>\n\n<!-- Se usa el #authenticated para renderisar el template dependiendo de la respuesta del servicio auth de firestore -->\n<!-- Esto con tal de poder hacer uso de una navegación basada en roles-->\n\n\n<!--Template para usuario autenticadoe-->\n<ng-template #authenticated>\n    <div *ngIf=\"auth.User | async as User\">\n        <div *ngIf=\"User.role === 'customer'\">\n            <app-navbar-user></app-navbar-user>\n        </div>\n        <div *ngIf=\"User.role === 'admin'\">\n            <app-navbar-admin></app-navbar-admin>\n        </div>\n        <section id=\"team\" class=\"pb-5\">\n            <div class=\"container\">\n                <h5 class=\"section-title h1\">Bienvenido a la sección de arte</h5>\n                <div class=\"col text-right\">\n\n                    <form class=\"form-inline my-2 my-lg-0\">\n                        <input class=\"form-control mr-sm-2\" [(ngModel)]=\"searchterm\" (ngModelChange)=\"search($event)\" type=\"search\" placeholder=\"Búsqueda\" aria-label=\"Search\" name=\"searchInput\">\n                        <button class=\"btn btn-dark my-2 my-sm-0\" type=\"submit\">buscar</button>\n                    </form>\n                </div>\n                <br>\n                <div class=\"row\">\n                    <div class=\"col-xs-12 col-sm-6 col-md-4\" *ngFor=\"let producto of productos\">\n                        <div class=\"image-flip\" ontouchstart=\"this.classList.toggle('hover');\">\n                            <div class=\"mainflip\">\n                                <div class=\"frontside\">\n                                    <div class=\"card\">\n                                        <div class=\"card-body text-center\">\n                                            <p><img class=\" img-fluid\" src={{producto.photoUrl}} alt=\"card image\"></p>\n                                            <h4 class=\"card-title\">{{producto.name}}</h4>\n                                            <p class=\"card-text\">{{producto.department}}</p>\n                                            <p class=\"card-text\">Precio: ${{producto.price}}</p>\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"backside\">\n                                    <div class=\"card\">\n                                        <div class=\"card-body text-center mt-4\">\n                                            <h4 class=\"card-title\">{{producto.name}}</h4>\n                                            <p class=\"card-text\">{{producto.description}}</p>\n                                            <div class=\"form-group\">\n\n                                                <div *ngIf=\"producto.variaciones.length >0\">\n                                                    <label for=\"exampleFormControlSelect1\">Variacion</label>\n                                                    <select [(ngModel)]=\"variacion\" class=\"form-control\" id=\"exampleFormControlSelect1\">\n                                                        <option *ngFor=\"let Variacion of producto.variaciones\">{{Variacion.value}}</option>\n                                                      </select>\n                                                </div>\n                                            </div>\n                                            <ul class=\"list-inline\">\n                                                <li class=\"list-inline-item align-content-center\">\n                                                    <button class=\"btn btn-primary btn-sm\">Comentarios</button>\n                                                </li>\n                                            </ul>\n                                        </div>\n                                        <div class=\"card-footer\">\n                                            <ul class=\"list-inline\">\n                                                <li class=\"list-inline-item\">\n                                                    <button (click)=\"anadirCarrito(producto)\" class=\"btn btn-primary btn-sm\">Carrito</button>\n                                                </li>\n                                                <li class=\"list-inline-item align-self-end\">\n                                                    <button (click)=\"anadirWish(producto)\" class=\"btn btn-primary btn-sm\">Lista de deseos</button>\n                                                </li>\n                                            </ul>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </section>\n    </div>\n</ng-template>"
+module.exports = "<!-- Determina si el usuario esta autenticado o es un invitado-->\n<div *ngIf=\"auth.User | async; then authenticated; else noauthenticated\"></div>\n\n<!-- Se usa el #authenticated para renderisar el template dependiendo de la respuesta del servicio auth de firestore -->\n<!-- Esto con tal de poder hacer uso de una navegación basada en roles-->\n\n\n<!--Template para usuario autenticadoe-->\n<ng-template #authenticated>\n    <div *ngIf=\"auth.User | async as User\">\n        <div *ngIf=\"User.role === 'customer'\">\n            <app-navbar-user></app-navbar-user>\n        </div>\n        <div *ngIf=\"User.role === 'admin'\">\n            <app-navbar-admin></app-navbar-admin>\n        </div>\n        <section id=\"team\" class=\"pb-5\">\n            <div class=\"container\">\n                <h5 class=\"section-title h1\">Bienvenido a la sección de arte</h5>\n                <div class=\"col text-right\">\n                    <form class=\"form-inline my-2 my-lg-0\">\n                        <input class=\"form-control mr-sm-2\" [(ngModel)]=\"searchterm\" (ngModelChange)=\"search($event)\" type=\"search\" placeholder=\"Búsqueda\" aria-label=\"Search\" name=\"searchInput\">\n                        <button class=\"btn btn-dark my-2 my-sm-0\" type=\"submit\">buscar</button>\n                    </form>\n                </div>\n                <p class=\"section-title h1 text-center\">Filtros</p>\n                <div class=\"form-check\">\n                    <input [checked]=\"PrecioAsc\" (change)=\"CheckedPrecioAsc()\" class=\"form-check-input\" type=\"radio\" name=\"exampleRadios1\" id=\"exampleRadios1\">\n                    <label class=\"form-check-label\" for=\"exampleRadios1\">\n                              Precio ascendiente\n                            </label>\n                </div>\n                <div class=\"form-check\">\n                    <input [checked]=\"PrecioDesc\" (change)=\"CheckedPrecioDesc()\" class=\"form-check-input\" type=\"radio\" name=\"exampleRadios2\" id=\"exampleRadios2\">\n                    <label class=\"form-check-label\" for=\"exampleRadios2\">\n                              Precio descendiente\n                            </label>\n                </div>\n                <div class=\"form-check\">\n                    <input [checked]=\"PrecioRgo\" (change)=\"CheckedRgo()\" class=\"form-check-input\" type=\"radio\" name=\"exampleRadios3\" id=\"exampleRadios3\">\n                    <label class=\"form-check-label\" for=\"exampleRadios3\">\n                              Rango de monto\n                            </label>\n                </div>\n                <div class=\"form-check\">\n                    <input [checked]=\"NombreAsc\" (change)=\"CheckedNombreAsc()\" class=\"form-check-input\" type=\"radio\" name=\"exampleRadios4\" id=\"exampleRadios4\">\n                    <label class=\"form-check-label\" for=\"exampleRadios4\">\n                                Nombre Ascendiente  \n                            </label>\n                </div>\n                <div class=\"form-check\">\n                    <input [checked]=\"NombreDesc\" (change)=\"CheckedNombreDesc()\" class=\"form-check-input\" type=\"radio\" name=\"exampleRadios5\" id=\"exampleRadios5\">\n                    <label class=\"form-check-label\" for=\"exampleRadios5\">\n                                    Nombre Descendiente   \n                                </label>\n                </div>\n                <br>\n                <div *ngIf=\"PrecioRgo == true\">\n                    <form>\n                        <div class=\"form-row\">\n                            <div class=\"form-group col-md-3\">\n                                <label for=\"inputMin\">Ingrese Valor minimo</label>\n                                <input [(ngModel)]=\"minPrecio\" type=\"number\" class=\"form-control\" id=\"inputMin\" name=\"inputValorMin\" placeholder=\"Valor Minimo\">\n                            </div>\n                            <div class=\"col\">\n                                <div class=\"form-group col-md-3\">\n                                    <label for=\"inputMin\">Ingrese Valor maximo</label>\n                                    <input [(ngModel)]=\"maxPrecio\" type=\"number\" class=\"form-control\" id=\"inputMin\" name=\"inputValorMax\" placeholder=\"Valor Maximo\">\n                                </div>\n                            </div>\n                        </div>\n                    </form>\n                    <br>\n                </div>\n                <div class=\"btn-group\" role=\"group\" aria-label=\"Basic example\">\n                    <button (click)=\"filtro()\" type=\"button\" class=\"btn btn-primary\">Aplicar Filtro</button>\n                    <button (click)=\"Quitarfiltro()\" type=\"button\" class=\"btn btn-primary\">Quitar Filtro</button>\n                </div>\n                <br>\n                <hr>\n                <br>\n                <div class=\"row\">\n                    <div class=\"col-xs-12 col-sm-6 col-md-4\" *ngFor=\"let producto of productos\">\n                        <div class=\"image-flip\" ontouchstart=\"this.classList.toggle('hover');\">\n                            <div class=\"mainflip\">\n                                <div class=\"frontside\">\n                                    <div class=\"card\">\n                                        <div class=\"card-body text-center\">\n                                            <p><img class=\" img-fluid\" src={{producto.photoUrl}} alt=\"card image\"></p>\n                                            <h4 class=\"card-title\">{{producto.name}}</h4>\n                                            <p class=\"card-text\">{{producto.department}}</p>\n                                            <p class=\"card-text\">Precio: ${{producto.price}}</p>\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"backside\">\n                                    <div class=\"card\">\n                                        <div class=\"card-body text-center mt-4\">\n                                            <h4 class=\"card-title\">{{producto.name}}</h4>\n                                            <p class=\"card-text\">{{producto.description}}</p>\n                                            <div class=\"form-group\">\n\n                                                <div *ngIf=\"producto.variaciones.length >0\">\n                                                    <label for=\"exampleFormControlSelect1\">Variacion</label>\n                                                    <select [(ngModel)]=\"variacion\" class=\"form-control\" id=\"exampleFormControlSelect1\">\n                                                        <option *ngFor=\"let Variacion of producto.variaciones\">{{Variacion.value}}</option>\n                                                      </select>\n                                                </div>\n                                            </div>\n                                            <ul class=\"list-inline\">\n                                                <li class=\"list-inline-item align-content-center\">\n                                                    <button (click)=\"MostrarComentarios(comentario, producto)\" class=\"btn btn-primary btn-sm\">Comentarios</button>\n                                                </li>\n                                            </ul>\n                                        </div>\n                                        <div class=\"card-footer\">\n                                            <ul class=\"list-inline\">\n                                                <li class=\"list-inline-item\">\n                                                    <button (click)=\"anadirCarrito(producto)\" class=\"btn btn-primary btn-sm\">Carrito</button>\n                                                </li>\n                                                <li class=\"list-inline-item align-self-end\">\n                                                    <button (click)=\"anadirWish(producto)\" class=\"btn btn-primary btn-sm\">Lista de deseos</button>\n                                                </li>\n                                            </ul>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </section>\n    </div>\n</ng-template>\n\n<ng-template #noauthenticated>\n    <app-navbar></app-navbar>\n    <section id=\"team\" class=\"pb-5\">\n        <div class=\"container\">\n            <h5 class=\"section-title h1\">Bienvenido a la sección de Arte</h5>\n            <div class=\"col text-right\">\n\n                <form class=\"form-inline my-2 my-lg-0\">\n                    <input class=\"form-control mr-sm-2\" [(ngModel)]=\"searchterm\" (ngModelChange)=\"search($event)\" type=\"search\" placeholder=\"Búsqueda\" aria-label=\"Search\" name=\"searchInput\">\n                    <button class=\"btn btn-dark my-2 my-sm-0\" type=\"submit\">buscar</button>\n                </form>\n            </div>\n            <br>\n            <div class=\"row\">\n                <div class=\"col-xs-12 col-sm-6 col-md-4\" *ngFor=\"let producto of productos\">\n                    <div class=\"image-flip\" ontouchstart=\"this.classList.toggle('hover');\">\n                        <div class=\"mainflip\">\n                            <div class=\"frontside\">\n                                <div class=\"card\">\n                                    <div class=\"card-body text-center\">\n                                        <p><img class=\" img-fluid\" src={{producto.photoUrl}} alt=\"card image\"></p>\n                                        <h4 class=\"card-title\">{{producto.name}}</h4>\n                                        <p class=\"card-text\">{{producto.department}}</p>\n                                        <p class=\"card-text\">Precio: ${{producto.price}}</p>\n                                    </div>\n                                </div>\n                            </div>\n                            <div class=\"backside\">\n                                <div class=\"card\">\n                                    <div class=\"card-body text-center mt-4\">\n                                        <h4 class=\"card-title\">{{producto.name}}</h4>\n                                        <p class=\"card-text\">{{producto.description}}</p>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </section>\n</ng-template>\n\n<ng-template #comentario>\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-12 mb-4\">\n                <h4 data-type=\"header\" class=\"d-flex justify-content-between align-items-center mb-3\">\n                    <span data-highlightable=\"1\" class=\"text-muted gjs-comp-selected\">Comentarios</span>\n                    <span data-highlightable=\"1\" class=\"badge badge-info badge-pill\">{{Productocomentarios.length}}</span>\n                </h4>\n                <ul class=\"list-group mb-3\">\n                    <li *ngFor=\"let comentario of Productocomentarios; let i = index\" class=\"list-group-item d-flex justify-content-between lh-condensed\">\n                        <div>\n                            <h6 data-type=\"header\" class=\"my-0\">{{comentario.nombre}}\n                            </h6>\n                            <small class=\"text-muted\">{{comentario.comentario}}</small>\n                        </div>\n                        <!-- <span class=\"text-muted\">Costo Unitario: {{comentario.calificacion}}</span> -->\n                        <span class=\"text-muted\"><rating [(ngModel)]=\"rate[i]\" [readonly]=\"true\" [max]=\"5\" style=\"color: #dbb716;font-size: 20px;\"></rating></span>\n                    </li>\n                </ul>\n            </div>\n        </div>\n    </div>\n</ng-template>"
 
 /***/ }),
 
@@ -3510,6 +4143,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/fire/firestore */ "./node_modules/@angular/fire/firestore/index.js");
 /* harmony import */ var src_app_servicios_carrito_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/servicios/carrito.service */ "./src/app/servicios/carrito.service.ts");
 /* harmony import */ var src_app_servicios_wishlist_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/app/servicios/wishlist.service */ "./src/app/servicios/wishlist.service.ts");
+/* harmony import */ var ngx_bootstrap__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ngx-bootstrap */ "./node_modules/ngx-bootstrap/esm5/ngx-bootstrap.js");
+/* harmony import */ var util__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! util */ "./node_modules/util/util.js");
+/* harmony import */ var util__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(util__WEBPACK_IMPORTED_MODULE_9__);
+
+
 
 
 
@@ -3519,16 +4157,24 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var ArteComponent = /** @class */ (function () {
-    function ArteComponent(auth, productoService, afs, carritoService, wishlistService) {
+    function ArteComponent(auth, productoService, afs, carritoService, wishlistService, ModalService) {
         this.auth = auth;
         this.productoService = productoService;
         this.afs = afs;
         this.carritoService = carritoService;
         this.wishlistService = wishlistService;
+        this.ModalService = ModalService;
         this.startAt = new rxjs__WEBPACK_IMPORTED_MODULE_3__["Subject"]();
         this.endAt = new rxjs__WEBPACK_IMPORTED_MODULE_3__["Subject"]();
         this.startObs = this.startAt.asObservable();
         this.endObs = this.endAt.asObservable();
+        // check para el filtro
+        this.PrecioAsc = false;
+        this.PrecioDesc = false;
+        this.PrecioRgo = false;
+        this.NombreAsc = false;
+        this.NombreDesc = false;
+        this.rate = [];
     }
     ArteComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -3559,24 +4205,25 @@ var ArteComponent = /** @class */ (function () {
     };
     //Filtro nombre ascendiente
     ArteComponent.prototype.NameAsc = function () {
-        return this.afs.collection('products', function (ref) { return ref.orderBy("name", "asc"); }).valueChanges();
+        return this.afs.collection('products', function (ref) { return ref.orderBy("name", "asc").where("department", "==", "arte"); }).valueChanges();
     };
     // Filtro nombre descendiente
     ArteComponent.prototype.NameDes = function () {
-        return this.afs.collection('products', function (ref) { return ref.orderBy("name", "desc"); }).valueChanges();
+        return this.afs.collection('products', function (ref) { return ref.orderBy("name", "desc").where("department", "==", "arte"); }).valueChanges();
     };
     // Filtro Precio ascendiente
-    ArteComponent.prototype.PrecioAsc = function () {
-        return this.afs.collection('products', function (ref) { return ref.orderBy("price", "asc"); }).valueChanges();
+    ArteComponent.prototype.PrecioAscendente = function () {
+        return this.afs.collection('products', function (ref) { return ref.orderBy("price", "asc").where("department", "==", "arte"); }).valueChanges();
     };
     // Filtro precio descendiente
-    ArteComponent.prototype.PrecioDesc = function () {
-        return this.afs.collection('products', function (ref) { return ref.orderBy("price", "desc"); }).valueChanges();
+    ArteComponent.prototype.PrecioDescendiente = function () {
+        return this.afs.collection('products', function (ref) { return ref.orderBy("price", "desc").where("department", "==", "arte"); }).valueChanges();
     };
     // Precio entre valores
     ArteComponent.prototype.PrecioEntre = function (menor, mayor) {
+        var _this = this;
         if (menor <= mayor) {
-            return this.afs.collection('products', function (ref) { return ref.where("price", ">=", menor).where("price", "<=", mayor); }).valueChanges();
+            this.productoService.ProductosArteEntre(menor, mayor).subscribe(function (productos) { return _this.productos = productos; });
         }
         else {
             alert("Error en los valores suminstrados");
@@ -3592,13 +4239,105 @@ var ArteComponent = /** @class */ (function () {
         alert("Producto añadido a la wishlist");
         this.variacion = undefined;
     };
+    ArteComponent.prototype.MostrarComentarios = function (template, producto) {
+        var _this = this;
+        if (Object(util__WEBPACK_IMPORTED_MODULE_9__["isNullOrUndefined"])(producto.comentarios)) {
+            alert("Este producto no tiene comentarios");
+            return;
+        }
+        else {
+            this.Productocomentarios = producto.comentarios;
+            this.Productocomentarios.forEach(function (comentario) {
+                _this.rate.push(comentario.calificacion);
+            });
+            this.modalRef = this.ModalService.show(template, { class: 'gray modal-lg' });
+        }
+    };
+    ArteComponent.prototype.CheckedPrecioAsc = function () {
+        this.PrecioDesc = false;
+        this.PrecioRgo = false;
+        this.PrecioAsc = true;
+        this.NombreAsc = false;
+        this.NombreDesc = false;
+    };
+    ArteComponent.prototype.CheckedPrecioDesc = function () {
+        this.PrecioDesc = true;
+        this.PrecioRgo = false;
+        this.PrecioAsc = false;
+        this.NombreAsc = false;
+        this.NombreDesc = false;
+    };
+    ArteComponent.prototype.CheckedRgo = function () {
+        this.PrecioDesc = false;
+        this.PrecioRgo = true;
+        this.PrecioAsc = false;
+        this.NombreAsc = false;
+        this.NombreDesc = false;
+    };
+    ArteComponent.prototype.CheckedNombreAsc = function () {
+        this.PrecioDesc = false;
+        this.PrecioRgo = false;
+        this.PrecioAsc = false;
+        this.NombreAsc = true;
+        this.NombreDesc = false;
+    };
+    ArteComponent.prototype.CheckedNombreDesc = function () {
+        this.PrecioDesc = false;
+        this.PrecioRgo = false;
+        this.PrecioAsc = false;
+        this.NombreAsc = false;
+        this.NombreDesc = true;
+    };
+    ArteComponent.prototype.filtro = function () {
+        var _this = this;
+        if (this.PrecioAsc == true) {
+            this.PrecioAscendente().subscribe(function (productos) { return _this.productos = productos; });
+            return;
+        }
+        else if (this.PrecioDesc == true) {
+            this.PrecioDescendiente().subscribe(function (productos) { return _this.productos = productos; });
+            return;
+        }
+        else if (this.PrecioRgo == true) {
+            if (Object(util__WEBPACK_IMPORTED_MODULE_9__["isNullOrUndefined"])(this.minPrecio)) {
+                alert("Introduzca el precio minimo");
+                return;
+            }
+            else if (Object(util__WEBPACK_IMPORTED_MODULE_9__["isNullOrUndefined"])(this.maxPrecio)) {
+                alert("Introduzca el precio minimo");
+                return;
+            }
+            else {
+                this.PrecioEntre(this.minPrecio, this.maxPrecio);
+                this.minPrecio = null;
+                this.maxPrecio = null;
+                return;
+            }
+        }
+        else if (this.NombreAsc == true) {
+            this.NameAsc().subscribe(function (productos) { return _this.productos = productos; });
+            return;
+        }
+        else if (this.NombreDesc == true) {
+            this.NameDes().subscribe(function (productos) { return _this.productos = productos; });
+            return;
+        }
+    };
+    ArteComponent.prototype.Quitarfiltro = function () {
+        this.getProducts();
+    };
     ArteComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-arte',
             template: __webpack_require__(/*! ./arte.component.html */ "./src/app/view/arte/arte.component.html"),
             styles: [__webpack_require__(/*! ./arte.component.css */ "./src/app/view/arte/arte.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_auth_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"], src_app_servicios_producto_service__WEBPACK_IMPORTED_MODULE_4__["ProductoService"], _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_5__["AngularFirestore"], src_app_servicios_carrito_service__WEBPACK_IMPORTED_MODULE_6__["CarritoService"], src_app_servicios_wishlist_service__WEBPACK_IMPORTED_MODULE_7__["wishlistService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_auth_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"],
+            src_app_servicios_producto_service__WEBPACK_IMPORTED_MODULE_4__["ProductoService"],
+            _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_5__["AngularFirestore"],
+            src_app_servicios_carrito_service__WEBPACK_IMPORTED_MODULE_6__["CarritoService"],
+            src_app_servicios_wishlist_service__WEBPACK_IMPORTED_MODULE_7__["wishlistService"],
+            ngx_bootstrap__WEBPACK_IMPORTED_MODULE_8__["BsModalService"]])
     ], ArteComponent);
     return ArteComponent;
 }());
@@ -3706,6 +4445,232 @@ var CarritoComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/view/compras/compras.component.css":
+/*!****************************************************!*\
+  !*** ./src/app/view/compras/compras.component.css ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".row {\n    padding: 2em;\n}\n\n.btn-primary:hover,\n.btn-primary:focus {\n    background-color: #108d6f;\n    border-color: #108d6f;\n    box-shadow: none;\n    outline: none;\n}\n\n.btn-primary {\n    color: #fff;\n    background-color: #007b5e;\n    border-color: #007b5e;\n}\n\nsection {\n    padding: 60px 0;\n}\n\nsection .section-title {\n    text-align: center;\n    color: rgb(73, 70, 70);\n    margin-bottom: 50px;\n}\n\n.image-flip:hover .backside,\n.image-flip.hover .backside {\n    -webkit-transform: rotateY(0deg);\n    transform: rotateY(0deg);\n    border-radius: .25rem;\n}\n\n.image-flip:hover .frontside,\n.image-flip.hover .frontside {\n    -webkit-transform: rotateY(180deg);\n    transform: rotateY(180deg);\n}\n\n.mainflip {\n    -webkit-transition: 1s;\n    -webkit-transform-style: preserve-3d;\n    -ms-transition: 1s;\n    -moz-transition: 1s;\n    -moz-transform: perspective(1000px);\n    -moz-transform-style: preserve-3d;\n    -ms-transform-style: preserve-3d;\n    transition: 1s;\n    transform-style: preserve-3d;\n    position: relative;\n}\n\n.frontside {\n    position: relative;\n    -webkit-transform: rotateY(0deg);\n    -ms-transform: rotateY(0deg);\n    z-index: 2;\n    margin-bottom: 30px;\n}\n\n.backside {\n    position: absolute;\n    top: 0;\n    left: 0;\n    background: white;\n    -webkit-transform: rotateY(-180deg);\n    transform: rotateY(-180deg);\n    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);\n}\n\n.frontside,\n.backside {\n    -webkit-backface-visibility: hidden;\n    backface-visibility: hidden;\n    -webkit-transition: 1s;\n    -webkit-transform-style: preserve-3d;\n    -moz-transition: 1s;\n    -moz-transform-style: preserve-3d;\n    -o-transition: 1s;\n    -o-transform-style: preserve-3d;\n    -ms-transition: 1s;\n    -ms-transform-style: preserve-3d;\n    transition: 1s;\n    transform-style: preserve-3d;\n}\n\n.frontside .card,\n.backside .card {\n    min-height: 312px;\n}\n\n.backside .card a {\n    font-size: 18px;\n    color: #007b5e !important;\n}\n\n.frontside .card .card-title,\n.backside .card .card-title {\n    color: #007b5e !important;\n}\n\n.frontside .card .card-body img {\n    width: 120px;\n    height: 120px;\n    border-radius: 50%;\n}\n\n.hidden {\n    display: none;\n}\n\n.btn-cancelar {\n    margin-left: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdmlldy9jb21wcmFzL2NvbXByYXMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLFlBQVk7QUFDaEI7O0FBRUE7O0lBRUkseUJBQXlCO0lBQ3pCLHFCQUFxQjtJQUNyQixnQkFBZ0I7SUFDaEIsYUFBYTtBQUNqQjs7QUFFQTtJQUNJLFdBQVc7SUFDWCx5QkFBeUI7SUFDekIscUJBQXFCO0FBQ3pCOztBQUVBO0lBQ0ksZUFBZTtBQUNuQjs7QUFFQTtJQUNJLGtCQUFrQjtJQUNsQixzQkFBc0I7SUFDdEIsbUJBQW1CO0FBQ3ZCOztBQUVBOztJQUVJLGdDQUFnQztJQUloQyx3QkFBd0I7SUFDeEIscUJBQXFCO0FBQ3pCOztBQUVBOztJQUVJLGtDQUFrQztJQUdsQywwQkFBMEI7QUFDOUI7O0FBRUE7SUFDSSxzQkFBc0I7SUFDdEIsb0NBQW9DO0lBQ3BDLGtCQUFrQjtJQUNsQixtQkFBbUI7SUFDbkIsbUNBQW1DO0lBQ25DLGlDQUFpQztJQUNqQyxnQ0FBZ0M7SUFDaEMsY0FBYztJQUNkLDRCQUE0QjtJQUM1QixrQkFBa0I7QUFDdEI7O0FBRUE7SUFDSSxrQkFBa0I7SUFDbEIsZ0NBQWdDO0lBQ2hDLDRCQUE0QjtJQUM1QixVQUFVO0lBQ1YsbUJBQW1CO0FBQ3ZCOztBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLE1BQU07SUFDTixPQUFPO0lBQ1AsaUJBQWlCO0lBQ2pCLG1DQUFtQztJQUluQywyQkFBMkI7SUFHM0IsK0NBQStDO0FBQ25EOztBQUVBOztJQUVJLG1DQUFtQztJQUduQywyQkFBMkI7SUFDM0Isc0JBQXNCO0lBQ3RCLG9DQUFvQztJQUNwQyxtQkFBbUI7SUFDbkIsaUNBQWlDO0lBQ2pDLGlCQUFpQjtJQUNqQiwrQkFBK0I7SUFDL0Isa0JBQWtCO0lBQ2xCLGdDQUFnQztJQUNoQyxjQUFjO0lBQ2QsNEJBQTRCO0FBQ2hDOztBQUVBOztJQUVJLGlCQUFpQjtBQUNyQjs7QUFFQTtJQUNJLGVBQWU7SUFDZix5QkFBeUI7QUFDN0I7O0FBRUE7O0lBRUkseUJBQXlCO0FBQzdCOztBQUVBO0lBQ0ksWUFBWTtJQUNaLGFBQWE7SUFDYixrQkFBa0I7QUFDdEI7O0FBRUE7SUFDSSxhQUFhO0FBQ2pCOztBQUVBO0lBQ0ksaUJBQWlCO0FBQ3JCIiwiZmlsZSI6InNyYy9hcHAvdmlldy9jb21wcmFzL2NvbXByYXMuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5yb3cge1xuICAgIHBhZGRpbmc6IDJlbTtcbn1cblxuLmJ0bi1wcmltYXJ5OmhvdmVyLFxuLmJ0bi1wcmltYXJ5OmZvY3VzIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMTA4ZDZmO1xuICAgIGJvcmRlci1jb2xvcjogIzEwOGQ2ZjtcbiAgICBib3gtc2hhZG93OiBub25lO1xuICAgIG91dGxpbmU6IG5vbmU7XG59XG5cbi5idG4tcHJpbWFyeSB7XG4gICAgY29sb3I6ICNmZmY7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzAwN2I1ZTtcbiAgICBib3JkZXItY29sb3I6ICMwMDdiNWU7XG59XG5cbnNlY3Rpb24ge1xuICAgIHBhZGRpbmc6IDYwcHggMDtcbn1cblxuc2VjdGlvbiAuc2VjdGlvbi10aXRsZSB7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIGNvbG9yOiByZ2IoNzMsIDcwLCA3MCk7XG4gICAgbWFyZ2luLWJvdHRvbTogNTBweDtcbn1cblxuLmltYWdlLWZsaXA6aG92ZXIgLmJhY2tzaWRlLFxuLmltYWdlLWZsaXAuaG92ZXIgLmJhY2tzaWRlIHtcbiAgICAtd2Via2l0LXRyYW5zZm9ybTogcm90YXRlWSgwZGVnKTtcbiAgICAtbW96LXRyYW5zZm9ybTogcm90YXRlWSgwZGVnKTtcbiAgICAtby10cmFuc2Zvcm06IHJvdGF0ZVkoMGRlZyk7XG4gICAgLW1zLXRyYW5zZm9ybTogcm90YXRlWSgwZGVnKTtcbiAgICB0cmFuc2Zvcm06IHJvdGF0ZVkoMGRlZyk7XG4gICAgYm9yZGVyLXJhZGl1czogLjI1cmVtO1xufVxuXG4uaW1hZ2UtZmxpcDpob3ZlciAuZnJvbnRzaWRlLFxuLmltYWdlLWZsaXAuaG92ZXIgLmZyb250c2lkZSB7XG4gICAgLXdlYmtpdC10cmFuc2Zvcm06IHJvdGF0ZVkoMTgwZGVnKTtcbiAgICAtbW96LXRyYW5zZm9ybTogcm90YXRlWSgxODBkZWcpO1xuICAgIC1vLXRyYW5zZm9ybTogcm90YXRlWSgxODBkZWcpO1xuICAgIHRyYW5zZm9ybTogcm90YXRlWSgxODBkZWcpO1xufVxuXG4ubWFpbmZsaXAge1xuICAgIC13ZWJraXQtdHJhbnNpdGlvbjogMXM7XG4gICAgLXdlYmtpdC10cmFuc2Zvcm0tc3R5bGU6IHByZXNlcnZlLTNkO1xuICAgIC1tcy10cmFuc2l0aW9uOiAxcztcbiAgICAtbW96LXRyYW5zaXRpb246IDFzO1xuICAgIC1tb3otdHJhbnNmb3JtOiBwZXJzcGVjdGl2ZSgxMDAwcHgpO1xuICAgIC1tb3otdHJhbnNmb3JtLXN0eWxlOiBwcmVzZXJ2ZS0zZDtcbiAgICAtbXMtdHJhbnNmb3JtLXN0eWxlOiBwcmVzZXJ2ZS0zZDtcbiAgICB0cmFuc2l0aW9uOiAxcztcbiAgICB0cmFuc2Zvcm0tc3R5bGU6IHByZXNlcnZlLTNkO1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbn1cblxuLmZyb250c2lkZSB7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIC13ZWJraXQtdHJhbnNmb3JtOiByb3RhdGVZKDBkZWcpO1xuICAgIC1tcy10cmFuc2Zvcm06IHJvdGF0ZVkoMGRlZyk7XG4gICAgei1pbmRleDogMjtcbiAgICBtYXJnaW4tYm90dG9tOiAzMHB4O1xufVxuXG4uYmFja3NpZGUge1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB0b3A6IDA7XG4gICAgbGVmdDogMDtcbiAgICBiYWNrZ3JvdW5kOiB3aGl0ZTtcbiAgICAtd2Via2l0LXRyYW5zZm9ybTogcm90YXRlWSgtMTgwZGVnKTtcbiAgICAtbW96LXRyYW5zZm9ybTogcm90YXRlWSgtMTgwZGVnKTtcbiAgICAtby10cmFuc2Zvcm06IHJvdGF0ZVkoLTE4MGRlZyk7XG4gICAgLW1zLXRyYW5zZm9ybTogcm90YXRlWSgtMTgwZGVnKTtcbiAgICB0cmFuc2Zvcm06IHJvdGF0ZVkoLTE4MGRlZyk7XG4gICAgLXdlYmtpdC1ib3gtc2hhZG93OiA1cHggN3B4IDlweCAtNHB4IHJnYigxNTgsIDE1OCwgMTU4KTtcbiAgICAtbW96LWJveC1zaGFkb3c6IDVweCA3cHggOXB4IC00cHggcmdiKDE1OCwgMTU4LCAxNTgpO1xuICAgIGJveC1zaGFkb3c6IDVweCA3cHggOXB4IC00cHggcmdiKDE1OCwgMTU4LCAxNTgpO1xufVxuXG4uZnJvbnRzaWRlLFxuLmJhY2tzaWRlIHtcbiAgICAtd2Via2l0LWJhY2tmYWNlLXZpc2liaWxpdHk6IGhpZGRlbjtcbiAgICAtbW96LWJhY2tmYWNlLXZpc2liaWxpdHk6IGhpZGRlbjtcbiAgICAtbXMtYmFja2ZhY2UtdmlzaWJpbGl0eTogaGlkZGVuO1xuICAgIGJhY2tmYWNlLXZpc2liaWxpdHk6IGhpZGRlbjtcbiAgICAtd2Via2l0LXRyYW5zaXRpb246IDFzO1xuICAgIC13ZWJraXQtdHJhbnNmb3JtLXN0eWxlOiBwcmVzZXJ2ZS0zZDtcbiAgICAtbW96LXRyYW5zaXRpb246IDFzO1xuICAgIC1tb3otdHJhbnNmb3JtLXN0eWxlOiBwcmVzZXJ2ZS0zZDtcbiAgICAtby10cmFuc2l0aW9uOiAxcztcbiAgICAtby10cmFuc2Zvcm0tc3R5bGU6IHByZXNlcnZlLTNkO1xuICAgIC1tcy10cmFuc2l0aW9uOiAxcztcbiAgICAtbXMtdHJhbnNmb3JtLXN0eWxlOiBwcmVzZXJ2ZS0zZDtcbiAgICB0cmFuc2l0aW9uOiAxcztcbiAgICB0cmFuc2Zvcm0tc3R5bGU6IHByZXNlcnZlLTNkO1xufVxuXG4uZnJvbnRzaWRlIC5jYXJkLFxuLmJhY2tzaWRlIC5jYXJkIHtcbiAgICBtaW4taGVpZ2h0OiAzMTJweDtcbn1cblxuLmJhY2tzaWRlIC5jYXJkIGEge1xuICAgIGZvbnQtc2l6ZTogMThweDtcbiAgICBjb2xvcjogIzAwN2I1ZSAhaW1wb3J0YW50O1xufVxuXG4uZnJvbnRzaWRlIC5jYXJkIC5jYXJkLXRpdGxlLFxuLmJhY2tzaWRlIC5jYXJkIC5jYXJkLXRpdGxlIHtcbiAgICBjb2xvcjogIzAwN2I1ZSAhaW1wb3J0YW50O1xufVxuXG4uZnJvbnRzaWRlIC5jYXJkIC5jYXJkLWJvZHkgaW1nIHtcbiAgICB3aWR0aDogMTIwcHg7XG4gICAgaGVpZ2h0OiAxMjBweDtcbiAgICBib3JkZXItcmFkaXVzOiA1MCU7XG59XG5cbi5oaWRkZW4ge1xuICAgIGRpc3BsYXk6IG5vbmU7XG59XG5cbi5idG4tY2FuY2VsYXIge1xuICAgIG1hcmdpbi1sZWZ0OiAxMHB4O1xufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/view/compras/compras.component.html":
+/*!*****************************************************!*\
+  !*** ./src/app/view/compras/compras.component.html ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div *ngIf=\"auth.User | async; then authenticated;\"></div>\n<ng-template #authenticated>\n    <div *ngIf=\"auth.User | async as User\">\n        <div *ngIf=\"User.role == 'customer'\">\n            <app-navbar-user></app-navbar-user>\n        </div>\n        <div *ngIf=\"User.role == 'admin'\">\n            <app-navbar-admin></app-navbar-admin>\n        </div>\n        <div *ngIf=\"User.role == 'customer'\">\n            <section id=\"team\" class=\"pb-3\">\n                <div class=\"container\">\n                    <h5 class=\"section-title h1 text-center\">Historial de compra</h5>\n                    <table class=\"table table-striped text-center\">\n                        <thead>\n                            <tr>\n                                <th class=\"text-center\" scope=\"col\">#</th>\n                                <th class=\"text-center\" scope=\"col\">Fecha</th>\n                                <th class=\"text-center\" scope=\"col\">Monto</th>\n                                <th class=\"text-center\" scope=\"col\"># Productos</th>\n                                <th class=\"text-center\" scope=\"col\">Ver Productos</th>\n                            </tr>\n                        </thead>\n                        <tbody>\n                            <tr *ngFor=\"let compra of compras; let i = index\">\n                                <th class=\"text-center\" scope=\"row\">{{i+1}}</th>\n                                <td class=\"text-center\">{{compra.created_at}}</td>\n                                <td class=\"text-center\">{{compra.amount}}</td>\n                                <td class=\"text-center\">{{compra.product.length + 1}}</td>\n                                <td class=\"text-center\">\n                                    <button class=\"btn btn-primary\" (click)=\"DetalleProductos(productos)\" type=\"submit\">Productos\n                                    </button>\n                                    <ng-template #productos>\n                                        <div class=\"modal-header\">\n                                            <h4 class=\"modal-title pull-left\">Productos</h4>\n                                            <button type=\"button\" class=\"close pull-right\" aria-label=\"Close\" (click)=\"modalRef.hide()\">\n                                                <span aria-hidden=\"true\">&times;</span>\n                                            </button>\n                                        </div>\n                                        <div class=\"modal-body\">\n                                            <b>ID de la compra</b> {{compra.id}}\n                                            <hr>\n                                            <strong>Productos Pedidos:</strong>\n                                            <br><br>\n                                            <div *ngFor=\"let product of compra.product; let i index\">\n                                                <b>Nombre:</b> {{product.name}}\n                                                <br>\n                                                <b>Precio:</b> {{product.price}}\n                                                <br>\n                                                <b>Cantidad:</b> {{product.qty}}\n                                                <div *ngIf=\"product.variacion == null\">\n                                                    <b>No tiene variacion</b>\n                                                </div>\n                                                <div *ngIf=\"product.variacion != null\">\n                                                    <b>Variacion:</b> {{product.variacion}}\n                                                </div>\n                                                <br>\n                                                <button class=\"btn btn-dark\" (click)=\"Modalcomentar(comentar, product)\" type=\"submit\">Comentar\n                                                </button>\n                                                <ng-template #comentar>\n                                                    <div class=\"modal-header\">\n                                                        <h4 class=\"modal-title pull-left\">Comentario</h4>\n                                                        <button type=\"button\" class=\"close pull-right\" aria-label=\"Close\" (click)=\"ComentarmodalRef.hide()\">\n                                                                    <span aria-hidden=\"true\">&times;</span>\n                                                                </button>\n                                                    </div>\n                                                    <div class=\"modal-body\">\n                                                        <p>Que opina sobre el producto: {{productoComentar.name}}</p>\n                                                        <!-- Cuerpo de comentarios -->\n                                                        <form #f=\"ngForm\" class=\"form\" id=\"ProductForm\">\n                                                            <div class=\"form-group\">\n                                                                <textarea [(ngModel)]=\"comentario\" #name=\"ngModel\" ngModel type=\"text\" placeholder=\"Deje su comentario aca\" class=\"form-control\" name=\"comentario\" id=\"comentario\" rows=\"5\">\n            \n                                                                </textarea>\n                                                            </div>\n                                                        </form>\n                                                        <p>Por favor deje una calificacion</p>\n                                                        <rating [(ngModel)]=\"rate\" [max]=\"max\" style=\"color: #dbb716;font-size: 20px;\"></rating>\n                                                        <br>\n                                                        <hr>\n                                                        <div class=\"text-center\">\n                                                            <button class=\"btn btn-primary\" (click)=\"agregarComentario()\" type=\"submit\">Agregar Comentario\n                                                                    </button>\n                                                        </div>\n                                                    </div>\n                                                </ng-template>\n                                                <hr>\n                                            </div>\n                                        </div>\n                                    </ng-template>\n                                </td>\n                            </tr>\n                        </tbody>\n                    </table>\n                </div>\n            </section>\n        </div>\n        <div *ngIf=\"User.role == 'admin'\">\n            <section id=\"team\" class=\"pb-3\">\n                <div class=\"container\">\n                    <h5 class=\"section-title h1 text-center\">Historial de compra</h5>\n                    <p class=\"section-title h1 text-center\">Filtros</p>\n                    <div class=\"form-check\">\n                        <input [checked]=\"checkAsc\" (change)=\"CheckedAsc($event)\" class=\"form-check-input\" type=\"radio\" name=\"exampleRadios1\" id=\"exampleRadios1\">\n                        <label class=\"form-check-label\" for=\"exampleRadios1\">\n                              Precio ascendiente\n                            </label>\n                    </div>\n                    <div class=\"form-check\">\n                        <input [checked]=\"checkDes\" (change)=\"CheckedDesc($event)\" class=\"form-check-input\" type=\"radio\" name=\"exampleRadios2\" id=\"exampleRadios2\">\n                        <label class=\"form-check-label\" for=\"exampleRadios2\">\n                              Precio descendiente\n                            </label>\n                    </div>\n                    <div class=\"form-check\">\n                        <input [checked]=\"checkRgo\" (change)=\"CheckedRgo($event)\" class=\"form-check-input\" type=\"radio\" name=\"exampleRadios3\" id=\"exampleRadios3\">\n                        <label class=\"form-check-label\" for=\"exampleRadios3\">\n                              Rango de monto\n                            </label>\n                    </div>\n                    <div class=\"form-check\">\n                        <input [checked]=\"checkUser\" (change)=\"CheckedUser($event)\" class=\"form-check-input\" type=\"radio\" name=\"exampleRadios4\" id=\"exampleRadios4\">\n                        <label class=\"form-check-label\" for=\"exampleRadios4\">\n                                Compra de un usuario      \n                            </label>\n                    </div>\n                    <div class=\"form-check\">\n                        <input [checked]=\"checkFiltro\" (change)=\"CheckedFiltro($event)\" class=\"form-check-input\" type=\"radio\" name=\"exampleRadios4\" id=\"exampleRadios4\">\n                        <label class=\"form-check-label\" for=\"exampleRadios4\">\n                                    Sin filtro    \n                                </label>\n                    </div>\n                    <br>\n                    <div *ngIf=\"checkRgo == true\">\n                        <form>\n                            <div class=\"form-row\">\n                                <div class=\"form-group col-md-3\">\n                                    <label for=\"inputMin\">Ingrese Valor minimo</label>\n                                    <input [(ngModel)]=\"minPrecio\" type=\"number\" class=\"form-control\" id=\"inputMin\" name=\"inputValorMin\" placeholder=\"Valor Minimo\">\n                                </div>\n                                <div class=\"col\">\n                                    <div class=\"form-group col-md-3\">\n                                        <label for=\"inputMin\">Ingrese Valor maximo</label>\n                                        <input [(ngModel)]=\"maxPrecio\" type=\"number\" class=\"form-control\" id=\"inputMin\" name=\"inputValorMax\" placeholder=\"Valor Maximo\">\n                                    </div>\n                                </div>\n                            </div>\n                        </form>\n                        <br>\n                    </div>\n                    <div *ngIf=\"checkUser == true\">\n                        <form>\n                            <div class=\"form-row\">\n                                <div class=\"form-group col-md-3\">\n                                    <label for=\"inputUid\">Ingrese el uid</label>\n                                    <input [(ngModel)]=\"uid\" type=\"text\" class=\"form-control\" name=\"inputUid\" id=\"inputUid\" placeholder=\"uid\">\n                                </div>\n                            </div>\n                        </form>\n                        <br>\n                    </div>\n                    <button class=\"btn btn-primary\" (click)=\"filtro()\" type=\"submit\">Aplicar Filtro\n                        </button>\n                    <br>\n                    <hr>\n                    <table class=\"table table-striped text-center\">\n                        <thead>\n                            <tr>\n                                <th class=\"text-center\" scope=\"col\">#</th>\n                                <th class=\"text-center\" scope=\"col\">id usuario</th>\n                                <th class=\"text-center\" scope=\"col\">Fecha</th>\n                                <th class=\"text-center\" scope=\"col\">Monto</th>\n                                <th class=\"text-center\" scope=\"col\"># Productos</th>\n                                <th class=\"text-center\" scope=\"col\">Ver Productos</th>\n                            </tr>\n                        </thead>\n                        <tbody>\n                            <tr *ngFor=\"let compra of compras; let i = index\">\n                                <th class=\"text-center\" scope=\"row\">{{i+1}}</th>\n                                <th class=\"text-center\" scope=\"row\">{{compra.uid}}</th>\n                                <td class=\"text-center\">{{compra.created_at}}</td>\n                                <td class=\"text-center\">{{compra.amount}}</td>\n                                <td class=\"text-center\">{{compra.product.length + 1}}</td>\n                                <td class=\"text-center\">\n                                    <button class=\"btn btn-primary\" (click)=\"DetalleProductos(productos)\" type=\"submit\">Productos\n                                    </button>\n                                    <ng-template #productos>\n                                        <div class=\"modal-header\">\n                                            <h4 class=\"modal-title pull-left\">Productos</h4>\n                                            <button type=\"button\" class=\"close pull-right\" aria-label=\"Close\" (click)=\"modalRef.hide()\">\n                                                <span aria-hidden=\"true\">&times;</span>\n                                            </button>\n                                        </div>\n                                        <div class=\"modal-body\">\n                                            <b>ID de la compra</b> {{compra.id}}\n                                            <hr>\n                                            <strong>Productos Pedidos:</strong>\n                                            <br><br>\n                                            <div *ngFor=\"let product of compra.product; let i index\">\n                                                <b>Nombre:</b> {{product.name}}\n                                                <br>\n                                                <b>Precio:</b> {{product.price}}\n                                                <br>\n                                                <b>Cantidad:</b> {{product.qty}}\n                                                <div *ngIf=\"product.variacion == null\">\n                                                    <b>No tiene variacion</b>\n                                                </div>\n                                                <div *ngIf=\"product.variacion != null\">\n                                                    <b>Variacion:</b> {{product.variacion}}\n                                                </div>\n                                                <br>\n                                                <hr>\n                                            </div>\n                                        </div>\n                                    </ng-template>\n                                </td>\n                            </tr>\n                        </tbody>\n                    </table>\n                </div>\n            </section>\n        </div>\n    </div>\n</ng-template>"
+
+/***/ }),
+
+/***/ "./src/app/view/compras/compras.component.ts":
+/*!***************************************************!*\
+  !*** ./src/app/view/compras/compras.component.ts ***!
+  \***************************************************/
+/*! exports provided: ComprasComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ComprasComponent", function() { return ComprasComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var src_app_auth_auth_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/auth/auth.service */ "./src/app/auth/auth.service.ts");
+/* harmony import */ var ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ngx-bootstrap/modal */ "./node_modules/ngx-bootstrap/modal/fesm5/ngx-bootstrap-modal.js");
+/* harmony import */ var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/fire/firestore */ "./node_modules/@angular/fire/firestore/index.js");
+/* harmony import */ var util__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! util */ "./node_modules/util/util.js");
+/* harmony import */ var util__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(util__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var src_app_servicios_producto_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/servicios/producto.service */ "./src/app/servicios/producto.service.ts");
+/* harmony import */ var src_app_servicios_compra_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/app/servicios/compra.service */ "./src/app/servicios/compra.service.ts");
+
+
+
+
+
+
+
+
+var ComprasComponent = /** @class */ (function () {
+    function ComprasComponent(productoService, comprasService, auth, modalService, afs) {
+        this.productoService = productoService;
+        this.comprasService = comprasService;
+        this.auth = auth;
+        this.modalService = modalService;
+        this.afs = afs;
+        this.max = 5;
+        this.rate = 0;
+        this.isReadonly = false;
+        this.checkDes = false;
+        this.checkAsc = false;
+        this.checkRgo = false;
+        this.checkUser = false;
+        this.checkFiltro = false;
+    }
+    ComprasComponent.prototype.ngOnInit = function () {
+        this.getCompras();
+    };
+    ComprasComponent.prototype.getCompras = function () {
+        var _this = this;
+        this.auth.User.subscribe(function (user) {
+            _this.usuario = user;
+            if (user) {
+                if (user.role == 'customer') {
+                    _this.comprasService.obtenerCompras(user.uid).subscribe(function (compras) { return _this.compras = compras; });
+                }
+                else if (user.role == 'admin') {
+                    _this.comprasService.obtenerCompras().subscribe(function (compras) { return _this.compras = compras; });
+                }
+            }
+        });
+    };
+    ComprasComponent.prototype.DetalleProductos = function (template) {
+        this.modalRef = this.modalService.show(template);
+        console.log(this.compras);
+    };
+    ComprasComponent.prototype.Modalcomentar = function (template, producto) {
+        this.productoComentar = producto;
+        this.modalRef.hide();
+        this.ComentarmodalRef = this.modalService.show(template);
+    };
+    ComprasComponent.prototype.agregarComentario = function () {
+        if (Object(util__WEBPACK_IMPORTED_MODULE_5__["isUndefined"])(this.comentario)) {
+            alert("No escribio un comentario");
+            this.comentario = undefined;
+            this.rate = 0;
+            return;
+        }
+        if (this.rate == 0) {
+            alert("No dejo una calificacion");
+            this.comentario = undefined;
+            this.rate = 0;
+            return;
+        }
+        if (this.productoComentar.variacion == null) {
+            this.comentario = "Comentario para" + " " + this.productoComentar.name + " " + "sin variacion: " + this.comentario;
+        }
+        else {
+            this.comentario = "Comentario para" + " " + this.productoComentar.name + " " + this.productoComentar.variacion + ":" + " " + this.comentario;
+        }
+        this.productoService.agregarComentario(this.productoComentar, this.comentario, this.rate, this.usuario);
+        this.comentario = undefined;
+        this.rate = 0;
+        this.ComentarmodalRef.hide();
+    };
+    ComprasComponent.prototype.CheckedUser = function (event) {
+        this.checkRgo = false;
+        this.checkDes = false;
+        this.checkAsc = false;
+        this.checkUser = true;
+        this.checkFiltro = false;
+    };
+    ComprasComponent.prototype.CheckedAsc = function (event) {
+        this.checkRgo = false;
+        this.checkDes = false;
+        this.checkAsc = true;
+        this.checkUser = false;
+        this.checkFiltro = false;
+    };
+    ComprasComponent.prototype.CheckedDesc = function (event) {
+        this.checkRgo = false;
+        this.checkDes = true;
+        this.checkAsc = false;
+        this.checkUser = false;
+        this.checkFiltro = false;
+    };
+    ComprasComponent.prototype.CheckedRgo = function (event) {
+        this.checkRgo = true;
+        this.checkDes = false;
+        this.checkAsc = false;
+        this.checkUser = false;
+        this.checkFiltro = false;
+    };
+    ComprasComponent.prototype.CheckedFiltro = function (event) {
+        this.checkRgo = false;
+        this.checkDes = false;
+        this.checkAsc = false;
+        this.checkUser = false;
+        this.checkFiltro = true;
+    };
+    ComprasComponent.prototype.filtro = function () {
+        var _this = this;
+        if (this.checkAsc == true) {
+            this.PrecioAsc().subscribe(function (compras) { return _this.compras = compras; });
+            return;
+        }
+        else if (this.checkDes == true) {
+            this.PrecioDesc().subscribe(function (compras) { return _this.compras = compras; });
+            return;
+        }
+        else if (this.checkRgo == true) {
+            if (Object(util__WEBPACK_IMPORTED_MODULE_5__["isNullOrUndefined"])(this.minPrecio)) {
+                alert("Introduzca el precio minimo");
+                return;
+            }
+            else if (Object(util__WEBPACK_IMPORTED_MODULE_5__["isNullOrUndefined"])(this.maxPrecio)) {
+                alert("Introduzca el precio minimo");
+                return;
+            }
+            else {
+                this.PrecioEntre(this.minPrecio, this.maxPrecio).subscribe(function (compras) { return _this.compras = compras; });
+                this.minPrecio = null;
+                this.maxPrecio = null;
+                return;
+            }
+        }
+        else if (this.checkUser == true) {
+            this.FiltroUid(this.uid).subscribe(function (compras) { return _this.compras = compras; });
+            this.uid = null;
+            return;
+        }
+        else if (this.checkFiltro == true) {
+            this.getCompras();
+            return;
+        }
+    };
+    // Filtro Precio ascendiente
+    ComprasComponent.prototype.PrecioAsc = function () {
+        return this.afs.collection('purchases', function (ref) { return ref.orderBy("amount", "asc"); }).valueChanges();
+    };
+    // Filtro precio descendiente
+    ComprasComponent.prototype.PrecioDesc = function () {
+        return this.afs.collection('purchases', function (ref) { return ref.orderBy("amount", "desc"); }).valueChanges();
+    };
+    // Precio entre valores
+    ComprasComponent.prototype.PrecioEntre = function (menor, mayor) {
+        if (menor <= mayor) {
+            return this.afs.collection('purchases', function (ref) { return ref.where("amount", ">=", menor).where("amount", "<=", mayor); }).valueChanges();
+        }
+        else {
+            alert("Error en los valores suminstrados");
+        }
+    };
+    // Filtro para un solo usuario
+    ComprasComponent.prototype.FiltroUid = function (userId) {
+        return this.afs.collection('purchases', function (ref) { return ref.where("uid", "==", userId); }).valueChanges();
+    };
+    ComprasComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-compras',
+            template: __webpack_require__(/*! ./compras.component.html */ "./src/app/view/compras/compras.component.html"),
+            styles: [__webpack_require__(/*! ./compras.component.css */ "./src/app/view/compras/compras.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_servicios_producto_service__WEBPACK_IMPORTED_MODULE_6__["ProductoService"],
+            src_app_servicios_compra_service__WEBPACK_IMPORTED_MODULE_7__["CompraService"],
+            src_app_auth_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"],
+            ngx_bootstrap_modal__WEBPACK_IMPORTED_MODULE_3__["BsModalService"],
+            _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_4__["AngularFirestore"]])
+    ], ComprasComponent);
+    return ComprasComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/view/electrodomestico/electrodomestico.component.css":
 /*!**********************************************************************!*\
   !*** ./src/app/view/electrodomestico/electrodomestico.component.css ***!
@@ -3724,7 +4689,7 @@ module.exports = ".row {\n    padding: 2em;\n}\n\n.btn-primary:hover,\n.btn-prim
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Determina si el usuario esta autenticado o es un invitado-->\n<div *ngIf=\"auth.User | async; then authenticated; else noauthenticated\"></div>\n\n<!-- Se usa el #authenticated para renderisar el template dependiendo de la respuesta del servicio auth de firestore -->\n<!-- Esto con tal de poder hacer uso de una navegación basada en roles-->\n\n\n<!--Template para usuario autenticadoe-->\n<ng-template #authenticated>\n    <div *ngIf=\"auth.User | async as User\">\n        <div *ngIf=\"User.role === 'customer'\">\n            <app-navbar-user></app-navbar-user>\n        </div>\n        <div *ngIf=\"User.role === 'admin'\">\n            <app-navbar-admin></app-navbar-admin>\n        </div>\n        <section id=\"team\" class=\"pb-5\">\n            <div class=\"container\">\n                <h5 class=\"section-title h1\">Bienvenido a la sección de electrodomesticos</h5>\n                <div class=\"col text-right\">\n\n                    <form class=\"form-inline my-2 my-lg-0\">\n                        <input class=\"form-control mr-sm-2\" [(ngModel)]=\"searchterm\" (ngModelChange)=\"search($event)\" type=\"search\" placeholder=\"Búsqueda\" aria-label=\"Search\" name=\"searchInput\">\n                        <button class=\"btn btn-dark my-2 my-sm-0\" type=\"submit\">buscar</button>\n                    </form>\n                </div>\n                <br>\n                <div class=\"row\">\n                    <div class=\"col-xs-12 col-sm-6 col-md-4\" *ngFor=\"let producto of productos\">\n                        <div class=\"image-flip\" ontouchstart=\"this.classList.toggle('hover');\">\n                            <div class=\"mainflip\">\n                                <div class=\"frontside\">\n                                    <div class=\"card\">\n                                        <div class=\"card-body text-center\">\n                                            <p><img class=\" img-fluid\" src={{producto.photoUrl}} alt=\"card image\"></p>\n                                            <h4 class=\"card-title\">{{producto.name}}</h4>\n                                            <p class=\"card-text\">{{producto.department}}</p>\n                                            <p class=\"card-text\">Precio: ${{producto.price}}</p>\n\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"backside\">\n                                    <div class=\"card\">\n                                        <div class=\"card-body text-center mt-4\">\n                                            <h4 class=\"card-title\">{{producto.name}}</h4>\n                                            <p class=\"card-text\">{{producto.description}}</p>\n                                            <div class=\"form-group\">\n\n                                                <div *ngIf=\"producto.variaciones.length >0\">\n                                                    <label for=\"exampleFormControlSelect1\">Variacion</label>\n                                                    <select [(ngModel)]=\"variacionElectro\" class=\"form-control\" id=\"exampleFormControlSelect1\">\n                                                        <option *ngFor=\"let Variacion of producto.variaciones\">{{Variacion.value}}</option>\n                                                      </select>\n                                                </div>\n                                            </div>\n                                            <ul class=\"list-inline\">\n                                                <li class=\"list-inline-item align-content-center\">\n                                                    <button class=\"btn btn-primary btn-sm\">Comentarios</button>\n                                                </li>\n                                            </ul>\n                                        </div>\n                                        <div class=\"card-footer\">\n                                            <ul class=\"list-inline\">\n                                                <li class=\"list-inline-item\">\n                                                    <button (click)=\"anadirCarrito(producto)\" class=\"btn btn-primary btn-sm\">Carrito</button>\n                                                </li>\n                                                <li class=\"list-inline-item align-self-end\">\n                                                    <button (click)=\"anadirWish(producto)\" class=\"btn btn-primary btn-sm\">Lista de deseos</button>\n                                                </li>\n                                            </ul>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </section>\n    </div>\n</ng-template>\n\n<!--Template para usuario no autenticadoe-->\n<ng-template #noauthenticated>\n    <app-navbar></app-navbar>\n    <section id=\"team\" class=\"pb-5\">\n        <div class=\"container\">\n            <h5 class=\"section-title h1\">Bienvenido a la sección de electrodomesticos</h5>\n            <div class=\"col text-right\">\n\n                <form class=\"form-inline my-2 my-lg-0\">\n                    <input class=\"form-control mr-sm-2\" [(ngModel)]=\"searchterm\" (ngModelChange)=\"search($event)\" type=\"search\" placeholder=\"Búsqueda\" aria-label=\"Search\" name=\"searchInput\">\n                    <button class=\"btn btn-dark my-2 my-sm-0\" type=\"submit\">buscar</button>\n                </form>\n            </div>\n            <br>\n            <div class=\"row\">\n                <div class=\"col-xs-12 col-sm-6 col-md-4\" *ngFor=\"let producto of productos\">\n                    <div class=\"image-flip\" ontouchstart=\"this.classList.toggle('hover');\">\n                        <div class=\"mainflip\">\n                            <div class=\"frontside\">\n                                <div class=\"card\">\n                                    <div class=\"card-body text-center\">\n                                        <p><img class=\" img-fluid\" src={{producto.photoUrl}} alt=\"card image\"></p>\n                                        <h4 class=\"card-title\">{{producto.name}}</h4>\n                                        <p class=\"card-text\">{{producto.department}}</p>\n                                        <p class=\"card-text\">Precio: ${{producto.price}}</p>\n                                    </div>\n                                </div>\n                            </div>\n                            <div class=\"backside\">\n                                <div class=\"card\">\n                                    <div class=\"card-body text-center mt-4\">\n                                        <h4 class=\"card-title\">{{producto.name}}</h4>\n                                        <p class=\"card-text\">{{producto.description}}</p>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </section>\n</ng-template>"
+module.exports = "<!-- Determina si el usuario esta autenticado o es un invitado-->\n<div *ngIf=\"auth.User | async; then authenticated; else noauthenticated\"></div>\n\n<!-- Se usa el #authenticated para renderisar el template dependiendo de la respuesta del servicio auth de firestore -->\n<!-- Esto con tal de poder hacer uso de una navegación basada en roles-->\n\n\n<!--Template para usuario autenticadoe-->\n<ng-template #authenticated>\n    <div *ngIf=\"auth.User | async as User\">\n        <div *ngIf=\"User.role === 'customer'\">\n            <app-navbar-user></app-navbar-user>\n        </div>\n        <div *ngIf=\"User.role === 'admin'\">\n            <app-navbar-admin></app-navbar-admin>\n        </div>\n        <section id=\"team\" class=\"pb-5\">\n            <div class=\"container\">\n                <h5 class=\"section-title h1\">Bienvenido a la sección de electrodomesticos</h5>\n                <div class=\"col text-right\">\n\n                    <form class=\"form-inline my-2 my-lg-0\">\n                        <input class=\"form-control mr-sm-2\" [(ngModel)]=\"searchterm\" (ngModelChange)=\"search($event)\" type=\"search\" placeholder=\"Búsqueda\" aria-label=\"Search\" name=\"searchInput\">\n                        <button class=\"btn btn-dark my-2 my-sm-0\" type=\"submit\">buscar</button>\n                    </form>\n                </div>\n                <p class=\"section-title h1 text-center\">Filtros</p>\n                <div class=\"form-check\">\n                    <input [checked]=\"PrecioAsc\" (change)=\"CheckedPrecioAsc()\" class=\"form-check-input\" type=\"radio\" name=\"exampleRadios1\" id=\"exampleRadios1\">\n                    <label class=\"form-check-label\" for=\"exampleRadios1\">\n                              Precio ascendiente\n                            </label>\n                </div>\n                <div class=\"form-check\">\n                    <input [checked]=\"PrecioDesc\" (change)=\"CheckedPrecioDesc()\" class=\"form-check-input\" type=\"radio\" name=\"exampleRadios2\" id=\"exampleRadios2\">\n                    <label class=\"form-check-label\" for=\"exampleRadios2\">\n                              Precio descendiente\n                            </label>\n                </div>\n                <div class=\"form-check\">\n                    <input [checked]=\"PrecioRgo\" (change)=\"CheckedRgo()\" class=\"form-check-input\" type=\"radio\" name=\"exampleRadios3\" id=\"exampleRadios3\">\n                    <label class=\"form-check-label\" for=\"exampleRadios3\">\n                              Rango de monto\n                            </label>\n                </div>\n                <div class=\"form-check\">\n                    <input [checked]=\"NombreAsc\" (change)=\"CheckedNombreAsc()\" class=\"form-check-input\" type=\"radio\" name=\"exampleRadios4\" id=\"exampleRadios4\">\n                    <label class=\"form-check-label\" for=\"exampleRadios4\">\n                                Nombre Ascendiente  \n                            </label>\n                </div>\n                <div class=\"form-check\">\n                    <input [checked]=\"NombreDesc\" (change)=\"CheckedNombreDesc()\" class=\"form-check-input\" type=\"radio\" name=\"exampleRadios5\" id=\"exampleRadios5\">\n                    <label class=\"form-check-label\" for=\"exampleRadios5\">\n                                    Nombre Descendiente   \n                                </label>\n                </div>\n                <br>\n                <div *ngIf=\"PrecioRgo == true\">\n                    <form>\n                        <div class=\"form-row\">\n                            <div class=\"form-group col-md-3\">\n                                <label for=\"inputMin\">Ingrese Valor minimo</label>\n                                <input [(ngModel)]=\"minPrecio\" type=\"number\" class=\"form-control\" id=\"inputMin\" name=\"inputValorMin\" placeholder=\"Valor Minimo\">\n                            </div>\n                            <div class=\"col\">\n                                <div class=\"form-group col-md-3\">\n                                    <label for=\"inputMin\">Ingrese Valor maximo</label>\n                                    <input [(ngModel)]=\"maxPrecio\" type=\"number\" class=\"form-control\" id=\"inputMin\" name=\"inputValorMax\" placeholder=\"Valor Maximo\">\n                                </div>\n                            </div>\n                        </div>\n                    </form>\n                    <br>\n                </div>\n                <div class=\"btn-group\" role=\"group\" aria-label=\"Basic example\">\n                    <button (click)=\"filtro()\" type=\"button\" class=\"btn btn-primary\">Aplicar Filtro</button>\n                    <button (click)=\"Quitarfiltro()\" type=\"button\" class=\"btn btn-primary\">Quitar Filtro</button>\n                </div>\n                <br>\n                <hr>\n                <br>\n                <br>\n                <div class=\"row\">\n                    <div class=\"col-xs-12 col-sm-6 col-md-4\" *ngFor=\"let producto of productos\">\n                        <div class=\"image-flip\" ontouchstart=\"this.classList.toggle('hover');\">\n                            <div class=\"mainflip\">\n                                <div class=\"frontside\">\n                                    <div class=\"card\">\n                                        <div class=\"card-body text-center\">\n                                            <p><img class=\" img-fluid\" src={{producto.photoUrl}} alt=\"card image\"></p>\n                                            <h4 class=\"card-title\">{{producto.name}}</h4>\n                                            <p class=\"card-text\">{{producto.department}}</p>\n                                            <p class=\"card-text\">Precio: ${{producto.price}}</p>\n\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"backside\">\n                                    <div class=\"card\">\n                                        <div class=\"card-body text-center mt-4\">\n                                            <h4 class=\"card-title\">{{producto.name}}</h4>\n                                            <p class=\"card-text\">{{producto.description}}</p>\n                                            <div class=\"form-group\">\n\n                                                <div *ngIf=\"producto.variaciones.length >0\">\n                                                    <label for=\"exampleFormControlSelect1\">Variacion</label>\n                                                    <select [(ngModel)]=\"variacionElectro\" class=\"form-control\" id=\"exampleFormControlSelect1\">\n                                                        <option *ngFor=\"let Variacion of producto.variaciones\">{{Variacion.value}}</option>\n                                                      </select>\n                                                </div>\n                                            </div>\n                                            <ul class=\"list-inline\">\n                                                <li class=\"list-inline-item align-content-center\">\n                                                    <button (click)=\"MostrarComentarios(comentario, producto)\" class=\"btn btn-primary btn-sm\">Comentarios</button>\n                                                </li>\n                                            </ul>\n                                        </div>\n                                        <div class=\"card-footer\">\n                                            <ul class=\"list-inline\">\n                                                <li class=\"list-inline-item\">\n                                                    <button (click)=\"anadirCarrito(producto)\" class=\"btn btn-primary btn-sm\">Carrito</button>\n                                                </li>\n                                                <li class=\"list-inline-item align-self-end\">\n                                                    <button (click)=\"anadirWish(producto)\" class=\"btn btn-primary btn-sm\">Lista de deseos</button>\n                                                </li>\n                                            </ul>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </section>\n    </div>\n</ng-template>\n\n<!--Template para usuario no autenticadoe-->\n<ng-template #noauthenticated>\n    <app-navbar></app-navbar>\n    <section id=\"team\" class=\"pb-5\">\n        <div class=\"container\">\n            <h5 class=\"section-title h1\">Bienvenido a la sección de electrodomesticos</h5>\n            <div class=\"col text-right\">\n\n                <form class=\"form-inline my-2 my-lg-0\">\n                    <input class=\"form-control mr-sm-2\" [(ngModel)]=\"searchterm\" (ngModelChange)=\"search($event)\" type=\"search\" placeholder=\"Búsqueda\" aria-label=\"Search\" name=\"searchInput\">\n                    <button class=\"btn btn-dark my-2 my-sm-0\" type=\"submit\">buscar</button>\n                </form>\n            </div>\n            <br>\n            <div class=\"row\">\n                <div class=\"col-xs-12 col-sm-6 col-md-4\" *ngFor=\"let producto of productos\">\n                    <div class=\"image-flip\" ontouchstart=\"this.classList.toggle('hover');\">\n                        <div class=\"mainflip\">\n                            <div class=\"frontside\">\n                                <div class=\"card\">\n                                    <div class=\"card-body text-center\">\n                                        <p><img class=\" img-fluid\" src={{producto.photoUrl}} alt=\"card image\"></p>\n                                        <h4 class=\"card-title\">{{producto.name}}</h4>\n                                        <p class=\"card-text\">{{producto.department}}</p>\n                                        <p class=\"card-text\">Precio: ${{producto.price}}</p>\n                                    </div>\n                                </div>\n                            </div>\n                            <div class=\"backside\">\n                                <div class=\"card\">\n                                    <div class=\"card-body text-center mt-4\">\n                                        <h4 class=\"card-title\">{{producto.name}}</h4>\n                                        <p class=\"card-text\">{{producto.description}}</p>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </section>\n</ng-template>\n\n<ng-template #comentario>\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-12 mb-4\">\n                <h4 data-type=\"header\" class=\"d-flex justify-content-between align-items-center mb-3\">\n                    <span data-highlightable=\"1\" class=\"text-muted gjs-comp-selected\">Comentarios</span>\n                    <span data-highlightable=\"1\" class=\"badge badge-info badge-pill\">{{Productocomentarios.length}}</span>\n                </h4>\n                <ul class=\"list-group mb-3\">\n                    <li *ngFor=\"let comentario of Productocomentarios; let i = index\" class=\"list-group-item d-flex justify-content-between lh-condensed\">\n                        <div>\n                            <h6 data-type=\"header\" class=\"my-0\">{{comentario.nombre}}\n                            </h6>\n                            <small class=\"text-muted\">{{comentario.comentario}}</small>\n                        </div>\n                        <!-- <span class=\"text-muted\">Costo Unitario: {{comentario.calificacion}}</span> -->\n                        <span class=\"text-muted\"><rating [(ngModel)]=\"rate[i]\" [readonly]=\"true\" [max]=\"5\" style=\"color: #dbb716;font-size: 20px;\"></rating></span>\n                    </li>\n                </ul>\n            </div>\n        </div>\n    </div>\n</ng-template>"
 
 /***/ }),
 
@@ -3746,6 +4711,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/fire/firestore */ "./node_modules/@angular/fire/firestore/index.js");
 /* harmony import */ var src_app_servicios_carrito_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/servicios/carrito.service */ "./src/app/servicios/carrito.service.ts");
 /* harmony import */ var src_app_servicios_wishlist_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/app/servicios/wishlist.service */ "./src/app/servicios/wishlist.service.ts");
+/* harmony import */ var util__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! util */ "./node_modules/util/util.js");
+/* harmony import */ var util__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(util__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var ngx_bootstrap__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ngx-bootstrap */ "./node_modules/ngx-bootstrap/esm5/ngx-bootstrap.js");
+
+
 
 
 
@@ -3755,16 +4725,24 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var ElectrodomesticoComponent = /** @class */ (function () {
-    function ElectrodomesticoComponent(auth, productoService, afs, carritoService, wishlistService) {
+    function ElectrodomesticoComponent(auth, productoService, afs, carritoService, wishlistService, ModalService) {
         this.auth = auth;
         this.productoService = productoService;
         this.afs = afs;
         this.carritoService = carritoService;
         this.wishlistService = wishlistService;
+        this.ModalService = ModalService;
         this.startAt = new rxjs__WEBPACK_IMPORTED_MODULE_3__["Subject"]();
         this.endAt = new rxjs__WEBPACK_IMPORTED_MODULE_3__["Subject"]();
         this.startObs = this.startAt.asObservable();
         this.endObs = this.endAt.asObservable();
+        // check para el filtro
+        this.PrecioAsc = false;
+        this.PrecioDesc = false;
+        this.PrecioRgo = false;
+        this.NombreAsc = false;
+        this.NombreDesc = false;
+        this.rate = [];
     }
     ElectrodomesticoComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -3795,24 +4773,25 @@ var ElectrodomesticoComponent = /** @class */ (function () {
     };
     //Filtro nombre ascendiente
     ElectrodomesticoComponent.prototype.NameAsc = function () {
-        return this.afs.collection('products', function (ref) { return ref.orderBy("name", "asc"); }).valueChanges();
+        return this.afs.collection('products', function (ref) { return ref.orderBy("name", "asc").where("department", "==", "electrodomesticos"); }).valueChanges();
     };
     // Filtro nombre descendiente
     ElectrodomesticoComponent.prototype.NameDes = function () {
-        return this.afs.collection('products', function (ref) { return ref.orderBy("name", "desc"); }).valueChanges();
+        return this.afs.collection('products', function (ref) { return ref.orderBy("name", "desc").where("department", "==", "electrodomesticos"); }).valueChanges();
     };
     // Filtro Precio ascendiente
-    ElectrodomesticoComponent.prototype.PrecioAsc = function () {
-        return this.afs.collection('products', function (ref) { return ref.orderBy("price", "asc"); }).valueChanges();
+    ElectrodomesticoComponent.prototype.PrecioAscendente = function () {
+        return this.afs.collection('products', function (ref) { return ref.orderBy("price", "asc").where("department", "==", "electrodomesticos"); }).valueChanges();
     };
     // Filtro precio descendiente
-    ElectrodomesticoComponent.prototype.PrecioDesc = function () {
-        return this.afs.collection('products', function (ref) { return ref.orderBy("price", "desc"); }).valueChanges();
+    ElectrodomesticoComponent.prototype.PrecioDescendiente = function () {
+        return this.afs.collection('products', function (ref) { return ref.orderBy("price", "desc").where("department", "==", "electrodomesticos"); }).valueChanges();
     };
     // Precio entre valores
     ElectrodomesticoComponent.prototype.PrecioEntre = function (menor, mayor) {
+        var _this = this;
         if (menor <= mayor) {
-            return this.afs.collection('products', function (ref) { return ref.where("price", ">=", menor).where("price", "<=", mayor); }).valueChanges();
+            this.productoService.ProductosElectroEntre(menor, mayor).subscribe(function (productos) { return _this.productos = productos; });
         }
         else {
             alert("Error en los valores suminstrados");
@@ -3828,15 +4807,223 @@ var ElectrodomesticoComponent = /** @class */ (function () {
         alert("Producto añadido a la wishlist");
         this.variacionElectro = undefined;
     };
+    ElectrodomesticoComponent.prototype.MostrarComentarios = function (template, producto) {
+        var _this = this;
+        if (Object(util__WEBPACK_IMPORTED_MODULE_8__["isNullOrUndefined"])(producto.comentarios)) {
+            alert("Este producto no tiene comentarios");
+            return;
+        }
+        else {
+            this.Productocomentarios = producto.comentarios;
+            this.Productocomentarios.forEach(function (comentario) {
+                _this.rate.push(comentario.calificacion);
+            });
+            this.modalRef = this.ModalService.show(template, { class: 'gray modal-lg' });
+        }
+    };
+    ElectrodomesticoComponent.prototype.CheckedPrecioAsc = function () {
+        this.PrecioDesc = false;
+        this.PrecioRgo = false;
+        this.PrecioAsc = true;
+        this.NombreAsc = false;
+        this.NombreDesc = false;
+    };
+    ElectrodomesticoComponent.prototype.CheckedPrecioDesc = function () {
+        this.PrecioDesc = true;
+        this.PrecioRgo = false;
+        this.PrecioAsc = false;
+        this.NombreAsc = false;
+        this.NombreDesc = false;
+    };
+    ElectrodomesticoComponent.prototype.CheckedRgo = function () {
+        this.PrecioDesc = false;
+        this.PrecioRgo = true;
+        this.PrecioAsc = false;
+        this.NombreAsc = false;
+        this.NombreDesc = false;
+    };
+    ElectrodomesticoComponent.prototype.CheckedNombreAsc = function () {
+        this.PrecioDesc = false;
+        this.PrecioRgo = false;
+        this.PrecioAsc = false;
+        this.NombreAsc = true;
+        this.NombreDesc = false;
+    };
+    ElectrodomesticoComponent.prototype.CheckedNombreDesc = function () {
+        this.PrecioDesc = false;
+        this.PrecioRgo = false;
+        this.PrecioAsc = false;
+        this.NombreAsc = false;
+        this.NombreDesc = true;
+    };
+    ElectrodomesticoComponent.prototype.filtro = function () {
+        var _this = this;
+        if (this.PrecioAsc == true) {
+            this.PrecioAscendente().subscribe(function (productos) { return _this.productos = productos; });
+            return;
+        }
+        else if (this.PrecioDesc == true) {
+            this.PrecioDescendiente().subscribe(function (productos) { return _this.productos = productos; });
+            return;
+        }
+        else if (this.PrecioRgo == true) {
+            if (Object(util__WEBPACK_IMPORTED_MODULE_8__["isNullOrUndefined"])(this.minPrecio)) {
+                alert("Introduzca el precio minimo");
+                return;
+            }
+            else if (Object(util__WEBPACK_IMPORTED_MODULE_8__["isNullOrUndefined"])(this.maxPrecio)) {
+                alert("Introduzca el precio minimo");
+                return;
+            }
+            else {
+                this.PrecioEntre(this.minPrecio, this.maxPrecio);
+                this.minPrecio = null;
+                this.maxPrecio = null;
+                return;
+            }
+        }
+        else if (this.NombreAsc == true) {
+            this.NameAsc().subscribe(function (productos) { return _this.productos = productos; });
+            return;
+        }
+        else if (this.NombreDesc == true) {
+            this.NameDes().subscribe(function (productos) { return _this.productos = productos; });
+            return;
+        }
+    };
+    ElectrodomesticoComponent.prototype.Quitarfiltro = function () {
+        this.getProducts();
+    };
     ElectrodomesticoComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-electrodomestico',
             template: __webpack_require__(/*! ./electrodomestico.component.html */ "./src/app/view/electrodomestico/electrodomestico.component.html"),
             styles: [__webpack_require__(/*! ./electrodomestico.component.css */ "./src/app/view/electrodomestico/electrodomestico.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_auth_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"], src_app_servicios_producto_service__WEBPACK_IMPORTED_MODULE_4__["ProductoService"], _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_5__["AngularFirestore"], src_app_servicios_carrito_service__WEBPACK_IMPORTED_MODULE_6__["CarritoService"], src_app_servicios_wishlist_service__WEBPACK_IMPORTED_MODULE_7__["wishlistService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_auth_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"], src_app_servicios_producto_service__WEBPACK_IMPORTED_MODULE_4__["ProductoService"], _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_5__["AngularFirestore"], src_app_servicios_carrito_service__WEBPACK_IMPORTED_MODULE_6__["CarritoService"], src_app_servicios_wishlist_service__WEBPACK_IMPORTED_MODULE_7__["wishlistService"], ngx_bootstrap__WEBPACK_IMPORTED_MODULE_9__["BsModalService"]])
     ], ElectrodomesticoComponent);
     return ElectrodomesticoComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/view/estadisticas/estadisticas.component.css":
+/*!**************************************************************!*\
+  !*** ./src/app/view/estadisticas/estadisticas.component.css ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".c6101 {\n    min-height: 75px;\n}\n\n.c6120 {\n    min-height: 75px;\n}\n\n.c6621 {\n    min-height: 75px;\n}\n\n.c6640 {\n    min-height: 75px;\n}\n\n.color-warning {\n    color: red;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdmlldy9lc3RhZGlzdGljYXMvZXN0YWRpc3RpY2FzLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxVQUFVO0FBQ2QiLCJmaWxlIjoic3JjL2FwcC92aWV3L2VzdGFkaXN0aWNhcy9lc3RhZGlzdGljYXMuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jNjEwMSB7XG4gICAgbWluLWhlaWdodDogNzVweDtcbn1cblxuLmM2MTIwIHtcbiAgICBtaW4taGVpZ2h0OiA3NXB4O1xufVxuXG4uYzY2MjEge1xuICAgIG1pbi1oZWlnaHQ6IDc1cHg7XG59XG5cbi5jNjY0MCB7XG4gICAgbWluLWhlaWdodDogNzVweDtcbn1cblxuLmNvbG9yLXdhcm5pbmcge1xuICAgIGNvbG9yOiByZWQ7XG59Il19 */"
+
+/***/ }),
+
+/***/ "./src/app/view/estadisticas/estadisticas.component.html":
+/*!***************************************************************!*\
+  !*** ./src/app/view/estadisticas/estadisticas.component.html ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<app-navbar-admin></app-navbar-admin>\n\n<section id=\"team\" class=\"pb-3\">\n    <div class=\"container\">\n        <br>\n        <div class=\"container c6640\">\n            <h5 data-type=\"header\" class=\"display-4 text-center\">Los {{limit}} productos más vendidos\n            </h5>\n            <p class=\"section-title h1 text-center\">Filtros</p>\n            <div class=\"form-check\">\n                <input [checked]=\"checkLimit\" (change)=\"CheckedLimit($event)\" class=\"form-check-input\" type=\"radio\" name=\"exampleRadios1\" id=\"exampleRadios1\">\n                <label class=\"form-check-label\" for=\"exampleRadios1\">\n                          Escoger cantidad de vendidos\n                            </label>\n            </div>\n            <div *ngIf=\"checkLimit == true\">\n\n                <form>\n                    <div class=\"form-row\">\n                        <div class=\"col\">\n                            <div class=\"form-group col-md-3\">\n                                <label for=\"inputMin\">cantidad de productos</label>\n                                <input [(ngModel)]=\"limite\" type=\"number\" class=\"form-control\" id=\"limit\" name=\"inputlimit\" placeholder=\"# productos\">\n                            </div>\n                        </div>\n                    </div>\n                </form>\n            </div>\n            <br>\n            <button class=\"btn btn-primary\" (click)=\"filtro()\" type=\"submit\">Aplicar Filtro\n                      </button>\n            <br>\n            <hr>\n            <div class=\"row\">\n                <div *ngFor=\"let producto of productosMasVendidos\" class=\"col-md-4\">\n                    <div class=\"card mb-4 box-shadow\">\n                        <img data-type=\"image\" height=300px width=300px src=\"{{producto.photoUrl}}\" class=\"card-img-top\" />\n                        <div class=\"card-body\">\n                            <h3 data-type=\"header\" class=\"mb-0\">\n                                <p class=\"text-dark\"> {{producto.name}}</p>\n                            </h3>\n                            <br>\n                            <p data-type=\"text\" class=\"card-text\">Se han vendido: {{producto.sold}}</p>\n                            <p data-type=\"text\" class=\"card-text\">{{producto.description}}</p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <br>\n        <div class=\"container\">\n            <div class=\"col-sm-12 text-center\">\n                <h1 class=\"text-center\">Ganancias Totales: {{TotalGanancia}}</h1>\n                <br>\n                <hr>\n                <h2 class=\"text-center\">Total de productos vendido: {{totalProductos}}</h2>\n                <br>\n                <hr>\n                <h2 class=\"text-center\">Ganancias por departamento</h2>\n                <small class=\"text-center color-warning\">es necesario clickear los label</small>\n                <div style=\"display: block;\">\n                    <canvas baseChart [data]=\"pieChartData\" [labels]=\"pieChartLabels\" [chartType]=\"pieChartType\" [options]=\"pieChartOptions\" [plugins]=\"pieChartPlugins\" [legend]=\"pieChartLegend\">\n                    </canvas>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>"
+
+/***/ }),
+
+/***/ "./src/app/view/estadisticas/estadisticas.component.ts":
+/*!*************************************************************!*\
+  !*** ./src/app/view/estadisticas/estadisticas.component.ts ***!
+  \*************************************************************/
+/*! exports provided: EstadisticasComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EstadisticasComponent", function() { return EstadisticasComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var src_app_servicios_producto_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/servicios/producto.service */ "./src/app/servicios/producto.service.ts");
+/* harmony import */ var src_app_servicios_compra_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/servicios/compra.service */ "./src/app/servicios/compra.service.ts");
+/* harmony import */ var src_app_servicios_estadisticas_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/servicios/estadisticas.service */ "./src/app/servicios/estadisticas.service.ts");
+/* harmony import */ var ng2_charts__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng2-charts */ "./node_modules/ng2-charts/fesm5/ng2-charts.js");
+/* harmony import */ var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/fire/firestore */ "./node_modules/@angular/fire/firestore/index.js");
+
+
+
+
+
+
+
+var EstadisticasComponent = /** @class */ (function () {
+    function EstadisticasComponent(productoService, compraService, estadisticaService, afs) {
+        this.productoService = productoService;
+        this.compraService = compraService;
+        this.estadisticaService = estadisticaService;
+        this.afs = afs;
+        this.pieChartOptions = {
+            responsive: true,
+        };
+        this.pieChartLabels = ["Hogar", "Electro", "Arte"];
+        this.pieChartData = [100, 100, 100];
+        this.pieChartType = 'pie';
+        this.pieChartLegend = true;
+        this.pieChartPlugins = [];
+        this.limite = 6;
+        this.limit = 6;
+        this.checkLimit = false;
+        Object(ng2_charts__WEBPACK_IMPORTED_MODULE_5__["monkeyPatchChartJsTooltip"])();
+        Object(ng2_charts__WEBPACK_IMPORTED_MODULE_5__["monkeyPatchChartJsLegend"])();
+    }
+    EstadisticasComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        var sub = this.compraService.obtenerCompras().subscribe(function (compras) {
+            _this.compras = compras;
+            sub.unsubscribe();
+        }).add(function () {
+            _this.TotalGanancia = _this.compraService.GananciasTotales(_this.compras);
+            _this.GananciaDept = _this.estadisticaService.GananciasPorDept(_this.compras);
+            _this.totalProductos = _this.estadisticaService.CantidadProductosVendidos(_this.compras);
+            _this.pieChartData = _this.GananciaDept;
+        });
+        this.productoService.ProductosMasVendidos().subscribe(function (productos) { return _this.productosMasVendidos = productos; });
+    };
+    EstadisticasComponent.prototype.prueba = function () {
+        console.log(this.GananciaDept);
+    };
+    EstadisticasComponent.prototype.chartClicked = function (e) {
+        console.log(e);
+    };
+    // event on pie chart slice hover
+    EstadisticasComponent.prototype.chartHovered = function (e) {
+        console.log(e);
+    };
+    EstadisticasComponent.prototype.CheckedLimit = function () {
+        this.checkLimit = true;
+    };
+    EstadisticasComponent.prototype.filtro = function () {
+        this.limiteFunction();
+        this.checkLimit = false;
+    };
+    EstadisticasComponent.prototype.limiteFunction = function () {
+        var _this = this;
+        if (this.limite == null) {
+            alert("Ingrese un valor");
+        }
+        else {
+            this.productoService.ProductosMasVendidosLimite(this.limite).subscribe(function (productos) { return _this.productosMasVendidos = productos; });
+            this.limit = this.limite;
+        }
+    };
+    EstadisticasComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-estadisticas',
+            template: __webpack_require__(/*! ./estadisticas.component.html */ "./src/app/view/estadisticas/estadisticas.component.html"),
+            styles: [__webpack_require__(/*! ./estadisticas.component.css */ "./src/app/view/estadisticas/estadisticas.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_servicios_producto_service__WEBPACK_IMPORTED_MODULE_2__["ProductoService"], src_app_servicios_compra_service__WEBPACK_IMPORTED_MODULE_3__["CompraService"], src_app_servicios_estadisticas_service__WEBPACK_IMPORTED_MODULE_4__["EstadisticasService"], _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_6__["AngularFirestore"]])
+    ], EstadisticasComponent);
+    return EstadisticasComponent;
 }());
 
 
@@ -3861,7 +5048,7 @@ module.exports = ".row {\n    padding: 2em;\n}\n\n.btn-primary:hover,\n.btn-prim
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Determina si el usuario esta autenticado o es un invitado-->\n<div *ngIf=\"auth.User | async; then authenticated\"></div>\n\n<!-- Se usa el #authenticated para renderisar el template dependiendo de la respuesta del servicio auth de firestore -->\n<!-- Esto con tal de poder hacer uso de una navegación basada en roles-->\n\n\n<!--Template para usuario autenticadoe-->\n<ng-template #authenticated>\n    <div *ngIf=\"auth.User | async as User\">\n        <div *ngIf=\"User.role === 'customer'\">\n            <app-navbar-user></app-navbar-user>\n        </div>\n        <div *ngIf=\"User.role === 'admin'\">\n            <app-navbar-admin></app-navbar-admin>\n        </div>\n        <section id=\"team\" class=\"pb-5\">\n            <div class=\"container\">\n                <h5 class=\"section-title h1\">Bienvenido a la sección de hogar</h5>\n                <div class=\"col text-right\">\n\n                    <form class=\"form-inline my-2 my-lg-0\">\n                        <input class=\"form-control mr-sm-2\" [(ngModel)]=\"searchterm\" (ngModelChange)=\"search($event)\" type=\"search\" placeholder=\"Búsqueda\" aria-label=\"Search\" name=\"searchInput\">\n                        <button class=\"btn btn-dark my-2 my-sm-0\" type=\"submit\">buscar</button>\n                    </form>\n                </div>\n                <br>\n                <div class=\"row\">\n                    <div class=\"col-xs-12 col-sm-6 col-md-4\" *ngFor=\"let producto of productos\">\n                        <div class=\"image-flip\" ontouchstart=\"this.classList.toggle('hover');\">\n                            <div class=\"mainflip\">\n                                <div class=\"frontside\">\n                                    <div class=\"card\">\n                                        <div class=\"card-body text-center\">\n                                            <p><img class=\" img-fluid\" src={{producto.photoUrl}} alt=\"card image\"></p>\n                                            <h4 class=\"card-title\">{{producto.name}}</h4>\n                                            <p class=\"card-text\">{{producto.department}}</p>\n                                            <p class=\"card-text\">Precio: ${{producto.price}}</p>\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"backside\">\n                                    <div class=\"card\">\n                                        <div class=\"card-body text-center mt-4\">\n                                            <h4 class=\"card-title\">{{producto.name}}</h4>\n                                            <p class=\"card-text\">{{producto.description}}</p>\n                                            <div class=\"form-group\">\n\n                                                <div *ngIf=\"producto.variaciones.length >0\">\n                                                    <label for=\"exampleFormControlSelect1\">Variacion</label>\n                                                    <select [(ngModel)]=\"variacionHogar\" class=\"form-control\" id=\"exampleFormControlSelect1\">\n                                                        <option *ngFor=\"let Variacion of producto.variaciones\">{{Variacion.value}}</option>\n                                                      </select>\n                                                </div>\n                                            </div>\n                                            <ul class=\"list-inline\">\n                                                <li class=\"list-inline-item align-content-center\">\n                                                    <button class=\"btn btn-primary btn-sm\">Comentarios</button>\n                                                </li>\n                                            </ul>\n                                        </div>\n                                        <div class=\"card-footer\">\n                                            <ul class=\"list-inline\">\n                                                <li class=\"list-inline-item\">\n                                                    <button (click)=\"anadirCarrito(producto)\" class=\"btn btn-primary btn-sm\">Carrito</button>\n                                                </li>\n                                                <li class=\"list-inline-item align-self-end\">\n                                                    <button (click)=\"anadirWish(producto)\" class=\"btn btn-primary btn-sm\">Lista de deseos</button>\n                                                </li>\n                                            </ul>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </section>\n    </div>\n</ng-template>"
+module.exports = "<!-- Determina si el usuario esta autenticado o es un invitado-->\n<div *ngIf=\"auth.User | async; then authenticated; else noauthenticated\"></div>\n\n<!-- Se usa el #authenticated para renderisar el template dependiendo de la respuesta del servicio auth de firestore -->\n<!-- Esto con tal de poder hacer uso de una navegación basada en roles-->\n\n\n<!--Template para usuario autenticadoe-->\n<ng-template #authenticated>\n    <div *ngIf=\"auth.User | async as User\">\n        <div *ngIf=\"User.role === 'customer'\">\n            <app-navbar-user></app-navbar-user>\n        </div>\n        <div *ngIf=\"User.role === 'admin'\">\n            <app-navbar-admin></app-navbar-admin>\n        </div>\n        <section id=\"team\" class=\"pb-5\">\n            <div class=\"container\">\n                <h5 class=\"section-title h1\">Bienvenido a la sección de hogar</h5>\n                <div class=\"col text-right\">\n\n                    <form class=\"form-inline my-2 my-lg-0\">\n                        <input class=\"form-control mr-sm-2\" [(ngModel)]=\"searchterm\" (ngModelChange)=\"search($event)\" type=\"search\" placeholder=\"Búsqueda\" aria-label=\"Search\" name=\"searchInput\">\n                        <button class=\"btn btn-dark my-2 my-sm-0\" type=\"submit\">buscar</button>\n                    </form>\n                </div>\n                <p class=\"section-title h1 text-center\">Filtros</p>\n                <div class=\"form-check\">\n                    <input [checked]=\"PrecioAsc\" (change)=\"CheckedPrecioAsc()\" class=\"form-check-input\" type=\"radio\" name=\"exampleRadios1\" id=\"exampleRadios1\">\n                    <label class=\"form-check-label\" for=\"exampleRadios1\">\n                              Precio ascendiente\n                            </label>\n                </div>\n                <div class=\"form-check\">\n                    <input [checked]=\"PrecioDesc\" (change)=\"CheckedPrecioDesc()\" class=\"form-check-input\" type=\"radio\" name=\"exampleRadios2\" id=\"exampleRadios2\">\n                    <label class=\"form-check-label\" for=\"exampleRadios2\">\n                              Precio descendiente\n                            </label>\n                </div>\n                <div class=\"form-check\">\n                    <input [checked]=\"PrecioRgo\" (change)=\"CheckedRgo()\" class=\"form-check-input\" type=\"radio\" name=\"exampleRadios3\" id=\"exampleRadios3\">\n                    <label class=\"form-check-label\" for=\"exampleRadios3\">\n                              Rango de monto\n                            </label>\n                </div>\n                <div class=\"form-check\">\n                    <input [checked]=\"NombreAsc\" (change)=\"CheckedNombreAsc()\" class=\"form-check-input\" type=\"radio\" name=\"exampleRadios4\" id=\"exampleRadios4\">\n                    <label class=\"form-check-label\" for=\"exampleRadios4\">\n                                Nombre Ascendiente  \n                            </label>\n                </div>\n                <div class=\"form-check\">\n                    <input [checked]=\"NombreDesc\" (change)=\"CheckedNombreDesc()\" class=\"form-check-input\" type=\"radio\" name=\"exampleRadios5\" id=\"exampleRadios5\">\n                    <label class=\"form-check-label\" for=\"exampleRadios5\">\n                                    Nombre Descendiente   \n                                </label>\n                </div>\n                <br>\n                <div *ngIf=\"PrecioRgo == true\">\n                    <form>\n                        <div class=\"form-row\">\n                            <div class=\"form-group col-md-3\">\n                                <label for=\"inputMin\">Ingrese Valor minimo</label>\n                                <input [(ngModel)]=\"minPrecio\" type=\"number\" class=\"form-control\" id=\"inputMin\" name=\"inputValorMin\" placeholder=\"Valor Minimo\">\n                            </div>\n                            <div class=\"col\">\n                                <div class=\"form-group col-md-3\">\n                                    <label for=\"inputMin\">Ingrese Valor maximo</label>\n                                    <input [(ngModel)]=\"maxPrecio\" type=\"number\" class=\"form-control\" id=\"inputMin\" name=\"inputValorMax\" placeholder=\"Valor Maximo\">\n                                </div>\n                            </div>\n                        </div>\n                    </form>\n                    <br>\n                </div>\n                <div class=\"btn-group\" role=\"group\" aria-label=\"Basic example\">\n                    <button (click)=\"filtro()\" type=\"button\" class=\"btn btn-primary\">Aplicar Filtro</button>\n                    <button (click)=\"Quitarfiltro()\" type=\"button\" class=\"btn btn-primary\">Quitar Filtro</button>\n                </div>\n                <br>\n                <hr>\n                <br>\n                <br>\n                <div class=\"row\">\n                    <div class=\"col-xs-12 col-sm-6 col-md-4\" *ngFor=\"let producto of productos\">\n                        <div class=\"image-flip\" ontouchstart=\"this.classList.toggle('hover');\">\n                            <div class=\"mainflip\">\n                                <div class=\"frontside\">\n                                    <div class=\"card\">\n                                        <div class=\"card-body text-center\">\n                                            <p><img class=\" img-fluid\" src={{producto.photoUrl}} alt=\"card image\"></p>\n                                            <h4 class=\"card-title\">{{producto.name}}</h4>\n                                            <p class=\"card-text\">{{producto.department}}</p>\n                                            <p class=\"card-text\">Precio: ${{producto.price}}</p>\n                                        </div>\n                                    </div>\n                                </div>\n                                <div class=\"backside\">\n                                    <div class=\"card\">\n                                        <div class=\"card-body text-center mt-4\">\n                                            <h4 class=\"card-title\">{{producto.name}}</h4>\n                                            <p class=\"card-text\">{{producto.description}}</p>\n                                            <div class=\"form-group\">\n\n                                                <div *ngIf=\"producto.variaciones.length >0\">\n                                                    <label for=\"exampleFormControlSelect1\">Variacion</label>\n                                                    <select [(ngModel)]=\"variacionHogar\" class=\"form-control\" id=\"exampleFormControlSelect1\">\n                                                        <option *ngFor=\"let Variacion of producto.variaciones\">{{Variacion.value}}</option>\n                                                      </select>\n                                                </div>\n                                            </div>\n                                            <ul class=\"list-inline\">\n                                                <li class=\"list-inline-item align-content-center\">\n                                                    <button (click)=\"MostrarComentarios(comentario, producto)\" class=\"btn btn-primary btn-sm\">Comentarios</button>\n                                                </li>\n                                            </ul>\n                                        </div>\n                                        <div class=\"card-footer\">\n                                            <ul class=\"list-inline\">\n                                                <li class=\"list-inline-item\">\n                                                    <button (click)=\"anadirCarrito(producto)\" class=\"btn btn-primary btn-sm\">Carrito</button>\n                                                </li>\n                                                <li class=\"list-inline-item align-self-end\">\n                                                    <button (click)=\"anadirWish(producto)\" class=\"btn btn-primary btn-sm\">Lista de deseos</button>\n                                                </li>\n                                            </ul>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </section>\n    </div>\n</ng-template>\n\n<ng-template #noauthenticated>\n    <app-navbar></app-navbar>\n    <section id=\"team\" class=\"pb-5\">\n        <div class=\"container\">\n            <h5 class=\"section-title h1\">Bienvenido a la sección de hogar</h5>\n            <div class=\"col text-right\">\n\n                <form class=\"form-inline my-2 my-lg-0\">\n                    <input class=\"form-control mr-sm-2\" [(ngModel)]=\"searchterm\" (ngModelChange)=\"search($event)\" type=\"search\" placeholder=\"Búsqueda\" aria-label=\"Search\" name=\"searchInput\">\n                    <button class=\"btn btn-dark my-2 my-sm-0\" type=\"submit\">buscar</button>\n                </form>\n            </div>\n            <br>\n            <div class=\"row\">\n                <div class=\"col-xs-12 col-sm-6 col-md-4\" *ngFor=\"let producto of productos\">\n                    <div class=\"image-flip\" ontouchstart=\"this.classList.toggle('hover');\">\n                        <div class=\"mainflip\">\n                            <div class=\"frontside\">\n                                <div class=\"card\">\n                                    <div class=\"card-body text-center\">\n                                        <p><img class=\" img-fluid\" src={{producto.photoUrl}} alt=\"card image\"></p>\n                                        <h4 class=\"card-title\">{{producto.name}}</h4>\n                                        <p class=\"card-text\">{{producto.department}}</p>\n                                        <p class=\"card-text\">Precio: ${{producto.price}}</p>\n                                    </div>\n                                </div>\n                            </div>\n                            <div class=\"backside\">\n                                <div class=\"card\">\n                                    <div class=\"card-body text-center mt-4\">\n                                        <h4 class=\"card-title\">{{producto.name}}</h4>\n                                        <p class=\"card-text\">{{producto.description}}</p>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </section>\n</ng-template>\n\n<ng-template #comentario>\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-12 mb-4\">\n                <h4 data-type=\"header\" class=\"d-flex justify-content-between align-items-center mb-3\">\n                    <span data-highlightable=\"1\" class=\"text-muted gjs-comp-selected\">Comentarios</span>\n                    <span data-highlightable=\"1\" class=\"badge badge-info badge-pill\">{{Productocomentarios.length}}</span>\n                </h4>\n                <ul class=\"list-group mb-3\">\n                    <li *ngFor=\"let comentario of Productocomentarios; let i = index\" class=\"list-group-item d-flex justify-content-between lh-condensed\">\n                        <div>\n                            <h6 data-type=\"header\" class=\"my-0\">{{comentario.nombre}}\n                            </h6>\n                            <small class=\"text-muted\">{{comentario.comentario}}</small>\n                        </div>\n                        <!-- <span class=\"text-muted\">Costo Unitario: {{comentario.calificacion}}</span> -->\n                        <span class=\"text-muted\"><rating [(ngModel)]=\"rate[i]\" [readonly]=\"true\" [max]=\"5\" style=\"color: #dbb716;font-size: 20px;\"></rating></span>\n                    </li>\n                </ul>\n            </div>\n        </div>\n    </div>\n</ng-template>"
 
 /***/ }),
 
@@ -3883,6 +5070,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/fire/firestore */ "./node_modules/@angular/fire/firestore/index.js");
 /* harmony import */ var src_app_servicios_carrito_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/servicios/carrito.service */ "./src/app/servicios/carrito.service.ts");
 /* harmony import */ var src_app_servicios_wishlist_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/app/servicios/wishlist.service */ "./src/app/servicios/wishlist.service.ts");
+/* harmony import */ var ngx_bootstrap__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ngx-bootstrap */ "./node_modules/ngx-bootstrap/esm5/ngx-bootstrap.js");
+/* harmony import */ var util__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! util */ "./node_modules/util/util.js");
+/* harmony import */ var util__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(util__WEBPACK_IMPORTED_MODULE_9__);
+
+
 
 
 
@@ -3892,16 +5084,24 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var HogarComponent = /** @class */ (function () {
-    function HogarComponent(auth, productoService, afs, carritoService, wishlistService) {
+    function HogarComponent(auth, productoService, afs, carritoService, wishlistService, ModalService) {
         this.auth = auth;
         this.productoService = productoService;
         this.afs = afs;
         this.carritoService = carritoService;
         this.wishlistService = wishlistService;
+        this.ModalService = ModalService;
         this.startAt = new rxjs__WEBPACK_IMPORTED_MODULE_3__["Subject"]();
         this.endAt = new rxjs__WEBPACK_IMPORTED_MODULE_3__["Subject"]();
         this.startObs = this.startAt.asObservable();
         this.endObs = this.endAt.asObservable();
+        // check para el filtro
+        this.PrecioAsc = false;
+        this.PrecioDesc = false;
+        this.PrecioRgo = false;
+        this.NombreAsc = false;
+        this.NombreDesc = false;
+        this.rate = [];
     }
     HogarComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -3932,24 +5132,25 @@ var HogarComponent = /** @class */ (function () {
     };
     //Filtro nombre ascendiente
     HogarComponent.prototype.NameAsc = function () {
-        return this.afs.collection('products', function (ref) { return ref.orderBy("name", "asc"); }).valueChanges();
+        return this.afs.collection('products', function (ref) { return ref.orderBy("name", "asc").where("department", "==", "hogar"); }).valueChanges();
     };
     // Filtro nombre descendiente
     HogarComponent.prototype.NameDes = function () {
-        return this.afs.collection('products', function (ref) { return ref.orderBy("name", "desc"); }).valueChanges();
+        return this.afs.collection('products', function (ref) { return ref.orderBy("name", "desc").where("department", "==", "hogar"); }).valueChanges();
     };
     // Filtro Precio ascendiente
-    HogarComponent.prototype.PrecioAsc = function () {
-        return this.afs.collection('products', function (ref) { return ref.orderBy("price", "asc"); }).valueChanges();
+    HogarComponent.prototype.PrecioAscendente = function () {
+        return this.afs.collection('products', function (ref) { return ref.orderBy("price", "asc").where("department", "==", "hogar"); }).valueChanges();
     };
     // Filtro precio descendiente
-    HogarComponent.prototype.PrecioDesc = function () {
-        return this.afs.collection('products', function (ref) { return ref.orderBy("price", "desc"); }).valueChanges();
+    HogarComponent.prototype.PrecioDescendiente = function () {
+        return this.afs.collection('products', function (ref) { return ref.orderBy("price", "desc").where("department", "==", "hogar"); }).valueChanges();
     };
     // Precio entre valores
     HogarComponent.prototype.PrecioEntre = function (menor, mayor) {
+        var _this = this;
         if (menor <= mayor) {
-            return this.afs.collection('products', function (ref) { return ref.where("price", ">=", menor).where("price", "<=", mayor); }).valueChanges();
+            this.productoService.ProductosHogarEntre(menor, mayor).subscribe(function (productos) { return _this.productos = productos; });
         }
         else {
             alert("Error en los valores suminstrados");
@@ -3965,13 +5166,100 @@ var HogarComponent = /** @class */ (function () {
         alert("Producto añadido a la wishlist");
         this.variacionHogar = undefined;
     };
+    HogarComponent.prototype.MostrarComentarios = function (template, producto) {
+        var _this = this;
+        if (Object(util__WEBPACK_IMPORTED_MODULE_9__["isNullOrUndefined"])(producto.comentarios)) {
+            alert("Este producto no tiene comentarios");
+            return;
+        }
+        else {
+            this.Productocomentarios = producto.comentarios;
+            this.Productocomentarios.forEach(function (comentario) {
+                _this.rate.push(comentario.calificacion);
+            });
+            this.modalRef = this.ModalService.show(template, { class: 'gray modal-lg' });
+        }
+    };
+    HogarComponent.prototype.CheckedPrecioAsc = function () {
+        this.PrecioDesc = false;
+        this.PrecioRgo = false;
+        this.PrecioAsc = true;
+        this.NombreAsc = false;
+        this.NombreDesc = false;
+    };
+    HogarComponent.prototype.CheckedPrecioDesc = function () {
+        this.PrecioDesc = true;
+        this.PrecioRgo = false;
+        this.PrecioAsc = false;
+        this.NombreAsc = false;
+        this.NombreDesc = false;
+    };
+    HogarComponent.prototype.CheckedRgo = function () {
+        this.PrecioDesc = false;
+        this.PrecioRgo = true;
+        this.PrecioAsc = false;
+        this.NombreAsc = false;
+        this.NombreDesc = false;
+    };
+    HogarComponent.prototype.CheckedNombreAsc = function () {
+        this.PrecioDesc = false;
+        this.PrecioRgo = false;
+        this.PrecioAsc = false;
+        this.NombreAsc = true;
+        this.NombreDesc = false;
+    };
+    HogarComponent.prototype.CheckedNombreDesc = function () {
+        this.PrecioDesc = false;
+        this.PrecioRgo = false;
+        this.PrecioAsc = false;
+        this.NombreAsc = false;
+        this.NombreDesc = true;
+    };
+    HogarComponent.prototype.filtro = function () {
+        var _this = this;
+        if (this.PrecioAsc == true) {
+            this.PrecioAscendente().subscribe(function (productos) { return _this.productos = productos; });
+            return;
+        }
+        else if (this.PrecioDesc == true) {
+            this.PrecioDescendiente().subscribe(function (productos) { return _this.productos = productos; });
+            return;
+        }
+        else if (this.PrecioRgo == true) {
+            if (Object(util__WEBPACK_IMPORTED_MODULE_9__["isNullOrUndefined"])(this.minPrecio)) {
+                alert("Introduzca el precio minimo");
+                return;
+            }
+            else if (Object(util__WEBPACK_IMPORTED_MODULE_9__["isNullOrUndefined"])(this.maxPrecio)) {
+                alert("Introduzca el precio minimo");
+                return;
+            }
+            else {
+                this.PrecioEntre(this.minPrecio, this.maxPrecio);
+                this.minPrecio = null;
+                this.maxPrecio = null;
+                return;
+            }
+        }
+        else if (this.NombreAsc == true) {
+            this.NameAsc().subscribe(function (productos) { return _this.productos = productos; });
+            return;
+        }
+        else if (this.NombreDesc == true) {
+            this.NameDes().subscribe(function (productos) { return _this.productos = productos; });
+            return;
+        }
+    };
+    HogarComponent.prototype.Quitarfiltro = function () {
+        this.getProducts();
+    };
     HogarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-hogar',
             template: __webpack_require__(/*! ./hogar.component.html */ "./src/app/view/hogar/hogar.component.html"),
             styles: [__webpack_require__(/*! ./hogar.component.css */ "./src/app/view/hogar/hogar.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_auth_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"], src_app_servicios_producto_service__WEBPACK_IMPORTED_MODULE_4__["ProductoService"], _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_5__["AngularFirestore"], src_app_servicios_carrito_service__WEBPACK_IMPORTED_MODULE_6__["CarritoService"], src_app_servicios_wishlist_service__WEBPACK_IMPORTED_MODULE_7__["wishlistService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_auth_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"], src_app_servicios_producto_service__WEBPACK_IMPORTED_MODULE_4__["ProductoService"], _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_5__["AngularFirestore"], src_app_servicios_carrito_service__WEBPACK_IMPORTED_MODULE_6__["CarritoService"], src_app_servicios_wishlist_service__WEBPACK_IMPORTED_MODULE_7__["wishlistService"], ngx_bootstrap__WEBPACK_IMPORTED_MODULE_8__["BsModalService"]])
     ], HogarComponent);
     return HogarComponent;
 }());
@@ -3987,7 +5275,7 @@ var HogarComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ":root{\n    --input-padding-x: 1.5rem;\n    --input-padding-y: 0.75rem;\n  }\n  .card-signin{\n    border-top-width:0px;\n    border-right-width:0px;\n    border-bottom-width:0px;\n    border-left-width:0px;\n    border-top-style:initial;\n    border-right-style:initial;\n    border-bottom-style:initial;\n    border-left-style:initial;\n    border-top-color:initial;\n    border-right-color:initial;\n    border-bottom-color:initial;\n    border-left-color:initial;\n    border-image-source:initial;\n    border-image-slice:initial;\n    border-image-width:initial;\n    border-image-outset:initial;\n    border-image-repeat:initial;\n    border-top-left-radius:1rem;\n    border-top-right-radius:1rem;\n    border-bottom-right-radius:1rem;\n    border-bottom-left-radius:1rem;\n    box-shadow:rgba(0, 0, 0, 0.1) 0px 0.5rem 1rem 0px;\n  }\n  .card-signin .card-img-left{\n    width:45%;\n    background-image:url(\"https://source.unsplash.com/collection/190727/414x512\");\n    background-position-x:50%;\n    background-position-y:50%;\n    background-repeat-x:initial;\n    background-repeat-y:initial;\n    background-attachment:scroll;\n    background-origin:initial;\n    background-clip:initial;\n    background-color:initial;\n    background-size:cover;\n  }\n  .card-signin .card-title{\n    margin-bottom:2rem;\n    font-weight:300;\n    font-size:1.5rem;\n  }\n  .card-signin .card-body{\n    padding-top:2rem;\n    padding-right:2rem;\n    padding-bottom:2rem;\n    padding-left:2rem;\n  }\n  .form-signin{\n    width:100%;\n  }\n  .form-signin .btn{\n    font-size:80%;\n    border-top-left-radius:5rem;\n    border-top-right-radius:5rem;\n    border-bottom-right-radius:5rem;\n    border-bottom-left-radius:5rem;\n    letter-spacing:0.1rem;\n    font-weight:bold;\n    padding-top:1rem;\n    padding-right:1rem;\n    padding-bottom:1rem;\n    padding-left:1rem;\n    transition-duration:0.2s;\n    transition-timing-function:ease;\n    transition-delay:0s;\n    transition-property:all;\n  }\n  .form-label-group{\n    position:relative;\n    margin-bottom:1rem;\n  }\n  .form-label-group > label{\n    position:absolute;\n    top:0px;\n    left:0px;\n    display:block;\n    width:100%;\n    margin-bottom:0px;\n    line-height:1.5;\n    color:rgb(73, 80, 87);\n    border-top-width:1px;\n    border-right-width:1px;\n    border-bottom-width:1px;\n    border-left-width:1px;\n    border-top-style:solid;\n    border-right-style:solid;\n    border-bottom-style:solid;\n    border-left-style:solid;\n    border-top-color:transparent;\n    border-right-color:transparent;\n    border-bottom-color:transparent;\n    border-left-color:transparent;\n    border-image-source:initial;\n    border-image-slice:initial;\n    border-image-width:initial;\n    border-image-outset:initial;\n    border-image-repeat:initial;\n    border-top-left-radius:0.25rem;\n    border-top-right-radius:0.25rem;\n    border-bottom-right-radius:0.25rem;\n    border-bottom-left-radius:0.25rem;\n    transition-duration:0.1s;\n    transition-timing-function:ease-in-out;\n    transition-delay:0s;\n    transition-property:all;\n  }\n  .form-label-group input::-webkit-input-placeholder{\n    color:transparent;\n  }\n  .form-label-group input::-ms-input-placeholder{\n    color:transparent;\n  }\n  .form-label-group input::placeholder{\n    color:transparent;\n  }\n  .form-label-group input:not(:placeholder-shown){\n    padding-top:calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));\n    padding-bottom:calc(var(--input-padding-y) / 3);\n  }\n  .form-label-group input:not(:placeholder-shown) ~ label{\n    padding-top:calc(var(--input-padding-y) / 3);\n    padding-bottom:calc(var(--input-padding-y) / 3);\n    font-size:12px;\n    color:rgb(119, 119, 119);\n  }\n  .btn-google{\n    color:white;\n    background-color:rgb(234, 67, 53);\n  }\n  .btn-facebook{\n    color:white;\n    background-color:rgb(59, 89, 152);\n  }\n  .btn.btn-lg.btn-primary.btn-block.text-uppercase{\n    background-color:rgb(234, 67, 53);\n    border-top-width:1px;\n    border-right-width:1px;\n    border-bottom-width:1px;\n    border-left-width:1px;\n    border-top-style:solid;\n    border-right-style:solid;\n    border-bottom-style:solid;\n    border-left-style:solid;\n    border-top-color:rgb(234, 67, 53);\n    border-right-color:rgb(234, 67, 53);\n    border-bottom-color:rgb(234, 67, 53);\n    border-left-color:rgb(234, 67, 53);\n    border-image-source:initial;\n    border-image-slice:initial;\n    border-image-width:initial;\n    border-image-outset:initial;\n    border-image-repeat:initial;\n  }\n  .blog-header{\n    line-height:1;\n    border-bottom-width:1px;\n    border-bottom-style:solid;\n    border-bottom-color:rgb(229, 229, 229);\n  }\n  .blog-header-logo{\n    font-family:Georgia, \"Times New Roman\", serif;\n    font-size:2.25rem;\n    font-weight:bold;\n  }\n  .nav-scroller .nav{\n    display:flex;\n    flex-wrap:nowrap;\n    padding-bottom:1rem;\n    margin-top:-1px;\n    overflow-x:auto;\n    text-align:center;\n    white-space:nowrap;\n  }\n  .nav-scroller .nav-link{\n    padding-top:0.75rem;\n    padding-bottom:0.75rem;\n    font-size:0.875rem;\n  }\n  .c6101{\n    min-height:75px;\n  }\n  .c6120{\n    min-height:75px;\n  }\n  .jumbotron{\n    color:rgb(255, 255, 255);\n    background-image:url(\"https://www.gridbox.io/projects/109c62b4-ed6e-4dd6-b83f-937e6924aa5b/assets/img/pexels-photo-998641.jpeg\");\n    background-repeat-x:repeat;\n    background-repeat-y:repeat;\n    background-attachment:scroll;\n    background-position-x:50%;\n    background-position-y:100%;\n    background-size:cover;\n  }\n  .c6621{\n    min-height:75px;\n  }\n  .c6640{\n    min-height:75px;\n  }\n  .display-4.text-center{\n    margin-top:0px;\n    margin-right:0px;\n    margin-bottom:23px;\n    margin-left:0px;\n  }\n  @media (max-width: 480px){\n    .blog-header-logo.text-dark{\n    font-size:25px;\n    }\n  }\n  .blog-header{\n    line-height:1;\n    border-bottom-width:1px;\n    border-bottom-style:solid;\n    border-bottom-color:rgb(229, 229, 229);\n  }\n  .blog-header-logo{\n    font-family:Georgia, \"Times New Roman\", serif;\n    font-size:2.25rem;\n    font-weight:bold;\n  }\n  .nav-scroller .nav{\n    display:flex;\n    flex-wrap:nowrap;\n    padding-bottom:1rem;\n    margin-top:-1px;\n    overflow-x:auto;\n    text-align:center;\n    white-space:nowrap;\n  }\n  .nav-scroller .nav-link{\n    padding-top:0.75rem;\n    padding-bottom:0.75rem;\n    font-size:0.875rem;\n  }\n  .c6101{\n    min-height:75px;\n  }\n  .c6120{\n    min-height:75px;\n  }\n  .jumbotron{\n    color:rgb(255, 255, 255);\n    background-image:url(\"https://www.gridbox.io/projects/109c62b4-ed6e-4dd6-b83f-937e6924aa5b/assets/img/pexels-photo-998641.jpeg\");\n    background-repeat-x:repeat;\n    background-repeat-y:repeat;\n    background-attachment:scroll;\n    background-position-x:50%;\n    background-position-y:100%;\n    background-size:cover;\n  }\n  .c6621{\n    min-height:75px;\n  }\n  .c6640{\n    min-height:75px;\n  }\n  .display-4.text-center{\n    margin-top:0px;\n    margin-right:0px;\n    margin-bottom:23px;\n    margin-left:0px;\n  }\n  @media (max-width: 480px){\n    .blog-header-logo.text-dark{\n    font-size:25px;\n    }\n  }\n  .blog-header{\n    line-height:1;\n    border-bottom-width:1px;\n    border-bottom-style:solid;\n    border-bottom-color:rgb(229, 229, 229);\n  }\n  .blog-header-logo{\n    font-family:Georgia, \"Times New Roman\", serif;\n    font-size:2.25rem;\n    font-weight:bold;\n  }\n  .nav-scroller .nav{\n    display:flex;\n    flex-wrap:nowrap;\n    padding-bottom:1rem;\n    margin-top:-1px;\n    overflow-x:auto;\n    text-align:center;\n    white-space:nowrap;\n  }\n  .nav-scroller .nav-link{\n    padding-top:0.75rem;\n    padding-bottom:0.75rem;\n    font-size:0.875rem;\n  }\n  .c6101{\n    min-height:75px;\n  }\n  .c6120{\n    min-height:75px;\n  }\n  .jumbotron{\n    color:rgb(255, 255, 255);\n    background-image:url(\"https://www.gridbox.io/projects/109c62b4-ed6e-4dd6-b83f-937e6924aa5b/assets/img/pexels-photo-998641.jpeg\");\n    background-repeat-x:repeat;\n    background-repeat-y:repeat;\n    background-attachment:scroll;\n    background-position-x:50%;\n    background-position-y:100%;\n    background-size:cover;\n  }\n  .c6621{\n    min-height:75px;\n  }\n  .c6640{\n    min-height:75px;\n  }\n  .display-4.text-center{\n    margin-top:0px;\n    margin-right:0px;\n    margin-bottom:23px;\n    margin-left:0px;\n  }\n  @media (max-width: 480px){\n    .blog-header-logo.text-dark{\n    font-size:25px;\n    }\n  }\n  \n    \n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdmlldy9pbmljaW8vaW5pY2lvLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSx5QkFBeUI7SUFDekIsMEJBQTBCO0VBQzVCO0VBQ0E7SUFDRSxvQkFBb0I7SUFDcEIsc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2QixxQkFBcUI7SUFDckIsd0JBQXdCO0lBQ3hCLDBCQUEwQjtJQUMxQiwyQkFBMkI7SUFDM0IseUJBQXlCO0lBQ3pCLHdCQUF3QjtJQUN4QiwwQkFBMEI7SUFDMUIsMkJBQTJCO0lBQzNCLHlCQUF5QjtJQUN6QiwyQkFBMkI7SUFDM0IsMEJBQTBCO0lBQzFCLDBCQUEwQjtJQUMxQiwyQkFBMkI7SUFDM0IsMkJBQTJCO0lBQzNCLDJCQUEyQjtJQUMzQiw0QkFBNEI7SUFDNUIsK0JBQStCO0lBQy9CLDhCQUE4QjtJQUM5QixpREFBaUQ7RUFDbkQ7RUFDQTtJQUNFLFNBQVM7SUFDVCw2RUFBNkU7SUFDN0UseUJBQXlCO0lBQ3pCLHlCQUF5QjtJQUN6QiwyQkFBMkI7SUFDM0IsMkJBQTJCO0lBQzNCLDRCQUE0QjtJQUM1Qix5QkFBeUI7SUFDekIsdUJBQXVCO0lBQ3ZCLHdCQUF3QjtJQUN4QixxQkFBcUI7RUFDdkI7RUFDQTtJQUNFLGtCQUFrQjtJQUNsQixlQUFlO0lBQ2YsZ0JBQWdCO0VBQ2xCO0VBQ0E7SUFDRSxnQkFBZ0I7SUFDaEIsa0JBQWtCO0lBQ2xCLG1CQUFtQjtJQUNuQixpQkFBaUI7RUFDbkI7RUFDQTtJQUNFLFVBQVU7RUFDWjtFQUNBO0lBQ0UsYUFBYTtJQUNiLDJCQUEyQjtJQUMzQiw0QkFBNEI7SUFDNUIsK0JBQStCO0lBQy9CLDhCQUE4QjtJQUM5QixxQkFBcUI7SUFDckIsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixrQkFBa0I7SUFDbEIsbUJBQW1CO0lBQ25CLGlCQUFpQjtJQUNqQix3QkFBd0I7SUFDeEIsK0JBQStCO0lBQy9CLG1CQUFtQjtJQUNuQix1QkFBdUI7RUFDekI7RUFDQTtJQUNFLGlCQUFpQjtJQUNqQixrQkFBa0I7RUFDcEI7RUFDQTtJQUNFLGlCQUFpQjtJQUNqQixPQUFPO0lBQ1AsUUFBUTtJQUNSLGFBQWE7SUFDYixVQUFVO0lBQ1YsaUJBQWlCO0lBQ2pCLGVBQWU7SUFDZixxQkFBcUI7SUFDckIsb0JBQW9CO0lBQ3BCLHNCQUFzQjtJQUN0Qix1QkFBdUI7SUFDdkIscUJBQXFCO0lBQ3JCLHNCQUFzQjtJQUN0Qix3QkFBd0I7SUFDeEIseUJBQXlCO0lBQ3pCLHVCQUF1QjtJQUN2Qiw0QkFBNEI7SUFDNUIsOEJBQThCO0lBQzlCLCtCQUErQjtJQUMvQiw2QkFBNkI7SUFDN0IsMkJBQTJCO0lBQzNCLDBCQUEwQjtJQUMxQiwwQkFBMEI7SUFDMUIsMkJBQTJCO0lBQzNCLDJCQUEyQjtJQUMzQiw4QkFBOEI7SUFDOUIsK0JBQStCO0lBQy9CLGtDQUFrQztJQUNsQyxpQ0FBaUM7SUFDakMsd0JBQXdCO0lBQ3hCLHNDQUFzQztJQUN0QyxtQkFBbUI7SUFDbkIsdUJBQXVCO0VBQ3pCO0VBQ0E7SUFDRSxpQkFBaUI7RUFDbkI7RUFDQTtJQUNFLGlCQUFpQjtFQUNuQjtFQUZBO0lBQ0UsaUJBQWlCO0VBQ25CO0VBQ0E7SUFDRSwyRUFBMkU7SUFDM0UsK0NBQStDO0VBQ2pEO0VBQ0E7SUFDRSw0Q0FBNEM7SUFDNUMsK0NBQStDO0lBQy9DLGNBQWM7SUFDZCx3QkFBd0I7RUFDMUI7RUFDQTtJQUNFLFdBQVc7SUFDWCxpQ0FBaUM7RUFDbkM7RUFDQTtJQUNFLFdBQVc7SUFDWCxpQ0FBaUM7RUFDbkM7RUFDQTtJQUNFLGlDQUFpQztJQUNqQyxvQkFBb0I7SUFDcEIsc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2QixxQkFBcUI7SUFDckIsc0JBQXNCO0lBQ3RCLHdCQUF3QjtJQUN4Qix5QkFBeUI7SUFDekIsdUJBQXVCO0lBQ3ZCLGlDQUFpQztJQUNqQyxtQ0FBbUM7SUFDbkMsb0NBQW9DO0lBQ3BDLGtDQUFrQztJQUNsQywyQkFBMkI7SUFDM0IsMEJBQTBCO0lBQzFCLDBCQUEwQjtJQUMxQiwyQkFBMkI7SUFDM0IsMkJBQTJCO0VBQzdCO0VBRUE7SUFDRSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLHlCQUF5QjtJQUN6QixzQ0FBc0M7RUFDeEM7RUFDQTtJQUNFLDZDQUE2QztJQUM3QyxpQkFBaUI7SUFDakIsZ0JBQWdCO0VBQ2xCO0VBQ0E7SUFDRSxZQUFZO0lBQ1osZ0JBQWdCO0lBQ2hCLG1CQUFtQjtJQUNuQixlQUFlO0lBQ2YsZUFBZTtJQUNmLGlCQUFpQjtJQUNqQixrQkFBa0I7RUFDcEI7RUFDQTtJQUNFLG1CQUFtQjtJQUNuQixzQkFBc0I7SUFDdEIsa0JBQWtCO0VBQ3BCO0VBQ0E7SUFDRSxlQUFlO0VBQ2pCO0VBQ0E7SUFDRSxlQUFlO0VBQ2pCO0VBQ0E7SUFDRSx3QkFBd0I7SUFDeEIsZ0lBQWdJO0lBQ2hJLDBCQUEwQjtJQUMxQiwwQkFBMEI7SUFDMUIsNEJBQTRCO0lBQzVCLHlCQUF5QjtJQUN6QiwwQkFBMEI7SUFDMUIscUJBQXFCO0VBQ3ZCO0VBQ0E7SUFDRSxlQUFlO0VBQ2pCO0VBQ0E7SUFDRSxlQUFlO0VBQ2pCO0VBQ0E7SUFDRSxjQUFjO0lBQ2QsZ0JBQWdCO0lBQ2hCLGtCQUFrQjtJQUNsQixlQUFlO0VBQ2pCO0VBQ0E7SUFDRTtJQUNBLGNBQWM7SUFDZDtFQUNGO0VBQ0E7SUFDRSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLHlCQUF5QjtJQUN6QixzQ0FBc0M7RUFDeEM7RUFDQTtJQUNFLDZDQUE2QztJQUM3QyxpQkFBaUI7SUFDakIsZ0JBQWdCO0VBQ2xCO0VBQ0E7SUFDRSxZQUFZO0lBQ1osZ0JBQWdCO0lBQ2hCLG1CQUFtQjtJQUNuQixlQUFlO0lBQ2YsZUFBZTtJQUNmLGlCQUFpQjtJQUNqQixrQkFBa0I7RUFDcEI7RUFDQTtJQUNFLG1CQUFtQjtJQUNuQixzQkFBc0I7SUFDdEIsa0JBQWtCO0VBQ3BCO0VBQ0E7SUFDRSxlQUFlO0VBQ2pCO0VBQ0E7SUFDRSxlQUFlO0VBQ2pCO0VBQ0E7SUFDRSx3QkFBd0I7SUFDeEIsZ0lBQWdJO0lBQ2hJLDBCQUEwQjtJQUMxQiwwQkFBMEI7SUFDMUIsNEJBQTRCO0lBQzVCLHlCQUF5QjtJQUN6QiwwQkFBMEI7SUFDMUIscUJBQXFCO0VBQ3ZCO0VBQ0E7SUFDRSxlQUFlO0VBQ2pCO0VBQ0E7SUFDRSxlQUFlO0VBQ2pCO0VBQ0E7SUFDRSxjQUFjO0lBQ2QsZ0JBQWdCO0lBQ2hCLGtCQUFrQjtJQUNsQixlQUFlO0VBQ2pCO0VBQ0E7SUFDRTtJQUNBLGNBQWM7SUFDZDtFQUNGO0VBRUE7SUFDRSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLHlCQUF5QjtJQUN6QixzQ0FBc0M7RUFDeEM7RUFDQTtJQUNFLDZDQUE2QztJQUM3QyxpQkFBaUI7SUFDakIsZ0JBQWdCO0VBQ2xCO0VBQ0E7SUFDRSxZQUFZO0lBQ1osZ0JBQWdCO0lBQ2hCLG1CQUFtQjtJQUNuQixlQUFlO0lBQ2YsZUFBZTtJQUNmLGlCQUFpQjtJQUNqQixrQkFBa0I7RUFDcEI7RUFDQTtJQUNFLG1CQUFtQjtJQUNuQixzQkFBc0I7SUFDdEIsa0JBQWtCO0VBQ3BCO0VBQ0E7SUFDRSxlQUFlO0VBQ2pCO0VBQ0E7SUFDRSxlQUFlO0VBQ2pCO0VBQ0E7SUFDRSx3QkFBd0I7SUFDeEIsZ0lBQWdJO0lBQ2hJLDBCQUEwQjtJQUMxQiwwQkFBMEI7SUFDMUIsNEJBQTRCO0lBQzVCLHlCQUF5QjtJQUN6QiwwQkFBMEI7SUFDMUIscUJBQXFCO0VBQ3ZCO0VBQ0E7SUFDRSxlQUFlO0VBQ2pCO0VBQ0E7SUFDRSxlQUFlO0VBQ2pCO0VBQ0E7SUFDRSxjQUFjO0lBQ2QsZ0JBQWdCO0lBQ2hCLGtCQUFrQjtJQUNsQixlQUFlO0VBQ2pCO0VBQ0E7SUFDRTtJQUNBLGNBQWM7SUFDZDtFQUNGIiwiZmlsZSI6InNyYy9hcHAvdmlldy9pbmljaW8vaW5pY2lvLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyI6cm9vdHtcbiAgICAtLWlucHV0LXBhZGRpbmcteDogMS41cmVtO1xuICAgIC0taW5wdXQtcGFkZGluZy15OiAwLjc1cmVtO1xuICB9XG4gIC5jYXJkLXNpZ25pbntcbiAgICBib3JkZXItdG9wLXdpZHRoOjBweDtcbiAgICBib3JkZXItcmlnaHQtd2lkdGg6MHB4O1xuICAgIGJvcmRlci1ib3R0b20td2lkdGg6MHB4O1xuICAgIGJvcmRlci1sZWZ0LXdpZHRoOjBweDtcbiAgICBib3JkZXItdG9wLXN0eWxlOmluaXRpYWw7XG4gICAgYm9yZGVyLXJpZ2h0LXN0eWxlOmluaXRpYWw7XG4gICAgYm9yZGVyLWJvdHRvbS1zdHlsZTppbml0aWFsO1xuICAgIGJvcmRlci1sZWZ0LXN0eWxlOmluaXRpYWw7XG4gICAgYm9yZGVyLXRvcC1jb2xvcjppbml0aWFsO1xuICAgIGJvcmRlci1yaWdodC1jb2xvcjppbml0aWFsO1xuICAgIGJvcmRlci1ib3R0b20tY29sb3I6aW5pdGlhbDtcbiAgICBib3JkZXItbGVmdC1jb2xvcjppbml0aWFsO1xuICAgIGJvcmRlci1pbWFnZS1zb3VyY2U6aW5pdGlhbDtcbiAgICBib3JkZXItaW1hZ2Utc2xpY2U6aW5pdGlhbDtcbiAgICBib3JkZXItaW1hZ2Utd2lkdGg6aW5pdGlhbDtcbiAgICBib3JkZXItaW1hZ2Utb3V0c2V0OmluaXRpYWw7XG4gICAgYm9yZGVyLWltYWdlLXJlcGVhdDppbml0aWFsO1xuICAgIGJvcmRlci10b3AtbGVmdC1yYWRpdXM6MXJlbTtcbiAgICBib3JkZXItdG9wLXJpZ2h0LXJhZGl1czoxcmVtO1xuICAgIGJvcmRlci1ib3R0b20tcmlnaHQtcmFkaXVzOjFyZW07XG4gICAgYm9yZGVyLWJvdHRvbS1sZWZ0LXJhZGl1czoxcmVtO1xuICAgIGJveC1zaGFkb3c6cmdiYSgwLCAwLCAwLCAwLjEpIDBweCAwLjVyZW0gMXJlbSAwcHg7XG4gIH1cbiAgLmNhcmQtc2lnbmluIC5jYXJkLWltZy1sZWZ0e1xuICAgIHdpZHRoOjQ1JTtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOnVybChcImh0dHBzOi8vc291cmNlLnVuc3BsYXNoLmNvbS9jb2xsZWN0aW9uLzE5MDcyNy80MTR4NTEyXCIpO1xuICAgIGJhY2tncm91bmQtcG9zaXRpb24teDo1MCU7XG4gICAgYmFja2dyb3VuZC1wb3NpdGlvbi15OjUwJTtcbiAgICBiYWNrZ3JvdW5kLXJlcGVhdC14OmluaXRpYWw7XG4gICAgYmFja2dyb3VuZC1yZXBlYXQteTppbml0aWFsO1xuICAgIGJhY2tncm91bmQtYXR0YWNobWVudDpzY3JvbGw7XG4gICAgYmFja2dyb3VuZC1vcmlnaW46aW5pdGlhbDtcbiAgICBiYWNrZ3JvdW5kLWNsaXA6aW5pdGlhbDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOmluaXRpYWw7XG4gICAgYmFja2dyb3VuZC1zaXplOmNvdmVyO1xuICB9XG4gIC5jYXJkLXNpZ25pbiAuY2FyZC10aXRsZXtcbiAgICBtYXJnaW4tYm90dG9tOjJyZW07XG4gICAgZm9udC13ZWlnaHQ6MzAwO1xuICAgIGZvbnQtc2l6ZToxLjVyZW07XG4gIH1cbiAgLmNhcmQtc2lnbmluIC5jYXJkLWJvZHl7XG4gICAgcGFkZGluZy10b3A6MnJlbTtcbiAgICBwYWRkaW5nLXJpZ2h0OjJyZW07XG4gICAgcGFkZGluZy1ib3R0b206MnJlbTtcbiAgICBwYWRkaW5nLWxlZnQ6MnJlbTtcbiAgfVxuICAuZm9ybS1zaWduaW57XG4gICAgd2lkdGg6MTAwJTtcbiAgfVxuICAuZm9ybS1zaWduaW4gLmJ0bntcbiAgICBmb250LXNpemU6ODAlO1xuICAgIGJvcmRlci10b3AtbGVmdC1yYWRpdXM6NXJlbTtcbiAgICBib3JkZXItdG9wLXJpZ2h0LXJhZGl1czo1cmVtO1xuICAgIGJvcmRlci1ib3R0b20tcmlnaHQtcmFkaXVzOjVyZW07XG4gICAgYm9yZGVyLWJvdHRvbS1sZWZ0LXJhZGl1czo1cmVtO1xuICAgIGxldHRlci1zcGFjaW5nOjAuMXJlbTtcbiAgICBmb250LXdlaWdodDpib2xkO1xuICAgIHBhZGRpbmctdG9wOjFyZW07XG4gICAgcGFkZGluZy1yaWdodDoxcmVtO1xuICAgIHBhZGRpbmctYm90dG9tOjFyZW07XG4gICAgcGFkZGluZy1sZWZ0OjFyZW07XG4gICAgdHJhbnNpdGlvbi1kdXJhdGlvbjowLjJzO1xuICAgIHRyYW5zaXRpb24tdGltaW5nLWZ1bmN0aW9uOmVhc2U7XG4gICAgdHJhbnNpdGlvbi1kZWxheTowcztcbiAgICB0cmFuc2l0aW9uLXByb3BlcnR5OmFsbDtcbiAgfVxuICAuZm9ybS1sYWJlbC1ncm91cHtcbiAgICBwb3NpdGlvbjpyZWxhdGl2ZTtcbiAgICBtYXJnaW4tYm90dG9tOjFyZW07XG4gIH1cbiAgLmZvcm0tbGFiZWwtZ3JvdXAgPiBsYWJlbHtcbiAgICBwb3NpdGlvbjphYnNvbHV0ZTtcbiAgICB0b3A6MHB4O1xuICAgIGxlZnQ6MHB4O1xuICAgIGRpc3BsYXk6YmxvY2s7XG4gICAgd2lkdGg6MTAwJTtcbiAgICBtYXJnaW4tYm90dG9tOjBweDtcbiAgICBsaW5lLWhlaWdodDoxLjU7XG4gICAgY29sb3I6cmdiKDczLCA4MCwgODcpO1xuICAgIGJvcmRlci10b3Atd2lkdGg6MXB4O1xuICAgIGJvcmRlci1yaWdodC13aWR0aDoxcHg7XG4gICAgYm9yZGVyLWJvdHRvbS13aWR0aDoxcHg7XG4gICAgYm9yZGVyLWxlZnQtd2lkdGg6MXB4O1xuICAgIGJvcmRlci10b3Atc3R5bGU6c29saWQ7XG4gICAgYm9yZGVyLXJpZ2h0LXN0eWxlOnNvbGlkO1xuICAgIGJvcmRlci1ib3R0b20tc3R5bGU6c29saWQ7XG4gICAgYm9yZGVyLWxlZnQtc3R5bGU6c29saWQ7XG4gICAgYm9yZGVyLXRvcC1jb2xvcjp0cmFuc3BhcmVudDtcbiAgICBib3JkZXItcmlnaHQtY29sb3I6dHJhbnNwYXJlbnQ7XG4gICAgYm9yZGVyLWJvdHRvbS1jb2xvcjp0cmFuc3BhcmVudDtcbiAgICBib3JkZXItbGVmdC1jb2xvcjp0cmFuc3BhcmVudDtcbiAgICBib3JkZXItaW1hZ2Utc291cmNlOmluaXRpYWw7XG4gICAgYm9yZGVyLWltYWdlLXNsaWNlOmluaXRpYWw7XG4gICAgYm9yZGVyLWltYWdlLXdpZHRoOmluaXRpYWw7XG4gICAgYm9yZGVyLWltYWdlLW91dHNldDppbml0aWFsO1xuICAgIGJvcmRlci1pbWFnZS1yZXBlYXQ6aW5pdGlhbDtcbiAgICBib3JkZXItdG9wLWxlZnQtcmFkaXVzOjAuMjVyZW07XG4gICAgYm9yZGVyLXRvcC1yaWdodC1yYWRpdXM6MC4yNXJlbTtcbiAgICBib3JkZXItYm90dG9tLXJpZ2h0LXJhZGl1czowLjI1cmVtO1xuICAgIGJvcmRlci1ib3R0b20tbGVmdC1yYWRpdXM6MC4yNXJlbTtcbiAgICB0cmFuc2l0aW9uLWR1cmF0aW9uOjAuMXM7XG4gICAgdHJhbnNpdGlvbi10aW1pbmctZnVuY3Rpb246ZWFzZS1pbi1vdXQ7XG4gICAgdHJhbnNpdGlvbi1kZWxheTowcztcbiAgICB0cmFuc2l0aW9uLXByb3BlcnR5OmFsbDtcbiAgfVxuICAuZm9ybS1sYWJlbC1ncm91cCBpbnB1dDo6LXdlYmtpdC1pbnB1dC1wbGFjZWhvbGRlcntcbiAgICBjb2xvcjp0cmFuc3BhcmVudDtcbiAgfVxuICAuZm9ybS1sYWJlbC1ncm91cCBpbnB1dDo6cGxhY2Vob2xkZXJ7XG4gICAgY29sb3I6dHJhbnNwYXJlbnQ7XG4gIH1cbiAgLmZvcm0tbGFiZWwtZ3JvdXAgaW5wdXQ6bm90KDpwbGFjZWhvbGRlci1zaG93bil7XG4gICAgcGFkZGluZy10b3A6Y2FsYyh2YXIoLS1pbnB1dC1wYWRkaW5nLXkpICsgdmFyKC0taW5wdXQtcGFkZGluZy15KSAqICgyIC8gMykpO1xuICAgIHBhZGRpbmctYm90dG9tOmNhbGModmFyKC0taW5wdXQtcGFkZGluZy15KSAvIDMpO1xuICB9XG4gIC5mb3JtLWxhYmVsLWdyb3VwIGlucHV0Om5vdCg6cGxhY2Vob2xkZXItc2hvd24pIH4gbGFiZWx7XG4gICAgcGFkZGluZy10b3A6Y2FsYyh2YXIoLS1pbnB1dC1wYWRkaW5nLXkpIC8gMyk7XG4gICAgcGFkZGluZy1ib3R0b206Y2FsYyh2YXIoLS1pbnB1dC1wYWRkaW5nLXkpIC8gMyk7XG4gICAgZm9udC1zaXplOjEycHg7XG4gICAgY29sb3I6cmdiKDExOSwgMTE5LCAxMTkpO1xuICB9XG4gIC5idG4tZ29vZ2xle1xuICAgIGNvbG9yOndoaXRlO1xuICAgIGJhY2tncm91bmQtY29sb3I6cmdiKDIzNCwgNjcsIDUzKTtcbiAgfVxuICAuYnRuLWZhY2Vib29re1xuICAgIGNvbG9yOndoaXRlO1xuICAgIGJhY2tncm91bmQtY29sb3I6cmdiKDU5LCA4OSwgMTUyKTtcbiAgfVxuICAuYnRuLmJ0bi1sZy5idG4tcHJpbWFyeS5idG4tYmxvY2sudGV4dC11cHBlcmNhc2V7XG4gICAgYmFja2dyb3VuZC1jb2xvcjpyZ2IoMjM0LCA2NywgNTMpO1xuICAgIGJvcmRlci10b3Atd2lkdGg6MXB4O1xuICAgIGJvcmRlci1yaWdodC13aWR0aDoxcHg7XG4gICAgYm9yZGVyLWJvdHRvbS13aWR0aDoxcHg7XG4gICAgYm9yZGVyLWxlZnQtd2lkdGg6MXB4O1xuICAgIGJvcmRlci10b3Atc3R5bGU6c29saWQ7XG4gICAgYm9yZGVyLXJpZ2h0LXN0eWxlOnNvbGlkO1xuICAgIGJvcmRlci1ib3R0b20tc3R5bGU6c29saWQ7XG4gICAgYm9yZGVyLWxlZnQtc3R5bGU6c29saWQ7XG4gICAgYm9yZGVyLXRvcC1jb2xvcjpyZ2IoMjM0LCA2NywgNTMpO1xuICAgIGJvcmRlci1yaWdodC1jb2xvcjpyZ2IoMjM0LCA2NywgNTMpO1xuICAgIGJvcmRlci1ib3R0b20tY29sb3I6cmdiKDIzNCwgNjcsIDUzKTtcbiAgICBib3JkZXItbGVmdC1jb2xvcjpyZ2IoMjM0LCA2NywgNTMpO1xuICAgIGJvcmRlci1pbWFnZS1zb3VyY2U6aW5pdGlhbDtcbiAgICBib3JkZXItaW1hZ2Utc2xpY2U6aW5pdGlhbDtcbiAgICBib3JkZXItaW1hZ2Utd2lkdGg6aW5pdGlhbDtcbiAgICBib3JkZXItaW1hZ2Utb3V0c2V0OmluaXRpYWw7XG4gICAgYm9yZGVyLWltYWdlLXJlcGVhdDppbml0aWFsO1xuICB9XG5cbiAgLmJsb2ctaGVhZGVye1xuICAgIGxpbmUtaGVpZ2h0OjE7XG4gICAgYm9yZGVyLWJvdHRvbS13aWR0aDoxcHg7XG4gICAgYm9yZGVyLWJvdHRvbS1zdHlsZTpzb2xpZDtcbiAgICBib3JkZXItYm90dG9tLWNvbG9yOnJnYigyMjksIDIyOSwgMjI5KTtcbiAgfVxuICAuYmxvZy1oZWFkZXItbG9nb3tcbiAgICBmb250LWZhbWlseTpHZW9yZ2lhLCBcIlRpbWVzIE5ldyBSb21hblwiLCBzZXJpZjtcbiAgICBmb250LXNpemU6Mi4yNXJlbTtcbiAgICBmb250LXdlaWdodDpib2xkO1xuICB9XG4gIC5uYXYtc2Nyb2xsZXIgLm5hdntcbiAgICBkaXNwbGF5OmZsZXg7XG4gICAgZmxleC13cmFwOm5vd3JhcDtcbiAgICBwYWRkaW5nLWJvdHRvbToxcmVtO1xuICAgIG1hcmdpbi10b3A6LTFweDtcbiAgICBvdmVyZmxvdy14OmF1dG87XG4gICAgdGV4dC1hbGlnbjpjZW50ZXI7XG4gICAgd2hpdGUtc3BhY2U6bm93cmFwO1xuICB9XG4gIC5uYXYtc2Nyb2xsZXIgLm5hdi1saW5re1xuICAgIHBhZGRpbmctdG9wOjAuNzVyZW07XG4gICAgcGFkZGluZy1ib3R0b206MC43NXJlbTtcbiAgICBmb250LXNpemU6MC44NzVyZW07XG4gIH1cbiAgLmM2MTAxe1xuICAgIG1pbi1oZWlnaHQ6NzVweDtcbiAgfVxuICAuYzYxMjB7XG4gICAgbWluLWhlaWdodDo3NXB4O1xuICB9XG4gIC5qdW1ib3Ryb257XG4gICAgY29sb3I6cmdiKDI1NSwgMjU1LCAyNTUpO1xuICAgIGJhY2tncm91bmQtaW1hZ2U6dXJsKFwiaHR0cHM6Ly93d3cuZ3JpZGJveC5pby9wcm9qZWN0cy8xMDljNjJiNC1lZDZlLTRkZDYtYjgzZi05MzdlNjkyNGFhNWIvYXNzZXRzL2ltZy9wZXhlbHMtcGhvdG8tOTk4NjQxLmpwZWdcIik7XG4gICAgYmFja2dyb3VuZC1yZXBlYXQteDpyZXBlYXQ7XG4gICAgYmFja2dyb3VuZC1yZXBlYXQteTpyZXBlYXQ7XG4gICAgYmFja2dyb3VuZC1hdHRhY2htZW50OnNjcm9sbDtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uLXg6NTAlO1xuICAgIGJhY2tncm91bmQtcG9zaXRpb24teToxMDAlO1xuICAgIGJhY2tncm91bmQtc2l6ZTpjb3ZlcjtcbiAgfVxuICAuYzY2MjF7XG4gICAgbWluLWhlaWdodDo3NXB4O1xuICB9XG4gIC5jNjY0MHtcbiAgICBtaW4taGVpZ2h0Ojc1cHg7XG4gIH1cbiAgLmRpc3BsYXktNC50ZXh0LWNlbnRlcntcbiAgICBtYXJnaW4tdG9wOjBweDtcbiAgICBtYXJnaW4tcmlnaHQ6MHB4O1xuICAgIG1hcmdpbi1ib3R0b206MjNweDtcbiAgICBtYXJnaW4tbGVmdDowcHg7XG4gIH1cbiAgQG1lZGlhIChtYXgtd2lkdGg6IDQ4MHB4KXtcbiAgICAuYmxvZy1oZWFkZXItbG9nby50ZXh0LWRhcmt7XG4gICAgZm9udC1zaXplOjI1cHg7XG4gICAgfVxuICB9XG4gIC5ibG9nLWhlYWRlcntcbiAgICBsaW5lLWhlaWdodDoxO1xuICAgIGJvcmRlci1ib3R0b20td2lkdGg6MXB4O1xuICAgIGJvcmRlci1ib3R0b20tc3R5bGU6c29saWQ7XG4gICAgYm9yZGVyLWJvdHRvbS1jb2xvcjpyZ2IoMjI5LCAyMjksIDIyOSk7XG4gIH1cbiAgLmJsb2ctaGVhZGVyLWxvZ297XG4gICAgZm9udC1mYW1pbHk6R2VvcmdpYSwgXCJUaW1lcyBOZXcgUm9tYW5cIiwgc2VyaWY7XG4gICAgZm9udC1zaXplOjIuMjVyZW07XG4gICAgZm9udC13ZWlnaHQ6Ym9sZDtcbiAgfVxuICAubmF2LXNjcm9sbGVyIC5uYXZ7XG4gICAgZGlzcGxheTpmbGV4O1xuICAgIGZsZXgtd3JhcDpub3dyYXA7XG4gICAgcGFkZGluZy1ib3R0b206MXJlbTtcbiAgICBtYXJnaW4tdG9wOi0xcHg7XG4gICAgb3ZlcmZsb3cteDphdXRvO1xuICAgIHRleHQtYWxpZ246Y2VudGVyO1xuICAgIHdoaXRlLXNwYWNlOm5vd3JhcDtcbiAgfVxuICAubmF2LXNjcm9sbGVyIC5uYXYtbGlua3tcbiAgICBwYWRkaW5nLXRvcDowLjc1cmVtO1xuICAgIHBhZGRpbmctYm90dG9tOjAuNzVyZW07XG4gICAgZm9udC1zaXplOjAuODc1cmVtO1xuICB9XG4gIC5jNjEwMXtcbiAgICBtaW4taGVpZ2h0Ojc1cHg7XG4gIH1cbiAgLmM2MTIwe1xuICAgIG1pbi1oZWlnaHQ6NzVweDtcbiAgfVxuICAuanVtYm90cm9ue1xuICAgIGNvbG9yOnJnYigyNTUsIDI1NSwgMjU1KTtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOnVybChcImh0dHBzOi8vd3d3LmdyaWRib3guaW8vcHJvamVjdHMvMTA5YzYyYjQtZWQ2ZS00ZGQ2LWI4M2YtOTM3ZTY5MjRhYTViL2Fzc2V0cy9pbWcvcGV4ZWxzLXBob3RvLTk5ODY0MS5qcGVnXCIpO1xuICAgIGJhY2tncm91bmQtcmVwZWF0LXg6cmVwZWF0O1xuICAgIGJhY2tncm91bmQtcmVwZWF0LXk6cmVwZWF0O1xuICAgIGJhY2tncm91bmQtYXR0YWNobWVudDpzY3JvbGw7XG4gICAgYmFja2dyb3VuZC1wb3NpdGlvbi14OjUwJTtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uLXk6MTAwJTtcbiAgICBiYWNrZ3JvdW5kLXNpemU6Y292ZXI7XG4gIH1cbiAgLmM2NjIxe1xuICAgIG1pbi1oZWlnaHQ6NzVweDtcbiAgfVxuICAuYzY2NDB7XG4gICAgbWluLWhlaWdodDo3NXB4O1xuICB9XG4gIC5kaXNwbGF5LTQudGV4dC1jZW50ZXJ7XG4gICAgbWFyZ2luLXRvcDowcHg7XG4gICAgbWFyZ2luLXJpZ2h0OjBweDtcbiAgICBtYXJnaW4tYm90dG9tOjIzcHg7XG4gICAgbWFyZ2luLWxlZnQ6MHB4O1xuICB9XG4gIEBtZWRpYSAobWF4LXdpZHRoOiA0ODBweCl7XG4gICAgLmJsb2ctaGVhZGVyLWxvZ28udGV4dC1kYXJre1xuICAgIGZvbnQtc2l6ZToyNXB4O1xuICAgIH1cbiAgfVxuXG4gIC5ibG9nLWhlYWRlcntcbiAgICBsaW5lLWhlaWdodDoxO1xuICAgIGJvcmRlci1ib3R0b20td2lkdGg6MXB4O1xuICAgIGJvcmRlci1ib3R0b20tc3R5bGU6c29saWQ7XG4gICAgYm9yZGVyLWJvdHRvbS1jb2xvcjpyZ2IoMjI5LCAyMjksIDIyOSk7XG4gIH1cbiAgLmJsb2ctaGVhZGVyLWxvZ297XG4gICAgZm9udC1mYW1pbHk6R2VvcmdpYSwgXCJUaW1lcyBOZXcgUm9tYW5cIiwgc2VyaWY7XG4gICAgZm9udC1zaXplOjIuMjVyZW07XG4gICAgZm9udC13ZWlnaHQ6Ym9sZDtcbiAgfVxuICAubmF2LXNjcm9sbGVyIC5uYXZ7XG4gICAgZGlzcGxheTpmbGV4O1xuICAgIGZsZXgtd3JhcDpub3dyYXA7XG4gICAgcGFkZGluZy1ib3R0b206MXJlbTtcbiAgICBtYXJnaW4tdG9wOi0xcHg7XG4gICAgb3ZlcmZsb3cteDphdXRvO1xuICAgIHRleHQtYWxpZ246Y2VudGVyO1xuICAgIHdoaXRlLXNwYWNlOm5vd3JhcDtcbiAgfVxuICAubmF2LXNjcm9sbGVyIC5uYXYtbGlua3tcbiAgICBwYWRkaW5nLXRvcDowLjc1cmVtO1xuICAgIHBhZGRpbmctYm90dG9tOjAuNzVyZW07XG4gICAgZm9udC1zaXplOjAuODc1cmVtO1xuICB9XG4gIC5jNjEwMXtcbiAgICBtaW4taGVpZ2h0Ojc1cHg7XG4gIH1cbiAgLmM2MTIwe1xuICAgIG1pbi1oZWlnaHQ6NzVweDtcbiAgfVxuICAuanVtYm90cm9ue1xuICAgIGNvbG9yOnJnYigyNTUsIDI1NSwgMjU1KTtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOnVybChcImh0dHBzOi8vd3d3LmdyaWRib3guaW8vcHJvamVjdHMvMTA5YzYyYjQtZWQ2ZS00ZGQ2LWI4M2YtOTM3ZTY5MjRhYTViL2Fzc2V0cy9pbWcvcGV4ZWxzLXBob3RvLTk5ODY0MS5qcGVnXCIpO1xuICAgIGJhY2tncm91bmQtcmVwZWF0LXg6cmVwZWF0O1xuICAgIGJhY2tncm91bmQtcmVwZWF0LXk6cmVwZWF0O1xuICAgIGJhY2tncm91bmQtYXR0YWNobWVudDpzY3JvbGw7XG4gICAgYmFja2dyb3VuZC1wb3NpdGlvbi14OjUwJTtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uLXk6MTAwJTtcbiAgICBiYWNrZ3JvdW5kLXNpemU6Y292ZXI7XG4gIH1cbiAgLmM2NjIxe1xuICAgIG1pbi1oZWlnaHQ6NzVweDtcbiAgfVxuICAuYzY2NDB7XG4gICAgbWluLWhlaWdodDo3NXB4O1xuICB9XG4gIC5kaXNwbGF5LTQudGV4dC1jZW50ZXJ7XG4gICAgbWFyZ2luLXRvcDowcHg7XG4gICAgbWFyZ2luLXJpZ2h0OjBweDtcbiAgICBtYXJnaW4tYm90dG9tOjIzcHg7XG4gICAgbWFyZ2luLWxlZnQ6MHB4O1xuICB9XG4gIEBtZWRpYSAobWF4LXdpZHRoOiA0ODBweCl7XG4gICAgLmJsb2ctaGVhZGVyLWxvZ28udGV4dC1kYXJre1xuICAgIGZvbnQtc2l6ZToyNXB4O1xuICAgIH1cbiAgfVxuICBcbiAgICAiXX0= */"
+module.exports = ":root {\n    --input-padding-x: 1.5rem;\n    --input-padding-y: 0.75rem;\n}\n\n.card-signin {\n    border-top-width: 0px;\n    border-right-width: 0px;\n    border-bottom-width: 0px;\n    border-left-width: 0px;\n    border-top-style: initial;\n    border-right-style: initial;\n    border-bottom-style: initial;\n    border-left-style: initial;\n    border-top-color: initial;\n    border-right-color: initial;\n    border-bottom-color: initial;\n    border-left-color: initial;\n    border-image-source: initial;\n    border-image-slice: initial;\n    border-image-width: initial;\n    border-image-outset: initial;\n    border-image-repeat: initial;\n    border-top-left-radius: 1rem;\n    border-top-right-radius: 1rem;\n    border-bottom-right-radius: 1rem;\n    border-bottom-left-radius: 1rem;\n    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem 1rem 0px;\n}\n\n.card-signin .card-img-left {\n    width: 45%;\n    background-image: url(\"https://source.unsplash.com/collection/190727/414x512\");\n    background-position-x: 50%;\n    background-position-y: 50%;\n    background-repeat-x: initial;\n    background-repeat-y: initial;\n    background-attachment: scroll;\n    background-origin: initial;\n    background-clip: initial;\n    background-color: initial;\n    background-size: cover;\n}\n\n.card-signin .card-title {\n    margin-bottom: 2rem;\n    font-weight: 300;\n    font-size: 1.5rem;\n}\n\n.card-signin .card-body {\n    padding-top: 2rem;\n    padding-right: 2rem;\n    padding-bottom: 2rem;\n    padding-left: 2rem;\n}\n\n.form-signin {\n    width: 100%;\n}\n\n.form-signin .btn {\n    font-size: 80%;\n    border-top-left-radius: 5rem;\n    border-top-right-radius: 5rem;\n    border-bottom-right-radius: 5rem;\n    border-bottom-left-radius: 5rem;\n    letter-spacing: 0.1rem;\n    font-weight: bold;\n    padding-top: 1rem;\n    padding-right: 1rem;\n    padding-bottom: 1rem;\n    padding-left: 1rem;\n    transition-duration: 0.2s;\n    transition-timing-function: ease;\n    transition-delay: 0s;\n    transition-property: all;\n}\n\n.form-label-group {\n    position: relative;\n    margin-bottom: 1rem;\n}\n\n.form-label-group>label {\n    position: absolute;\n    top: 0px;\n    left: 0px;\n    display: block;\n    width: 100%;\n    margin-bottom: 0px;\n    line-height: 1.5;\n    color: rgb(73, 80, 87);\n    border-top-width: 1px;\n    border-right-width: 1px;\n    border-bottom-width: 1px;\n    border-left-width: 1px;\n    border-top-style: solid;\n    border-right-style: solid;\n    border-bottom-style: solid;\n    border-left-style: solid;\n    border-top-color: transparent;\n    border-right-color: transparent;\n    border-bottom-color: transparent;\n    border-left-color: transparent;\n    border-image-source: initial;\n    border-image-slice: initial;\n    border-image-width: initial;\n    border-image-outset: initial;\n    border-image-repeat: initial;\n    border-top-left-radius: 0.25rem;\n    border-top-right-radius: 0.25rem;\n    border-bottom-right-radius: 0.25rem;\n    border-bottom-left-radius: 0.25rem;\n    transition-duration: 0.1s;\n    transition-timing-function: ease-in-out;\n    transition-delay: 0s;\n    transition-property: all;\n}\n\n.form-label-group input::-webkit-input-placeholder {\n    color: transparent;\n}\n\n.form-label-group input::-ms-input-placeholder {\n    color: transparent;\n}\n\n.form-label-group input::placeholder {\n    color: transparent;\n}\n\n.form-label-group input:not(:placeholder-shown) {\n    padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));\n    padding-bottom: calc(var(--input-padding-y) / 3);\n}\n\n.form-label-group input:not(:placeholder-shown)~label {\n    padding-top: calc(var(--input-padding-y) / 3);\n    padding-bottom: calc(var(--input-padding-y) / 3);\n    font-size: 12px;\n    color: rgb(119, 119, 119);\n}\n\n.btn-google {\n    color: white;\n    background-color: rgb(234, 67, 53);\n}\n\n.btn-facebook {\n    color: white;\n    background-color: rgb(59, 89, 152);\n}\n\n.btn.btn-lg.btn-primary.btn-block.text-uppercase {\n    background-color: rgb(234, 67, 53);\n    border-top-width: 1px;\n    border-right-width: 1px;\n    border-bottom-width: 1px;\n    border-left-width: 1px;\n    border-top-style: solid;\n    border-right-style: solid;\n    border-bottom-style: solid;\n    border-left-style: solid;\n    border-top-color: rgb(234, 67, 53);\n    border-right-color: rgb(234, 67, 53);\n    border-bottom-color: rgb(234, 67, 53);\n    border-left-color: rgb(234, 67, 53);\n    border-image-source: initial;\n    border-image-slice: initial;\n    border-image-width: initial;\n    border-image-outset: initial;\n    border-image-repeat: initial;\n}\n\n.blog-header {\n    line-height: 1;\n    border-bottom-width: 1px;\n    border-bottom-style: solid;\n    border-bottom-color: rgb(229, 229, 229);\n}\n\n.blog-header-logo {\n    font-family: Georgia, \"Times New Roman\", serif;\n    font-size: 2.25rem;\n    font-weight: bold;\n}\n\n.nav-scroller .nav {\n    display: flex;\n    flex-wrap: nowrap;\n    padding-bottom: 1rem;\n    margin-top: -1px;\n    overflow-x: auto;\n    text-align: center;\n    white-space: nowrap;\n}\n\n.nav-scroller .nav-link {\n    padding-top: 0.75rem;\n    padding-bottom: 0.75rem;\n    font-size: 0.875rem;\n}\n\n.c6101 {\n    min-height: 75px;\n}\n\n.c6120 {\n    min-height: 75px;\n}\n\n.c6621 {\n    min-height: 75px;\n}\n\n.c6640 {\n    min-height: 75px;\n}\n\n.display-4.text-center {\n    margin-top: 0px;\n    margin-right: 0px;\n    margin-bottom: 23px;\n    margin-left: 0px;\n}\n\n@media (max-width: 480px) {\n    .blog-header-logo.text-dark {\n        font-size: 25px;\n    }\n}\n\n.blog-header {\n    line-height: 1;\n    border-bottom-width: 1px;\n    border-bottom-style: solid;\n    border-bottom-color: rgb(229, 229, 229);\n}\n\n.blog-header-logo {\n    font-family: Georgia, \"Times New Roman\", serif;\n    font-size: 2.25rem;\n    font-weight: bold;\n}\n\n.nav-scroller .nav {\n    display: flex;\n    flex-wrap: nowrap;\n    padding-bottom: 1rem;\n    margin-top: -1px;\n    overflow-x: auto;\n    text-align: center;\n    white-space: nowrap;\n}\n\n.nav-scroller .nav-link {\n    padding-top: 0.75rem;\n    padding-bottom: 0.75rem;\n    font-size: 0.875rem;\n}\n\n.c6101 {\n    min-height: 75px;\n}\n\n.c6120 {\n    min-height: 75px;\n}\n\n.c6621 {\n    min-height: 75px;\n}\n\n.c6640 {\n    min-height: 75px;\n}\n\n.display-4.text-center {\n    margin-top: 0px;\n    margin-right: 0px;\n    margin-bottom: 23px;\n    margin-left: 0px;\n}\n\n@media (max-width: 480px) {\n    .blog-header-logo.text-dark {\n        font-size: 25px;\n    }\n}\n\n.blog-header {\n    line-height: 1;\n    border-bottom-width: 1px;\n    border-bottom-style: solid;\n    border-bottom-color: rgb(229, 229, 229);\n}\n\n.blog-header-logo {\n    font-family: Georgia, \"Times New Roman\", serif;\n    font-size: 2.25rem;\n    font-weight: bold;\n}\n\n.nav-scroller .nav {\n    display: flex;\n    flex-wrap: nowrap;\n    padding-bottom: 1rem;\n    margin-top: -1px;\n    overflow-x: auto;\n    text-align: center;\n    white-space: nowrap;\n}\n\n.nav-scroller .nav-link {\n    padding-top: 0.75rem;\n    padding-bottom: 0.75rem;\n    font-size: 0.875rem;\n}\n\n.c6101 {\n    min-height: 75px;\n}\n\n.c6120 {\n    min-height: 75px;\n}\n\n.jumbotron {\n    color: rgb(255, 255, 255);\n    background-image: url(\"https://www.gridbox.io/projects/109c62b4-ed6e-4dd6-b83f-937e6924aa5b/assets/img/pexels-photo-998641.jpeg\");\n    background-repeat-x: repeat;\n    background-repeat-y: repeat;\n    background-attachment: scroll;\n    background-position-x: 50%;\n    background-position-y: 100%;\n    background-size: cover;\n}\n\n.c6621 {\n    min-height: 75px;\n}\n\n.c6640 {\n    min-height: 75px;\n}\n\n.display-4.text-center {\n    margin-top: 0px;\n    margin-right: 0px;\n    margin-bottom: 23px;\n    margin-left: 0px;\n}\n\n@media (max-width: 480px) {\n    .blog-header-logo.text-dark {\n        font-size: 25px;\n    }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdmlldy9pbmljaW8vaW5pY2lvLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSx5QkFBeUI7SUFDekIsMEJBQTBCO0FBQzlCOztBQUVBO0lBQ0kscUJBQXFCO0lBQ3JCLHVCQUF1QjtJQUN2Qix3QkFBd0I7SUFDeEIsc0JBQXNCO0lBQ3RCLHlCQUF5QjtJQUN6QiwyQkFBMkI7SUFDM0IsNEJBQTRCO0lBQzVCLDBCQUEwQjtJQUMxQix5QkFBeUI7SUFDekIsMkJBQTJCO0lBQzNCLDRCQUE0QjtJQUM1QiwwQkFBMEI7SUFDMUIsNEJBQTRCO0lBQzVCLDJCQUEyQjtJQUMzQiwyQkFBMkI7SUFDM0IsNEJBQTRCO0lBQzVCLDRCQUE0QjtJQUM1Qiw0QkFBNEI7SUFDNUIsNkJBQTZCO0lBQzdCLGdDQUFnQztJQUNoQywrQkFBK0I7SUFDL0Isa0RBQWtEO0FBQ3REOztBQUVBO0lBQ0ksVUFBVTtJQUNWLDhFQUE4RTtJQUM5RSwwQkFBMEI7SUFDMUIsMEJBQTBCO0lBQzFCLDRCQUE0QjtJQUM1Qiw0QkFBNEI7SUFDNUIsNkJBQTZCO0lBQzdCLDBCQUEwQjtJQUMxQix3QkFBd0I7SUFDeEIseUJBQXlCO0lBQ3pCLHNCQUFzQjtBQUMxQjs7QUFFQTtJQUNJLG1CQUFtQjtJQUNuQixnQkFBZ0I7SUFDaEIsaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksaUJBQWlCO0lBQ2pCLG1CQUFtQjtJQUNuQixvQkFBb0I7SUFDcEIsa0JBQWtCO0FBQ3RCOztBQUVBO0lBQ0ksV0FBVztBQUNmOztBQUVBO0lBQ0ksY0FBYztJQUNkLDRCQUE0QjtJQUM1Qiw2QkFBNkI7SUFDN0IsZ0NBQWdDO0lBQ2hDLCtCQUErQjtJQUMvQixzQkFBc0I7SUFDdEIsaUJBQWlCO0lBQ2pCLGlCQUFpQjtJQUNqQixtQkFBbUI7SUFDbkIsb0JBQW9CO0lBQ3BCLGtCQUFrQjtJQUNsQix5QkFBeUI7SUFDekIsZ0NBQWdDO0lBQ2hDLG9CQUFvQjtJQUNwQix3QkFBd0I7QUFDNUI7O0FBRUE7SUFDSSxrQkFBa0I7SUFDbEIsbUJBQW1CO0FBQ3ZCOztBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLFFBQVE7SUFDUixTQUFTO0lBQ1QsY0FBYztJQUNkLFdBQVc7SUFDWCxrQkFBa0I7SUFDbEIsZ0JBQWdCO0lBQ2hCLHNCQUFzQjtJQUN0QixxQkFBcUI7SUFDckIsdUJBQXVCO0lBQ3ZCLHdCQUF3QjtJQUN4QixzQkFBc0I7SUFDdEIsdUJBQXVCO0lBQ3ZCLHlCQUF5QjtJQUN6QiwwQkFBMEI7SUFDMUIsd0JBQXdCO0lBQ3hCLDZCQUE2QjtJQUM3QiwrQkFBK0I7SUFDL0IsZ0NBQWdDO0lBQ2hDLDhCQUE4QjtJQUM5Qiw0QkFBNEI7SUFDNUIsMkJBQTJCO0lBQzNCLDJCQUEyQjtJQUMzQiw0QkFBNEI7SUFDNUIsNEJBQTRCO0lBQzVCLCtCQUErQjtJQUMvQixnQ0FBZ0M7SUFDaEMsbUNBQW1DO0lBQ25DLGtDQUFrQztJQUNsQyx5QkFBeUI7SUFDekIsdUNBQXVDO0lBQ3ZDLG9CQUFvQjtJQUNwQix3QkFBd0I7QUFDNUI7O0FBRUE7SUFDSSxrQkFBa0I7QUFDdEI7O0FBRUE7SUFDSSxrQkFBa0I7QUFDdEI7O0FBRkE7SUFDSSxrQkFBa0I7QUFDdEI7O0FBRUE7SUFDSSw0RUFBNEU7SUFDNUUsZ0RBQWdEO0FBQ3BEOztBQUVBO0lBQ0ksNkNBQTZDO0lBQzdDLGdEQUFnRDtJQUNoRCxlQUFlO0lBQ2YseUJBQXlCO0FBQzdCOztBQUVBO0lBQ0ksWUFBWTtJQUNaLGtDQUFrQztBQUN0Qzs7QUFFQTtJQUNJLFlBQVk7SUFDWixrQ0FBa0M7QUFDdEM7O0FBRUE7SUFDSSxrQ0FBa0M7SUFDbEMscUJBQXFCO0lBQ3JCLHVCQUF1QjtJQUN2Qix3QkFBd0I7SUFDeEIsc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2Qix5QkFBeUI7SUFDekIsMEJBQTBCO0lBQzFCLHdCQUF3QjtJQUN4QixrQ0FBa0M7SUFDbEMsb0NBQW9DO0lBQ3BDLHFDQUFxQztJQUNyQyxtQ0FBbUM7SUFDbkMsNEJBQTRCO0lBQzVCLDJCQUEyQjtJQUMzQiwyQkFBMkI7SUFDM0IsNEJBQTRCO0lBQzVCLDRCQUE0QjtBQUNoQzs7QUFFQTtJQUNJLGNBQWM7SUFDZCx3QkFBd0I7SUFDeEIsMEJBQTBCO0lBQzFCLHVDQUF1QztBQUMzQzs7QUFFQTtJQUNJLDhDQUE4QztJQUM5QyxrQkFBa0I7SUFDbEIsaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksYUFBYTtJQUNiLGlCQUFpQjtJQUNqQixvQkFBb0I7SUFDcEIsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixrQkFBa0I7SUFDbEIsbUJBQW1CO0FBQ3ZCOztBQUVBO0lBQ0ksb0JBQW9CO0lBQ3BCLHVCQUF1QjtJQUN2QixtQkFBbUI7QUFDdkI7O0FBRUE7SUFDSSxnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxlQUFlO0lBQ2YsaUJBQWlCO0lBQ2pCLG1CQUFtQjtJQUNuQixnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSTtRQUNJLGVBQWU7SUFDbkI7QUFDSjs7QUFFQTtJQUNJLGNBQWM7SUFDZCx3QkFBd0I7SUFDeEIsMEJBQTBCO0lBQzFCLHVDQUF1QztBQUMzQzs7QUFFQTtJQUNJLDhDQUE4QztJQUM5QyxrQkFBa0I7SUFDbEIsaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksYUFBYTtJQUNiLGlCQUFpQjtJQUNqQixvQkFBb0I7SUFDcEIsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixrQkFBa0I7SUFDbEIsbUJBQW1CO0FBQ3ZCOztBQUVBO0lBQ0ksb0JBQW9CO0lBQ3BCLHVCQUF1QjtJQUN2QixtQkFBbUI7QUFDdkI7O0FBRUE7SUFDSSxnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxlQUFlO0lBQ2YsaUJBQWlCO0lBQ2pCLG1CQUFtQjtJQUNuQixnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSTtRQUNJLGVBQWU7SUFDbkI7QUFDSjs7QUFFQTtJQUNJLGNBQWM7SUFDZCx3QkFBd0I7SUFDeEIsMEJBQTBCO0lBQzFCLHVDQUF1QztBQUMzQzs7QUFFQTtJQUNJLDhDQUE4QztJQUM5QyxrQkFBa0I7SUFDbEIsaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksYUFBYTtJQUNiLGlCQUFpQjtJQUNqQixvQkFBb0I7SUFDcEIsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixrQkFBa0I7SUFDbEIsbUJBQW1CO0FBQ3ZCOztBQUVBO0lBQ0ksb0JBQW9CO0lBQ3BCLHVCQUF1QjtJQUN2QixtQkFBbUI7QUFDdkI7O0FBRUE7SUFDSSxnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSx5QkFBeUI7SUFDekIsaUlBQWlJO0lBQ2pJLDJCQUEyQjtJQUMzQiwyQkFBMkI7SUFDM0IsNkJBQTZCO0lBQzdCLDBCQUEwQjtJQUMxQiwyQkFBMkI7SUFDM0Isc0JBQXNCO0FBQzFCOztBQUVBO0lBQ0ksZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0ksZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0ksZUFBZTtJQUNmLGlCQUFpQjtJQUNqQixtQkFBbUI7SUFDbkIsZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0k7UUFDSSxlQUFlO0lBQ25CO0FBQ0oiLCJmaWxlIjoic3JjL2FwcC92aWV3L2luaWNpby9pbmljaW8uY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIjpyb290IHtcbiAgICAtLWlucHV0LXBhZGRpbmcteDogMS41cmVtO1xuICAgIC0taW5wdXQtcGFkZGluZy15OiAwLjc1cmVtO1xufVxuXG4uY2FyZC1zaWduaW4ge1xuICAgIGJvcmRlci10b3Atd2lkdGg6IDBweDtcbiAgICBib3JkZXItcmlnaHQtd2lkdGg6IDBweDtcbiAgICBib3JkZXItYm90dG9tLXdpZHRoOiAwcHg7XG4gICAgYm9yZGVyLWxlZnQtd2lkdGg6IDBweDtcbiAgICBib3JkZXItdG9wLXN0eWxlOiBpbml0aWFsO1xuICAgIGJvcmRlci1yaWdodC1zdHlsZTogaW5pdGlhbDtcbiAgICBib3JkZXItYm90dG9tLXN0eWxlOiBpbml0aWFsO1xuICAgIGJvcmRlci1sZWZ0LXN0eWxlOiBpbml0aWFsO1xuICAgIGJvcmRlci10b3AtY29sb3I6IGluaXRpYWw7XG4gICAgYm9yZGVyLXJpZ2h0LWNvbG9yOiBpbml0aWFsO1xuICAgIGJvcmRlci1ib3R0b20tY29sb3I6IGluaXRpYWw7XG4gICAgYm9yZGVyLWxlZnQtY29sb3I6IGluaXRpYWw7XG4gICAgYm9yZGVyLWltYWdlLXNvdXJjZTogaW5pdGlhbDtcbiAgICBib3JkZXItaW1hZ2Utc2xpY2U6IGluaXRpYWw7XG4gICAgYm9yZGVyLWltYWdlLXdpZHRoOiBpbml0aWFsO1xuICAgIGJvcmRlci1pbWFnZS1vdXRzZXQ6IGluaXRpYWw7XG4gICAgYm9yZGVyLWltYWdlLXJlcGVhdDogaW5pdGlhbDtcbiAgICBib3JkZXItdG9wLWxlZnQtcmFkaXVzOiAxcmVtO1xuICAgIGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiAxcmVtO1xuICAgIGJvcmRlci1ib3R0b20tcmlnaHQtcmFkaXVzOiAxcmVtO1xuICAgIGJvcmRlci1ib3R0b20tbGVmdC1yYWRpdXM6IDFyZW07XG4gICAgYm94LXNoYWRvdzogcmdiYSgwLCAwLCAwLCAwLjEpIDBweCAwLjVyZW0gMXJlbSAwcHg7XG59XG5cbi5jYXJkLXNpZ25pbiAuY2FyZC1pbWctbGVmdCB7XG4gICAgd2lkdGg6IDQ1JTtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoXCJodHRwczovL3NvdXJjZS51bnNwbGFzaC5jb20vY29sbGVjdGlvbi8xOTA3MjcvNDE0eDUxMlwiKTtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uLXg6IDUwJTtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uLXk6IDUwJTtcbiAgICBiYWNrZ3JvdW5kLXJlcGVhdC14OiBpbml0aWFsO1xuICAgIGJhY2tncm91bmQtcmVwZWF0LXk6IGluaXRpYWw7XG4gICAgYmFja2dyb3VuZC1hdHRhY2htZW50OiBzY3JvbGw7XG4gICAgYmFja2dyb3VuZC1vcmlnaW46IGluaXRpYWw7XG4gICAgYmFja2dyb3VuZC1jbGlwOiBpbml0aWFsO1xuICAgIGJhY2tncm91bmQtY29sb3I6IGluaXRpYWw7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3Zlcjtcbn1cblxuLmNhcmQtc2lnbmluIC5jYXJkLXRpdGxlIHtcbiAgICBtYXJnaW4tYm90dG9tOiAycmVtO1xuICAgIGZvbnQtd2VpZ2h0OiAzMDA7XG4gICAgZm9udC1zaXplOiAxLjVyZW07XG59XG5cbi5jYXJkLXNpZ25pbiAuY2FyZC1ib2R5IHtcbiAgICBwYWRkaW5nLXRvcDogMnJlbTtcbiAgICBwYWRkaW5nLXJpZ2h0OiAycmVtO1xuICAgIHBhZGRpbmctYm90dG9tOiAycmVtO1xuICAgIHBhZGRpbmctbGVmdDogMnJlbTtcbn1cblxuLmZvcm0tc2lnbmluIHtcbiAgICB3aWR0aDogMTAwJTtcbn1cblxuLmZvcm0tc2lnbmluIC5idG4ge1xuICAgIGZvbnQtc2l6ZTogODAlO1xuICAgIGJvcmRlci10b3AtbGVmdC1yYWRpdXM6IDVyZW07XG4gICAgYm9yZGVyLXRvcC1yaWdodC1yYWRpdXM6IDVyZW07XG4gICAgYm9yZGVyLWJvdHRvbS1yaWdodC1yYWRpdXM6IDVyZW07XG4gICAgYm9yZGVyLWJvdHRvbS1sZWZ0LXJhZGl1czogNXJlbTtcbiAgICBsZXR0ZXItc3BhY2luZzogMC4xcmVtO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgIHBhZGRpbmctdG9wOiAxcmVtO1xuICAgIHBhZGRpbmctcmlnaHQ6IDFyZW07XG4gICAgcGFkZGluZy1ib3R0b206IDFyZW07XG4gICAgcGFkZGluZy1sZWZ0OiAxcmVtO1xuICAgIHRyYW5zaXRpb24tZHVyYXRpb246IDAuMnM7XG4gICAgdHJhbnNpdGlvbi10aW1pbmctZnVuY3Rpb246IGVhc2U7XG4gICAgdHJhbnNpdGlvbi1kZWxheTogMHM7XG4gICAgdHJhbnNpdGlvbi1wcm9wZXJ0eTogYWxsO1xufVxuXG4uZm9ybS1sYWJlbC1ncm91cCB7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIG1hcmdpbi1ib3R0b206IDFyZW07XG59XG5cbi5mb3JtLWxhYmVsLWdyb3VwPmxhYmVsIHtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgdG9wOiAwcHg7XG4gICAgbGVmdDogMHB4O1xuICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIG1hcmdpbi1ib3R0b206IDBweDtcbiAgICBsaW5lLWhlaWdodDogMS41O1xuICAgIGNvbG9yOiByZ2IoNzMsIDgwLCA4Nyk7XG4gICAgYm9yZGVyLXRvcC13aWR0aDogMXB4O1xuICAgIGJvcmRlci1yaWdodC13aWR0aDogMXB4O1xuICAgIGJvcmRlci1ib3R0b20td2lkdGg6IDFweDtcbiAgICBib3JkZXItbGVmdC13aWR0aDogMXB4O1xuICAgIGJvcmRlci10b3Atc3R5bGU6IHNvbGlkO1xuICAgIGJvcmRlci1yaWdodC1zdHlsZTogc29saWQ7XG4gICAgYm9yZGVyLWJvdHRvbS1zdHlsZTogc29saWQ7XG4gICAgYm9yZGVyLWxlZnQtc3R5bGU6IHNvbGlkO1xuICAgIGJvcmRlci10b3AtY29sb3I6IHRyYW5zcGFyZW50O1xuICAgIGJvcmRlci1yaWdodC1jb2xvcjogdHJhbnNwYXJlbnQ7XG4gICAgYm9yZGVyLWJvdHRvbS1jb2xvcjogdHJhbnNwYXJlbnQ7XG4gICAgYm9yZGVyLWxlZnQtY29sb3I6IHRyYW5zcGFyZW50O1xuICAgIGJvcmRlci1pbWFnZS1zb3VyY2U6IGluaXRpYWw7XG4gICAgYm9yZGVyLWltYWdlLXNsaWNlOiBpbml0aWFsO1xuICAgIGJvcmRlci1pbWFnZS13aWR0aDogaW5pdGlhbDtcbiAgICBib3JkZXItaW1hZ2Utb3V0c2V0OiBpbml0aWFsO1xuICAgIGJvcmRlci1pbWFnZS1yZXBlYXQ6IGluaXRpYWw7XG4gICAgYm9yZGVyLXRvcC1sZWZ0LXJhZGl1czogMC4yNXJlbTtcbiAgICBib3JkZXItdG9wLXJpZ2h0LXJhZGl1czogMC4yNXJlbTtcbiAgICBib3JkZXItYm90dG9tLXJpZ2h0LXJhZGl1czogMC4yNXJlbTtcbiAgICBib3JkZXItYm90dG9tLWxlZnQtcmFkaXVzOiAwLjI1cmVtO1xuICAgIHRyYW5zaXRpb24tZHVyYXRpb246IDAuMXM7XG4gICAgdHJhbnNpdGlvbi10aW1pbmctZnVuY3Rpb246IGVhc2UtaW4tb3V0O1xuICAgIHRyYW5zaXRpb24tZGVsYXk6IDBzO1xuICAgIHRyYW5zaXRpb24tcHJvcGVydHk6IGFsbDtcbn1cblxuLmZvcm0tbGFiZWwtZ3JvdXAgaW5wdXQ6Oi13ZWJraXQtaW5wdXQtcGxhY2Vob2xkZXIge1xuICAgIGNvbG9yOiB0cmFuc3BhcmVudDtcbn1cblxuLmZvcm0tbGFiZWwtZ3JvdXAgaW5wdXQ6OnBsYWNlaG9sZGVyIHtcbiAgICBjb2xvcjogdHJhbnNwYXJlbnQ7XG59XG5cbi5mb3JtLWxhYmVsLWdyb3VwIGlucHV0Om5vdCg6cGxhY2Vob2xkZXItc2hvd24pIHtcbiAgICBwYWRkaW5nLXRvcDogY2FsYyh2YXIoLS1pbnB1dC1wYWRkaW5nLXkpICsgdmFyKC0taW5wdXQtcGFkZGluZy15KSAqICgyIC8gMykpO1xuICAgIHBhZGRpbmctYm90dG9tOiBjYWxjKHZhcigtLWlucHV0LXBhZGRpbmcteSkgLyAzKTtcbn1cblxuLmZvcm0tbGFiZWwtZ3JvdXAgaW5wdXQ6bm90KDpwbGFjZWhvbGRlci1zaG93bil+bGFiZWwge1xuICAgIHBhZGRpbmctdG9wOiBjYWxjKHZhcigtLWlucHV0LXBhZGRpbmcteSkgLyAzKTtcbiAgICBwYWRkaW5nLWJvdHRvbTogY2FsYyh2YXIoLS1pbnB1dC1wYWRkaW5nLXkpIC8gMyk7XG4gICAgZm9udC1zaXplOiAxMnB4O1xuICAgIGNvbG9yOiByZ2IoMTE5LCAxMTksIDExOSk7XG59XG5cbi5idG4tZ29vZ2xlIHtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIzNCwgNjcsIDUzKTtcbn1cblxuLmJ0bi1mYWNlYm9vayB7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYig1OSwgODksIDE1Mik7XG59XG5cbi5idG4uYnRuLWxnLmJ0bi1wcmltYXJ5LmJ0bi1ibG9jay50ZXh0LXVwcGVyY2FzZSB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIzNCwgNjcsIDUzKTtcbiAgICBib3JkZXItdG9wLXdpZHRoOiAxcHg7XG4gICAgYm9yZGVyLXJpZ2h0LXdpZHRoOiAxcHg7XG4gICAgYm9yZGVyLWJvdHRvbS13aWR0aDogMXB4O1xuICAgIGJvcmRlci1sZWZ0LXdpZHRoOiAxcHg7XG4gICAgYm9yZGVyLXRvcC1zdHlsZTogc29saWQ7XG4gICAgYm9yZGVyLXJpZ2h0LXN0eWxlOiBzb2xpZDtcbiAgICBib3JkZXItYm90dG9tLXN0eWxlOiBzb2xpZDtcbiAgICBib3JkZXItbGVmdC1zdHlsZTogc29saWQ7XG4gICAgYm9yZGVyLXRvcC1jb2xvcjogcmdiKDIzNCwgNjcsIDUzKTtcbiAgICBib3JkZXItcmlnaHQtY29sb3I6IHJnYigyMzQsIDY3LCA1Myk7XG4gICAgYm9yZGVyLWJvdHRvbS1jb2xvcjogcmdiKDIzNCwgNjcsIDUzKTtcbiAgICBib3JkZXItbGVmdC1jb2xvcjogcmdiKDIzNCwgNjcsIDUzKTtcbiAgICBib3JkZXItaW1hZ2Utc291cmNlOiBpbml0aWFsO1xuICAgIGJvcmRlci1pbWFnZS1zbGljZTogaW5pdGlhbDtcbiAgICBib3JkZXItaW1hZ2Utd2lkdGg6IGluaXRpYWw7XG4gICAgYm9yZGVyLWltYWdlLW91dHNldDogaW5pdGlhbDtcbiAgICBib3JkZXItaW1hZ2UtcmVwZWF0OiBpbml0aWFsO1xufVxuXG4uYmxvZy1oZWFkZXIge1xuICAgIGxpbmUtaGVpZ2h0OiAxO1xuICAgIGJvcmRlci1ib3R0b20td2lkdGg6IDFweDtcbiAgICBib3JkZXItYm90dG9tLXN0eWxlOiBzb2xpZDtcbiAgICBib3JkZXItYm90dG9tLWNvbG9yOiByZ2IoMjI5LCAyMjksIDIyOSk7XG59XG5cbi5ibG9nLWhlYWRlci1sb2dvIHtcbiAgICBmb250LWZhbWlseTogR2VvcmdpYSwgXCJUaW1lcyBOZXcgUm9tYW5cIiwgc2VyaWY7XG4gICAgZm9udC1zaXplOiAyLjI1cmVtO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xufVxuXG4ubmF2LXNjcm9sbGVyIC5uYXYge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC13cmFwOiBub3dyYXA7XG4gICAgcGFkZGluZy1ib3R0b206IDFyZW07XG4gICAgbWFyZ2luLXRvcDogLTFweDtcbiAgICBvdmVyZmxvdy14OiBhdXRvO1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICB3aGl0ZS1zcGFjZTogbm93cmFwO1xufVxuXG4ubmF2LXNjcm9sbGVyIC5uYXYtbGluayB7XG4gICAgcGFkZGluZy10b3A6IDAuNzVyZW07XG4gICAgcGFkZGluZy1ib3R0b206IDAuNzVyZW07XG4gICAgZm9udC1zaXplOiAwLjg3NXJlbTtcbn1cblxuLmM2MTAxIHtcbiAgICBtaW4taGVpZ2h0OiA3NXB4O1xufVxuXG4uYzYxMjAge1xuICAgIG1pbi1oZWlnaHQ6IDc1cHg7XG59XG5cbi5jNjYyMSB7XG4gICAgbWluLWhlaWdodDogNzVweDtcbn1cblxuLmM2NjQwIHtcbiAgICBtaW4taGVpZ2h0OiA3NXB4O1xufVxuXG4uZGlzcGxheS00LnRleHQtY2VudGVyIHtcbiAgICBtYXJnaW4tdG9wOiAwcHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAwcHg7XG4gICAgbWFyZ2luLWJvdHRvbTogMjNweDtcbiAgICBtYXJnaW4tbGVmdDogMHB4O1xufVxuXG5AbWVkaWEgKG1heC13aWR0aDogNDgwcHgpIHtcbiAgICAuYmxvZy1oZWFkZXItbG9nby50ZXh0LWRhcmsge1xuICAgICAgICBmb250LXNpemU6IDI1cHg7XG4gICAgfVxufVxuXG4uYmxvZy1oZWFkZXIge1xuICAgIGxpbmUtaGVpZ2h0OiAxO1xuICAgIGJvcmRlci1ib3R0b20td2lkdGg6IDFweDtcbiAgICBib3JkZXItYm90dG9tLXN0eWxlOiBzb2xpZDtcbiAgICBib3JkZXItYm90dG9tLWNvbG9yOiByZ2IoMjI5LCAyMjksIDIyOSk7XG59XG5cbi5ibG9nLWhlYWRlci1sb2dvIHtcbiAgICBmb250LWZhbWlseTogR2VvcmdpYSwgXCJUaW1lcyBOZXcgUm9tYW5cIiwgc2VyaWY7XG4gICAgZm9udC1zaXplOiAyLjI1cmVtO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xufVxuXG4ubmF2LXNjcm9sbGVyIC5uYXYge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC13cmFwOiBub3dyYXA7XG4gICAgcGFkZGluZy1ib3R0b206IDFyZW07XG4gICAgbWFyZ2luLXRvcDogLTFweDtcbiAgICBvdmVyZmxvdy14OiBhdXRvO1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICB3aGl0ZS1zcGFjZTogbm93cmFwO1xufVxuXG4ubmF2LXNjcm9sbGVyIC5uYXYtbGluayB7XG4gICAgcGFkZGluZy10b3A6IDAuNzVyZW07XG4gICAgcGFkZGluZy1ib3R0b206IDAuNzVyZW07XG4gICAgZm9udC1zaXplOiAwLjg3NXJlbTtcbn1cblxuLmM2MTAxIHtcbiAgICBtaW4taGVpZ2h0OiA3NXB4O1xufVxuXG4uYzYxMjAge1xuICAgIG1pbi1oZWlnaHQ6IDc1cHg7XG59XG5cbi5jNjYyMSB7XG4gICAgbWluLWhlaWdodDogNzVweDtcbn1cblxuLmM2NjQwIHtcbiAgICBtaW4taGVpZ2h0OiA3NXB4O1xufVxuXG4uZGlzcGxheS00LnRleHQtY2VudGVyIHtcbiAgICBtYXJnaW4tdG9wOiAwcHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAwcHg7XG4gICAgbWFyZ2luLWJvdHRvbTogMjNweDtcbiAgICBtYXJnaW4tbGVmdDogMHB4O1xufVxuXG5AbWVkaWEgKG1heC13aWR0aDogNDgwcHgpIHtcbiAgICAuYmxvZy1oZWFkZXItbG9nby50ZXh0LWRhcmsge1xuICAgICAgICBmb250LXNpemU6IDI1cHg7XG4gICAgfVxufVxuXG4uYmxvZy1oZWFkZXIge1xuICAgIGxpbmUtaGVpZ2h0OiAxO1xuICAgIGJvcmRlci1ib3R0b20td2lkdGg6IDFweDtcbiAgICBib3JkZXItYm90dG9tLXN0eWxlOiBzb2xpZDtcbiAgICBib3JkZXItYm90dG9tLWNvbG9yOiByZ2IoMjI5LCAyMjksIDIyOSk7XG59XG5cbi5ibG9nLWhlYWRlci1sb2dvIHtcbiAgICBmb250LWZhbWlseTogR2VvcmdpYSwgXCJUaW1lcyBOZXcgUm9tYW5cIiwgc2VyaWY7XG4gICAgZm9udC1zaXplOiAyLjI1cmVtO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xufVxuXG4ubmF2LXNjcm9sbGVyIC5uYXYge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC13cmFwOiBub3dyYXA7XG4gICAgcGFkZGluZy1ib3R0b206IDFyZW07XG4gICAgbWFyZ2luLXRvcDogLTFweDtcbiAgICBvdmVyZmxvdy14OiBhdXRvO1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICB3aGl0ZS1zcGFjZTogbm93cmFwO1xufVxuXG4ubmF2LXNjcm9sbGVyIC5uYXYtbGluayB7XG4gICAgcGFkZGluZy10b3A6IDAuNzVyZW07XG4gICAgcGFkZGluZy1ib3R0b206IDAuNzVyZW07XG4gICAgZm9udC1zaXplOiAwLjg3NXJlbTtcbn1cblxuLmM2MTAxIHtcbiAgICBtaW4taGVpZ2h0OiA3NXB4O1xufVxuXG4uYzYxMjAge1xuICAgIG1pbi1oZWlnaHQ6IDc1cHg7XG59XG5cbi5qdW1ib3Ryb24ge1xuICAgIGNvbG9yOiByZ2IoMjU1LCAyNTUsIDI1NSk7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKFwiaHR0cHM6Ly93d3cuZ3JpZGJveC5pby9wcm9qZWN0cy8xMDljNjJiNC1lZDZlLTRkZDYtYjgzZi05MzdlNjkyNGFhNWIvYXNzZXRzL2ltZy9wZXhlbHMtcGhvdG8tOTk4NjQxLmpwZWdcIik7XG4gICAgYmFja2dyb3VuZC1yZXBlYXQteDogcmVwZWF0O1xuICAgIGJhY2tncm91bmQtcmVwZWF0LXk6IHJlcGVhdDtcbiAgICBiYWNrZ3JvdW5kLWF0dGFjaG1lbnQ6IHNjcm9sbDtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uLXg6IDUwJTtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uLXk6IDEwMCU7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3Zlcjtcbn1cblxuLmM2NjIxIHtcbiAgICBtaW4taGVpZ2h0OiA3NXB4O1xufVxuXG4uYzY2NDAge1xuICAgIG1pbi1oZWlnaHQ6IDc1cHg7XG59XG5cbi5kaXNwbGF5LTQudGV4dC1jZW50ZXIge1xuICAgIG1hcmdpbi10b3A6IDBweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDBweDtcbiAgICBtYXJnaW4tYm90dG9tOiAyM3B4O1xuICAgIG1hcmdpbi1sZWZ0OiAwcHg7XG59XG5cbkBtZWRpYSAobWF4LXdpZHRoOiA0ODBweCkge1xuICAgIC5ibG9nLWhlYWRlci1sb2dvLnRleHQtZGFyayB7XG4gICAgICAgIGZvbnQtc2l6ZTogMjVweDtcbiAgICB9XG59Il19 */"
 
 /***/ }),
 
@@ -3998,7 +5286,7 @@ module.exports = ":root{\n    --input-padding-x: 1.5rem;\n    --input-padding-y:
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"auth.User | async; then authenticated; else noauthenticated\"></div>\n<ng-template #authenticated>\n    <div *ngIf=\"auth.User | async as User\">\n        <div *ngIf=\"User.role === 'customer'\">\n            <app-navbar-user></app-navbar-user>\n        </div>\n        <div *ngIf=\"User.role === 'admin'\">\n            <app-navbar-admin></app-navbar-admin>\n        </div>\n        <div id=\"carouselExampleCaptions\" data-ride=\"carousel\" class=\"carousel slide\">\n            <ol class=\"carousel-indicators\">\n                <li data-target=\"#carouselExampleCaptions\" data-slide-to=\"0\" class=\"active\">\n                </li>\n                <li data-target=\"#carouselExampleCaptions\" data-slide-to=\"1\">\n                </li>\n                <li data-target=\"#carouselExampleCaptions\" data-slide-to=\"2\">\n                </li>\n            </ol>\n            <div class=\"carousel-inner\">\n                <div class=\"carousel-item active\">\n                    <img data-type=\"image\" alt=\"First slide [800x400]\" src=\"assets/slidehogar.ico\" data-holder-rendered=\"true\" class=\"d-block w-100\" />\n                    <div class=\"carousel-caption d-none d-md-block\">\n                        <h3 data-type=\"header\">Todo para tu hogar\n                        </h3>\n                    </div>\n                </div>\n                <div class=\"carousel-item\">\n                    <img data-type=\"image\" alt=\"Second slide [800x400]\" src=\"assets/slideart.ico\" data-holder-rendered=\"true\" class=\"d-block w-100\" />\n                    <div class=\"carousel-caption d-none d-md-block\">\n                        <h3 data-type=\"header\">Arte\n                        </h3>\n                        <p data-type=\"paragraph\">Decora tu hogar\n                        </p>\n                    </div>\n                </div>\n                <div class=\"carousel-item\">\n                    <img data-type=\"image\" alt=\"Third slide [800x400]\" src=\"assets/slidetec.ico\" data-holder-rendered=\"true\" class=\"d-block w-100\" />\n                    <div class=\"carousel-caption d-none d-md-block\">\n                        <h3 data-type=\"header\">Electrodomésticos\n                        </h3>\n                    </div>\n                </div>\n            </div>\n            <a href=\"#carouselExampleCaptions\" role=\"button\" data-slide=\"prev\" class=\"carousel-control-prev\"><span aria-hidden=\"true\" class=\"carousel-control-prev-icon\"></span><span class=\"sr-only\">Previous</span></a>\n            <a href=\"#carouselExampleCaptions\" role=\"button\" data-slide=\"next\" class=\"carousel-control-next\"><span aria-hidden=\"true\" class=\"carousel-control-next-icon\"></span><span class=\"sr-only\">Next</span></a>\n        </div>\n\n        <!-- DIV DE PROMOCIONES-->\n\n        <div class=\"container c6640\">\n            <h1 data-type=\"header\" class=\"display-4 text-center\">Promociones\n            </h1>\n            <div class=\"row\">\n                <div *ngFor=\"let producto of productosPromocionales\" class=\"col-md-4\">\n                    <div class=\"card mb-4 box-shadow\">\n                        <img data-type=\"image\" src=\"{{producto.photoUrl}}\" class=\"card-img-top\" />\n                        <div class=\"card-body\">\n                            <h3 data-type=\"header\" class=\"mb-0\">\n                                {{producto.name}}\n                            </h3>\n                            <br>\n                            <p data-type=\"text\" class=\"card-text\">Precio de promocion: {{producto.price}}</p>\n                            <div class=\"d-flex justify-content-between align-items-center\">\n                                <div class=\"btn-group\">\n                                    <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">Detalles</button>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n\n        <div class=\"container c6640\">\n            <h1 data-type=\"header\" class=\"display-4 text-center\">Los más vendidos\n            </h1>\n            <div class=\"row\">\n                <div class=\"col-md-4\">\n                    <div class=\"card mb-4 box-shadow\">\n                        <img data-type=\"image\" src=\"https://source.unsplash.com/collection/190727/300x300\" class=\"card-img-top\" />\n                        <div class=\"card-body\">\n                            <h3 data-type=\"header\" class=\"mb-0\">\n                                <a href=\"#\" class=\"text-dark\">Post title</a>\n                            </h3>\n                            <p data-type=\"paragraph\" class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.\n                            </p>\n                            <div class=\"d-flex justify-content-between align-items-center\">\n                                <div class=\"btn-group\">\n                                    <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">Detalles</button>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col-md-4\">\n                    <div class=\"card mb-4 box-shadow\">\n                        <img data-type=\"image\" src=\"https://source.unsplash.com/collection/410546/300x300\" class=\"card-img-top\" />\n                        <div class=\"card-body\">\n                            <h3 data-type=\"header\" class=\"mb-0\">\n                                <a href=\"#\" class=\"text-dark\">Post title</a>\n                            </h3>\n                            <p data-type=\"paragraph\" class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.\n                            </p>\n                            <div class=\"d-flex justify-content-between align-items-center\">\n                                <div class=\"btn-group\">\n                                    <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">Detalles</button>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col-md-4\">\n                    <div class=\"card mb-4 box-shadow\">\n                        <img data-type=\"image\" src=\"https://source.unsplash.com/collection/542909/300x300\" class=\"card-img-top\" />\n                        <div class=\"card-body\">\n                            <h3 data-type=\"header\" class=\"mb-0\">\n                                <a href=\"#\" class=\"text-dark\">Post title</a>\n                            </h3>\n                            <p data-type=\"paragraph\" class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.\n                            </p>\n                            <div class=\"d-flex justify-content-between align-items-center\">\n                                <div class=\"btn-group\">\n                                    <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">Detalles</button>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col-md-4\">\n                    <div class=\"card mb-4 box-shadow\">\n                        <img data-type=\"image\" src=\"https://source.unsplash.com/collection/140489/300x300\" class=\"card-img-top\" />\n                        <div class=\"card-body\">\n                            <h3 data-type=\"header\" class=\"mb-0\">\n                                <a href=\"#\" class=\"text-dark\">Post title</a>\n                            </h3>\n                            <p data-type=\"paragraph\" class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.\n                            </p>\n                            <div class=\"d-flex justify-content-between align-items-center\">\n                                <div class=\"btn-group\">\n                                    <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">Delete</button>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col-md-4\">\n                    <div class=\"card mb-4 box-shadow\">\n                        <img data-type=\"image\" src=\"https://source.unsplash.com/collection/403065/300x300\" class=\"card-img-top\" />\n                        <div class=\"card-body\">\n                            <h3 data-type=\"header\" class=\"mb-0\">\n                                <a href=\"#\" class=\"text-dark\">Post title</a>\n                            </h3>\n                            <p data-type=\"paragraph\" class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.\n                            </p>\n                            <div class=\"d-flex justify-content-between align-items-center\">\n                                <div class=\"btn-group\">\n                                    <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">Detalles</button>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col-md-4\">\n                    <div class=\"card mb-4 box-shadow\">\n                        <img data-type=\"image\" src=\"https://source.unsplash.com/collection/1410856/300x300\" class=\"card-img-top\" />\n                        <div class=\"card-body\">\n                            <h3 data-type=\"header\" class=\"mb-0\">\n                                <a href=\"#\" class=\"text-dark\">Post title</a>\n                            </h3>\n                            <p data-type=\"paragraph\" class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.\n                            </p>\n                            <div class=\"d-flex justify-content-between align-items-center\">\n                                <div class=\"btn-group\">\n                                    <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">Detalles</button>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"container c6640\">\n            <h1 data-type=\"header\" class=\"display-4 text-center\">Recomendados\n            </h1>\n            <div class=\"row\">\n                <div *ngFor=\"let producto of productosRecomendados\" class=\"col-md-4\">\n                    <div class=\"card mb-4 box-shadow\">\n                        <img data-type=\"image\" src=\"{{producto.photoUrl}}\" class=\"card-img-top\" />\n                        <div class=\"card-body\">\n                            <h3 data-type=\"header\" class=\"mb-0 text-dark\">\n                                {{producto.name}}\n                            </h3>\n                            <br>\n                            <p data-type=\"text\" class=\"card-text\">{{producto.description}}</p>\n                            <div class=\"d-flex justify-content-between align-items-center\">\n                                <div class=\"btn-group\">\n                                    <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">Detalles</button>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</ng-template>\n\n<!-- Navbar para usuario no autenticado -->\n<ng-template #noauthenticated>\n    <app-navbar></app-navbar>\n    <div id=\"carouselExampleCaptions\" data-ride=\"carousel\" class=\"carousel slide\">\n        <ol class=\"carousel-indicators\">\n            <li data-target=\"#carouselExampleCaptions\" data-slide-to=\"0\" class=\"active\">\n            </li>\n            <li data-target=\"#carouselExampleCaptions\" data-slide-to=\"1\">\n            </li>\n            <li data-target=\"#carouselExampleCaptions\" data-slide-to=\"2\">\n            </li>\n        </ol>\n        <div class=\"carousel-inner\">\n            <div class=\"carousel-item active\">\n                <img data-type=\"image\" alt=\"First slide [800x400]\" src=\"assets/slidehogar.ico\" data-holder-rendered=\"true\" class=\"d-block w-100\" />\n                <div class=\"carousel-caption d-none d-md-block\">\n                    <h3 data-type=\"header\">Todo para tu hogar\n                    </h3>\n                </div>\n            </div>\n            <div class=\"carousel-item\">\n                <img data-type=\"image\" alt=\"Second slide [800x400]\" src=\"assets/slideart.ico\" data-holder-rendered=\"true\" class=\"d-block w-100\" />\n                <div class=\"carousel-caption d-none d-md-block\">\n                    <h3 data-type=\"header\">Arte\n                    </h3>\n                    <p data-type=\"paragraph\">Decora tu hogar\n                    </p>\n                </div>\n            </div>\n            <div class=\"carousel-item\">\n                <img data-type=\"image\" alt=\"Third slide [800x400]\" src=\"assets/slidetec.ico\" data-holder-rendered=\"true\" class=\"d-block w-100\" />\n                <div class=\"carousel-caption d-none d-md-block\">\n                    <h3 data-type=\"header\">Electrodomésticos\n                    </h3>\n                </div>\n            </div>\n        </div>\n        <a href=\"#carouselExampleCaptions\" role=\"button\" data-slide=\"prev\" class=\"carousel-control-prev\"><span aria-hidden=\"true\" class=\"carousel-control-prev-icon\"></span><span class=\"sr-only\">Previous</span></a>\n        <a href=\"#carouselExampleCaptions\" role=\"button\" data-slide=\"next\" class=\"carousel-control-next\"><span aria-hidden=\"true\" class=\"carousel-control-next-icon\"></span><span class=\"sr-only\">Next</span></a>\n    </div>\n\n    <!-- DIV DE PROMOCIONES-->\n\n    <div class=\"container c6640\">\n        <h1 data-type=\"header\" class=\"display-4 text-center\">Promociones\n        </h1>\n        <div class=\"row\">\n            <div class=\"col-md-4\">\n                <div class=\"card mb-4 box-shadow\">\n                    <img data-type=\"image\" src=\"https://source.unsplash.com/collection/190727/300x300\" class=\"card-img-top\" />\n                    <div class=\"card-body\">\n                        <h3 data-type=\"header\" class=\"mb-0\">\n                            <a href=\"#\" class=\"text-dark\">Post title</a>\n                        </h3>\n                        <p data-type=\"paragraph\" class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.\n                        </p>\n                        <div class=\"d-flex justify-content-between align-items-center\">\n                            <div class=\"btn-group\">\n                                <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">Detalles</button>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-md-4\">\n                <div class=\"card mb-4 box-shadow\">\n                    <img data-type=\"image\" src=\"https://source.unsplash.com/collection/410546/300x300\" class=\"card-img-top\" />\n                    <div class=\"card-body\">\n                        <h3 data-type=\"header\" class=\"mb-0\">\n                            <a href=\"#\" class=\"text-dark\">Post title</a>\n                        </h3>\n                        <p data-type=\"paragraph\" class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.\n                        </p>\n                        <div class=\"d-flex justify-content-between align-items-center\">\n                            <div class=\"btn-group\">\n                                <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">Detalles</button>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-md-4\">\n                <div class=\"card mb-4 box-shadow\">\n                    <img data-type=\"image\" src=\"https://source.unsplash.com/collection/542909/300x300\" class=\"card-img-top\" />\n                    <div class=\"card-body\">\n                        <h3 data-type=\"header\" class=\"mb-0\">\n                            <a href=\"#\" class=\"text-dark\">Post title</a>\n                        </h3>\n                        <p data-type=\"paragraph\" class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.\n                        </p>\n                        <div class=\"d-flex justify-content-between align-items-center\">\n                            <div class=\"btn-group\">\n                                <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">Detalles</button>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n\n    <div class=\"container c6640\">\n        <h1 data-type=\"header\" class=\"display-4 text-center\">Los más vendidos\n        </h1>\n        <div class=\"row\">\n            <div class=\"col-md-4\">\n                <div class=\"card mb-4 box-shadow\">\n                    <img data-type=\"image\" src=\"https://source.unsplash.com/collection/190727/300x300\" class=\"card-img-top\" />\n                    <div class=\"card-body\">\n                        <h3 data-type=\"header\" class=\"mb-0\">\n                            <a href=\"#\" class=\"text-dark\">Post title</a>\n                        </h3>\n                        <p data-type=\"paragraph\" class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.\n                        </p>\n                        <div class=\"d-flex justify-content-between align-items-center\">\n                            <div class=\"btn-group\">\n                                <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">Detalles</button>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-md-4\">\n                <div class=\"card mb-4 box-shadow\">\n                    <img data-type=\"image\" src=\"https://source.unsplash.com/collection/410546/300x300\" class=\"card-img-top\" />\n                    <div class=\"card-body\">\n                        <h3 data-type=\"header\" class=\"mb-0\">\n                            <a href=\"#\" class=\"text-dark\">Post title</a>\n                        </h3>\n                        <p data-type=\"paragraph\" class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.\n                        </p>\n                        <div class=\"d-flex justify-content-between align-items-center\">\n                            <div class=\"btn-group\">\n                                <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">Detalles</button>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-md-4\">\n                <div class=\"card mb-4 box-shadow\">\n                    <img data-type=\"image\" src=\"https://source.unsplash.com/collection/542909/300x300\" class=\"card-img-top\" />\n                    <div class=\"card-body\">\n                        <h3 data-type=\"header\" class=\"mb-0\">\n                            <a href=\"#\" class=\"text-dark\">Post title</a>\n                        </h3>\n                        <p data-type=\"paragraph\" class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.\n                        </p>\n                        <div class=\"d-flex justify-content-between align-items-center\">\n                            <div class=\"btn-group\">\n                                <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">Detalles</button>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-md-4\">\n                <div class=\"card mb-4 box-shadow\">\n                    <img data-type=\"image\" src=\"https://source.unsplash.com/collection/140489/300x300\" class=\"card-img-top\" />\n                    <div class=\"card-body\">\n                        <h3 data-type=\"header\" class=\"mb-0\">\n                            <a href=\"#\" class=\"text-dark\">Post title</a>\n                        </h3>\n                        <p data-type=\"paragraph\" class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.\n                        </p>\n                        <div class=\"d-flex justify-content-between align-items-center\">\n                            <div class=\"btn-group\">\n                                <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">Delete</button>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-md-4\">\n                <div class=\"card mb-4 box-shadow\">\n                    <img data-type=\"image\" src=\"https://source.unsplash.com/collection/403065/300x300\" class=\"card-img-top\" />\n                    <div class=\"card-body\">\n                        <h3 data-type=\"header\" class=\"mb-0\">\n                            <a href=\"#\" class=\"text-dark\">Post title</a>\n                        </h3>\n                        <p data-type=\"paragraph\" class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.\n                        </p>\n                        <div class=\"d-flex justify-content-between align-items-center\">\n                            <div class=\"btn-group\">\n                                <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">Detalles</button>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-md-4\">\n                <div class=\"card mb-4 box-shadow\">\n                    <img data-type=\"image\" src=\"https://source.unsplash.com/collection/1410856/300x300\" class=\"card-img-top\" />\n                    <div class=\"card-body\">\n                        <h3 data-type=\"header\" class=\"mb-0\">\n                            <a href=\"#\" class=\"text-dark\">Post title</a>\n                        </h3>\n                        <p data-type=\"paragraph\" class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.\n                        </p>\n                        <div class=\"d-flex justify-content-between align-items-center\">\n                            <div class=\"btn-group\">\n                                <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">Detalles</button>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n\n    <div class=\"container c6640\">\n        <h1 data-type=\"header\" class=\"display-4 text-center\">Recomendados\n        </h1>\n        <div class=\"row\">\n            <div class=\"col-md-4\">\n                <div class=\"card mb-4 box-shadow\">\n                    <img data-type=\"image\" src=\"https://source.unsplash.com/collection/190727/300x300\" class=\"card-img-top\" />\n                    <div class=\"card-body\">\n                        <h3 data-type=\"header\" class=\"mb-0\">\n                            <a href=\"#\" class=\"text-dark\">Post title</a>\n                        </h3>\n                        <p data-type=\"paragraph\" class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.\n                        </p>\n                        <div class=\"d-flex justify-content-between align-items-center\">\n                            <div class=\"btn-group\">\n                                <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">Detalles</button>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-md-4\">\n                <div class=\"card mb-4 box-shadow\">\n                    <img data-type=\"image\" src=\"https://source.unsplash.com/collection/410546/300x300\" class=\"card-img-top\" />\n                    <div class=\"card-body\">\n                        <h3 data-type=\"header\" class=\"mb-0\">\n                            <a href=\"#\" class=\"text-dark\">Post title</a>\n                        </h3>\n                        <p data-type=\"paragraph\" class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.\n                        </p>\n                        <div class=\"d-flex justify-content-between align-items-center\">\n                            <div class=\"btn-group\">\n                                <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">Detalles</button>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-md-4\">\n                <div class=\"card mb-4 box-shadow\">\n                    <img data-type=\"image\" src=\"https://source.unsplash.com/collection/542909/300x300\" class=\"card-img-top\" />\n                    <div class=\"card-body\">\n                        <h3 data-type=\"header\" class=\"mb-0\">\n                            <a href=\"#\" class=\"text-dark\">Post title</a>\n                        </h3>\n                        <p data-type=\"paragraph\" class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.\n                        </p>\n                        <div class=\"d-flex justify-content-between align-items-center\">\n                            <div class=\"btn-group\">\n                                <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">Detalles</button>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</ng-template>"
+module.exports = "<div *ngIf=\"auth.User | async; then authenticated; else noauthenticated\"></div>\n<ng-template #authenticated>\n    <div *ngIf=\"auth.User | async as User\">\n        <div *ngIf=\"User.role === 'customer'\">\n            <app-navbar-user></app-navbar-user>\n        </div>\n        <div id=\"carouselExampleCaptions\" data-ride=\"carousel\" class=\"carousel slide\">\n            <ol class=\"carousel-indicators\">\n                <li data-target=\"#carouselExampleCaptions\" data-slide-to=\"0\" class=\"active\">\n                </li>\n                <li data-target=\"#carouselExampleCaptions\" data-slide-to=\"1\">\n                </li>\n                <li data-target=\"#carouselExampleCaptions\" data-slide-to=\"2\">\n                </li>\n            </ol>\n            <div class=\"carousel-inner\">\n                <div class=\"carousel-item active\">\n                    <img data-type=\"image\" alt=\"First slide [800x400]\" src=\"assets/slidehogar.ico\" data-holder-rendered=\"true\" class=\"d-block w-100\" />\n                    <div class=\"carousel-caption d-none d-md-block\">\n                        <h3 data-type=\"header\">Todo para tu hogar\n                        </h3>\n                    </div>\n                </div>\n                <div class=\"carousel-item\">\n                    <img data-type=\"image\" alt=\"Second slide [800x400]\" src=\"assets/slideart.ico\" data-holder-rendered=\"true\" class=\"d-block w-100\" />\n                    <div class=\"carousel-caption d-none d-md-block\">\n                        <h3 data-type=\"header\">Arte\n                        </h3>\n                        <p data-type=\"paragraph\">Decora tu hogar\n                        </p>\n                    </div>\n                </div>\n                <div class=\"carousel-item\">\n                    <img data-type=\"image\" alt=\"Third slide [800x400]\" src=\"assets/slidetec.ico\" data-holder-rendered=\"true\" class=\"d-block w-100\" />\n                    <div class=\"carousel-caption d-none d-md-block\">\n                        <h3 data-type=\"header\">Electrodomésticos\n                        </h3>\n                    </div>\n                </div>\n            </div>\n            <a href=\"#carouselExampleCaptions\" role=\"button\" data-slide=\"prev\" class=\"carousel-control-prev\"><span aria-hidden=\"true\" class=\"carousel-control-prev-icon\"></span><span class=\"sr-only\">Previous</span></a>\n            <a href=\"#carouselExampleCaptions\" role=\"button\" data-slide=\"next\" class=\"carousel-control-next\"><span aria-hidden=\"true\" class=\"carousel-control-next-icon\"></span><span class=\"sr-only\">Next</span></a>\n        </div>\n\n        <!-- DIV DE PROMOCIONES-->\n\n        <div class=\"container c6640\">\n            <h1 data-type=\"header\" class=\"display-4 text-center\">Promociones\n            </h1>\n            <div class=\"row\">\n                <div *ngFor=\"let producto of productosPromocionales\" class=\"col-md-4\">\n                    <div class=\"card mb-4 box-shadow\">\n                        <img data-type=\"image\" height=300px width=300px src=\"{{producto.photoUrl}}\" class=\"card-img-top\" />\n                        <div class=\"card-body\">\n                            <h3 data-type=\"header\" class=\"mb-0\">\n                                {{producto.name}}\n                            </h3>\n                            <br>\n                            <p data-type=\"text\" class=\"card-text\">Precio de promocion: {{producto.price}}</p>\n                            <div *ngIf=\"producto.variacion != null\">\n                                <p data-type=\"text\" class=\"card-text\">Aplica unicamente para el producto de variacion {{producto.variacion}}</p>\n                            </div>\n                            <div *ngIf=\"producto.variacion == null\">\n                                <p data-type=\"text\" class=\"card-text\">Aplica unicamente para el producto que no posee variacion</p>\n                            </div>\n                            <div class=\"d-flex justify-content-between align-items-center\">\n                                <div class=\"btn-group\">\n                                    <button type=\"button\" (click)=\"agregarCarrito(producto)\" class=\"btn btn-sm btn-outline-secondary\">Agregar Carrito</button>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n\n        <div class=\"container c6640\">\n            <h1 data-type=\"header\" class=\"display-4 text-center\">Los más vendidos\n            </h1>\n            <div class=\"row\">\n                <div *ngFor=\"let producto of productosMasVendidos\" class=\"col-md-4\">\n                    <div class=\"card mb-4 box-shadow\">\n                        <img data-type=\"image\" height=300px width=300px src=\"{{producto.photoUrl}}\" class=\"card-img-top\" />\n                        <div class=\"card-body\">\n                            <h3 data-type=\"header\" class=\"mb-0\">\n                                <p class=\"text-dark\"> {{producto.name}}</p>\n                            </h3>\n                            <br>\n                            <p data-type=\"text\" class=\"card-text\">Se han vendido: {{producto.sold}}</p>\n                            <p data-type=\"text\" class=\"card-text\">{{producto.description}}</p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <div class=\"container c6640\">\n            <h1 data-type=\"header\" class=\"display-4 text-center\">Recomendados\n            </h1>\n            <div class=\"row\">\n                <div *ngFor=\"let producto of productosRecomendados\" class=\"col-md-4\">\n                    <div class=\"card mb-4 box-shadow\">\n                        <img data-type=\"image\" height=300px width=300px src=\"{{producto.photoUrl}}\" class=\"card-img-top\" />\n                        <div class=\"card-body\">\n                            <h3 data-type=\"header\" class=\"mb-0 text-dark\">\n                                {{producto.name}}\n                            </h3>\n                            <br>\n                            <p data-type=\"text\" class=\"card-text\">{{producto.description}}</p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</ng-template>\n\n<!-- Navbar para usuario no autenticado -->\n<ng-template #noauthenticated>\n    <app-navbar></app-navbar>\n    <div id=\"carouselExampleCaptions\" data-ride=\"carousel\" class=\"carousel slide\">\n        <ol class=\"carousel-indicators\">\n            <li data-target=\"#carouselExampleCaptions\" data-slide-to=\"0\" class=\"active\">\n            </li>\n            <li data-target=\"#carouselExampleCaptions\" data-slide-to=\"1\">\n            </li>\n            <li data-target=\"#carouselExampleCaptions\" data-slide-to=\"2\">\n            </li>\n        </ol>\n        <div class=\"carousel-inner\">\n            <div class=\"carousel-item active\">\n                <img data-type=\"image\" alt=\"First slide [800x400]\" src=\"assets/slidehogar.ico\" data-holder-rendered=\"true\" class=\"d-block w-100\" />\n                <div class=\"carousel-caption d-none d-md-block\">\n                    <h3 data-type=\"header\">Todo para tu hogar\n                    </h3>\n                </div>\n            </div>\n            <div class=\"carousel-item\">\n                <img data-type=\"image\" alt=\"Second slide [800x400]\" src=\"assets/slideart.ico\" data-holder-rendered=\"true\" class=\"d-block w-100\" />\n                <div class=\"carousel-caption d-none d-md-block\">\n                    <h3 data-type=\"header\">Arte\n                    </h3>\n                    <p data-type=\"paragraph\">Decora tu hogar\n                    </p>\n                </div>\n            </div>\n            <div class=\"carousel-item\">\n                <img data-type=\"image\" alt=\"Third slide [800x400]\" src=\"assets/slidetec.ico\" data-holder-rendered=\"true\" class=\"d-block w-100\" />\n                <div class=\"carousel-caption d-none d-md-block\">\n                    <h3 data-type=\"header\">Electrodomésticos\n                    </h3>\n                </div>\n            </div>\n        </div>\n        <a href=\"#carouselExampleCaptions\" role=\"button\" data-slide=\"prev\" class=\"carousel-control-prev\"><span aria-hidden=\"true\" class=\"carousel-control-prev-icon\"></span><span class=\"sr-only\">Previous</span></a>\n        <a href=\"#carouselExampleCaptions\" role=\"button\" data-slide=\"next\" class=\"carousel-control-next\"><span aria-hidden=\"true\" class=\"carousel-control-next-icon\"></span><span class=\"sr-only\">Next</span></a>\n    </div>\n\n    <!-- DIV DE PROMOCIONES-->\n\n\n    <div class=\"container c6640\">\n        <h1 data-type=\"header\" class=\"display-4 text-center\">Promociones\n        </h1>\n        <div class=\"row\">\n            <div *ngFor=\"let producto of productosPromocionales\" class=\"col-md-4\">\n                <div class=\"card mb-4 box-shadow\">\n                    <img data-type=\"image\" height=300px width=300px src=\"{{producto.photoUrl}}\" class=\"card-img-top\" />\n                    <div class=\"card-body\">\n                        <h3 data-type=\"header\" class=\"mb-0\">\n                            {{producto.name}}\n                        </h3>\n                        <br>\n                        <p data-type=\"text\" class=\"card-text\">Precio de promocion: {{producto.price}}</p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"container c6640\">\n        <h1 data-type=\"header\" class=\"display-4 text-center\">Los más vendidos\n        </h1>\n        <div class=\"row\">\n            <div *ngFor=\"let producto of productosMasVendidos\" class=\"col-md-4\">\n                <div class=\"card mb-4 box-shadow\">\n                    <img data-type=\"image\" height=300px width=300px src=\"{{producto.photoUrl}}\" class=\"card-img-top\" />\n                    <div class=\"card-body\">\n                        <h3 data-type=\"header\" class=\"mb-0\">\n                            <p class=\"text-dark\"> {{producto.name}}</p>\n                        </h3>\n                        <br>\n                        <p data-type=\"text\" class=\"card-text\">Se han vendido: {{producto.sold}}</p>\n\n                        <p data-type=\"text\" class=\"card-text\">{{producto.description}}</p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"container c6640\">\n        <h1 data-type=\"header\" class=\"display-4 text-center\">Recomendados\n        </h1>\n        <div class=\"row\">\n            <div *ngFor=\"let producto of productosRecomendados\" class=\"col-md-4\">\n                <div class=\"card mb-4 box-shadow\">\n                    <img data-type=\"image\" height=300px width=300px src=\"{{producto.photoUrl}}\" class=\"card-img-top\" />\n                    <div class=\"card-body\">\n                        <h3 data-type=\"header\" class=\"mb-0 text-dark\">\n                            {{producto.name}}\n                        </h3>\n                        <br>\n                        <p data-type=\"text\" class=\"card-text\">{{producto.description}}</p>\n                        <div class=\"d-flex justify-content-between align-items-center\">\n                            <div class=\"btn-group\">\n                                <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">Detalles</button>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</ng-template>"
 
 /***/ }),
 
@@ -4017,24 +5305,39 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var src_app_auth_auth_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/auth/auth.service */ "./src/app/auth/auth.service.ts");
 /* harmony import */ var src_app_servicios_recomendado_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/servicios/recomendado.service */ "./src/app/servicios/recomendado.service.ts");
 /* harmony import */ var src_app_servicios_promocion_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/servicios/promocion.service */ "./src/app/servicios/promocion.service.ts");
+/* harmony import */ var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/fire/firestore */ "./node_modules/@angular/fire/firestore/index.js");
+/* harmony import */ var src_app_servicios_producto_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/servicios/producto.service */ "./src/app/servicios/producto.service.ts");
+/* harmony import */ var src_app_servicios_carrito_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/app/servicios/carrito.service */ "./src/app/servicios/carrito.service.ts");
+
+
+
 
 
 
 
 
 var InicioComponent = /** @class */ (function () {
-    function InicioComponent(auth, recomendadoService, promocionService) {
+    function InicioComponent(auth, recomendadoService, promocionService, afs, productoService, carritoService) {
         this.auth = auth;
         this.recomendadoService = recomendadoService;
         this.promocionService = promocionService;
+        this.afs = afs;
+        this.productoService = productoService;
+        this.carritoService = carritoService;
     }
     InicioComponent.prototype.ngOnInit = function () {
         this.getProducts();
     };
     InicioComponent.prototype.getProducts = function () {
         var _this = this;
+        this.productoService.ProductosMasVendidos().subscribe(function (productos) { return _this.productosMasVendidos = productos; });
         this.recomendadoService.Productos().subscribe(function (productos) { return _this.productosRecomendados = productos; });
         this.promocionService.Productos().subscribe(function (productos) { return _this.productosPromocionales = productos; });
+    };
+    InicioComponent.prototype.agregarCarrito = function (producto) {
+        this.carritoService.agregarProducto(producto, producto.variacion);
+        alert("Producto añadido al carrito");
+        this.variacion = undefined;
     };
     InicioComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -4042,7 +5345,12 @@ var InicioComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./inicio.component.html */ "./src/app/view/inicio/inicio.component.html"),
             styles: [__webpack_require__(/*! ./inicio.component.css */ "./src/app/view/inicio/inicio.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_auth_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"], src_app_servicios_recomendado_service__WEBPACK_IMPORTED_MODULE_3__["RecomendadoService"], src_app_servicios_promocion_service__WEBPACK_IMPORTED_MODULE_4__["PromocionService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_auth_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"],
+            src_app_servicios_recomendado_service__WEBPACK_IMPORTED_MODULE_3__["RecomendadoService"],
+            src_app_servicios_promocion_service__WEBPACK_IMPORTED_MODULE_4__["PromocionService"],
+            _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_5__["AngularFirestore"],
+            src_app_servicios_producto_service__WEBPACK_IMPORTED_MODULE_6__["ProductoService"],
+            src_app_servicios_carrito_service__WEBPACK_IMPORTED_MODULE_7__["CarritoService"]])
     ], InicioComponent);
     return InicioComponent;
 }());
@@ -4114,7 +5422,7 @@ var NosotrosComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".c1955 {\n    min-height: 75px;\n}\n\n.c1999 {\n    min-height: 300px;\n    height: auto;\n}\n\n.c2042 {\n    min-height: 20px;\n}\n\n.c2594 {\n    min-height: 75px;\n}\n\n.c2636 {\n    min-height: 75px;\n}\n\n.c6024 {\n    width: 100%;\n}\n\n.btn.btn-primary.btn-lg.btn-block {\n    background-color: #FF530D;\n    border: 1px solid #FF530D;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdmlldy9wYWdvL3BhZ28uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGdCQUFnQjtBQUNwQjs7QUFFQTtJQUNJLGlCQUFpQjtJQUNqQixZQUFZO0FBQ2hCOztBQUVBO0lBQ0ksZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0ksZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0ksZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0ksV0FBVztBQUNmOztBQUVBO0lBQ0kseUJBQXlCO0lBQ3pCLHlCQUF5QjtBQUM3QiIsImZpbGUiOiJzcmMvYXBwL3ZpZXcvcGFnby9wYWdvLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYzE5NTUge1xuICAgIG1pbi1oZWlnaHQ6IDc1cHg7XG59XG5cbi5jMTk5OSB7XG4gICAgbWluLWhlaWdodDogMzAwcHg7XG4gICAgaGVpZ2h0OiBhdXRvO1xufVxuXG4uYzIwNDIge1xuICAgIG1pbi1oZWlnaHQ6IDIwcHg7XG59XG5cbi5jMjU5NCB7XG4gICAgbWluLWhlaWdodDogNzVweDtcbn1cblxuLmMyNjM2IHtcbiAgICBtaW4taGVpZ2h0OiA3NXB4O1xufVxuXG4uYzYwMjQge1xuICAgIHdpZHRoOiAxMDAlO1xufVxuXG4uYnRuLmJ0bi1wcmltYXJ5LmJ0bi1sZy5idG4tYmxvY2sge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNGRjUzMEQ7XG4gICAgYm9yZGVyOiAxcHggc29saWQgI0ZGNTMwRDtcbn0iXX0= */"
+module.exports = ".c1955 {\n    min-height: 75px;\n}\n\n.c1999 {\n    min-height: 300px;\n    height: auto;\n}\n\n.c2042 {\n    min-height: 20px;\n}\n\n.c2594 {\n    min-height: 75px;\n}\n\n.c2636 {\n    min-height: 75px;\n}\n\n.c6024 {\n    width: 100%;\n}\n\n.btn.btn-primary.btn-lg.btn-block {\n    background-color: #FF530D;\n    border: 1px solid #FF530D;\n}\n\n.top-space {\n    margin-top: 3vh\n}\n\n.ghost {\n    display: none;\n}\n\n.invoice-title h2,\n.invoice-title h3 {\n    display: inline-block;\n}\n\n.table>tbody>tr>.no-line {\n    border-top: none;\n}\n\n.table>thead>tr>.no-line {\n    border-bottom: none;\n}\n\n.table>tbody>tr>.thick-line {\n    border-top: 2px solid;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdmlldy9wYWdvL3BhZ28uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGdCQUFnQjtBQUNwQjs7QUFFQTtJQUNJLGlCQUFpQjtJQUNqQixZQUFZO0FBQ2hCOztBQUVBO0lBQ0ksZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0ksZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0ksZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0ksV0FBVztBQUNmOztBQUVBO0lBQ0kseUJBQXlCO0lBQ3pCLHlCQUF5QjtBQUM3Qjs7QUFFQTtJQUNJO0FBQ0o7O0FBRUE7SUFDSSxhQUFhO0FBQ2pCOztBQUVBOztJQUVJLHFCQUFxQjtBQUN6Qjs7QUFFQTtJQUNJLGdCQUFnQjtBQUNwQjs7QUFFQTtJQUNJLG1CQUFtQjtBQUN2Qjs7QUFFQTtJQUNJLHFCQUFxQjtBQUN6QiIsImZpbGUiOiJzcmMvYXBwL3ZpZXcvcGFnby9wYWdvLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYzE5NTUge1xuICAgIG1pbi1oZWlnaHQ6IDc1cHg7XG59XG5cbi5jMTk5OSB7XG4gICAgbWluLWhlaWdodDogMzAwcHg7XG4gICAgaGVpZ2h0OiBhdXRvO1xufVxuXG4uYzIwNDIge1xuICAgIG1pbi1oZWlnaHQ6IDIwcHg7XG59XG5cbi5jMjU5NCB7XG4gICAgbWluLWhlaWdodDogNzVweDtcbn1cblxuLmMyNjM2IHtcbiAgICBtaW4taGVpZ2h0OiA3NXB4O1xufVxuXG4uYzYwMjQge1xuICAgIHdpZHRoOiAxMDAlO1xufVxuXG4uYnRuLmJ0bi1wcmltYXJ5LmJ0bi1sZy5idG4tYmxvY2sge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNGRjUzMEQ7XG4gICAgYm9yZGVyOiAxcHggc29saWQgI0ZGNTMwRDtcbn1cblxuLnRvcC1zcGFjZSB7XG4gICAgbWFyZ2luLXRvcDogM3ZoXG59XG5cbi5naG9zdCB7XG4gICAgZGlzcGxheTogbm9uZTtcbn1cblxuLmludm9pY2UtdGl0bGUgaDIsXG4uaW52b2ljZS10aXRsZSBoMyB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xufVxuXG4udGFibGU+dGJvZHk+dHI+Lm5vLWxpbmUge1xuICAgIGJvcmRlci10b3A6IG5vbmU7XG59XG5cbi50YWJsZT50aGVhZD50cj4ubm8tbGluZSB7XG4gICAgYm9yZGVyLWJvdHRvbTogbm9uZTtcbn1cblxuLnRhYmxlPnRib2R5PnRyPi50aGljay1saW5lIHtcbiAgICBib3JkZXItdG9wOiAycHggc29saWQ7XG59Il19 */"
 
 /***/ }),
 
@@ -4125,7 +5433,7 @@ module.exports = ".c1955 {\n    min-height: 75px;\n}\n\n.c1999 {\n    min-height
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-navbar-user></app-navbar-user>\n<div class=\"container\">\n    <div class=\"py-5 text-center\">\n        <img data-type=\"image\" src=\"https://www.gridbox.io/projects/457e2284-c2ed-489b-b2d5-a70a14b82275/assets/img/logomandarina.png\" alt=\"\" width=\"72\" height=\"72\" class=\"d-block mx-auto mb-4\" />\n        <h2 data-type=\"header\">Completa tu pago\n        </h2>\n    </div>\n    <div class=\"row\">\n        <div class=\"col-md-4 order-md-2 mb-4\">\n            <h4 data-type=\"header\" class=\"d-flex justify-content-between align-items-center mb-3\">\n                <span data-highlightable=\"1\" class=\"text-muted gjs-comp-selected\">Tu carrito</span>\n                <span data-highlightable=\"1\" class=\"badge badge-secondary badge-pill\">{{carrito?.totalProducts}}</span>\n            </h4>\n            <ul class=\"list-group mb-3\">\n                <li *ngFor=\"let producto of carrito.products; let i = index\" class=\"list-group-item d-flex justify-content-between lh-condensed\">\n                    <div>\n                        <h6 data-type=\"header\" class=\"my-0\">{{producto.name}}\n                        </h6>\n                        <div *ngIf=\"producto.variacion != undefined\">\n                            <small class=\"text-muted\">{{producto.variacion}}</small><br>\n                            <small class=\"text-muted\">cantidad: {{producto.qty}}</small>\n                        </div>\n                        <div *ngIf=\"producto.variacion == undefined\">\n                            <small class=\"text-muted\">cantidad: {{producto.qty}}</small>\n                        </div>\n                    </div>\n                    <span class=\"text-muted\">Costo Unitario: {{producto.price}}</span>\n                </li>\n                <li class=\"list-group-item d-flex justify-content-between\">\n                    <span>Total (USD)</span>\n                    <strong>{{total}}</strong>\n                </li>\n            </ul>\n        </div>\n        <div class=\"col-md-8 order-md-1\">\n            <h4 data-type=\"header\" class=\"mb-3\">Información de Contacto\n            </h4>\n            <form novalidate=\"\" class=\"needs-validation\">\n                <div class=\"row\">\n                    <div class=\"col-md-6 mb-3\">\n                        <label for=\"firstName\">Nombre</label>\n                        <input type=\"text\" id=\"firstName\" placeholder=\"\" value=\"\" required=\"\" class=\"form-control\" />\n                        <div class=\"invalid-feedback\"> Valid first name is required.\n                        </div>\n                    </div>\n                    <div class=\"col-md-6 mb-3\">\n                        <label for=\"lastName\">Apellido</label>\n                        <input type=\"text\" id=\"lastName\" placeholder=\"\" value=\"\" required=\"\" class=\"form-control\" />\n                        <div class=\"invalid-feedback\"> Valid last name is required.\n                        </div>\n                    </div>\n                </div>\n                <div class=\"form-row\">\n                    <div class=\"col-md-6 mb-3\">\n                        <label for=\"validationDefault03\">City</label>\n                        <input type=\"text\" class=\"form-control\" id=\"validationDefault03\" placeholder=\"City\" required>\n                    </div>\n                    <div class=\"col-md-3 mb-3\">\n                        <label for=\"validationDefault04\">State</label>\n                        <input type=\"text\" class=\"form-control\" id=\"validationDefault04\" placeholder=\"State\" required>\n                    </div>\n                    <div class=\"col-md-3 mb-3\">\n                        <label for=\"validationDefault05\">Zip</label>\n                        <input type=\"number\" class=\"form-control\" id=\"validationDefault05\" placeholder=\"Zip\" required>\n                    </div>\n                </div>\n                <div class=\"mb-3\">\n                    <label for=\"address\">Dirección</label>\n                    <input type=\"text\" id=\"address\" placeholder=\"1234 Main St\" required=\"\" class=\"form-control\" />\n                    <div class=\"invalid-feedback\"> Please enter your shipping address.\n                    </div>\n                </div>\n                <hr class=\"mb-4\" />\n                <div class=\"text-center\">\n                    <div id=\"paypal-checkout-btn\"></div>\n                </div>\n            </form>\n        </div>\n    </div>\n</div>"
+module.exports = "<div *ngIf=\"auth.User | async; then authenticated;\"></div>\n<ng-template #authenticated>\n    <div *ngIf=\"auth.User | async as User\">\n        <app-navbar-user></app-navbar-user>\n        <div class=\"container\">\n            <div class=\"py-5 text-center\">\n                <img data-type=\"image\" src=\"https://www.gridbox.io/projects/457e2284-c2ed-489b-b2d5-a70a14b82275/assets/img/logomandarina.png\" alt=\"\" width=\"72\" height=\"72\" class=\"d-block mx-auto mb-4\" />\n                <h2 data-type=\"header\">Completa tu pago\n                </h2>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-md-4 order-md-2 mb-4\">\n                    <h4 data-type=\"header\" class=\"d-flex justify-content-between align-items-center mb-3\">\n                        <span data-highlightable=\"1\" class=\"text-muted gjs-comp-selected\">Tu carrito</span>\n                        <span data-highlightable=\"1\" class=\"badge badge-secondary badge-pill\">{{carrito?.totalProducts}}</span>\n                    </h4>\n                    <ul class=\"list-group mb-3\">\n                        <li *ngFor=\"let producto of carrito.products; let i = index\" class=\"list-group-item d-flex justify-content-between lh-condensed\">\n                            <div>\n                                <h6 data-type=\"header\" class=\"my-0\">{{producto.name}}\n                                </h6>\n                                <div *ngIf=\"producto.variacion != undefined\">\n                                    <small class=\"text-muted\">{{producto.variacion}}</small><br>\n                                    <small class=\"text-muted\">cantidad: {{producto.qty}}</small>\n                                </div>\n                                <div *ngIf=\"producto.variacion == undefined\">\n                                    <small class=\"text-muted\">cantidad: {{producto.qty}}</small>\n                                </div>\n                            </div>\n                            <span class=\"text-muted\">Costo Unitario: {{producto.price}}</span>\n                        </li>\n                        <li class=\"list-group-item d-flex justify-content-between\">\n                            <span>Total (USD)</span>\n                            <strong>{{total}}</strong>\n                        </li>\n                    </ul>\n                </div>\n                <div class=\"col-md-8 order-md-1\">\n                    <h4 data-type=\"header\" class=\"mb-3\">Información de Contacto\n                    </h4>\n                    <form novalidate=\"\">\n                        <div class=\"row\">\n                            <div class=\"col-md-6 mb-3\">\n                                <label for=\"firstName\">Nombre</label>\n                                <input [(ngModel)]=\"nombre\" type=\"text\" name=\"nombre\" class=\"form-control\" />\n                            </div>\n                            <div class=\"col-md-6 mb-3\">\n                                <label for=\"lastName\">Apellido</label>\n                                <input [(ngModel)]=\"apellido\" type=\"text\" name=\"apellido\" class=\"form-control\" />\n                            </div>\n                        </div>\n                        <div class=\"form-row\">\n                            <div class=\"col-md-6 mb-3\">\n                                <label for=\"validationDefault03\">Ciudad</label>\n                                <input [(ngModel)]=\"ciudad\" type=\"text\" name=\"ciudad\" class=\"form-control\">\n                            </div>\n                            <div class=\"col-md-3 mb-3\">\n                                <label for=\"validationDefault04\">Estado</label>\n                                <input [(ngModel)]=\"estado\" type=\"text\" name=\"estado\" class=\"form-control\">\n                            </div>\n                        </div>\n                        <div class=\"mb-3\">\n                            <label for=\"address\">Dirección</label>\n                            <input [(ngModel)]=\"direccion\" type=\"text\" name=\"direccion\" class=\"form-control\" />\n                        </div>\n                        <div class=\"text-center\">\n                            <div id=\"paypal-checkout-btn\"></div>\n\n                            <button (click)=\"downloadPDF()\" class=\"btn btn-primary top-space\" type=\" button \">\n                            PDF factura\n                        </button>\n                        </div>\n                    </form>\n                </div>\n            </div>\n        </div>\n\n        <!-- Factura a imprimir -->\n        <div class=\"ghost\" id=\"content\" #content>\n\n            <div class=\"row\">\n                <div class=\"col-12\">\n                    <div class=\"invoice-title\">\n                        <h2>Mandarina Mecanica</h2>\n                    </div>\n                    <hr>\n                    <div class=\"row\">\n                        <div class=\"col-12\">\n                            <strong>Facturado a:</strong><br> {{User.name}}\n                            <br>\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                        <div class=\"col-12\">\n                            <address>\n                                <strong>Metodo de pago</strong><br>\n                                Paypal<br>\n                            </address>\n                        </div>\n                        <div class=\"col-12 text-right\">\n                            <address>\n                                <strong>Fecha de la orden:</strong><br>\n                                {{fechaFactura}}<br><br>\n                            </address>\n                        </div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"row\">\n                <div class=\"col-md-12\">\n                    <div class=\"panel panel-default\">\n                        <div class=\"panel-heading\">\n                            <h3 class=\"panel-title\"><strong>Detalle de la orden</strong></h3>\n                        </div>\n                        <div class=\"panel-body\">\n                            <table class=\"table table-condensed\">\n                                <thead>\n                                    <tr>\n                                        <td><strong>Producto</strong></td>\n                                        <td class=\"text-center\"><strong>Precio</strong></td>\n                                        <td class=\"text-center\"><strong>Cantidad</strong></td>\n                                        <td class=\"text-center\"><strong>variacion</strong></td>\n                                    </tr>\n                                </thead>\n                                <tbody>\n                                    <!-- foreach ($order->lineItems as $line) or some such thing here -->\n                                    <tr *ngFor=\"let producto of carrito.products\">\n                                        <td>{{producto.name}}</td>\n                                        <td class=\"text-center\">${{producto.price}}</td>\n                                        <td class=\"text-center\">{{producto.qty}}</td>\n                                        <td *ngIf=\"producto.variacion != undefined\" class=\"text-right\">{{producto.variacion}}</td>\n                                        <td *ngIf=\"producto.variacion == undefined\" class=\"text-right\">No tiene</td>\n                                    </tr>\n                                    <tr>\n                                        <td class=\"thick-line\"></td>\n                                        <td class=\"thick-line\"></td>\n                                        <td class=\"thick-line text-center\"><strong>Total</strong></td>\n                                        <td class=\"thick-line text-right\">{{total}}</td>\n                                    </tr>\n                                </tbody>\n                            </table>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</ng-template>"
 
 /***/ }),
 
@@ -4143,16 +5451,39 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var src_app_auth_auth_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/auth/auth.service */ "./src/app/auth/auth.service.ts");
 /* harmony import */ var src_app_servicios_carrito_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/servicios/carrito.service */ "./src/app/servicios/carrito.service.ts");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var src_app_servicios_compra_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/servicios/compra.service */ "./src/app/servicios/compra.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var src_app_servicios_producto_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! src/app/servicios/producto.service */ "./src/app/servicios/producto.service.ts");
+/* harmony import */ var jspdf__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! jspdf */ "./node_modules/jspdf/dist/jspdf.min.js");
+/* harmony import */ var jspdf__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(jspdf__WEBPACK_IMPORTED_MODULE_8__);
+
+
+
+
+
 
 
 
 
 var PagoComponent = /** @class */ (function () {
-    function PagoComponent(auth, carritoService) {
+    function PagoComponent(auth, carritoService, ComprasService, router, productoService) {
         var _this = this;
         this.auth = auth;
         this.carritoService = carritoService;
+        this.ComprasService = ComprasService;
+        this.router = router;
+        this.productoService = productoService;
+        this.productos = [];
         this.addScript = false;
+        this.prueba = true;
+        this.mostrar = false;
+        this.nombre = "";
+        this.apellido = "";
+        this.ciudad = "";
+        this.estado = "";
+        this.direccion = "";
         // Variable paypalConfig
         this.paypalConfig = {
             env: 'sandbox',
@@ -4160,11 +5491,11 @@ var PagoComponent = /** @class */ (function () {
                 label: 'paypal',
                 size: 'medium',
                 shape: 'rect',
-                color: 'gold',
+                color: 'silver',
                 tagline: false
             },
             client: {
-                sandbox: 'AZC2Qq_ii09SCT7iRUTjEBrF4a8vx2nUi1ByXmLNT_A-iSsqOTQoyeX8AItdNDaDWiGhrsbwwlbx6nL1',
+                sandbox: 'AZQAWe78bKpRVpd3vzZ7X1Mzuiuj87QvVHPUawuBoV_RSZe0CTH4hXsOAi4aLDhQCySMITMd8MLNU-oj',
                 production: '<production-key>'
             },
             commit: true,
@@ -4182,15 +5513,36 @@ var PagoComponent = /** @class */ (function () {
             // onAuthorize() is called when the buyer approves the payment
             onAuthorize: function (data, actions) {
                 // Make a call to the REST api to execute the payment
-                return actions.payment.execute().then(function (payment) {
-                    window.alert('Payment Complete!');
-                    // this.PruebaToOrder();
-                });
+                if (_this.DataVerified() == true) {
+                    return actions.payment.execute().then(function (payment) {
+                        _this.RegistrarCompra();
+                    });
+                }
+                else {
+                    alert("Por favor rellene todos los datos del formulario");
+                }
             }
         };
     }
     PagoComponent.prototype.ngOnInit = function () {
         this.getCarrito();
+        this.fechaFactura = moment__WEBPACK_IMPORTED_MODULE_4__(new Date).format('DD/MM/YYYY');
+    };
+    PagoComponent.prototype.downloadPDF = function () {
+        var doc = new jspdf__WEBPACK_IMPORTED_MODULE_8__({
+            orientation: 'landscape',
+        });
+        var specialElementHandlers = {
+            '#editor': function (element, renderer) {
+                return true;
+            }
+        };
+        var content = this.content.nativeElement;
+        doc.fromHTML(content.innerHTML, 20, 0, {
+            'width': 60,
+            'elementHandlers': specialElementHandlers
+        });
+        doc.save('factura.pdf');
     };
     PagoComponent.prototype.getCarrito = function () {
         var _this = this;
@@ -4230,13 +5582,48 @@ var PagoComponent = /** @class */ (function () {
             document.body.appendChild(scriptElement);
         });
     };
+    PagoComponent.prototype.DataVerified = function () {
+        if (this.nombre == "") {
+            return false;
+        }
+        else if (this.apellido == "") {
+            return false;
+        }
+        else if (this.ciudad == "") {
+            return false;
+        }
+        else if (this.estado == "") {
+            return false;
+        }
+        else if (this.direccion == "") {
+            return false;
+        }
+        else {
+            return true;
+        }
+    };
+    PagoComponent.prototype.RegistrarCompra = function () {
+        var Compra = {
+            id: null,
+            uid: this.uid,
+            product: this.carrito.products,
+            amount: this.total,
+            created_at: moment__WEBPACK_IMPORTED_MODULE_4__(new Date).format('DD/MM/YYYY')
+        };
+        this.productoService.ventaProducto(this.carrito.products, Compra, this.uid);
+    };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('content'),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"])
+    ], PagoComponent.prototype, "content", void 0);
     PagoComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-pago',
             template: __webpack_require__(/*! ./pago.component.html */ "./src/app/view/pago/pago.component.html"),
             styles: [__webpack_require__(/*! ./pago.component.css */ "./src/app/view/pago/pago.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_auth_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"], src_app_servicios_carrito_service__WEBPACK_IMPORTED_MODULE_3__["CarritoService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_app_auth_auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"], src_app_servicios_carrito_service__WEBPACK_IMPORTED_MODULE_3__["CarritoService"], src_app_servicios_compra_service__WEBPACK_IMPORTED_MODULE_5__["CompraService"], _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"],
+            src_app_servicios_producto_service__WEBPACK_IMPORTED_MODULE_7__["ProductoService"]])
     ], PagoComponent);
     return PagoComponent;
 }());
@@ -4669,12 +6056,12 @@ __webpack_require__.r(__webpack_exports__);
 var environment = {
     production: false,
     firebase: {
-        apiKey: "AIzaSyAz3X61TfyJNy1s_MiDMsutQMZxlyrK1Eg",
-        authDomain: "la-mandarina-mecanica.firebaseapp.com",
-        databaseURL: "https://la-mandarina-mecanica.firebaseio.com",
-        projectId: "la-mandarina-mecanica",
-        storageBucket: "la-mandarina-mecanica.appspot.com",
-        messagingSenderId: "1055087528109"
+        apiKey: "AIzaSyBafSPh7H_let-SltPQtEV-MjH2a8S3gvU",
+        authDomain: "proysistemasinfo.firebaseapp.com",
+        databaseURL: "https://proysistemasinfo.firebaseio.com",
+        projectId: "proysistemasinfo",
+        storageBucket: "proysistemasinfo.appspot.com",
+        messagingSenderId: "768619126709"
     }
 };
 
