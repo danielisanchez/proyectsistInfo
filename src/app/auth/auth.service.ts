@@ -119,6 +119,7 @@ export class AuthService {
       alert(error.message);
     });
   }
+  //Metodo que dado un id de usuario me dice si es admin o no
   isAdmin(id: string){
     this.UserDoc = this.firestore.doc<Usuario>(`users/${id}`);
     this.admin = this.UserDoc.snapshotChanges().pipe(map(action => {

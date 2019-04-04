@@ -16,7 +16,7 @@ export class OlvidoPassComponent implements OnInit {
   }
   forgot(form: NgForm) {
     const email = form.value.email;
-    alert(email)
+    alert("se envio un correo de verificacion a " + email)
     this.auth.ForgotPassword(email);
   }
 }

@@ -36,12 +36,16 @@ export class CarritoService {
   agregarProducto(producto, variacion): Promise<any> {
     return new Promise((resolve, reject) => {
       this.auth.User.subscribe(data => {
+        //Data contiene al usuario loggeado
         if(data){
+          //Si existe, entonces existe su carrito
           const cartRef = this.RefMiCarrito(data.uid);
           cartRef.get().then(doc => {
+            //Capturo todos los productos que estan en mi carrito
             let cartData = doc.data();
             let productosEnCarrito = cartData.products;
               if(!isUndefined(variacion)){
+                //Si el producto posee variacion
                 const productoAlCarrito = {
                   id: producto.id,
                   name: producto.name,
@@ -51,11 +55,15 @@ export class CarritoService {
                   variacion: variacion,
                   qty: 1
                 }
+                //Se verifica si ese producto ya existe
                 const exist = CarritoService.ProductosIguales(productosEnCarrito,producto,variacion);
                 if(!exist){
+                  //De no existir se guarda en la variable productosEnCarrito
                   productosEnCarrito.push(productoAlCarrito);
                   cartData.totalProducts += 1;
                 }else {
+                  //De existir se agrega uno a la cantidad de productos de ese tipo
+                  //Se agrega uno a la cantidad de productos en el carrito
                   exist.qty +=1;
                   cartData.totalProducts +=1;
                 }
